@@ -1,0 +1,44 @@
+leader = {
+	name = "General"
+	type = land
+	date="1836.1.1"
+	personality = indifferent
+	background = aristocrat
+}
+leader = {
+	name = "General"
+	type = land
+	date="1836.1.1"
+	personality = indifferent
+	background = aristocrat
+}
+leader = {
+	name = "General"
+	type = land
+	date="1836.1.1"
+	personality = indifferent
+	background = aristocrat
+}
+army = {
+	name = "Army of the Principality of Wallachia"
+	location = 669
+	regiment = {
+		name= "1st Wallachia Infantry"
+		type = infantry
+		home = 664
+	}
+
+	regiment = {
+		name= "2nd Wallachia Infantry"
+		type = infantry
+		home = 668
+	}
+
+	regiment = {
+		name= "3rd Wallachia Infantry"
+		type = infantry
+		home = 669
+	}
+
+}
+

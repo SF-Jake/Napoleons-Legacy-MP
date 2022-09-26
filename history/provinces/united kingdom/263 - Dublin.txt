@@ -1,0 +1,24 @@
+owner = IRE
+
+controller = IRE
+
+add_core = IRE
+
+
+add_core = CAN
+
+trade_goods = grain
+life_rating = 35
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

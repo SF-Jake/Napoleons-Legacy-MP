@@ -1,0 +1,7 @@
+owner = POR
+controller = POR
+add_core = POR
+add_core = BRZ
+add_core = URU
+trade_goods = wool
+life_rating = 35

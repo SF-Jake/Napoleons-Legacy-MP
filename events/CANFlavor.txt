@@ -1,0 +1,1289 @@
+country_event = {
+
+	id = 44300
+	trigger = {
+		tag = CAN 
+		year = 1872
+		owns = 13 #Vancouver BC
+		owns = 57 #Ottawa ON
+		NOT = {
+			year = 1878
+		}
+	}
+ 
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1873
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1875
+		}
+	}
+
+	title = "EVTNAME44300"
+	desc = "EVTDESC44300"
+	picture = "train"
+
+	option = {
+		name = "EVTOPTA44300" 
+		any_pop = {
+			ideology = {
+				factor = 0.1
+				value = liberal
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44300" 
+		any_pop = {
+			ideology = {
+				factor = 0.25
+				value = liberal
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 3
+				ideology = liberal
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 44301
+	trigger = {
+		tag = CAN 
+		year = 1868
+		owns = 36 #Winnipeg MB
+		owns = 57 #Ottawa ON
+		NOT = {
+			year = 1872
+			has_country_flag = RielRebellion
+			has_country_flag = RielRebellionIgnored
+			}
+		}
+ 
+	mean_time_to_happen =  {
+		months = 8
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1869
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1871
+		}
+	}
+
+	title = "EVTNAME44301"
+	desc = "EVTDESC44301"
+	picture = "Metis"
+
+	option = {
+		name = "EVTOPTA44301" 
+		set_country_flag = RielRebellion
+		set_country_flag = RielRebellionIgnored
+		any_pop = {
+			limit = {
+				has_pop_culture = french_canadian
+			}
+			militancy = 1
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = anglo_canadian
+			}
+			militancy = 1
+			consciousness = 2
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44301" 
+		set_country_flag = RielRebellion
+		any_pop = {
+			limit = {
+				has_pop_culture = french_canadian
+			}
+			militancy = 1
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = metis
+			}
+			militancy = 10
+			consciousness = 5
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = anglo_canadian
+			}
+			militancy = -1
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 44302
+	trigger = {
+		tag = CAN 
+		year = 1884
+		owns = 57 #Ottawa ON
+		OR = {
+			has_country_flag = RielRebellionIgnored
+			owns = 30 #Saskatchewan 
+			owns = 34  
+			owns = 38 #Western Manitoba 
+			owns = 39  
+			owns = 40 
+			owns = 41
+			} 
+		NOT = {
+			year = 1888
+			has_country_flag = NorthwestRebellion
+			}
+		}
+ 
+	mean_time_to_happen =  {
+		months = 8
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1885
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1886
+		}
+	}
+
+	title = "EVTNAME44302"
+	desc = "EVTDESC44302"
+	picture = "Rebellion"
+
+	option = {
+		name = "EVTOPTA44302" 
+		set_country_flag = NorthwestRebellion
+		any_pop = {
+			limit = {
+				has_pop_culture = metis
+			}
+			militancy = 7
+			consciousness = 5
+		}
+	}
+}
+
+country_event = {
+	id = 32467
+	title = "EVTNAME32467"
+	desc = "EVTDESC32467"
+	picture = "native_force"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32467"
+		IMP = {
+			any_owned = {
+				remove_core = BRI
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = "EVTOPTB32467"
+		badboy = 5
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+        id = 66550
+        title = "EVTNAME66550"
+        desc = "EVTDESC66550"
+	picture = "meeting"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA66550"
+                CAN = {
+                	country_event = 66551
+                }
+                ai_chance = {
+                        factor = 90
+                }
+        }
+ 
+        option = {
+                name = "EVTOPTB66550"
+                CAN = {
+			country_event = 66552
+		}
+                ai_chance = {
+                        factor = 10
+                }
+        }
+}
+ 
+country_event = {
+        id = 66551
+        title = "EVTNAME66551"
+        desc = "EVTDESC66551"
+	picture = "administration"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA66551"
+                FRA = {
+			country_event = 66553
+		}
+		relation = {
+			who = FRA
+			value = 150
+		}
+                ai_chance = {
+                        factor = 45
+                }
+        }
+ 
+        option = {
+                name = "EVTOPTB66551"
+                FRA = {
+			country_event = 66554
+		}
+                ai_chance = {
+                        factor = 55
+                }
+        }
+}
+ 
+country_event = {
+        id = 66552
+        title = "EVTNAME66552"
+        desc = "EVTDESC66552"
+	picture = "meeting3"
+       
+        is_triggered_only = yes
+       
+        option = {
+                name = "EVTOPTA66552"
+                relation = {
+			who = FRA
+			value = -50
+		}
+        }
+}
+ 
+country_event = {
+        id = 66553
+        title = "EVTNAME66553"
+        desc = "EVTDESC66553"
+	picture = "Travel"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA66553"
+                CAN = {
+                        2230 = {
+                                secede_province = FRA
+                                remove_core = CAN
+                        }
+                        2228 = {
+                                secede_province = FRA
+                                remove_core = CAN
+                        }
+                        77 = {
+                                secede_province = FRA
+                                remove_core = CAN
+                        }
+                }
+		relation = {
+			who = CAN
+			value = 150
+		}
+        }
+}
+ 
+country_event = {
+        id = 66554
+        title = "EVTNAME66554"
+        desc = "EVTDESC66554"
+	picture = "slavepower"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA66554"
+                money = 100000
+                FRA = {
+                        2230 = {
+				remove_core = FRA
+			}
+                        2228 = {
+				remove_core = FRA
+			}
+                        77 = {
+				remove_core = FRA
+			}
+                }
+		CAN = {
+                        2230 = {
+				add_core = CAN
+			}
+                        2228 = {
+				add_core = CAN
+			}
+                        77 = {
+				add_core = CAN
+			}
+                }
+                relation = {
+			who = CAN
+			value = 50
+		}
+                CAN = {
+			country_event = 66556
+		}
+                ai_chance = {
+                        factor = 45
+                }
+        }
+ 
+        option = {
+                name = "EVTOPTB66554"
+		relation = {
+			who = CAN
+			value = -50
+		}
+                CAN = {
+			country_event = 66557
+		}
+                ai_chance = {
+                        factor = 55
+                }
+        }
+}
+ 
+country_event = {
+        id = 66556
+        title = "EVTNAME66556"
+        desc = "EVTDESC66556"
+	picture = "Sturt"
+       
+        is_triggered_only = yes
+       
+        option = {
+                name = "EVTOPTA66556"
+                prestige = 5
+                money = -100000
+                relation = {
+			who = FRA
+			value = 20
+		}
+        }
+}
+ 
+country_event = {
+        id = 66557
+        title = "EVTNAME66557"
+        desc = "EVTDESC66557"
+	picture = "finepeople"
+       
+        is_triggered_only = yes
+       
+        option = {
+                name = "EVTOPTA66557"
+                relation = {
+			who = FRA
+			value = -50
+		}
+        }
+}
+
+#HBC starting modifers
+
+country_event = {
+
+	id = 86011
+
+	trigger = {
+		tag = HUD
+		year = 1836
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+
+	title = "EVTNAME86011"
+	desc = "EVTDESC86011"
+	picture = "meeting3"
+
+	option = {
+		name = "EVTOPTA86011"
+		add_country_modifier = {
+			name = company_rule
+			duration = 9125
+		}
+		93 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		91 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		92 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		114 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		83 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		82 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		81 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		80 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		79 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		78 = {
+			add_province_modifier = {
+                		name = Oregon_Territory
+                        	duration = 7300
+			}
+                }
+		set_country_flag = company_rule
+		money = 50000
+	}
+}
+
+#The first Oregon Trail
+country_event = {
+
+	id = 86012
+	
+	title = "EVTNAME86012"
+	desc = "EVTDESC86012"
+	picture = "yankee"
+
+	trigger = {
+		tag = USA
+		year = 1839
+	}
+
+	fire_only_once = yes
+		
+	mean_time_to_happen =  {
+		months = 2
+
+		modifier = {
+			factor = 1
+			year = 1839
+		}
+	}
+		
+	option = {
+	name = "EVTOPTA86012"
+		any_pop = {
+			limit = {
+				has_pop_culture = yankee
+				location = {
+					province_id = 113
+				}
+			}
+			move_pop = 80
+		}
+		HUD = {
+			country_event = 86013
+		}
+	}
+}
+
+#The first Oregon Trail COL
+country_event = {
+
+	id = 86013
+	
+	title = "EVTNAME86013"
+	desc = "EVTDESC86013"
+	picture = "yankee"
+
+	is_triggered_only = yes
+		
+	option = {
+	name = "EVTOPTA86013"
+	}
+}	
+
+#The 2nd Oregon Trail
+country_event = {
+
+	id = 86014
+	
+	title = "EVTNAME86014"
+	desc = "EVTDESC86014"
+	picture = "yankee"
+
+	trigger = {
+		tag = USA
+		year = 1843
+	}
+
+	fire_only_once = yes
+		
+	mean_time_to_happen =  {
+		months = 2
+
+		modifier = {
+			factor = 1
+			year = 1843
+		}
+	}
+		
+	option = {
+	name = "EVTOPTA86014"
+		any_pop = {
+			limit = {
+				has_pop_culture = yankee
+				location = {
+					province_id = 123
+				}
+			}
+			move_pop = 81
+		}
+		HUD = {
+			country_event = 86015
+		}
+	}
+}
+
+#The 2nd Oregon Trail HUD
+country_event = {
+
+	id = 86015
+	
+	title = "EVTNAME86015"
+	desc = "EVTDESC86015"
+	picture = "yankee"
+
+	is_triggered_only = yes
+		
+	option = {
+	name = "EVTOPTA86015"
+	}
+}	
+
+#Bankruptcy Prevention
+country_event = {
+
+	id = 86040
+	
+	title = "EVTNAME86040"
+	desc = "EVTDESC86040"
+	picture = "bankruptcy"
+
+	trigger = {
+		tag = HUD
+		year = 1837
+		NOT = {
+			money = 5000
+		}
+	}
+
+	fire_only_once = yes
+		
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA86040"
+		money = 50000
+		prestige = -100
+	}
+}	
+
+#YFE - Bad year
+country_event = {
+	id = 86041
+	title = "EVTNAME86041"
+	desc = "EVTDESC86041"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = HUD
+		NOT = {
+			has_country_modifier = yearly_YFE
+			has_country_flag = mechanized_YFE
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA86041"
+		money = 1000
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 330
+		}
+	}
+}
+
+#YFE - Great year
+country_event = {
+	id = 86042
+	title = "EVTNAME86042"
+	desc = "EVTDESC86042"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = HUD
+		NOT = {
+			has_country_modifier = yearly_YFE
+			has_country_flag = mechanized_YFE
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA86042"
+		money = 10000
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 310
+		}
+	}
+}
+
+#YFE - Good year
+country_event = {
+	id = 86043
+	title = "EVTNAME86043"
+	desc = "EVTDESC86043"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = HUD
+		NOT = {
+			has_country_modifier = yearly_YFE
+			has_country_flag = mechanized_YFE
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA86043"
+		money = 5000
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 310
+		}
+	}
+}
+
+#MYFE - Bad year
+country_event = {
+	id = 86069
+	title = "EVTNAME86069"
+	desc = "EVTDESC86069"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = HUD
+		NOT = {
+			has_country_modifier = yearly_YFE
+		}
+		has_country_flag = mechanized_YFE
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA86069"
+		money = 7000
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 310
+		}
+	}
+}
+
+#MYFE - Great year
+country_event = {
+	id = 86070
+	title = "EVTNAME86070"
+	desc = "EVTDESC86070"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = HUD
+		NOT = {
+			has_country_modifier = yearly_YFE
+		}
+		has_country_flag = mechanized_YFE
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA86070"
+		money = 38000
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 310
+		}
+	}
+}
+
+#MYFE - Good year
+country_event = {
+	id = 86071
+	title = "EVTNAME86071"
+	desc = "EVTDESC86071"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = HUD
+		NOT = {
+			has_country_modifier = yearly_YFE
+		}
+		has_country_flag = mechanized_YFE
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA86071"
+		money = 18000
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 310
+		}
+	}
+}
+
+#COL informed of Palliser
+country_event = {
+	
+	id = 86072
+	title = "EVTNAME86072"
+	desc = "EVTDESC86072"
+	picture = "Botanic_expedition"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA86072"
+		set_country_flag = Palliser_1857
+	}
+}
+
+#1857 Palliser event
+country_event = {
+	
+	id = 86073
+	title = "EVTNAME86073"
+	desc = "EVTDESC86073"
+	picture = "colonial_factory"
+
+	trigger = {
+		tag = HUD
+		year = 1857
+		has_country_flag = Palliser_1857
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 1
+			year = 1857
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86073"
+		set_country_flag = Palliser_1858
+		ai_chance = {
+                        factor = 100
+                }
+	}
+
+	option = {
+		name = "EVTOPTB86073"
+		set_country_flag = Palliser_1858
+		add_country_modifier = {
+			name = HBC_delayPAL
+			duration = 730
+		}
+		prestige = -5
+		badboy = 1
+		ai_chance = {
+                        factor = 0
+                }
+	}
+}
+
+#1858 Palliser event
+country_event = {
+	
+	id = 86074
+	title = "EVTNAME86074"
+	desc = "EVTDESC86074"
+	picture = "destroyed_forest"
+
+	trigger = {
+		tag = HUD
+		year = 1858
+		has_country_flag = Palliser_1858
+		NOT = {
+			has_country_modifier = HBC_delayPAL
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = .05
+			year = 1858
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86074"
+		set_country_flag = Palliser_1859
+		ai_chance = {
+                        factor = 100
+                }
+	}
+
+	option = {
+		name = "EVTOPTB86074"
+		set_country_flag = Palliser_1859
+		add_country_modifier = {
+			name = HBC_delayPAL
+			duration = 730
+		}
+		prestige = -10
+		badboy = 2
+		ai_chance = {
+                        factor = 0
+                }
+	}
+}
+
+#1859 Palliser event
+country_event = {
+	
+	id = 86055
+	title = "EVTNAME86055"
+	desc = "EVTDESC86055"
+	picture = "angry_natives"
+
+	trigger = {
+		tag = HUD
+		year = 1859
+		has_country_flag = Palliser_1859
+		NOT = {
+			has_country_modifier = HBC_delayPAL
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 2
+		modifier = {
+			factor = 1
+			year = 1858
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86055"
+		set_country_flag = Palliser_1860
+		ai_chance = {
+                        factor = 100
+                }
+	}
+
+	option = {
+		name = "EVTOPTB86055"
+		set_country_flag = Palliser_1860
+		add_country_modifier = {
+			name = HBC_delayPAL
+			duration = 730
+		}
+		prestige = -15
+		badboy = 3
+		ai_chance = {
+                        factor = 0
+                }
+	}
+}
+
+#1860 Palliser event
+country_event = {
+	
+	id = 86056
+	title = "EVTNAME86056"
+	desc = "EVTDESC86056"
+	picture = "Botanic_expedition"
+
+	trigger = {
+		tag = HUD
+		year = 1860
+		has_country_flag = Palliser_1860
+		NOT = {
+			has_country_modifier = HBC_delayPAL
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1
+			year = 1858
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86056"
+		set_country_flag = Palliser_1863
+		add_country_modifier = {
+			name = HBC_delayPAL
+			duration = 1085
+		}
+	}
+}
+
+#1863 Palliser event
+country_event = {
+	
+	id = 86057
+	title = "EVTNAME86057"
+	desc = "EVTDESC86057"
+	picture = "Upperhouse"
+
+	trigger = {
+		tag = HUD
+		year = 1860
+		has_country_flag = Palliser_1863
+		NOT = {
+			has_country_modifier = HBC_delayPAL
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 7
+		modifier = {
+			factor = 1
+			year = 1858
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86057"
+		set_global_flag = Total_ann_considered
+		add_country_modifier = {
+			name = HBC_delayPAL
+			duration = 1825
+		}
+		ai_chance = {
+                        factor = 100
+                }
+	}
+
+	option = {
+		name = "EVTOPTB86057"
+		set_global_flag = Total_ann_considered
+		add_country_modifier = {
+			name = HBC_delayPAL
+			duration = 3650
+		}
+		money = -20000
+		ai_chance = {
+                        factor = 0
+                }
+	}
+}
+
+#COL informed of intention to annex BC
+country_event = {
+	
+	id = 86058
+	title = "EVTNAME86058"
+	desc = "EVTDESC86058"
+	picture = "Administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA86058"
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 13
+					province_id = 77
+					province_id = 18
+					province_id = 15
+					province_id = 14
+					province_id = 20
+					province_id = 17
+					province_id = 19
+					province_id = 16
+					province_id = 2629
+					province_id = 21
+					province_id = 79
+					province_id = 80
+					province_id = 81
+					province_id = 78
+					province_id = 82
+					province_id = 83
+					province_id = 91
+					province_id = 92
+					province_id = 93
+					province_id = 114
+				}
+			}
+		add_core = CAN
+		}
+		any_owned = {
+			limit = {
+				is_core = CAN
+			}
+		secede_province = CAN
+		}
+		ai_chance = {
+                        factor = 100
+                }
+	}
+	option = {
+		name = "EVTOPTB86058"
+		any_owned = {
+			add_core = CAN
+		}
+		has_global_flag = time_for_war_HUD
+		CAN = {
+                	country_event = 86059
+                }
+		ai_chance = {
+                        factor = 0
+                }
+	}
+}
+
+#CAN hears COL wont let it annex BC
+country_event = {
+	
+	id = 86059
+	title = "EVTNAME86059"
+	desc = "EVTDESC86052"
+	picture = "Botanic_expedition"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA86097"
+		release_vassal = HUD
+		relation = {
+			who = HUD
+			value = -400
+		}
+		casus_belli = {
+			target = HUD
+			type = conquest
+			months = 1
+		}
+		war = {
+			target = HUD
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	}
+}
+
+
+#COL informed of intention for Total Annexation
+country_event = {
+	
+	id = 86060
+	title = "EVTNAME86060"
+	desc = "EVTDESC86060"
+	picture = "Administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA86058"
+		any_owned = {
+			add_core = CAN
+		}
+		CAN = {
+			inherit = HUD
+		}
+		CAN = {
+			any_owned = {
+				remove_core = HUD
+			}
+		}
+		ai_chance = {
+                        factor = 100
+                }
+	}
+	option = {
+		name = "EVTOPTB86058"
+		any_owned = {
+			add_core = CAN
+		}
+		CAN = {
+                	country_event = 86061
+                }
+		set_global_flag = time_for_war_HUD
+		ai_chance = {
+                        factor = 0
+                }
+	}
+}
+
+#CAN hears COL wont let it do Total Annexation
+country_event = {
+	
+	id = 86061
+	title = "EVTNAME86059"
+	desc = "EVTDESC86052"
+	picture = "Botanic_expedition"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA86097"
+		release_vassal = HUD
+		relation = {
+			who = HUD
+			value = -400
+		}
+		casus_belli = {
+			target = HUD
+			type = conquest
+			months = 1
+		}
+		war = {
+			target = HUD
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	}
+}

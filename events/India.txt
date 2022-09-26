@@ -1,0 +1,1645 @@
+#EIC starting event
+country_event = {
+	id = 121260
+	title = "EVTNAME121260"
+	desc = "EVTDESC121260"
+	picture = "meeting3"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121260"
+		add_country_modifier = {
+				name = nature_of_a_vassal_EIC
+				duration = -1
+		}
+	}
+}
+
+#EIC yearly payment
+country_event = {
+	id = 121261
+	title = "EVTNAME121261"
+	desc = "EVTDESC121261"
+	picture = "meeting3"
+	
+	trigger = {
+		tag = EIC
+		NOT = {
+			has_country_modifier = yearly_YFE
+		}
+		year = 1837
+		vassal_of = CAN
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121261"
+		money = -150000
+		CAN = {
+			money = 150000
+		}
+		add_country_modifier = {
+			name = yearly_YFE
+			duration = 350
+		}
+	}
+}
+
+#EIC 1850 Warning - Religion
+country_event = {
+	id = 121262
+	title = "EVTNAME121262"
+	desc = "EVTDESC121262"
+	picture = "BengaliNovel"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		year = 1844
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121262"
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 1
+			militancy = 1
+		}
+	}
+}
+
+#EIC 1852 Warning - Westernization
+country_event = {
+	id = 121263
+	title = "EVTNAME121263"
+	desc = "EVTDESC121263"
+	picture = "bagdadrailway"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		year = 1846
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121263"
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 1
+			militancy = 1
+		}
+	}
+}
+
+#EIC 1854 Warning - Discrimination
+country_event = {
+	id = 121264
+	title = "EVTNAME121264"
+	desc = "EVTDESC121264"
+	picture = "native_force"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		year = 1848
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121264"
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 1
+			militancy = 1
+		}
+	}
+}
+
+
+#EIC 1856 Mutiny - With Doctrine of Lapse
+country_event = {
+	id = 121265
+	title = "EVTNAME121265"
+	desc = "EVTDESC121265"
+	picture = "sultan"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		year = 1850
+		has_country_flag = doctrine_lapsed
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121265"
+		any_owned = {
+			add_core = BEN
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = -3
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1252
+					province_id = 1253
+					province_id = 1254
+					province_id = 1255
+					province_id = 1247
+					province_id = 1248
+					province_id = 1250
+					province_id = 1249
+				}
+			}
+				secede_province = BEN
+                }
+		casus_belli = {
+			target = BEN
+			type = conquest
+		}
+		BEN = {
+			casus_belli = {
+				target = EIC
+				type = conquest
+			}
+			war = {
+				target = EIC
+				attacker_goal = {
+					casus_belli = conquest
+				}
+				defender_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+	}
+}
+
+#EIC 1856 Mutiny - Without Doctrine of Lapse
+country_event = {
+	id = 121266
+	title = "EVTNAME121265"
+	desc = "EVTDESC121265"
+	picture = "sultan"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		year = 1850
+		NOT = {
+			has_country_flag = doctrine_lapsed
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121265"
+		any_owned = {
+			add_core = BEN
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = -3
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1252
+					province_id = 1253
+					province_id = 1254
+					province_id = 1255
+				}
+			}
+				secede_province = BEN
+                }
+		casus_belli = {
+			target = BEN
+			type = conquest
+		}
+		BEN = {
+			casus_belli = {
+				target = EIC
+				type = conquest
+			}
+			war = {
+				target = EIC
+				attacker_goal = {
+					casus_belli = conquest
+				}
+				defender_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+	}
+}
+
+#EIC 1856 Mutiny - EIC submits to CAN
+country_event = {
+	id = 121267
+	title = "EVTNAME121267"
+	desc = "EVTDESC121267"
+	picture = "sultan"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121267"
+		EIC = {
+			any_owned = {
+				remove_core = EIC
+			}
+                }
+		BEN = {
+			any_owned = {
+				remove_core = EIC
+			}
+                }
+		inherit = FROM
+		end_war = BEN
+		casus_belli = {
+			target = BEN
+			type = conquest
+		}
+		war = {
+			target = BEN
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121267"
+		prestige = -10
+		end_war = BEN
+		EIC = {
+			any_owned = {
+				remove_core = EIC
+			}
+                }
+		BEN = {
+			any_owned = {
+				remove_core = EIC
+			}
+			inherit = EIC
+                }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#EIC wants indie
+country_event = {
+	id = 121268
+	title = "EVTNAME121268"
+	desc = "EVTDESC121268"
+	picture = "meeting3"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121268"
+		release_vassal = EIC
+		diplomatic_influence = {
+			who = EIC
+			value = -200
+		}
+		casus_belli = {
+			target = EIC
+			type = conquest
+		}
+		war = {
+			target = EIC
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121268"
+		prestige = -5
+		release_vassal = EIC
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#EIC first event post-indie
+country_event = {
+	id = 121269
+	title = "EVTNAME121269"
+	desc = "EVTDESC121269"
+	picture = "meeting"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		war = no
+		NOT = {
+			vassal_of = CAN
+		}
+		year = 1850
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121269"
+		government = absolute_monarchy
+		any_pop = {
+			limit = {
+				has_pop_culture = british
+			}
+			consciousness = 3
+			militancy = 3
+		}
+		set_country_flag = reformed_EIC
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121269"
+		government = democracy
+		political_reform = wealth_voting
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = british
+			}
+			militancy = 3
+		}
+		set_country_flag = reformed_EIC
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121269"
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 3
+			militancy = 3
+		}
+		set_country_flag = staying_british
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+#EIC second event post-indie
+country_event = {
+	id = 121270
+	title = "EVTNAME121270"
+	desc = "EVTDESC121270"
+	picture = "meeting"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EIC
+		war = no
+		NOT = {
+			vassal_of = CAN
+			has_country_flag = staying_british
+		}
+		has_country_flag = reformed_EIC	
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121270"
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = british
+			}
+			militancy = 3
+		}
+		add_accepted_culture = bengali
+		set_country_flag = british_EIC_potential
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121270"
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali
+			}
+			consciousness = 3
+			militancy = 3
+		}
+		set_country_flag = staying_british
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+#EIC sells shit
+country_event = {
+	id = 121271
+	title = "EVTNAME121271"
+	desc = "EVTDESC121271"
+	picture = "Western"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121271"
+		years_of_research = 1.5
+	}
+}
+
+#MUG starting event
+country_event = {
+	id = 121272
+	title = "EVTNAME121272"
+	desc = "EVTDESC121272"
+	picture = "Ottoman"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121272"
+		prestige = 5
+	}
+}
+
+#HYD starting event
+country_event = {
+	id = 121273
+	title = "EVTNAME121273"
+	desc = "EVTDESC121273"
+	picture = "Ottoman"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HYD
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121273"
+		prestige = 5
+	}
+}
+
+#MUG Bahadur Shah
+country_event = {
+	id = 121274
+	title = "EVTNAME121274"
+	desc = "EVTDESC121274"
+	picture = "sultan"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+		year = 1837
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121274"
+		prestige = 2
+		any_pop = {
+			militancy = -1
+		}
+	}
+}
+
+
+#MUG hears of HYD's kidnapping
+country_event = {
+	id = 121275
+	title = "EVTNAME121275"
+	desc = "EVTDESC121275"
+	picture = "Outside_influences"
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121275"
+		casus_belli = {
+			target = HYD
+			type = cut_down_to_size
+		}
+		HYD = {
+			casus_belli = {
+				target = MUG
+				type = cut_down_to_size
+			}
+		}
+		war = {
+			call_ally = yes
+			target = HYD
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+		set_global_flag = HYD_MUG_war
+		ai_chance = {
+			factor = 66
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121275"
+		prestige = -3
+		HYD = {
+			create_vassal = IND
+			create_vassal = BHO
+			create_alliance = IND
+			create_alliance = BHO
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+#Small states hear of HYD-MUG war
+country_event = {
+	id = 121276
+	title = "EVTNAME121276"
+	desc = "EVTDESC121276"
+	picture = "sultan"
+	
+	trigger = {
+		OR = {
+			tag = IND
+			tag = BHO
+		}
+		has_global_flag = HYD_MUG_war
+		NOT = {
+			has_country_flag = HYD_MUG_war_decision
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121276"
+		casus_belli = {
+			target = HYD
+			type = cut_down_to_size
+		}
+		HYD = {
+			casus_belli = {
+				target = THIS
+				type = conquest
+			}
+		}
+		war = {
+			target = HYD
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		create_alliance = MUG
+		set_country_flag = HYD_MUG_war_decision
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121276"
+		casus_belli = {
+			target = MUG
+			type = cut_down_to_size
+		}
+		MUG = {
+			casus_belli = {
+				target = THIS
+				type = conquest
+			}
+		}
+		war = {
+			target = MUG
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		create_alliance = HYD
+		set_country_flag = HYD_MUG_war_decision
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121276"
+		prestige = -2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#HUD event post-indie
+country_event = {
+	id = 121277
+	title = "EVTNAME121277"
+	desc = "EVTDESC121277"
+	picture = "meeting"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUD
+		war = no
+		NOT = {
+			vassal_of = CAN
+		}
+		year = 1857
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121269"
+		government = absolute_monarchy
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121269"
+		government = democracy
+		political_reform = wealth_voting
+		any_pop = {
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121269"
+		any_pop = {
+			militancy = 2
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+#The Congress is called
+country_event = {
+	id = 121278
+	title = "EVTNAME121278"
+	desc = "EVTDESC121278"
+	picture = "anticorn"
+	
+	trigger = {
+		has_global_flag = congress_called
+		is_culture_group = south_asian
+		NOT = {
+			has_country_flag = delegate_sent_too
+			has_country_flag = delegate_sent_not
+			has_country_flag = congress_caller
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121278"
+		set_country_flag = delegate_sent_too
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121278"
+		prestige = -5
+		set_country_flag = delegate_sent_not
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Purpose of the Congress
+country_event = {
+	id = 121279
+	title = "EVTNAME121279"
+	desc = "EVTDESC121279"
+	picture = "anticorn"
+	
+	trigger = {
+		OR = {
+			has_country_flag = delegate_sent_too
+			has_country_flag = congress_caller
+		}
+		is_culture_group = south_asian
+		NOT = {
+			has_country_flag = no_confed
+			has_country_flag = yes_confed
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121279"
+		set_country_flag = yes_confed
+		JAP = {
+			change_variable = {
+				which = delegates_sent
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121279"
+		prestige = -5
+		set_country_flag = no_confed
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#11 votes gained GP informed
+country_event = {
+	id = 121280
+	title = "EVTNAME121280"
+	desc = "EVTDESC121280"
+	picture = "monarchy"
+
+	fire_only_once = yes
+	
+	trigger = {
+		JAP = {
+			check_variable = {
+				which = delegates_sent
+				value = 10
+			}
+		}
+		has_country_flag = congress_caller
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121280"
+		set_country_flag = Indian_confed_formed
+		add_country_modifier = {
+			name = Indian_confed_start
+			duration = 7200
+		}
+		any_country = {
+			limit = {
+				is_culture_group = south_asian
+			}
+				country_event = { id=121281 days=0 }
+		}
+	}
+}
+
+#11 votes gained non-GP informed
+country_event = {
+	id = 121281
+	title = "EVTNAME121281"
+	desc = "EVTDESC121281"
+	picture = "monarchy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121281"
+		FROM = {
+			create_vassal = THIS
+			alliance_with = THIS
+		}
+		set_country_flag = puppet_of_confed
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121281"
+		FROM = {
+			casus_belli = {
+				target = THIS
+				type = make_puppet
+				months = 12
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#A puppet of confed leaves the confed
+country_event = {
+	id = 121282
+	title = "EVTNAME121282"
+	desc = "EVTDESC121282"
+	picture = "sultan"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = puppet_of_confed
+		is_greater_power = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121282"
+		any_country = {
+			limit = {
+				has_country_flag = congress_caller
+			}
+			country_event = { id=121283 days=0 }
+		}
+	}
+}
+
+#A puppet of confed leaves the confed
+country_event = {
+	id = 121283
+	title = "EVTNAME121283"
+	desc = "EVTDESC121283"
+	picture = "sultan"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121283"
+		casus_belli = {
+			target = FROM
+			type = conquest
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		change_tag = HND
+		add_accepted_culture = assamese
+		add_accepted_culture = bihari
+		add_accepted_culture = manipuri
+		add_accepted_culture = oriya
+		add_accepted_culture = sinhala
+		add_accepted_culture = avadhi
+		add_accepted_culture = kanauji
+		add_accepted_culture = panjabi
+		add_accepted_culture = kashmiri
+		add_accepted_culture = gujarati
+		add_accepted_culture = marathi
+		add_accepted_culture = rajput
+		add_accepted_culture = kannada
+		add_accepted_culture = malayalam
+		add_accepted_culture = tamil
+		add_accepted_culture = telegu
+		any_country = {
+			limit = {
+				AND = {
+					is_culture_group = south_asian
+					NOT = {
+						war_with = THIS
+						tag = THIS
+					}
+				}
+			}
+			country_event = { id=121284 days=0 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121283"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The doctrine of Federation
+country_event = {
+	id = 121284
+	title = "EVTNAME121284"
+	desc = "EVTDESC121284"
+	picture = "sultan"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121284"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+}
+
+#HUD gets rid of all CAN cores
+country_event = {
+	id = 121285
+	title = "EVTNAME121285"
+	desc = "EVTDESC121285"
+	picture = "meeting3"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = time_for_war_HUD
+		NOT = {
+			war_with = CAN
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121285"
+		prestige = 20
+		any_owned = {
+			remove_core = CAN
+		}
+	}
+}
+
+#RUS gets CAN offer to buy Alaska
+country_event = {
+	id = 121288
+	title = "EVTNAME121288"
+	desc = "EVTDESC121288"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121288"
+		money = 72000
+		CAN = {
+			money = -72000
+		}
+		1 = {remove_core = THIS}
+		2 = {remove_core = THIS}
+		3 = {remove_core = THIS}
+		4 = {remove_core = THIS}
+		5 = {remove_core = THIS}
+		2599 = {remove_core = THIS}
+		2630 = {remove_core = THIS}
+		2631= {remove_core = THIS}
+		1 = {add_core = CAN}
+		2 = {add_core = CAN}
+		3 = {add_core = CAN}
+		4 = {add_core = CAN}
+		5 = {add_core = CAN}
+		2599 = {add_core = CAN}
+		2630 = {add_core = CAN}
+		2631= {add_core = CAN}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1
+					province_id = 2
+					province_id = 3
+					province_id = 4
+					province_id = 5
+					province_id = 2599
+					province_id = 2630
+					province_id = 2631
+				}		
+			}
+			 secede_province = CAN
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121288"
+		CAN = {
+			country_event = { id=121289 days=0 }
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#RUS refuses offer
+country_event = {
+	id = 121289
+	title = "EVTNAME121289"
+	desc = "EVTDESC121289"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121289"
+	}
+
+	option = {
+		name = "EVTOPTB121289"
+		1 = {add_core = CAN}
+		2 = {add_core = CAN}
+		3 = {add_core = CAN}
+		4 = {add_core = CAN}
+		5 = {add_core = CAN}
+		2599 = {add_core = CAN}
+		2630 = {add_core = CAN}
+		2631= {add_core = CAN}
+		casus_belli = {
+			target = RUS
+			type = acquire_state
+			months = 1
+		}                 
+                war = {
+                	target = RUS
+                        attacker_goal = {
+                        	casus_belli = acquire_state
+				state_province_id = 1
+                        }
+                }
+	}
+}
+#RUS gets NEN offer to buy Alaska
+country_event = {
+	id = 99991
+	title = "EVTNAME121288"
+	desc = "EVTDESC121288"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121288"
+		money = 72000
+		NEN = {
+			money = -72000
+		}
+		1 = {remove_core = THIS}
+		2 = {remove_core = THIS}
+		3 = {remove_core = THIS}
+		4 = {remove_core = THIS}
+		5 = {remove_core = THIS}
+		2599 = {remove_core = THIS}
+		2630 = {remove_core = THIS}
+		2631= {remove_core = THIS}
+		1 = {add_core = NEN}
+		2 = {add_core = NEN}
+		3 = {add_core = NEN}
+		4 = {add_core = NEN}
+		5 = {add_core = NEN}
+		2599 = {add_core = NEN}
+		2630 = {add_core = NEN}
+		2631= {add_core = NEN}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1
+					province_id = 2
+					province_id = 3
+					province_id = 4
+					province_id = 5
+					province_id = 2599
+					province_id = 2630
+					province_id = 2631
+				}		
+			}
+			 secede_province = NEN
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121288"
+		NEN = {
+			country_event = { id=99992 days=0 }
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#RUS refuses offer
+country_event = {
+	id = 99992
+	title = "EVTNAME121289"
+	desc = "EVTDESC121289"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121289"
+	}
+
+	option = {
+		name = "EVTOPTB121289"
+		1 = {add_core = NEN}
+		2 = {add_core = NEN}
+		3 = {add_core = NEN}
+		4 = {add_core = NEN}
+		5 = {add_core = NEN}
+		2599 = {add_core = NEN}
+		2630 = {add_core = NEN}
+		2631= {add_core = NEN}
+		casus_belli = {
+			target = RUS
+			type = acquire_state
+			months = 1
+		}                 
+                war = {
+                	target = RUS
+                        attacker_goal = {
+                        	casus_belli = acquire_state
+				state_province_id = 1
+                        }
+                }
+	}
+}
+#RUS gets USA offer to buy Alaska
+country_event = {
+	id = 99993
+	title = "EVTNAME121288"
+	desc = "EVTDESC121288"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121288"
+		money = 72000
+		USA = {
+			money = -72000
+		}
+		1 = {remove_core = THIS}
+		2 = {remove_core = THIS}
+		3 = {remove_core = THIS}
+		4 = {remove_core = THIS}
+		5 = {remove_core = THIS}
+		2599 = {remove_core = THIS}
+		2630 = {remove_core = THIS}
+		2631= {remove_core = THIS}
+		1 = {add_core = USA}
+		2 = {add_core = USA}
+		3 = {add_core = USA}
+		4 = {add_core = USA}
+		5 = {add_core = USA}
+		2599 = {add_core = USA}
+		2630 = {add_core = USA}
+		2631= {add_core = USA}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1
+					province_id = 2
+					province_id = 3
+					province_id = 4
+					province_id = 5
+					province_id = 2599
+					province_id = 2630
+					province_id = 2631
+				}		
+			}
+			 secede_province = USA
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121288"
+		USA = {
+			country_event = { id=99994 days=0 }
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#RUS refuses offer
+country_event = {
+	id = 99994
+	title = "EVTNAME121289"
+	desc = "EVTDESC121289"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121289"
+	}
+
+	option = {
+		name = "EVTOPTB121289"
+		1 = {add_core = USA}
+		2 = {add_core = USA}
+		3 = {add_core = USA}
+		4 = {add_core = USA}
+		5 = {add_core = USA}
+		2599 = {add_core = USA}
+		2630 = {add_core = USA}
+		2631= {add_core = USA}
+		casus_belli = {
+			target = RUS
+			type = acquire_state
+			months = 1
+		}                 
+                war = {
+                	target = RUS
+                        attacker_goal = {
+                        	casus_belli = acquire_state
+				state_province_id = 1
+                        }
+                }
+	}
+}
+#RUS gets BRI offer to buy Alaska
+country_event = {
+	id = 99995
+	title = "EVTNAME121288"
+	desc = "EVTDESC121288"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121288"
+		money = 72000
+		BRI = {
+			money = -72000
+		}
+		1 = {remove_core = THIS}
+		2 = {remove_core = THIS}
+		3 = {remove_core = THIS}
+		4 = {remove_core = THIS}
+		5 = {remove_core = THIS}
+		2599 = {remove_core = THIS}
+		2630 = {remove_core = THIS}
+		2631= {remove_core = THIS}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1
+					province_id = 2
+					province_id = 3
+					province_id = 4
+					province_id = 5
+					province_id = 2599
+					province_id = 2630
+					province_id = 2631
+				}		
+			}
+			 secede_province = BRI
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121288"
+		BRI = {
+			country_event = { id=999985 days=0 }
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#RUS refuses offer
+country_event = {
+	id = 999985
+	title = "EVTNAME121289"
+	desc = "EVTDESC121289"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121289"
+	}
+
+	option = {
+		name = "EVTOPTB121289"
+		casus_belli = {
+			target = RUS
+			type = acquire_state
+			months = 1
+		}                 
+                war = {
+                	target = RUS
+                        attacker_goal = {
+                        	casus_belli = acquire_state
+				state_province_id = 1
+                        }
+                }
+	}
+}
+#GP gets event to sphere
+country_event = {
+	id = 121290
+	title = "EVTNAME121290"
+	desc = "EVTDESC121290"
+	picture = "meeting3"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121290"
+		diplomatic_influence = {
+			who = FROM
+			value = 400
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121290"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#End the Bengali War
+country_event = {
+	id = 121291
+	title = "EVTNAME121291"
+	desc = "EVTDESC121291"
+	picture = "sultan"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAN
+		war_with = BEN
+		year = 1853
+		NOT = {
+			year = 1854
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 1 #increase likelihood to happen
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA121291"
+		end_war = BEN
+		any_owned = {
+			limit = {
+				is_core = BEN
+			}
+			secede_province = BEN
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTA121291"
+		prestige = -10
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+		

@@ -1,0 +1,5 @@
+owner = CAN
+controller = CAN
+trade_goods = timber
+colonial = 2
+life_rating = 35

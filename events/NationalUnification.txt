@@ -1,0 +1,252 @@
+# Pan-Nationalist
+country_event = {
+	title = "EVTNAME11100"
+	desc = "EVTDESC11100"
+	picture = "Celebration"
+
+	id = 11100
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA11100"
+		change_tag = culture
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				OR = {
+					in_sphere = THIS
+					AND = {
+						part_of_sphere = no
+						NOT = {
+							OR = {
+								tag = AUS
+								tag = KUH
+								tag = DNC
+								}
+							}
+						}
+					tag = MON
+					tag = BOS
+					tag = SER
+					tag = SLO
+					AND = {
+						OR = {
+							tag = AUS
+							tag = KUH
+							tag = DNC
+						}
+						exists = HUN
+						part_of_sphere = no
+					}
+				}
+				num_of_cities = 1
+			}
+			country_event = { id=11101 days=0 }
+		}
+		political_reform = wealth_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = secret_ballots
+		government = hms_government
+		add_accepted_culture = union
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 200
+				OR = {
+					tag = MOL
+					tag = WAL
+				}
+			}
+			modifier = {
+				factor = 5
+				government = hms_government
+			}
+			modifier = {
+				factor = 10
+				government = democracy
+			}
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 3
+				upper_house = {
+					ideology = liberal
+					value = 0.5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11100"
+		prestige = 20
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 1.5
+				government = absolute_monarchy
+			}
+		}
+		any_pop = {
+			militancy = 1
+		}
+	}
+}
+
+# Event to Inherit
+country_event = {
+	id = 11101
+	title = "EVTNAME11101"
+	desc = "EVTDESC11101"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA11101"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = -90
+				OR = {
+					tag = SIC
+					tag = MOD
+					tag = PAP
+					tag = SPA
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11101"
+		prestige = 20
+		relation = {
+			who = FROM
+			value = -100
+		}
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 90
+				OR = {
+					tag = SIC
+					tag = MOD
+					tag = PAP
+					tag = SPA
+				}
+			}
+		}
+	}
+}
+
+#Italian Red Shirt Unification
+country_event = {
+	title = "EVTNAME11103"
+	desc = "EVTDESC11103"
+	picture = "Celebration"
+
+	id = 11103
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA11103"
+		change_tag = ITA
+		add_accepted_culture = north_italian
+		add_accepted_culture = south_italian
+					472 = {
+				add_core = ITA
+			}
+			734 = {
+				add_core = ITA
+			}
+			SAR_466 = {
+				add_core = ITA
+			}
+			SAR_765 = {
+				add_core = ITA
+			}
+			SAR_720 = {
+				add_core = ITA
+			}
+			AUS_726 = {
+				add_core = ITA
+			}
+			MOD_739 = {
+				add_core = ITA
+			}
+			AUS_729 = {
+				add_core = ITA
+			}
+			PAP_741 = {
+				add_core = ITA
+			}
+			TUS_744 = {
+				add_core = ITA
+			}
+			PAP_752 = {
+				add_core = ITA
+			}
+			SIC_753 = {
+				add_core = ITA
+			}
+			SIC_754 = {
+				add_core = ITA
+			}
+			764 = {
+				add_core = ITA
+			}
+			763 = {
+				add_core = ITA
+			}
+			762 = {
+				add_core = ITA
+			}
+			any_owned_province = { 
+			remove_core = LOM
+			remove_core = LUC
+			remove_core = MOD
+			remove_core = PAP
+			remove_core = PAR
+			remove_core = SAR
+			remove_core = SIC
+			remove_core = ILY
+			remove_core = TRE
+			remove_core = TUS
+			remove_core = VEN
+					}
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				num_of_cities = 1
+			}
+			country_event = { id=11101 days=0 }
+		}
+		prestige = 10
+		ai_chance = {
+			factor = 95
+		}
+	}
+}

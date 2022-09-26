@@ -1,0 +1,27 @@
+country_event = {
+
+	id = 600105
+
+	trigger = {
+		in_sphere = BRI
+		BRI = {exists = no}
+	}
+	
+ 
+	mean_time_to_happen =  {
+		days = 1
+
+		
+
+
+	}
+
+	title = "Remove from British Union sphere"
+	desc = "The Union is gone, we are no longer in their sphere."
+
+	option = {
+		name = "Bye Bye Britain" 
+		BRI = {diplomatic_influence = { who = THIS value = -100 } }}
+	}
+
+}

@@ -1,0 +1,6 @@
+owner = FRA
+controller = FRA
+
+add_core = DUT
+life_rating = 35
+trade_goods = cattle

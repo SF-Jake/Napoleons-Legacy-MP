@@ -1,0 +1,644 @@
+leader = {
+	name = "von Zieten"
+	date = 1813.1.1
+	type = land
+	personality = soldierly
+	background = cavalry_school
+	prestige = 0.2
+}
+
+leader = {
+	name = "Hermann von Boyen"
+	date = 1814.1.1
+	type = land
+	personality = intelligent
+	background = old_school
+	prestige = 0.2
+}
+
+leader = {
+	name = "Wilhelm von Krauseneck"
+	date = 1814.1.1
+	type = land
+	personality = reserved
+	background = engineer
+	prestige = 0.2
+}
+
+leader = {
+	name = "Baron von Müffling"
+	date = 1813.1.1
+	type = land
+	personality = diplomatic
+	background = generals_aide
+	prestige = 0.2
+}
+
+leader = {
+	name = "August von Colomb"
+	date = 1829.1.1
+	type = land
+	personality = active_p
+	background = cavalry_school
+	prestige = 0.1
+}
+
+leader = {
+	name = "von Grolman"
+	date = 1816.1.1
+	type = land
+	personality = openminded
+	background = warmonger
+	prestige = 0.2
+}
+
+leader = {
+	name = "Rühle von Lilienstern"
+	date = 1819.1.1
+	type = land
+	personality = intelligent
+	background = professor
+	prestige = 0.2
+}
+
+leader = {
+	name = "zu Dohna-Schlobitten"
+	date = 1820.1.1
+	type = land
+	personality = tactful
+	background = old_school
+	prestige = 0.2
+}
+
+leader = {
+	name = "Heinrich von Wrangel"
+	date = 1823.1.1
+	type = land
+	personality = efficient
+	background = elderly
+	prestige = 0.2
+}
+
+leader = {
+	name = "Wilhelm von Neumann-Cosel"
+	date = 1836.1.1
+	type = land
+	personality = gallant
+	background = old_school
+	prestige = 0.1
+}
+
+leader = {
+	name = "Karl von Prittwitz"
+	date = 1836.1.1
+	type = land
+	personality = harsh
+	background = powerful_friends
+	prestige = 0.0
+}
+
+leader = {
+	name = "von Reyher"
+	date = 1836.1.1
+	type = land
+	personality = careful
+	background = exranker
+	prestige = 0.0
+}
+BRA = {
+	value = 0
+	level = 2
+	influence_value = 25
+	military_access = no
+}
+
+LER = {
+
+	value = 150	level = 5
+	influence_value = 25
+
+	military_access = no
+
+}
+
+DZG = {
+
+	value = 150	level = 5
+	influence_value = 25
+
+	military_access = no
+
+}
+
+COB = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+FRM = {
+
+	value = 0
+	level = 2
+	influence_value = 25
+	military_access = no
+}
+
+HAM = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+HAN = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+HEK = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+HES = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+KRA = {
+
+	value = 0
+	level = 2
+	influence_value = 25
+
+}
+LIP = {
+
+	value = 0
+	level = 2
+	influence_value = 25
+
+	military_access = no
+
+}
+
+LUB = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+LUX = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+}
+
+MEC = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+MEI = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+NAS = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+}
+
+OLD = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+}
+
+SAX = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+}
+
+WEI = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 25
+
+	military_access = no
+
+}
+
+
+BAV = {
+
+	value = 0
+	level = 2
+	influence_value = 25
+
+	military_access = no
+}
+
+
+BAD = {
+
+	value = 0
+
+	level = 2
+
+	influence_value = 20
+
+	military_access = no
+
+}
+
+
+WUR = {
+	value = 0
+	level = 2
+	influence_value = 20
+	military_access = no
+}
+
+AUS = {
+	value = 100
+}
+RUS = {
+	value = 80
+}
+DEN = {
+
+	value = 49
+	level = 4
+	influence_value = 25
+
+}
+
+FRA = {
+	value = -150
+}
+
+PLC = {
+	value = -100
+}
+
+#Army
+
+army = {
+	name = "I. Korps"
+	location = 553
+	regiment = {
+		name= "I. Linieninfanteriebrigade"
+		type = infantry
+		home = 553
+	}
+
+	regiment = {
+		name= "II. Linieninfanteriebrigade"
+		type = infantry
+		home = 557
+	}
+
+	regiment = {
+		name= "III. Linieninfanteriebrigade"
+		type = infantry
+		home = 554
+	}
+
+	regiment = {
+		name= "I. Pionierbrigade"
+		type = engineer
+		home = 577
+	}
+
+	regiment = {
+		name= "IV. Linieninfanteriebrigade"
+		type = infantry
+		home = 2561
+	}
+
+	regiment = {
+		name= "V. Linieninfanteriebrigade"
+		type = infantry
+		home = 582
+	}
+
+	regiment = {
+		name= "VI. Linieninfanteriebrigade"
+		type = infantry
+		home = 582
+	}
+
+	regiment = {
+		name= "I. Artilleriebrigade"
+		type = artillery
+		home = 584
+	}
+
+}
+
+army = {
+	name = "II. Korps"
+	location = 682
+	regiment = {
+		name= "VII. Linieninfanteriebrigade"
+		type = infantry
+		home = 682
+	}
+
+	regiment = {
+		name= "VIII. Linieninfanteriebrigade"
+		type = infantry
+		home = 682
+	}
+
+	regiment = {
+		name= "IX. Linieninfanteriebrigade"
+		type = infantry
+		home = 682
+	}
+
+	regiment = {
+		name= "II. Pionierbrigade"
+		type = engineer
+		home = 684
+	}
+
+	regiment = {
+		name= "X. Linieninfanteriebrigade"
+		type = infantry
+		home = 684
+	}
+
+	regiment = {
+		name= "XI. Linieninfanteriebrigade"
+		type = infantry
+		home = 684
+	}
+
+	regiment = {
+		name= "XII. Linieninfanteriebrigade"
+		type = infantry
+		home = 685
+	}
+
+	regiment = {
+		name= "II. Artilleriebrigade"
+		type = artillery
+		home = 685
+	}
+
+}
+
+army = {
+	name = "III. Korps"
+	location = 695
+	regiment = {
+		name= "XIII. Linieninfanteriebrigade"
+		type = infantry
+		home = 696
+	}
+
+	regiment = {
+		name= "XIV. Linieninfanteriebrigade"
+		type = infantry
+		home = 696
+	}
+
+	regiment = {
+		name= "XV. Linieninfanteriebrigade"
+		type = infantry
+		home = 693
+	}
+
+}
+
+army = {
+	name = "V. Korps"
+	location = 580
+	regiment = {
+		name= "XXV. Linieninfanteriebrigade"
+		type = infantry
+		home = 580
+	}
+
+	regiment = {
+		name= "XXVI. Linieninfanteriebrigade"
+		type = infantry
+		home = 580
+	}
+
+	regiment = {
+		name= "XXVII. Linieninfanteriebrigade"
+		type = infantry
+		home = 581
+	}
+
+}
+
+army = {
+	name = "VI. Korps"
+	location = 575
+	regiment = {
+		name= "XXVIII. Linieninfanteriebrigade"
+		type = infantry
+		home = 575
+	}
+
+	regiment = {
+		name= "XXIX. Linieninfanteriebrigade"
+		type = infantry
+		home = 576
+	}
+
+	regiment = {
+		name= "XXX. Linieninfanteriebrigade"
+		type = infantry
+		home = 578
+	}
+
+}
+
+army = {
+	name = "VII. Korps"
+	location = 546
+	regiment = {
+		name= "I. Kavalleriebrigade"
+		type = cavalry
+		home = 552
+	}
+
+	regiment = {
+		name= "II. Kavalleriebrigade"
+		type = cavalry
+		home = 549
+	}
+
+	regiment = {
+		name= "III. Kavalleriebrigade"
+		type = cavalry
+		home = 687
+	}
+
+	regiment = {
+		name= "IV. Kavalleriebrigade"
+		type = cavalry
+		home = 681
+	}
+
+	regiment = {
+		name= "V. Kavalleriebrigade"
+		type = cavalry
+		home = 550
+	}
+
+	regiment = {
+		name= "VI. Kavalleriebrigade"
+		type = cavalry
+		home = 551
+	}
+
+	regiment = {
+		name= "VII. Kavalleriebrigade"
+		type = dragoon
+		home = 699
+	}
+
+	regiment = {
+		name= "VIII. Kavalleriebrigade"
+		type = dragoon
+		home = 699
+	}
+
+	regiment = {
+		name= "IX. Kavalleriebrigade"
+		type = dragoon
+		home = 700
+	}
+
+	regiment = {
+		name= "X. Kavalleriebrigade"
+		type = dragoon
+		home = 692
+	}
+}
+
+army = {
+	name = "VIII. Korps"
+	location = 594
+	
+	regiment = {
+		name = "XXXI. Linieninfanteriebrigade"
+		type = infantry
+		home = 594
+	}
+	
+	regiment = {
+		name= "XI. Kavalleriebrigade"
+		type = dragoon
+		home = 701
+	}
+
+	regiment = {
+		name = "XII. Kavalleriebrigade"
+		type = dragoon
+		home = 701
+	}
+}
+
+navy = {
+	name = "Königlich Preußische Marine"
+	location = 680
+	ship = {
+		name= "1. Klipperflottille"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2. Klipperflottille"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3. Klipperflottille"
+		type = clipper_transport
+	}
+
+}

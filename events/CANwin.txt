@@ -1,0 +1,37 @@
+#CAN wins the final battle
+country_event = {
+	id = 66631
+	title = "EVTNAME66631"
+	desc = "EVTDESC66631"
+	picture = "Celebration"
+
+	trigger = {
+		tag = CAN
+		NOT = {
+			exists = BRI
+		}
+		has_global_flag = the_final_battle
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+
+	option = {
+		name = "EVTOPTA66631"
+		BRI = {
+           	 all_core = {
+                add_core = CAN
+                remove_core = BRI
+            }
+        }
+		prestige = 50
+		set_global_flag = the_Britains_reunified
+	}
+}

@@ -1,0 +1,147 @@
+political_decisions = {
+	treaty_of_umtata = {
+		picture = treaty_signing
+		potential = {
+			NOT = {	has_global_flag = stockenstrom_proposal } 
+			tag = SAF
+			AND = { 
+				owns = 2096
+				owns = 2097
+				}
+			XHO = {
+				OR = {
+					owns = 2098
+					owns = 2099
+				}
+				truce_with = THIS
+			}
+		}
+		
+		allow = {
+			war = no
+			XHO = {
+				truce_with = THIS
+			}
+		}
+		
+		effect = {
+			badboy = 2
+			prestige = 3
+
+			random_country = {
+				limit = {
+					tag = XHO
+					owns = 2098
+					owns = 2099
+				}
+				2098 = {
+					add_core = THIS
+					secede_province = THIS
+				}
+				2099 = {
+					add_core = THIS
+					secede_province = THIS
+				}
+			}
+
+			random_country = {
+				limit = {
+					tag = XHO
+					NOT = { owns = 2098 }
+					owns = 2099
+				}
+				2099 = {
+					add_core = THIS
+					secede_province = THIS
+				}
+			}
+
+
+
+		} 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	integrating_natal = {
+		picture = boer_expansion
+		potential = {
+			NOT = {	has_global_flag = stockenstrom_proposal } 
+			tag = SAF
+			exists = NAL
+			    }
+		allow = {
+			AND = {
+				invention = national_fraternity
+				year = 1855
+			OR = { 
+				is_our_vassal = NAL
+				NAL = { in_sphere = SAF }
+				NAL = { all_core = { owned_by = THIS }	}
+			     }
+			}
+			}
+effect = {
+			prestige = 5
+			NAL = {
+				all_core = {
+					remove_core = NAL
+					add_core = SAF 
+				}
+			}
+			random_country = {
+				limit = {
+					tag = NAL
+					exists = yes
+				}
+				SAF = { inherit = NAL }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	integrating_transvaal = {
+		picture = boer_expansion
+		potential = {
+			NOT = {	has_global_flag = stockenstrom_proposal } 
+			tag = SAF
+			exists = TRN
+			    }
+		allow = {
+			AND = {
+				invention = national_fraternity
+				year = 1860
+			OR = { 
+				is_our_vassal = TRN
+				TRN = { in_sphere = SAF }
+				TRN = { all_core = { owned_by = THIS }	}
+			     }
+			}
+			}
+effect = {
+			prestige = 5
+			TRN = {
+				all_core = {
+					remove_core = TRN
+					add_core = SAF 
+				}
+			}
+			random_country = {
+				limit = {
+					tag = TRN
+					exists = yes
+				}
+				SAF = { inherit = TRN }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

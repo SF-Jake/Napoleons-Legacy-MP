@@ -1,0 +1,859 @@
+
+
+country_event = {
+
+	id = 37702
+
+	trigger = {
+		tag = SPA
+		year = 1851
+		owns = 2209 #Havana
+		NOT = {
+			year = 1885
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1886
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1887
+		}
+	}
+
+	title = "EVTNAME37702"
+	desc = "EVTDESC37702"
+	picture = "Cubanrebels"
+
+	option = {
+		name = "EVTOPTA37702"
+		SPA_2209 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = caribeno
+					}
+				militancy = -3
+				}
+			any_pop = {
+				limit = {
+					has_pop_culture = afro_caribeno
+					}
+				militancy = -3
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = caribeno
+					}
+				consciousness = 3
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = afro_caribeno
+					}
+				consciousness = 3
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 37706
+
+	trigger = {
+		owns = 487
+		year = 1907
+		expressionism = 1
+		NOT = {
+			year = 1915
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1908
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1910
+		}
+	}
+
+	title = "EVTNAME37706"
+	desc = "EVTDESC37706"
+	picture = "picaso"
+
+	option = {
+		name = "EVTOPTA37706" 
+		prestige = 10
+	}
+
+}
+
+country_event = {
+
+	id = 37707
+
+	trigger = {
+		owns = 487
+		year = 1854
+		government = hms_government
+		NOT = {
+			year = 1858
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1855
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1856
+		}
+	}
+
+	title = "EVTNAME37707"
+	desc = "EVTDESC37707"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA37707"
+		farmers = {
+			militancy = 2
+			consciousness = 2
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37707"
+		clergymen = {
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTC37707"
+		clergymen = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		aristocrats = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		aristocrats = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		capitalists = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		capitalists = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+	}
+}
+
+#SPA gets the news
+country_event = {
+        id = 600027
+        title = "EVTNAME600027"
+        desc = "EVTDESC600027"
+	picture = "Monarchy"
+ 
+        is_triggered_only = yes
+ 
+	#on ILY's terms
+        option = {
+                name = "EVTOPTA600027"
+                ILY = {
+			country_event = 600028
+		}
+                ai_chance = {
+                        factor = 30
+                }
+        }
+ 
+	#On SPA's terms
+        option = {
+                name = "EVTOPTB600027"
+                ILY = {
+			country_event = 600029
+		}
+		prestige = 5
+                ai_chance = {
+                        factor = 0
+                }
+        }
+	#No deal
+	option = {
+                name = "EVTOPTC600027"
+                ILY = {
+			country_event = 600030
+		}
+		set_country_flag = cuba_unlocked
+                ai_chance = {
+                        factor = 1
+                }
+        }
+}
+
+#On ILY's terms
+country_event = {
+        id = 600028
+        title = "EVTNAME600028"
+        desc = "EVTDESC600028"
+	picture = "Monarchy"
+ 
+        is_triggered_only = yes
+ 
+	#on ILY's terms
+        option = {
+		name = "EVTOPTA600029"
+		SPA = {
+			country_event = 600100
+		}
+                ai_chance = {
+                        factor = 100
+                }
+        }
+}
+
+#Accept SPA terms?
+country_event = {
+        id = 600029
+        title = "EVTNAME600029"
+        desc = "EVTDESC600029"
+	picture = "Administration"
+ 
+        is_triggered_only = yes
+ 
+	#On SPA's terms
+        option = {
+		name = "EVTOPTA600029"
+		SPA = {
+			country_event = 600100
+		}
+                ai_chance = {
+                        factor = 40
+                }
+        }
+	#No deal
+	option = {
+                name = "EVTOPTB600029"
+		SPA = {
+			country_event = 600031
+		}
+                ai_chance = {
+                        factor = 60
+                }
+        }
+}
+
+#Accept SPA terms?
+country_event = {
+        id = 600100
+        title = "EVTNAME600029"
+        desc = "EVTDESC600029"
+	picture = "Administration"
+ 
+        is_triggered_only = yes
+ 
+	#On SPA's terms
+        option = {
+		name = "EVTOPTA600029"
+		political_reform = yes_slavery
+		political_reform = wealth_voting
+		political_reform = censored_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+		SPA = {
+			inherit = ILY
+		}
+		prestige = 5
+		badboy = 2
+		add_accepted_culture = south_italian
+		relation = { who = FRA value = -100 }
+		754 = { remove_core = ILY }
+		756 = { remove_core = ILY }
+		760 = { remove_core = ILY }
+		761 = { remove_core = ILY }
+		2567 = { remove_core = ILY }
+		755 = { remove_core = ILY }
+		757 = { remove_core = ILY }
+		753 = { remove_core = ILY }
+		759 = { remove_core = ILY }
+		758 = { remove_core = ILY }
+		capital = 762
+		SPA = {
+			country_event = 600032
+		}
+		SIC_763 = {
+			add_core = SPA
+		}
+		854 = {
+			remove_core = SPA
+		}
+		government = absolute_monarchy
+                ai_chance = {
+                        factor = 40
+                }
+        }
+}
+
+#No Deal for ILY
+country_event = {
+        id = 600030
+        title = "EVTNAME600030"
+        desc = "EVTDESC600030"
+	picture = "slavepower"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA600030"
+        }
+}
+
+#No Deal for SPA
+country_event = {
+        id = 600031
+        title = "EVTNAME600031"
+        desc = "EVTDESC600031"
+	picture = "slavepower"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA600031"
+		set_country_flag = cuba_unlocked
+        }
+}
+
+#No Deal for SPA
+country_event = {
+        id = 600032
+        title = "EVTNAME600032"
+        desc = "EVTDESC600032"
+	picture = "Monarchy"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA600032"
+        }
+}
+
+#SPA became CUB
+country_event = {
+        id = 600033
+        title = "EVTNAME600033"
+        desc = "EVTDESC600033"
+	picture = "Monarchy"
+ 
+        is_triggered_only = yes
+ 
+        option = {
+                name = "EVTOPTA600033"
+			1955 = { add_core = NSA }
+			2136 = { add_core = NSA }
+			1689 = { add_core = NSA }
+			474 = { add_core = NSA }
+			475 = { add_core = NSA }
+			476 = { add_core = NSA }
+			477 = { add_core = NSA }
+			478 = { add_core = NSA }
+			479 = { add_core = NSA }
+			480 = { add_core = NSA }
+			481 = { add_core = NSA }
+			482 = { add_core = NSA }
+			483 = { add_core = NSA }
+			484 = { add_core = NSA }
+			485 = { add_core = NSA }
+			486 = { add_core = NSA }
+			487 = { add_core = NSA }
+			488 = { add_core = NSA }
+			489 = { add_core = NSA }
+			490 = { add_core = NSA }
+			491 = { add_core = NSA }
+			492 = { add_core = NSA }
+			493 = { add_core = NSA }
+			494 = { add_core = NSA }
+			495 = { add_core = NSA }
+			496 = { add_core = NSA }
+			497 = { add_core = NSA }
+			498 = { add_core = NSA }
+			499 = { add_core = NSA }
+			500 = { add_core = NSA }
+			501 = { add_core = NSA }
+			502 = { add_core = NSA }
+			503 = { add_core = NSA }
+			504 = { add_core = NSA }
+			505 = { add_core = NSA }
+			506 = { add_core = NSA }
+			507 = { add_core = NSA }
+			508 = { add_core = NSA }
+			509 = { add_core = NSA }
+			510 = { add_core = NSA }
+			511 = { add_core = NSA }
+			512 = { add_core = NSA }
+			513 = { add_core = NSA }
+			514 = { add_core = NSA }
+			515 = { add_core = NSA }
+			516 = { add_core = NSA }
+			1955 = { remove_core = CUB }
+			2136 = { remove_core = CUB }
+			1689 = { remove_core = CUB }
+			474 = { remove_core = CUB }
+			475 = { remove_core = CUB }
+			476 = { remove_core = CUB }
+			477 = { remove_core = CUB }
+			478 = { remove_core = CUB }
+			479 = { remove_core = CUB }
+			480 = { remove_core = CUB }
+			481 = { remove_core = CUB }
+			482 = { remove_core = CUB }
+			483 = { remove_core = CUB }
+			484 = { remove_core = CUB }
+			485 = { remove_core = CUB }
+			486 = { remove_core = CUB }
+			487 = { remove_core = CUB }
+			488 = { remove_core = CUB }
+			489 = { remove_core = CUB }
+			490 = { remove_core = CUB }
+			491 = { remove_core = CUB }
+			492 = { remove_core = CUB }
+			493 = { remove_core = CUB }
+			494 = { remove_core = CUB }
+			495 = { remove_core = CUB }
+			496 = { remove_core = CUB }
+			497 = { remove_core = CUB }
+			498 = { remove_core = CUB }
+			499 = { remove_core = CUB }
+			500 = { remove_core = CUB }
+			501 = { remove_core = CUB }
+			502 = { remove_core = CUB }
+			503 = { remove_core = CUB }
+			504 = { remove_core = CUB }
+			505 = { remove_core = CUB }
+			506 = { remove_core = CUB }
+			507 = { remove_core = CUB }
+			508 = { remove_core = CUB }
+			509 = { remove_core = CUB }
+			510 = { remove_core = CUB }
+			511 = { remove_core = CUB }
+			512 = { remove_core = CUB }
+			513 = { remove_core = CUB }
+			514 = { remove_core = CUB }
+			515 = { remove_core = CUB }
+			516 = { remove_core = CUB }
+        }
+}
+
+#NSA gets the news
+country_event = {
+        id = 600034
+        title = "EVTNAME600034"
+        desc = "EVTDESC600034"
+	picture = "Celebration"
+ 
+        is_triggered_only = yes
+ 
+	#Be annexed
+        option = {
+                name = "EVTOPTA600034"
+                SPA = {
+			country_event = 600035
+		}
+		NSA = {
+			any_owned = {
+				remove_core = NSA
+			}
+		}
+		SPA = {
+			inherit = NSA
+		}
+                ai_chance = {
+                        factor = 90
+                }
+        }
+ 
+	#Not be anexxed
+        option = {
+                name = "EVTOPTB600034"
+                SPA = {
+			country_event = 600036
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = 6
+		}
+                ai_chance = {
+                        factor = 10
+                }
+        }
+}
+
+#NSA accepts
+country_event = {
+        id = 600035
+        title = "EVTNAME600035"
+        desc = "EVTDESC600035"
+	picture = "Celebration"
+ 
+        is_triggered_only = yes
+ 
+	#Be annexed
+        option = {
+                name = "EVTOPTA600035"
+		prestige = 30
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = -4
+			consciousness = -4
+		}
+        }
+}
+
+#NSA declines
+country_event = {
+        id = 600036
+        title = "EVTNAME600036"
+        desc = "EVTDESC600036"
+	picture = "Celebration"
+ 
+        is_triggered_only = yes
+ 
+	#Be annexed
+        option = {
+                name = "EVTOPTA600036"
+        }
+}
+
+#SPA Annexed
+country_event = {
+        id = 600042
+        title = "EVTNAME600033"
+        desc = "EVTDESC600033"
+	picture = "Monarchy"
+ 
+        	trigger = {
+		tag = NSA
+		NOT = {
+		exists = SPA
+		exists = CUB
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+ 
+        option = {
+                name = "EVTOPTA600033"
+			1955 = { add_core = NSA }
+			2136 = { add_core = NSA }
+			1689 = { add_core = NSA }
+			474 = { add_core = NSA }
+			475 = { add_core = NSA }
+			476 = { add_core = NSA }
+			477 = { add_core = NSA }
+			478 = { add_core = NSA }
+			479 = { add_core = NSA }
+			480 = { add_core = NSA }
+			481 = { add_core = NSA }
+			482 = { add_core = NSA }
+			483 = { add_core = NSA }
+			484 = { add_core = NSA }
+			485 = { add_core = NSA }
+			486 = { add_core = NSA }
+			487 = { add_core = NSA }
+			488 = { add_core = NSA }
+			489 = { add_core = NSA }
+			490 = { add_core = NSA }
+			491 = { add_core = NSA }
+			492 = { add_core = NSA }
+			493 = { add_core = NSA }
+			494 = { add_core = NSA }
+			495 = { add_core = NSA }
+			496 = { add_core = NSA }
+			497 = { add_core = NSA }
+			498 = { add_core = NSA }
+			499 = { add_core = NSA }
+			500 = { add_core = NSA }
+			501 = { add_core = NSA }
+			502 = { add_core = NSA }
+			503 = { add_core = NSA }
+			504 = { add_core = NSA }
+			505 = { add_core = NSA }
+			506 = { add_core = NSA }
+			507 = { add_core = NSA }
+			508 = { add_core = NSA }
+			509 = { add_core = NSA }
+			510 = { add_core = NSA }
+			511 = { add_core = NSA }
+			512 = { add_core = NSA }
+			513 = { add_core = NSA }
+			514 = { add_core = NSA }
+			515 = { add_core = NSA }
+			516 = { add_core = NSA }
+			1955 = { remove_core = SPA }
+			2136 = { remove_core = SPA }
+			1689 = { remove_core = SPA }
+			474 = { remove_core = SPA }
+			475 = { remove_core = SPA }
+			476 = { remove_core = SPA }
+			477 = { remove_core = SPA }
+			478 = { remove_core = SPA }
+			479 = { remove_core = SPA }
+			480 = { remove_core = SPA }
+			481 = { remove_core = SPA }
+			482 = { remove_core = SPA }
+			483 = { remove_core = SPA }
+			484 = { remove_core = SPA }
+			485 = { remove_core = SPA }
+			486 = { remove_core = SPA }
+			487 = { remove_core = SPA }
+			488 = { remove_core = SPA }
+			489 = { remove_core = SPA }
+			490 = { remove_core = SPA }
+			491 = { remove_core = SPA }
+			492 = { remove_core = SPA }
+			493 = { remove_core = SPA }
+			494 = { remove_core = SPA }
+			495 = { remove_core = SPA }
+			496 = { remove_core = SPA }
+			497 = { remove_core = SPA }
+			498 = { remove_core = SPA }
+			499 = { remove_core = SPA }
+			500 = { remove_core = SPA }
+			501 = { remove_core = SPA }
+			502 = { remove_core = SPA }
+			503 = { remove_core = SPA }
+			504 = { remove_core = SPA }
+			505 = { remove_core = SPA }
+			506 = { remove_core = SPA }
+			507 = { remove_core = SPA }
+			508 = { remove_core = SPA }
+			509 = { remove_core = SPA }
+			510 = { remove_core = SPA }
+			511 = { remove_core = SPA }
+			512 = { remove_core = SPA }
+			513 = { remove_core = SPA }
+			514 = { remove_core = SPA }
+			515 = { remove_core = SPA }
+			516 = { remove_core = SPA }
+			add_accepted_culture = basque
+        }
+}
+#SPA is gone
+country_event = {
+        id = 40051
+        title = "Annexation of Old Spain"
+        desc = "We are the rightful Spain!"
+	picture = "Monarchy"
+ 
+        	trigger = {
+		tag = NSA
+		SPA = {
+			exists = yes
+				NOT = {
+					OR = {
+						owns = 762
+						owns = 2209
+						owns = 1455
+						owns = 1460
+						owns = 1462
+						owns = 476
+						owns = 477
+						owns = 484
+						owns = 478
+						owns = 485
+						owns = 489
+						owns = 516
+						owns = 503
+						owns = 497
+						owns = 500
+					}
+				}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+ 
+        option = {
+                name = "EVTOPTA600033"
+			inherit = SPA
+			1955 = { add_core = NSA }
+			2136 = { add_core = NSA }
+			1689 = { add_core = NSA }
+			474 = { add_core = NSA }
+			475 = { add_core = NSA }
+			476 = { add_core = NSA }
+			477 = { add_core = NSA }
+			478 = { add_core = NSA }
+			479 = { add_core = NSA }
+			480 = { add_core = NSA }
+			481 = { add_core = NSA }
+			482 = { add_core = NSA }
+			483 = { add_core = NSA }
+			484 = { add_core = NSA }
+			485 = { add_core = NSA }
+			486 = { add_core = NSA }
+			487 = { add_core = NSA }
+			488 = { add_core = NSA }
+			489 = { add_core = NSA }
+			490 = { add_core = NSA }
+			491 = { add_core = NSA }
+			492 = { add_core = NSA }
+			493 = { add_core = NSA }
+			494 = { add_core = NSA }
+			495 = { add_core = NSA }
+			496 = { add_core = NSA }
+			497 = { add_core = NSA }
+			498 = { add_core = NSA }
+			499 = { add_core = NSA }
+			500 = { add_core = NSA }
+			501 = { add_core = NSA }
+			502 = { add_core = NSA }
+			503 = { add_core = NSA }
+			504 = { add_core = NSA }
+			505 = { add_core = NSA }
+			506 = { add_core = NSA }
+			507 = { add_core = NSA }
+			508 = { add_core = NSA }
+			509 = { add_core = NSA }
+			510 = { add_core = NSA }
+			511 = { add_core = NSA }
+			512 = { add_core = NSA }
+			513 = { add_core = NSA }
+			514 = { add_core = NSA }
+			515 = { add_core = NSA }
+			516 = { add_core = NSA }
+			1955 = { remove_core = SPA }
+			2136 = { remove_core = SPA }
+			1689 = { remove_core = SPA }
+			474 = { remove_core = SPA }
+			475 = { remove_core = SPA }
+			476 = { remove_core = SPA }
+			477 = { remove_core = SPA }
+			478 = { remove_core = SPA }
+			479 = { remove_core = SPA }
+			480 = { remove_core = SPA }
+			481 = { remove_core = SPA }
+			482 = { remove_core = SPA }
+			483 = { remove_core = SPA }
+			484 = { remove_core = SPA }
+			485 = { remove_core = SPA }
+			486 = { remove_core = SPA }
+			487 = { remove_core = SPA }
+			488 = { remove_core = SPA }
+			489 = { remove_core = SPA }
+			490 = { remove_core = SPA }
+			491 = { remove_core = SPA }
+			492 = { remove_core = SPA }
+			493 = { remove_core = SPA }
+			494 = { remove_core = SPA }
+			495 = { remove_core = SPA }
+			496 = { remove_core = SPA }
+			497 = { remove_core = SPA }
+			498 = { remove_core = SPA }
+			499 = { remove_core = SPA }
+			500 = { remove_core = SPA }
+			501 = { remove_core = SPA }
+			502 = { remove_core = SPA }
+			503 = { remove_core = SPA }
+			504 = { remove_core = SPA }
+			505 = { remove_core = SPA }
+			506 = { remove_core = SPA }
+			507 = { remove_core = SPA }
+			508 = { remove_core = SPA }
+			509 = { remove_core = SPA }
+			510 = { remove_core = SPA }
+			511 = { remove_core = SPA }
+			512 = { remove_core = SPA }
+			513 = { remove_core = SPA }
+			514 = { remove_core = SPA }
+			515 = { remove_core = SPA }
+			516 = { remove_core = SPA }
+			add_accepted_culture = basque
+        }
+}

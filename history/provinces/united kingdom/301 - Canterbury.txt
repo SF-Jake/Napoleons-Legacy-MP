@@ -1,0 +1,12 @@
+owner = BRI
+
+controller = BRI
+add_core = BRI
+
+
+add_core = CAN
+
+trade_goods = coal
+life_rating = 35 #Chatham
+fort = 1
+1861.1.1 = { railroad = 3 }

@@ -1,0 +1,8 @@
+owner = CAN
+controller = CAN
+add_core = CAN
+add_core = QUE
+add_core = NEW
+add_core = BRI
+life_rating = 35
+trade_goods = fish

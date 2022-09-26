@@ -1,0 +1,6 @@
+owner = DUT
+controller = DUT
+add_core = SLW
+trade_goods = dye
+life_rating = 30
+colonial = 2

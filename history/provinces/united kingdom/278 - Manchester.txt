@@ -1,0 +1,14 @@
+owner = BRI
+controller = BRI
+add_core = BRI
+
+
+
+add_core = CAN
+trade_goods = coal
+life_rating = 40
+railroad = 1
+1861.1.1 = {
+railroad = 3
+}
+1861.1.1 = { railroad = 3 }

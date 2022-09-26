@@ -1,0 +1,1242 @@
+political_decisions = {
+
+	form_south_german_confederation2 = {
+		potential = {
+			primary_culture = south_german
+			NOT = {
+				exists = SGF
+				exists = GER
+				exists = FED
+				tag = AUS
+				tag = KUH
+				tag = DNC
+			}
+		}	
+		allow = {
+			war = no
+			is_greater_power = yes
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							province_id = 370
+							province_id = 371
+							province_id = 410
+							province_id = 409
+							province_id = 412
+							province_id = 571
+							province_id = 596
+							province_id = 623
+							province_id = 688
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = SGF
+			}
+			change_tag = SGF
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+unite_moldavia_wallachia = {
+		potential = {
+			OR = {
+				tag = WAL
+				tag = MOL
+			}
+			exists = WAL
+			exists = MOL
+			NOT = { exists = ROM }
+		}
+
+		allow = {
+			OR = {
+				state_n_government = 1
+				is_vassal = no
+			}
+			WAL = {
+				war = no
+				is_vassal = no
+			}
+			MOL = {
+				war = no
+				is_vassal = no
+			}
+		}
+
+		effect = {
+			prestige = 10
+			change_tag = ROM
+			random_country = {
+				limit = {
+					tag = WAL
+					exists = yes
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MOL
+					exists = yes
+				}
+				country_event = 11101
+			}
+			capital = 664
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	form_north_german_confederation = {
+		potential = {
+			primary_culture = north_german
+			NOT = {
+				exists = GER
+				exists = NGF
+				exists = FED
+			}
+		}	
+		allow = {
+			war = no
+			SAX = {
+				all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					
+				}
+			}
+			555 = {
+			OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			561 = {
+			OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			563 = {
+			OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			544 = {
+			OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			545 = {
+			OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			
+		}
+		
+		effect = {
+			prestige = 15
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						tag = SCH }
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = NGF
+			}
+			GER = {
+			all_core = {
+					limit = {
+						culture = north_german
+						}	
+					add_core = NGF
+				}
+			}
+			change_tag = NGF
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	austrian_form_south_german_confederation = {
+		potential = {
+			year = 1851
+			tag = AUS
+			is_greater_power = yes
+			primary_culture = south_german
+			NOT = {
+				exists = GER
+				exists = SGF
+				exists = FED
+			}
+		}	
+		allow = {
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							province_id = 370
+							province_id = 371
+							province_id = 410
+							province_id = 409
+							province_id = 412
+							province_id = 571
+							province_id = 596
+							province_id = 623
+							province_id = 688
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						culture = south_german
+						province_id = 412
+					}
+					is_core = GER
+					NOT = {
+						is_core = AUS
+					}
+				}
+				add_core = SGF
+			}
+			release_vassal = SGF
+			diplomatic_influence = {
+				who = SGF
+				value = 300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	form_Federation_of_the_Rhine = {
+		potential = {
+			year = 1851
+			ai = yes
+			OR = {
+				primary_culture = north_german
+				primary_culture = south_german
+			}			
+			NOT = {
+				exists = GER
+				exists = FED
+				tag = PRU
+				tag = AUS
+				tag = KUH
+				tag = DNC
+				tag = DZG
+			}
+		}
+		allow = {
+			war = no
+			is_greater_power = yes
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							province_id = 530
+							province_id = 528
+							province_id = 531
+							province_id = 539
+							province_id = 540
+							province_id = 541
+							province_id = 538
+							province_id = 542
+							province_id = 543
+							province_id = 577
+							province_id = 575
+							province_id = 576
+							province_id = 572
+							province_id = 574
+							province_id = 570
+							province_id = 573
+							province_id = 370
+							province_id = 371
+							province_id = 410
+							province_id = 409
+							province_id = 412
+							province_id = 571
+							province_id = 688
+							province_id = 623
+							province_id = 618
+							province_id = 630
+							province_id = 627
+							province_id = 628
+							province_id = 621
+							province_id = 619
+							province_id = 620
+							province_id = 624
+							province_id = 616
+							province_id = 622
+							province_id = 617
+							province_id = 529
+							province_id = 369
+							province_id = 549
+							province_id = 551
+							province_id = 550
+							province_id = 547
+							province_id = 548
+							province_id = 549
+							province_id = 551
+							province_id = 550
+							province_id = 547
+							province_id = 548
+							province_id = 546
+							province_id = 681
+							province_id = 682
+							province_id = 683
+							province_id = 679
+							province_id = 692
+							province_id = 685
+							province_id = 680
+							province_id = 691
+							province_id = 690
+							province_id = 693
+							province_id = 695
+							province_id = 698
+							province_id = 697
+							province_id = 696
+							province_id = 694
+							province_id = 700
+							province_id = 699
+							province_id = 701
+							province_id = 684
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 15
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = rhenish
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = FED
+			}
+			change_tag = FED
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_union_nation = {
+		potential = {
+			culture_has_union_tag = yes
+			NOT = {
+				OR = {
+					cultural_union = { exists = yes }
+					is_culture_group = germanic
+					is_culture_group = scandinavian
+					is_culture_group = italian
+					is_culture_group = arab
+					tag = TSA
+					tag = BOR
+					tag = REP
+				}
+			}
+			NOT = {
+				has_country_modifier = Indian_confed_start
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			cultural_union = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = culture
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+						tag = AUS
+						tag = KUH
+						tag = DNC
+					}
+					is_culture_group = THIS
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			add_accepted_culture = union
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	form_germany = {
+		potential = {
+			is_culture_group = germanic
+			NOT = {
+				exists = GER
+				tag = ISR
+			}
+			capital_scope = {
+				is_core = GER
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 100
+			change_tag = GER
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = rhenish
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			all_core = {
+				remove_core = PRU
+			}
+			all_core = {
+				remove_core = NGF
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_italy = {
+		potential = {
+			tag = SAR
+			NOT = {
+				exists = ITA
+				exists = ITP
+				exists = ITM
+				exists = ITN
+				exists = ITS
+				exists = ITL
+				tag = SPA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			owns = 726
+			owns = 754
+			year = 1848
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITA
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			472 = {
+				add_core = ITA
+			}
+			734 = {
+				add_core = ITA
+			}
+			SAR_466 = {
+				add_core = ITA
+			}
+			SAR_765 = {
+				add_core = ITA
+			}
+			SAR_720 = {
+				add_core = ITA
+			}
+			AUS_726 = {
+				add_core = ITA
+			}
+			MOD_739 = {
+				add_core = ITA
+			}
+			AUS_729 = {
+				add_core = ITA
+			}
+			PAP_741 = {
+				add_core = ITA
+			}
+			TUS_744 = {
+				add_core = ITA
+			}
+			PAP_752 = {
+				add_core = ITA
+			}
+			SIC_753 = {
+				add_core = ITA
+			}
+			SIC_754 = {
+				add_core = ITA
+			}
+			764 = {
+				add_core = ITA
+			}
+			763 = {
+				add_core = ITA
+			}
+			762 = {
+				add_core = ITA
+			}
+			all_core = {
+				remove_core = SAR
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_italy_MOD = {
+		potential = {
+			tag = MOD
+			NOT = {
+				exists = ITA
+				exists = ITP
+				exists = ITM
+				exists = ITN
+				exists = ITS
+				exists = ITL
+				tag = SPA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			owns = 726
+			owns = 754
+			year = 1848
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITM
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			472 = {
+				add_core = ITM
+			}
+			734 = {
+				add_core = ITM
+			}
+			SAR_466 = {
+				add_core = ITM
+			}
+			SAR_765 = {
+				add_core = ITM
+			}
+			SAR_720 = {
+				add_core = ITM
+			}
+			AUS_726 = {
+				add_core = ITM
+			}
+			MOD_739 = {
+				add_core = ITM
+			}
+			AUS_729 = {
+				add_core = ITM
+			}
+			PAP_741 = {
+				add_core = ITM
+			}
+			TUS_744 = {
+				add_core = ITM
+			}
+			PAP_752 = {
+				add_core = ITM
+			}
+			SIC_753 = {
+				add_core = ITM
+			}
+			SIC_754 = {
+				add_core = ITM
+			}
+			764 = {
+				add_core = ITM
+			}
+			763 = {
+				add_core = ITM
+			}
+			762 = {
+				add_core = ITM
+			}
+			all_core = {
+				remove_core = MOD
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_italy_SIC = {
+		potential = {
+			tag = SIC
+			NOT = {
+				exists = ITA
+				exists = ITP
+				exists = ITM
+				exists = ITN
+				exists = ITS
+				exists = ITL
+				tag = SPA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			owns = 726
+			owns = 754
+			year = 1848
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITN
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			472 = {
+				add_core = ITN
+			}
+			734 = {
+				add_core = ITN
+			}
+			SAR_466 = {
+				add_core = ITN
+			}
+			SAR_765 = {
+				add_core = ITN
+			}
+			SAR_720 = {
+				add_core = ITN
+			}
+			AUS_726 = {
+				add_core = ITN
+			}
+			MOD_739 = {
+				add_core = ITN
+			}
+			AUS_729 = {
+				add_core = ITN
+			}
+			PAP_741 = {
+				add_core = ITN
+			}
+			TUS_744 = {
+				add_core = ITN
+			}
+			PAP_752 = {
+				add_core = ITN
+			}
+			SIC_753 = {
+				add_core = ITN
+			}
+			SIC_754 = {
+				add_core = ITN
+			}
+			764 = {
+				add_core = ITN
+			}
+			763 = {
+				add_core = ITN
+			}
+			762 = {
+				add_core = ITN
+			}
+			all_core = {
+				remove_core = SIC
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_italy_PAP = {
+		potential = {
+			tag = PAP
+			NOT = {
+				exists = ITA
+				exists = ITP
+				exists = ITM
+				exists = ITN
+				exists = ITS
+				exists = ITL
+				tag = SPA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			owns = 726
+			owns = 754
+			year = 1848
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITP
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			472 = {
+				add_core = ITP
+			}
+			734 = {
+				add_core = ITP
+			}
+			SAR_466 = {
+				add_core = ITP
+			}
+			SAR_765 = {
+				add_core = ITP
+			}
+			SAR_720 = {
+				add_core = ITP
+			}
+			AUS_726 = {
+				add_core = ITP
+			}
+			MOD_739 = {
+				add_core = ITP
+			}
+			AUS_729 = {
+				add_core = ITP
+			}
+			PAP_741 = {
+				add_core = ITP
+			}
+			TUS_744 = {
+				add_core = ITP
+			}
+			PAP_752 = {
+				add_core = ITP
+			}
+			SIC_753 = {
+				add_core = ITP
+			}
+			SIC_754 = {
+				add_core = ITP
+			}
+			764 = {
+				add_core = ITP
+			}
+			763 = {
+				add_core = ITP
+			}
+			762 = {
+				add_core = ITP
+			}
+			all_core = {
+				remove_core = PAP
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_italy_ILY = {
+		potential = {
+			tag = ILY
+			NOT = {
+				exists = ITA
+				exists = ITP
+				exists = ITM
+				exists = ITN
+				exists = ITS
+				exists = ITL
+				tag = SPA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			owns = 726
+			owns = 754
+			year = 1848
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITS
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			472 = {
+				add_core = ITS
+			}
+			734 = {
+				add_core = ITS
+			}
+			SAR_466 = {
+				add_core = ITS
+			}
+			SAR_765 = {
+				add_core = ITS
+			}
+			SAR_720 = {
+				add_core = ITS
+			}
+			AUS_726 = {
+				add_core = ITS
+			}
+			MOD_739 = {
+				add_core = ITS
+			}
+			AUS_729 = {
+				add_core = ITS
+			}
+			PAP_741 = {
+				add_core = ITS
+			}
+			TUS_744 = {
+				add_core = ITS
+			}
+			PAP_752 = {
+				add_core = ITS
+			}
+			SIC_753 = {
+				add_core = ITS
+			}
+			SIC_754 = {
+				add_core = ITS
+			}
+			764 = {
+				add_core = ITS
+			}
+			763 = {
+				add_core = ITS
+			}
+			762 = {
+				add_core = ITS
+			}
+			all_core = {
+				remove_core = ILY
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_italy_LUC = {
+		potential = {
+			tag = LUC
+			NOT = {
+				exists = ITA
+				exists = ITP
+				exists = ITM
+				exists = ITN
+				exists = ITS
+				exists = ITL
+				tag = SPA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			owns = 726
+			owns = 754
+			year = 1848
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITL
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			472 = {
+				add_core = ITL
+			}
+			734 = {
+				add_core = ITL
+			}
+			SAR_466 = {
+				add_core = ITL
+			}
+			SAR_765 = {
+				add_core = ITL
+			}
+			SAR_720 = {
+				add_core = ITL
+			}
+			AUS_726 = {
+				add_core = ITL
+			}
+			MOD_739 = {
+				add_core = ITL
+			}
+			AUS_729 = {
+				add_core = ITL
+			}
+			PAP_741 = {
+				add_core = ITL
+			}
+			TUS_744 = {
+				add_core = ITL
+			}
+			PAP_752 = {
+				add_core = ITL
+			}
+			SIC_753 = {
+				add_core = ITL
+			}
+			SIC_754 = {
+				add_core = ITL
+			}
+			764 = {
+				add_core = ITL
+			}
+			763 = {
+				add_core = ITL
+			}
+			762 = {
+				add_core = ITL
+			}
+			all_core = {
+				remove_core = LUC
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_scandinavia = {
+		potential = {
+			is_culture_group = scandinavian
+			
+			NOT = {
+				exists = SCA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			SCA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = SCA
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = norwegian
+			add_accepted_culture = finnish
+			add_accepted_culture = icelandic
+			add_accepted_culture = sami
+			RUS_336 = {
+			add_core = SCA
+			}
+			RUS_343 = {
+			add_core = SCA
+			}
+			340 = {
+			remove_core = SCA
+			}
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = scandinavian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			FIN = {
+				all_core = {
+				remove_core = FIN
+				}
+			}
+			NOR = {
+				all_core = {
+				remove_core = NOR
+				}
+			}
+			ICL = {
+				all_core = {
+				remove_core = ICL
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reichsland_elsass = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			owns = 410
+			owns = 409
+			owns = 412
+			NOT = {
+				has_global_flag = germany_has_renamed_elsass
+			}
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		
+		effect = {
+			410 = {
+				change_province_name = "Kolmar"
+			}
+			409 = {
+				change_province_name = "Straﬂburg"
+				state_scope = {
+					change_region_name = "Elsaﬂ-Lothringen"
+				}
+			}
+			prestige = 5
+			set_global_flag = germany_has_renamed_elsass
+		}
+	}
+	
+	restore_alsace = {
+		potential = {
+			tag = FRA
+			has_global_flag = germany_has_renamed_elsass
+			owns = 410
+			owns = 409
+			owns = 412
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		
+		effect = {
+			410 = {
+				change_province_name = "Colmar"
+			}
+			409 = {
+				change_province_name = "Strasbourg"
+				state_scope = {
+					change_region_name = "Alsace-Lorraine"
+				}
+			}
+			prestige = 10
+			clr_global_flag = germany_has_renamed_elsass
+		}
+	}
+	
+	form_gran_colombia = {
+		potential = {
+			OR = {
+				tag = ECU
+				tag = CLM
+				tag = VNZ
+			}
+			NOT = {
+				exists = GCO
+			}
+		}	
+		allow = {
+			war = no
+			is_greater_power = yes
+			GCO = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+				}
+				
+				any_owned = {
+					limit = {
+						is_core = GCO
+					}
+					secede_province = THIS
+				}
+
+			}
+			
+			2242 = { add_core = GCO } # Mahdia, prev VNZ core
+			
+			# some early claims we can roll with for future colombian lebensraum
+			2200 = { add_core = GCO }
+			2201 = { add_core = GCO }
+			2202 = { add_core = GCO }
+			2203 = { add_core = GCO }
+
+			change_tag = GCO
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

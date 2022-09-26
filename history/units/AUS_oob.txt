@@ -1,0 +1,299 @@
+leader = {
+	name = "Josef Radetzky"
+	date = 1805.1.1
+	type = land
+	personality = au_fait
+	background = elderly
+	prestige = 0.3
+}
+
+leader = {
+	name = "Julius von Haynau"
+	date = 1835.1.1
+	type = land
+	personality = wrathful
+	background = natural_born_leader
+	prestige = 0.1
+}
+
+leader = {
+	name = "von Mittrowitz-Nettolitzky"
+	date = 1835.1.1
+	type = land
+	personality = active_p
+	background = aristocrat
+	prestige = 0.1
+}
+
+leader = {
+	name = "Hermann von Hess"
+	date = 1834.1.1
+	type = land
+	personality = aggressive
+	background = generals_aide
+	prestige = 0.1
+}
+
+leader = {
+	name = "d’Aspre und Hoobreuck"
+	date = 1832.1.1
+	type = land
+	personality = bold
+	background = drillmaster
+	prestige = 0.1
+}
+
+leader = {
+	name = "Alfred von Windischgraetz"
+	date = 1826.1.1
+	type = land
+	personality = arrogant
+	background = butcher
+	prestige = 0.3
+}
+
+leader = {
+	name = "Erzherzog Albrecht"
+	date = 1836.1.1
+	type = land
+	personality = active_p
+	background = aristocrat
+}
+
+leader = {
+	name = "Paolucci delle Roncole"
+	date = 1824.1.1
+	type = sea
+	personality = competent
+	background = aristocrat
+	prestige = 0.1
+}
+#Sphere of Influence
+
+BAD = {	
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+BAV = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+WUR = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+SAX = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+KRA = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+SER = {
+	value = 75
+	level = 2
+	influence_value = 25
+}
+
+SAR = {
+	value = 50
+	level = 2
+	influence_value = 25
+}
+
+PAP = {
+	value = 100
+	level = 2
+	influence_value = 25
+}
+
+SWI = {
+	value = 125
+	level = 3
+	influence_value = 25
+}
+
+PAR = {
+	value = 0
+	level = 2
+}
+
+MOD = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+TUS = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+LUC = {
+	value = 0
+	level = 2
+	influence_value = 25
+}
+
+DEN = {
+	value = 100	#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+PRU = {
+	value = 80
+}
+
+RUS = {
+	value = -100
+}
+
+FRA = {
+	value = 50
+}
+
+PLC = {
+	value = -100
+}
+
+#Army
+
+army = {
+	name = "II. Armee"
+	location = 702
+	regiment = {
+		name= "1.6. Infanteriedivision"
+		type = infantry
+		home = 627
+	}
+
+	regiment = {
+		name= "2.6. Infanteriedivision"
+		type = infantry
+		home = 637
+	}
+
+	regiment = {
+		name= "3.6. Infanteriedivision"
+		type = infantry
+		home = 705
+	}
+
+	regiment = {
+		name= "4.6. Infanteriedivision"
+		type = infantry
+		home = 630
+	}
+
+}
+
+army = {
+	name = "III. Armee"
+	location = 619
+	regiment = {
+		name= "1.8. Infanteriedivision"
+		type = infantry
+		home = 628
+	}
+
+	regiment = {
+		name= "2.8. Infanteriedivision"
+		type = infantry
+		home = 626
+	}
+
+	regiment = {
+		name= "3.8. Infanteriedivision"
+		type = infantry
+		home = 702
+	}
+
+	regiment = {
+		name= "4.8. Infanteriedivision"
+		type = infantry
+		home = 624
+	}
+
+}
+
+army = {
+	name = "IV. Armee"
+	location = 630
+	regiment = {
+		name= "1.4. Infanteriedivision"
+		type = infantry
+		home = 630
+	}
+
+	regiment = {
+		name= "2.4. Infanteriedivision"
+		type = infantry
+		home = 629
+	}
+
+	regiment = {
+		name= "3.4. Infanteriedivision"
+		type = infantry
+		home = 628
+	}
+
+	regiment = {
+		name= "1.5. Infanteriedivision"
+		type = infantry
+		home = 622
+	}
+}
+
+army = {
+	name = "V. Armee"
+	location = 622
+	regiment = {
+		name= "1.2. Kavalleriedivision"
+		type = cavalry
+		home = 624
+	}
+
+	regiment = {
+		name= "3.2. Kavalleriedivision"
+		type = cavalry
+		home = 626
+	}
+
+	regiment = {
+		name= "1.1. Infanteriedivision"
+		type = infantry
+		home = 619
+	}
+
+	regiment = {
+		name= "2.1. Infanteriedivision"
+		type = infantry
+		home = 619
+	}
+
+	regiment = {
+		name= "3.1. Infanteriedivision"
+		type = infantry
+		home = 625
+	}
+
+	regiment = {
+		name= "1.2. Infanteriedivision"
+		type = infantry
+		home = 616
+	}
+}
+

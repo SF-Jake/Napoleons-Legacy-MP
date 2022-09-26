@@ -1,0 +1,17 @@
+owner = BRI
+
+controller = BRI
+add_core = BRI
+
+
+add_core = CAN
+
+add_core = SCO
+
+trade_goods = sulphur
+
+life_rating = 35
+
+naval_base = 1
+
+1861.1.1 = { railroad = 1 }

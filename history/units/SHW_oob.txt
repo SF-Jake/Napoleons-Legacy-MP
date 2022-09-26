@@ -1,0 +1,52 @@
+EGY = {
+	value = 60
+}
+
+GON = {
+	value = 40
+}
+
+TIG = {
+	value = 60
+}
+
+AWS = {
+	value = 40
+}
+
+leader = {
+   name = "Sahle Selassie"
+   type = land
+   date = 1836.1.1
+   background = gifted_administrator
+   personality = vainglorious
+}
+
+army = {
+	name = "Army of the Negus of Shewa"
+	location = 1859
+	regiment = {
+		name= "Negus' Guards"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "Negus' Horsemen"
+		type = cavalry
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Hawassa Division"
+		type = irregular
+		home = 1860
+	}
+
+}

@@ -1,0 +1,120 @@
+capital = 2279
+primary_culture = north_andean
+religion = catholic
+government = democracy
+plurality = 0.0
+nationalvalue = nv_liberty
+literacy = 0.1
+civilized = yes
+prestige = 1
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = state_equal_weight
+vote_franschise = landed_voting
+public_meetings = yes_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = jefferson_method
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+ruling_party = ECU_liberal
+last_election = 1834.8.8
+upper_house = {
+	fascist = 0
+	liberal = 59
+	conservative = 28
+	reactionary = 13
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+# Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+the_command_principle = 1
+private_banks = 1
+no_standard = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+water_wheel_power = 1
+publishing_industry = 1
+
+# Inventions
+
+#Starting Consciousness
+consciousness = 2
+nonstate_consciousness = 0
+
+oob = "ECU_oob.txt"
+1861.1.1 = {
+	oob = "/1861/ECU_oob.txt"
+}
+1861.1.1 = {
+ruling_party = ECU_conservative
+
+# Technologies
+	post_napoleonic_thought = 1
+	flintlock_rifles = 1
+	bronze_muzzle_loaded_artillery = 1
+	army_command_principle = 1
+	army_professionalism = 1
+	private_banks = 1
+	stock_exchange = 1
+	no_standard = 1
+	freedom_of_trade = 1
+	guild_based_production = 1
+	organized_factories = 1
+	classicism_n_early_romanticism = 1
+	romanticism = 1
+	late_enlightenment_philosophy = 1
+	idealism = 1
+	enlightenment_thought = 1
+	water_wheel_power = 1
+	publishing_industry = 1
+	mechanical_production = 1
+	experimental_railroad = 1
+	early_railroad = 1
+	post_nelsonian_thought = 1
+	alphabetic_flag_signaling = 1
+	the_command_principle = 1
+
+#Inventions
+	pitts_threshing_machine = yes
+	hussey_n_mccormicks_reaping_machine = yes
+	sharp_n_roberts_power_loom = yes
+	jacquard_power_loom = yes
+	mechanical_saw = yes
+	mechanical_precision_saw = yes
+	mechanized_slaughtering_block = yes
+	northrop_power_loom = yes
+	
+	
+	
+	army_academic_training = yes
+	hegelian_idealism = yes
+	neokantian_idealism = yes
+	work_specialization = yes
+	proto_existentialism = yes
+	field_training = yes
+	army_societal_status = yes
+	multitude_of_financial_instruments = yes
+	insurance_companies = yes
+	regulated_buying_and_selling_of_stocks = yes
+	work_control_and_hierarchy = yes
+}

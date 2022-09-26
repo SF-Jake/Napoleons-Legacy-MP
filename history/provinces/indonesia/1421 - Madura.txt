@@ -1,0 +1,5 @@
+owner = DUT
+controller = DUT
+add_core = DUT
+trade_goods = sulphur
+life_rating = 30

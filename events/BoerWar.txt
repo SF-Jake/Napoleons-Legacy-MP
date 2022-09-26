@@ -1,0 +1,867 @@
+#The Eastern Frontier
+country_event = {
+	id = 19500
+	title = "EVTNAME19500"
+	desc  = "EVTDESC19500"
+	picture = "trekboers"
+	
+	trigger = {
+		OR = { 
+		tag = SAF
+		tag = TRN
+		tag = NAL
+		tag = ORA
+		     }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+			factor = 0.01 #increase likelihood to happen
+			year = 1836
+		}
+	}
+
+option = {
+		name = "EVTOPTA19500"
+
+		add_country_modifier = {
+			name = land_of_opportunity
+			duration = -1
+		}
+
+		ai_chance = { factor = 100 }
+		}
+	}
+
+#Stockenström's treaty system
+country_event = {
+	id = 19510
+	title = "EVTNAME19510"
+	desc  = "EVTDESC19510"
+	picture = "xhosa"
+	
+	trigger = {
+		tag = SAF
+		exists = XHO
+		war = no
+		owns = 2099
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+option = {
+		name = "Sounds like a reasonable proposal."
+		set_global_flag = stockenstrom_proposal
+		badboy = -1
+		relation = {
+			value = 100
+			who = XHO
+				}
+		2099 = {
+		remove_core = THIS
+		secede_province = XHO
+				}
+		ai_chance = { factor = 80 }
+	}
+
+option = {
+		name = "And give up lands we could settle? Get out!"
+		set_global_flag = dwelling_xhosa
+		any_pop = {
+			limit = {
+				has_pop_culture = xhosa
+			}
+			militancy = 4
+			  }
+		ai_chance = { factor = 20 }
+	}
+}
+
+#Zulu-Xhosa conflict
+country_event = { 	
+	id = 19511
+	title = "EVTNAME19511"
+	desc  = "EVTDESC19511"
+	picture = "xhosa"
+	
+	trigger = {
+		tag = ZUL
+		exists = XHO
+		has_global_flag = dwelling_xhosa
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA19511"
+		badboy = 4
+		leave_alliance = XHO
+		relation = {
+			who = XHO
+			value = -100
+		}
+		casus_belli = {
+			target = XHO
+			type = conquest
+			months = 12
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = xhosa
+			}
+			militancy = 4
+				  }
+		ai_chance = { factor = 80 }
+	}
+
+	option = {
+		name = "EVTOPTB19511"
+		prestige = -5
+		any_pop = {
+			limit = {
+				has_pop_culture = zulu
+			}
+			militancy = 2
+				  }
+		ai_chance = { factor = 20 }
+	}
+}
+
+#The Northern Cape Colony
+country_event = {
+	id = 98261
+	title = "EVTNAME98261" 
+	desc = "EVTDESC98261"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		tag = SAF
+		war = no
+		owns = 2087
+		year = 1840
+		OR = {
+			2094 = { empty = yes } #Kimberley
+			2095 = { empty = yes } #Dikathong
+			2088 = { empty = yes } #Springbok
+		}
+		NOT = { has_country_flag = no_more_north_cape }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.5
+			has_global_flag = dwelling_xhosa
+		}
+		modifier = {
+			factor = 0.5
+			year = 1850
+		}
+		modifier = {
+			factor = 0.2
+			year = 1860
+		}
+		modifier = {
+			factor = 0.1
+			year = 1870
+		}
+	}
+
+	option = {
+		name = "This is necessary."
+		treasury = -3000
+		random_owned = {
+			limit = {
+				2088 = { empty = no }
+				2094 = { empty = no }
+				2095 = { empty = yes }
+			}
+			2095 = { 	life_rating = 15
+						secede_province = THIS
+						add_core = THIS
+				   }
+		}
+		random_owned = {
+			limit = {
+				2088 = { empty = no }
+				2094 = { empty = yes }
+			}
+			2094 = { 	life_rating = 15
+						secede_province = THIS
+						add_core = THIS
+				   }
+		}
+		random_owned = {
+			limit = {
+				2088 = { empty = yes }
+			}
+			2088 = { 	life_rating = 15
+						secede_province = THIS
+						add_core = THIS
+				   }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "We have other plans."
+		set_country_flag = no_more_north_cape
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The Transvaal Sovereignty
+country_event = {
+	id = 98220
+	title = "EVTNAME98220" 
+	desc = "EVTDESC98220"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		tag = SAF
+		year = 1845
+		NOT = {
+			TRN = { exists = yes }
+			has_global_flag = transvaal_sovereignty
+			has_global_flag = stockenstrom_proposal
+		}
+		2105 = {
+			OR = {
+				empty = yes
+				owned_by = THIS
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 40
+	}
+
+	option = {
+		name = "An excellent development."
+
+		set_global_flag = transvaal_sovereignty
+
+		2105 = {
+			secede_province = THIS
+			add_core = TRN
+			life_rating = 20
+		}
+		2106 = {
+			secede_province = THIS
+			add_core = TRN
+			life_rating = 20
+		}
+		2107 = {
+			secede_province = THIS
+			add_core = TRN
+			life_rating = 20
+		}
+		2108 = {
+			secede_province = THIS
+			add_core = TRN
+			life_rating = 20
+		}
+		2109 = {
+			secede_province = THIS
+			add_core = TRN
+			life_rating = 20
+		}
+		2110 = {
+			secede_province = THIS
+			add_core = TRN
+			life_rating = 20
+		}
+
+		any_pop = {
+			limit = {
+				has_pop_culture = boer
+				NOT = {
+					location = { region = ZUL_2113 }
+				}
+			}
+			random = {
+				chance = 10
+				money = 250
+			move_pop = 2105
+				 }
+			}
+		release_vassal = TRN
+		relation = { who = TRN value = 100 }
+		TRN = { prestige = -30 }
+		2105 = {
+			state_scope = { is_slave = yes }
+		}
+		TRN = {
+			any_pop = {
+				limit = { has_pop_culture = boer }
+				literacy = 0.15
+			}
+		}
+	}
+}
+
+#Invasion of the Laagers
+country_event = {
+	id = 98205
+	title = "EVTNAME98205" 
+	desc = "EVTDESC98205"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		tag = ZUL
+		year = 1843
+		NOT = {
+			has_country_flag = attack_the_laagers
+			has_country_flag = make_peace_with_the_laagers
+			has_global_flag = stockenstrom_proposal
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "We must drive them from our lands!"
+		set_country_flag = attack_the_laagers
+		prestige = 5
+		badboy = 5
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			literacy = 0.25
+		}
+		2111 = {
+			any_pop = {
+				limit = { has_pop_culture = boer }
+				reduce_pop = 0.8
+			}
+			add_core = SAF
+			add_core = NAL
+		}
+		2112 = {
+			any_pop = {
+				limit = { has_pop_culture = boer }
+				reduce_pop = 0.8
+			}
+			add_core = SAF
+			add_core = NAL
+		}
+		random_country = {
+			limit = {
+				tag = SAF
+			}
+			country_event = 98206
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "There is no choice but to appease them."
+		set_country_flag = make_peace_with_the_laagers
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			literacy = 0.25
+		}
+		2111 = {
+			add_core = SAF
+			add_core = NAL
+		}
+		2112 = {
+			add_core = SAF
+			add_core = NAL
+		}
+		random_country = {
+			limit = {
+				tag = SAF
+			}
+			country_event = 98207
+		}
+		any_pop = {
+			limit = { has_pop_culture = zulu }
+			militancy = 4
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#The Battle of Blood River
+country_event = {
+	id = 98206
+	title = "EVTNAME98206" 
+	desc = "EVTDESC98206"
+	picture = "blood_river"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them stay autonomous, for now."
+		2111 = { secede_province = THIS
+			 change_province_name = "Maritzburg"
+		         }
+		2112 = { secede_province = THIS
+			 change_province_name = "Utrecht"
+			 }
+		release_vassal = NAL
+		relation = { who = ZUL value = -100 }
+		relation = { who = NAL value = 100 }
+		NAL = { prestige = -30 }
+		any_pop = {
+			limit = {
+				has_pop_culture = boer
+				OR = {
+					location = { province_id = 2097 }
+					location = { province_id = 2096 }
+				}
+			}
+			random = {
+				chance = 30
+				money = 250
+			move_pop = 2111
+				 }
+		}
+		2111 = {
+			state_scope = {
+				change_region_name = "Natal"
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+		option = {
+		name = "We'll rule it directly."
+		prestige = 3 
+		2111 = { secede_province = THIS
+			 change_province_name = "Maritzburg"
+		         }
+		2112 = { secede_province = THIS
+			 change_province_name = "Utrecht"
+			 }
+			any_pop = {
+			limit = {
+				has_pop_culture = boer
+				OR = {
+					location = { province_id = 2097 }
+					location = { province_id = 2096 }
+				}
+			}
+			random = {
+				chance = 30
+				money = 250
+			move_pop = 2111
+				 }
+		}
+		2111 = {
+			state_scope = {
+				change_region_name = "Natal"
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#The Natalia Republic
+country_event = {
+	id = 98207
+	title = "EVTNAME98207" 
+	desc = "EVTDESC98207"
+	picture = "boer_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them stay autonomous, for now."
+		2111 = { secede_province = THIS
+			 change_province_name = "Maritzburg"
+		         }
+		2112 = { secede_province = THIS
+			 change_province_name = "Utrecht"
+			 }
+		release = NAL
+		NAL = {
+			all_core = { add_core = THIS }
+		}
+		relation = { who = NAL value = 100 }
+		NAL = { prestige = -30 }
+		any_pop = {
+			limit = {
+				has_pop_culture = boer
+				OR = {
+					location = { province_id = 2097 }
+					location = { province_id = 2096 }
+				}
+			}
+			random = {
+				chance = 30
+				money = 250
+			move_pop = 2111
+				 }
+		}
+		2111 = {
+			state_scope = {
+				change_region_name = "Natal"
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+		option = {
+		name = "We'll rule it directly."
+		prestige = 3 
+		2111 = { secede_province = THIS
+			 change_province_name = "Maritzburg"
+		         }
+		2112 = { secede_province = THIS
+			 change_province_name = "Utrecht"
+			 }
+		any_pop = {
+			limit = {
+				has_pop_culture = boer
+				OR = {
+					location = { province_id = 2097 }
+					location = { province_id = 2096 }
+				}
+			}
+			random = {
+				chance = 30
+				money = 250
+			move_pop = 2111
+				 }
+		}
+		2111 = {
+			state_scope = {
+				change_region_name = "Natal"
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#################################################################
+#																#
+#      	      			Bantu Wars						#
+#																#
+#################################################################
+
+# Border Dispute with the Zulu
+country_event = {
+	id = 98250
+	title = "EVTNAME98250"
+ 	desc = "EVTDESC98250"
+ 	picture = "zulu"
+
+	trigger = {
+		war = no
+		OR = {
+			tag = SAF
+			tag = ORA
+		}
+		year = 1878
+		NOT = { exists = XHO }
+		ZUL = {
+			neighbour = THIS
+			war = no
+			civilized = no
+			NOT = {
+				number_of_states = 3
+				truce_with = THIS
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			year = 1880
+		}
+		modifier = {
+			factor = 0.25
+			year = 1882
+		}
+	}
+
+	option = {
+		name = "We have no choice."
+		badboy = 4
+		2111 = { add_core = THIS } 
+		2112 = { add_core = THIS } 	
+		2113 = { add_core = THIS } 
+		diplomatic_influence = {
+			who = ZUL
+			value = -200
+		}
+		leave_alliance = ZUL
+		casus_belli = {
+			target = ZUL
+			type = establish_protectorate_casus_belli
+			months = 12
+		}
+		war = {
+			call_ally = yes
+			target = ZUL
+			attacker_goal = {
+				casus_belli = establish_protectorate_casus_belli
+			}
+		}	
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				badboy = 0.92
+			}
+		}
+	}
+	option = {
+		name = "Back down."
+		prestige = -10
+		diplomatic_influence = {
+			who = ZUL
+			value = -200
+		}
+		leave_alliance = ZUL
+		any_pop = {
+			scaled_militancy = {
+				factor = 2
+				issue = jingoism
+			}
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+				
+country_event = {
+	id = 98255
+	title = "EVTNAME98255" #Conflict with the Xhosa
+	desc = "EVTDESC98255"
+	picture = "xhosa"
+	
+	trigger = {
+		tag = SAF
+		owns = 2098
+		neighbour = XHO
+		NOT = {
+			war_with = XHO
+			truce_with = XHO
+			has_global_flag = dwelling_xhosa
+			owns = 2099
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.5
+			year = 1860
+		}
+	}
+	
+	option = {
+		name = "This is beyond the pale!"
+		leave_alliance = XHO
+		diplomatic_influence = { who = XHO value = -200 }
+		relation = { who = XHO value = -100 }
+		casus_belli = {
+			target = XHO
+			type = humiliate
+			months = 60
+		}
+		clr_global_flag = stockenstrom_proposal
+	}
+}
+
+country_event = {
+	id = 98256
+	title = "EVTNAME98256" #The Final Straw
+	desc = "EVTDESC98256"
+	picture = "xhosa"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = SAF
+			tag = ORA
+		}
+		XHO = {
+			neighbour = THIS
+			war = no
+			civilized = no
+			NOT = {
+				number_of_states = 2
+				truce_with = THIS
+			}
+		}
+
+		NOT = {
+			war_with = XHO
+			truce_with = XHO
+			has_global_flag = stockenstrom_proposal
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.5
+			year = 1870
+		}
+		modifier = {
+			factor = 0.1
+			year = 1880
+		}
+	}
+	
+	option = {
+		name = "Then so must it be."
+		badboy = 2
+		prestige = 5
+		leave_alliance = XHO
+		diplomatic_influence = { who = XHO value = -200 }
+		relation = { who = XHO value = -200 }
+		ENG_2096 = { add_core = THIS } 
+		war = {
+			call_ally = yes
+			target = XHO
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {
+		name = "Let's try to stay on friendly terms."
+		badboy = -2
+		prestige = -5
+		relation = { who = XHO value = 50 }
+		diplomatic_influence = { who = XHO value = 200 }
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = 98257
+	title = "EVTNAME98257" #Dealing with the Basotho Kingdom
+	desc = "EVTDESC98257"
+	picture = "boer_war"
+
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1860
+		civilized = yes
+		OR = {
+			tag = SAF
+			tag = ORA
+	             } 	
+		NOT = { 
+			owns = 2103
+		      }	
+		}
+mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
+			has_global_flag = dwelling_xhosa
+		}
+		modifier = {
+			factor = 1.5
+			has_global_flag = stockenstrom_proposal
+		}
+		modifier = {
+			factor = 0.1
+			year = 1865
+		}
+	}
+	option = {
+		name = "A golden opportunity."
+		badboy = 4
+				random_country = {
+			limit = {
+			owns = 2103
+					}
+		relation = { who = THIS value = -200 }
+				}
+		ORA_2103 = { add_core = THIS }
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				badboy = 0.84
+				}
+			}
+		 }
+	option = {
+		name = "Let's settle this peacefully."
+		prestige = -5
+		any_pop = {
+			scaled_militancy = {
+				factor = 2
+				issue = jingoism
+				}
+			}
+		ai_chance = {
+			factor = 5
+			}
+		 }
+}
