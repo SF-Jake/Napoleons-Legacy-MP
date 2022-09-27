@@ -9,8 +9,8 @@ BRI		= "countries/The British Union.txt"
 RUS		= "countries/Russia.txt"
 TSA		= "countries/The Russian Empire.txt"
 FRA		= "countries/The French Empire.txt"
-BOR             = "countries/The Kingdom of France.txt"
-REP             = "countries/The French Republic.txt"
+BOR     = "countries/The Kingdom of France.txt"
+REP     = "countries/The French Republic.txt"
 PRU		= "countries/Prussia.txt"
 TEU		= "countries/Teutonica.txt"
 GER		= "countries/Germany.txt"
@@ -27,7 +27,7 @@ KUH		= "countries/Austria-Hungary.txt"
 DNC		= "countries/The Three Crowns.txt"
 FED		= "countries/Federation of the Rhine.txt"
 IMP		= "countries/The Imperial Federation.txt"
-AFA             = "countries/The Coalition of Nations.txt"
+AFA     = "countries/The Coalition of Nations.txt"
 
 #Middle East
 JOR		="countries/Jordan.txt"
@@ -338,6 +338,11 @@ GCO		="countries/Gran Colombia.txt"
 
 ##HoD
 JAN 	= "countries/JanMayen.txt"
+
+##Utility Tags
+CIV		= "countries/Civilizing.txt"
+PRO		= "countries/Province Flag.txt"
+GHO		= "countries/Ghost Country.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

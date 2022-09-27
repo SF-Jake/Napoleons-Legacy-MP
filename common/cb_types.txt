@@ -95,7 +95,20 @@ gunboat = {
 			has_country_modifier = in_bankrupcy
 			has_country_modifier = generalised_debt_default
 		}
-		
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 		in_default = THIS
 	}
 
@@ -131,6 +144,20 @@ status_quo = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		always = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	break_truce_prestige_factor = 5
@@ -188,6 +215,20 @@ conquest = {
 				}
 			}
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	badboy_factor = 2.2
@@ -230,6 +271,20 @@ civil_war = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		always = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	badboy_factor = 0
@@ -287,6 +342,20 @@ add_to_sphere = {
 		is_greater_power = no
 		is_independant = yes
 		part_of_sphere = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	is_valid = {
@@ -330,6 +399,20 @@ take_from_sphere = {
 		NOT = { is_our_vassal = THIS }
 		this = { is_greater_power = yes }
 		is_greater_power = yes
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	
@@ -386,6 +469,20 @@ acquire_core_state = {
 		any_owned_province = {
 			is_core = THIS
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -441,6 +538,20 @@ annex_core_country = {
 				}
 			}
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	po_annex = yes
@@ -486,6 +597,20 @@ acquire_substate_region = {
 			any_owned_province = {
 				not = { is_core = THIS }
 				is_colonial = no
+			}
+		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
 			}
 		}
 	}
@@ -555,6 +680,20 @@ acquire_state = {
 				}
 			}
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -611,6 +750,20 @@ place_in_the_sun = {
 		NOT = { is_our_vassal = THIS }
 		any_owned_province = {
 			is_colonial = yes
+		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
 		}	
 	}
 	
@@ -705,6 +858,20 @@ cut_down_to_size = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		is_disarmed = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	on_add = {
@@ -727,6 +894,20 @@ cut_down_to_size_boxer = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		is_disarmed = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	badboy_factor = 1.1
@@ -780,6 +961,20 @@ free_peoples = {
 	
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -862,6 +1057,20 @@ liberate_country = {
 	
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -944,6 +1153,20 @@ dismantle_forts = {
 	
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -996,6 +1219,20 @@ release_puppet = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		num_of_vassals_no_substates = 1
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	# THIS - us
@@ -1046,6 +1283,20 @@ make_puppet = {
 		NOT = { number_of_states = 4 }
 		is_greater_power = no
 		is_vassal = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	# THIS - us
@@ -1094,6 +1345,20 @@ become_independent = {
 
 	can_use = {
 		is_our_vassal = THIS
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	# THIS - us
@@ -1155,6 +1420,20 @@ humiliate = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		has_recently_lost_war = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}	
 	on_add = {
 		move_issue_percentage = { 
@@ -1196,6 +1475,20 @@ demand_concession_casus_belli = {
 		}
 		civilized = no
 		number_of_states = 2
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -1262,6 +1555,20 @@ establish_protectorate_casus_belli = {
 			}
 		}
 		civilized = no
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_annex = yes
@@ -1311,6 +1618,20 @@ unification_humiliate_cb = {
 		is_culture_group = THIS
 		NOT = { is_cultural_union = THIS }
 		has_cultural_sphere = yes
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_clear_union_sphere = yes
@@ -1362,7 +1683,21 @@ unification_release_puppet_cb = {
 		}
 		NOT = {
 			is_culture_group = THIS
-		}		
+		}	
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}	
 	}
 	
 	# THIS - us
@@ -1432,6 +1767,20 @@ unification_casus_belli = {
 			}
 			not = { any_owned_province = { is_capital = yes } }
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	allowed_states = {
 		any_owned_province = {
@@ -1499,6 +1848,20 @@ unification_annex_casus_belli = {
 				is_cultural_union = yes
 			}
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_annex = yes
@@ -1541,6 +1904,20 @@ rude_boy = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		badboy = 1
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_remove_prestige = yes
@@ -1608,6 +1985,20 @@ install_communist_gov_cb = {
 			# If reciever is not a great power
 			is_greater_power = no
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_install_communist_gov_type = yes
@@ -1667,6 +2058,20 @@ uninstall_communist_gov_cb = {
 		
 		# If reciever current gov is proletarian_dictatorship
 		government = proletarian_dictatorship
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_uninstall_communist_gov_type = yes
@@ -1736,7 +2141,7 @@ british_conquest = {
 
     can_use = {
         NOT = { is_our_vassal = THIS }
-	year = 1860
+		year = 1860
         THIS = {
             OR = {
                 tag = CAN
@@ -1747,6 +2152,20 @@ british_conquest = {
                 tag = CAN
                 tag = BRI
             }
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+			THIS = {
+				NOT = {
+					OR = {
+						tag = JAN
+						tag = GHO
+					}
+				}
+			}
     }
 
     badboy_factor = 0
@@ -1789,8 +2208,22 @@ spanish_conquest = {
         NOT = { is_our_vassal = THIS }
         THIS = {
             tag = SPA
-            }
-            tag = NSA
+        }
+        tag = NSA
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
     }
 
     badboy_factor = 0
@@ -1862,6 +2295,20 @@ napoleonic_spain_take_state = {
 				province_id = 513 #Granada
 			}
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -1914,7 +2361,7 @@ negotiated_transfer = {
 	good_relation_infamy_factor = 0
 	good_relation_militancy_factor = 0
 
-	construction_speed = 2.0
+	construction_speed = 50.0
 
 	can_use = {
 		number_of_states = 2 # annex if you want their last state
@@ -1922,6 +2369,20 @@ negotiated_transfer = {
 		ai = no
 		THIS = { ai = no }
 		THIS = { civilized = yes }
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -1980,6 +2441,20 @@ conquest_low = {
 						NOT = { is_greater_power = yes }
 						NOT = { nationalism_n_imperialism = 1 }
 					}
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
 				}
 			}
 		}
@@ -2052,6 +2527,20 @@ take_capital = {
 				civilized = no
 				THIS = {
 					civilized = no
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
 				}
 			}
 		}
@@ -2139,6 +2628,20 @@ treaty_port_casus_belli = {
 					owns = 1499 #Hainan
 					owns = 1608 #Ningbo
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	po_reparations = yes
@@ -2222,6 +2725,20 @@ india_acquire_state = {
 		THIS = {
 			is_culture_group = south_asian
 		}
+		NOT = {
+			OR = {
+				tag = JAN
+				tag = GHO
+			}
+		}
+		THIS = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -2249,4 +2766,3 @@ india_acquire_state = {
 		}
 	}
 }
-

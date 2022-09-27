@@ -1255,3 +1255,13 @@ treaty_port = {
 	farm_rgo_size = 8
 	icon = 8
 }	
+
+#################### VICTORIA UNIVERSALIS ####################
+
+banker_income_timer = {
+	icon = 10
+}
+
+monthly_timer = {
+	icon = 8
+}

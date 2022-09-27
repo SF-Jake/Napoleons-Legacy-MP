@@ -1,0 +1,22 @@
+polar_bears;Polar Bears;;Polarbären;;;;;;;;x
+illuminati;Bankers;;;;;;;;;;;;;;;;;;;;;;;x
+bankers;Bankers;;;;;;;;;;;;;;
+give_host_powers_title;Host Powers;;;;;;;;;x;;;;
+give_host_powers_desc; ;;;;;;;;;x;;;;
+remove_host_powers_title;Remove Host Powers;;;;;;;;;x;;;;
+remove_host_powers_desc; ;;;;;;;;;x;;;;
+show_options_title;Show Options;;;;;;;;;x;;;;
+show_options_desc; ;;;;;;;;;x;;;;
+hide_options_title;Hide Options;;;;;;;;;x;;;;
+hide_options_desc; ;;;;;;;;;x;;;;
+JAN;World Bank;;;;;;;;;;;x
+JAN_ADJ;§;;;;;;;;;;;x
+JAN_liberal;IMF;;;;;;;;;;;x
+JAN_conservative;IMF;;;;;;;;;;;x
+JAN_socialist;IMF;;;;;;;;;;;x
+JAN_anarcho_liberal;International Monetary Fund;;;;;;;;;;;x
+JAN_communist;IMF;;;;;;;;;;;x
+JAN_fascist;IMF;;;;;;;;;;;x
+GHO;Ghostland;;;;;;;;;;;x
+GHO_ADJ;Ghostly;;;;;;;;;;;x
+UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;

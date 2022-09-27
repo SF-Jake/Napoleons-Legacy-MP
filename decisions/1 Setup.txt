@@ -1,0 +1,19 @@
+political_decisions = {
+	global_1836_setup = {
+		potential = {
+			tag = JAN
+			NOT = { has_global_flag = global_1836_setup }
+			NOT = { has_global_flag = 1913_bookmark }
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = global_1836_setup
+			set_country_flag = banker_income_timer
+			add_country_modifier = { name = banker_income_timer duration = 5 }
+			any_pop = {
+				money = 2000000
+			}
+		}
+	}
+}
