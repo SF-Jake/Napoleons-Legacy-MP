@@ -2,22 +2,22 @@ leader = {
 	name = "Sir George Anson"
 	type = land
 	date="1836.1.1"
-	personality = able
-	background = adventurer
+	personality = defence_1.1
+	background = attack_1.1
 }
 leader = {
 	name = "Sir James Charles Chatterton"
 	type = land
 	date="1836.1.1"
-	personality = brilliant
-	background = school_of_defense
+	personality = defence_1.1
+	background = attack_3.1
 }
 leader = {
 	name = "Henry Murray"
 	type = land
 	date="1836.1.1"
-	personality = competent
-	background = uncommonly_young
+	personality = defence_1.1
+	background = attack_1.1
 }
 #Sphere of Influence
 

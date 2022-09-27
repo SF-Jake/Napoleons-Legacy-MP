@@ -2,22 +2,22 @@ leader = {
 	name = "Joseph Bonaparte"
 	type = land
 	date="1836.1.1"
-	personality = stalwart
-	background = poet
+	personality = defence_1.1
+	background = attack_1.1
 }
 leader = {
 	name = "Edme Étienne Borne Desfourneaux"
 	type = land
 	date="1836.1.1"
-	personality = arrogant
-	background = cartographer
+	personality = defence_1.1
+	background = attack_1.1
 }
 leader = {
 	name = "Basile Baltus de Pouilly"
 	type = land
 	date="1836.1.1"
-	personality = audacious
-	background = old_school
+	personality = defence_2.1
+	background = attack_1.1
 }
 #Sphere of Influence
 MEX = {

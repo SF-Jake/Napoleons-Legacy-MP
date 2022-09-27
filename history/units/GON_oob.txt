@@ -22,8 +22,8 @@ leader = {
    name = "Ras Ali II of Yejju"
    type = land
    date = 1836.1.1
-   background = warmonger
-   personality = competent
+   background = attack_1.1
+   personality = defence_1.1
 }
 
 army = {

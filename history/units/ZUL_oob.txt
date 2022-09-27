@@ -18,8 +18,8 @@ leader = {
    name = "Dingane kaSenzangakhona"
    type = land
    date = 1836.1.1
-   background = incompetent
-   personality = aggressive
+   background = attack_1.1
+   personality = defence_1.1
 }
 
 army = {

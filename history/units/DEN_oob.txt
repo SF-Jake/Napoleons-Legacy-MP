@@ -2,22 +2,22 @@ leader = {
 	name = "Jørgen Conrad de Falsen"
 	type = land
 	date="1836.1.1"
-	personality = confident
-	background = cursed_luck
+	personality = defence_1.1
+	background = attack_2.1
 }
 leader = {
 	name = "Prince Charles of Hesse-Kassel"
 	type = land
 	date="1836.1.1"
-	personality = defiant
-	background = warmonger
+	personality = defence_3.1
+	background = attack_1.1
 }
 leader = {
 	name = "Jens Schou Fabricius"
 	type = sea
 	date="1836.1.1"
-	personality = defiant
-	background = warmonger
+	personality = defence_3.1
+	background = attack_1.1
 }
 army = {
 	name = "Danske Haeren"

@@ -2,24 +2,24 @@ leader = {
 	name = "Robert E.Lee"
 	type = land
 	date="1836.1.1"
-	personality = audacious
-	background = war_college
+	personality = defence_2.1
+	background = attack_1.1
 	picture="european_general_38"
 }
 leader = {
 	name = "Thomas Jackson"
 	type = land
 	date="1836.1.1"
-	personality = aggressive
-	background = school_of_defense
+	personality = defence_1.1
+	background = attack_3.1
 	picture="european_general_29"
 }
 leader = {
 	name = "Zachary Taylor"
 	date = 1836.1.1
 	type = land
-	personality = intuitive
-	background = school_of_offense
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 #Sphere of Influence

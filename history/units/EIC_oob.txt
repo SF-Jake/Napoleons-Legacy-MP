@@ -2,8 +2,8 @@ leader = {
 	name = "John Seaton"
 	date = 1825.1.1
 	type = land
-	personality = doughty
-	background = school_of_offense
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.2
 }
 
@@ -11,8 +11,8 @@ leader = {
 	name = "Whitworth-Aylmer"
 	date = 1825.1.1
 	type = land
-	personality = reserved
-	background = generals_aide
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 #Sphere of Influence

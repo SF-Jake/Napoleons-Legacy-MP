@@ -2,8 +2,8 @@ leader = {
 	name = "Ulysses S. Grant"
 	type = land
 	date="1836.1.1"
-	personality = merciless
-	background = uncommonly_young
+	personality = defence_2.1
+	background = attack_1.1
 	prestige = 0.2
 	picture="european_general_44"
 }
@@ -11,16 +11,16 @@ leader = {
 	name = "Winfield Scott"
 	date = 1836.1.1
 	type = land
-	personality = steadfast
-	background = school_of_firepower
+	personality = defence_2.1
+	background = attack_1.1
 	prestige = 0.3
 }
 leader = {
 	name = "Alexander Macomb"
 	date = 1812.1.1
 	type = land
-	personality = heroic
-	background = engineer
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 #Sphere of Influence

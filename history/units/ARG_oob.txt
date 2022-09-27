@@ -2,24 +2,24 @@ leader = {
 	name = "Manuel Blanco"
 	date = 1826.1.1
 	type = land
-	personality = ballsy
-	background = corrupt
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.3
 }
 leader = {
 	name = "Jose Joaquú‹ Prieto"
 	date = 1829.1.1
 	type = land
-	personality = bold
-	background = butcher
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.2
 }
 leader = {
 	name = "Manuel Bulnes"
 	date = 1815.1.1
 	type = land
-	personality = careful
-	background = bootlicker
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.3
 }
 army = {

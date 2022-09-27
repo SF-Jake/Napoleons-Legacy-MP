@@ -2,8 +2,8 @@ leader = {
 	name = "Ceferino Namuncurá"
 	type = land
 	date = 1836.1.1
-	personality = agressive
-	background = elderly
+	personality = defence_2.1
+	background = attack_1.1
 }
 army = {
 	name = "Army of the Nizam of Hyderabad"

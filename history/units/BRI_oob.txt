@@ -2,16 +2,16 @@ leader = {
 	name = "Henry Hardinge"
 	date = 1830.1.1
 	type = land
-	personality = tactful
-	background = gifted_administrator
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 leader = {
 	name = "Henry Smith"
 	date = 1834.1.1
 	type = land
-	personality = efficient
-	background = gifted_administrator
+	personality = defence_2.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -19,16 +19,16 @@ leader = {
 	name = "John Fox Burgoyne"
 	date = 1836.1.1
 	type = land
-	personality = able
-	background = engineer
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.0
 }
 leader = {
 	name = "James Dundas"
 	date = 1836.1.1
 	type = sea
-	personality = cautious
-	background = elderly
+	personality = defense_3.1
+	background = attack_1.1
 	prestige = 0.0
 }
 #Sphere of Influence
@@ -228,8 +228,8 @@ leader = {
 	name = "Oliver Cochrane"
 	date = 1831.1.1
 	type = sea
-	personality = charismatic
-	background = adventurer
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 

@@ -51,3 +51,8 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
+
+water_wheel_power = 1
+guild_based_production = 1
+clipper_design = 1
+mechanized_mining = 1

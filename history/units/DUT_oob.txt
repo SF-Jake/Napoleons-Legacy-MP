@@ -2,8 +2,8 @@ leader = {
 	name = "David Chassé"
 	date = 1806.1.1
 	type = land
-	personality = timid
-	background = school_of_defense
+	personality = defence_1.1
+	background = attack_3.1
 	prestige = 0.3
 }
 
@@ -11,16 +11,16 @@ leader = {
 	name = "Frans Cochius"
 	date = 1830.1.1
 	type = land
-	personality = aggressive
-	background = colonial_b
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 leader = {
 	name = "Engelbertus Lucas"
 	date = 1830.1.1
 	type = sea
-	personality = indifferent
-	background = politician
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -28,8 +28,8 @@ leader = {
 	name = "Charles Nepveu"
 	date = 1831.1.1
 	type = land
-	personality = bigoted
-	background = powerful_friends
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.0
 }
 army = {

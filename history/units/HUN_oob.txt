@@ -11,8 +11,8 @@ leader = {
 	name = "Andras Bacher"
 	date = 1836.1.1
 	type = land
-	background = aristocrat
-	personality = bold
+	background = attack_1.1
+	personality = defence_1.1
 }
 
 army = {

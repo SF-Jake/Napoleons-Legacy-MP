@@ -2,16 +2,16 @@ leader = {
 	name = "Juan Manuel Santos"
 	type = land
 	date = 1836.1.1
-	personality = bold
-	background = diplomat
+	personality = defence_1.1
+	background = attack_1.1
 }
 
 leader = {
 	name = "Angelino Garzón"
 	type = land
 	date = 1836.1.1
-	personality = brash
-	background = yesman
+	personality = defence_1.1
+	background = attack_1.1
 }
 army = {
 	name = "Ejército de Colombia"
