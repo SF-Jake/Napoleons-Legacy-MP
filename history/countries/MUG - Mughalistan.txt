@@ -23,7 +23,6 @@ upper_house = {
 
 admin_reform = yes_admin_reform
 foreign_weapons = yes_foreign_weapons
-foreign_training = yes_foreign_training
 military_constructions = yes_military_constructions
 
 post_napoleonic_thought = 1

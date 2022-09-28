@@ -23,6 +23,8 @@ POLITICS_DECISIONS2;§YYellow§g = Generic, §GGreen§g = Province selector, §BBlue§
 revanchism;§WRevanchism;Revanchisme;Revanchismus;;Revanchismo;;;;;;;;;x;
 REVANCHISM_EXPLANATION;§gRevanchism, from the French word for 'revenge', is the yearning for the return of land lost to the nation. In love, war, and peace alike, our people will be willing to make greater sacrifices for the return of our sacred soil.\n§YEvery 5 points of revanchism raises maximum soldier % in a core province by 0.5% and mobilization pool by 0.5%.;;;;;;;;;;;;;;
 UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
+john_cena_cooldown;John Cena Cooldown;;;;;;;;;;;;;
+john_cena_cooldown_desc;Prevent spam of Event to allow duplicate generals.;;;;;;;;;;;;;
 no_personality;§W0 Defence;;;;;;;;;;;;;;
 no_background;§W0 Attack;;;;;;;;;;;;;;
 attack_1.1;+1 Attack;;;;;;;;;;;;;;

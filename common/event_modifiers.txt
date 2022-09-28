@@ -1269,3 +1269,7 @@ banker_income_timer = {
 monthly_timer = {
 	icon = 8
 }
+
+john_cena_cooldown = {
+	icon = 15
+}

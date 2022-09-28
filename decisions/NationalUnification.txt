@@ -1091,7 +1091,10 @@ unite_moldavia_wallachia = {
 						is_greater_power = yes
 					}
 					is_culture_group = scandinavian
-					in_sphere = THIS
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 				}
 				country_event = { id=11101 days=0 }
 			}

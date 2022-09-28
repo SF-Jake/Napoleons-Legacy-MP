@@ -1279,10 +1279,6 @@ make_puppet = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { is_our_vassal = THIS }
-		NOT = { number_of_states = 4 }
-		is_greater_power = no
-		is_vassal = no
 		NOT = {
 			OR = {
 				tag = JAN
@@ -1297,6 +1293,17 @@ make_puppet = {
 				}
 			}
 		}
+		OR = {
+			NOT = {	total_pops = 1500000 }
+			AND = {
+				NOT = {	total_pops = 4000000 }
+				THIS = { revolution_n_counterrevolution = 1 }
+			}
+			NOT = { number_of_states = 4 }
+		}
+		NOT = { is_our_vassal = THIS }
+		is_greater_power = no
+		is_vassal = no
 	}
 	
 	# THIS - us

@@ -20,6 +20,13 @@ political_decisions = {
 					duration = -1
 				}
 			}
+			any_country = {
+				limit = {
+					ai = no
+					civilized = yes
+				}
+				country_event = 91332
+			}
 		}
 	}
 }

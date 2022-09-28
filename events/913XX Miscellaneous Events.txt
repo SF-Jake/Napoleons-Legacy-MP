@@ -21,6 +21,44 @@ country_event = {
 	}
 }
 
+#########################################################################
+# 							John Cena General							#
+#########################################################################
+country_event = {
+	id = 91332
+	title = "John Cena General"
+	desc = "You can't see me."
+
+	trigger = {
+		ai = no
+		NOT = { has_leader = "§RJohn Cena§W" }
+		NOT = { has_leader = "§RJohn Xina§W" }
+		NOT = { has_country_modifier = john_cena_cooldown }
+	}
+	immediate = {
+		add_country_modifier = {
+			name = john_cena_cooldown
+			duration = 120
+		}
+	}
+	option = {
+		name = "§RJohn Cena§W"
+		define_general = {
+			name = "§RJohn Cena§W"
+			personality = defence_3.1
+			background = attack_3.1
+		}
+	}
+	option = {
+		name = "§RJohn Xina§W"
+		define_general = {
+			name = "§RJohn Xina§W"
+			personality = defence_3.1
+			background = attack_3.1
+		}
+	}
+}
+
 
 
 #Ghost Events
