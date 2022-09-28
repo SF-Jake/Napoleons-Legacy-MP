@@ -118,16 +118,7 @@ country_event = {
 			inherit = THIS
 		}
 		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = -90
-				OR = {
-					tag = SIC
-					tag = MOD
-					tag = PAP
-					tag = SPA
-				}
-			}
+			factor = 1
 		}
 	}
 
@@ -143,16 +134,7 @@ country_event = {
 			consciousness = 2
 		}
 		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 90
-				OR = {
-					tag = SIC
-					tag = MOD
-					tag = PAP
-					tag = SPA
-				}
-			}
+			factor = 0
 		}
 	}
 }

@@ -14,6 +14,12 @@ political_decisions = {
 			any_pop = {
 				money = 2000000
 			}
+			CHI = {
+				add_country_modifier = {
+					name = unciv_research_points_on_conquer
+					duration = -1
+				}
+			}
 		}
 	}
 }

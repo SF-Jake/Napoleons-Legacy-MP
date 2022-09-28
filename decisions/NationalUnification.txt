@@ -1059,6 +1059,9 @@ unite_moldavia_wallachia = {
 						owner = {
 							in_sphere = THIS
 						}
+						owner = {
+							vassal_of = THIS
+						}
 					}
 				}
 			}

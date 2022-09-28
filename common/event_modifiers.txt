@@ -64,6 +64,10 @@ hundred_days_china = {
 	research_points_modifier = 0.75
 	icon = 5
 }
+unciv_research_points_on_conquer = {
+	research_points_on_conquer = -250
+	icon = 8
+}
 
 opium_stack_1 = {
 	farm_rgo_eff = -0.05
