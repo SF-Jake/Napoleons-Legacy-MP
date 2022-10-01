@@ -2,3 +2,10 @@
 # these are checked for each countries once/month and then applied.
 #
 # Effects are fully scriptable here.
+
+great_power_decay = {
+	trigger = {
+		is_greater_power = yes
+	}
+	badboy = -0.02
+}

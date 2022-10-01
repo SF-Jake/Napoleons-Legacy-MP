@@ -27,6 +27,20 @@ political_decisions = {
 				}
 				country_event = 91332
 			}
+			GHO = {
+				add_country_modifier = {
+					name = ghostland
+					duration = -1
+				}
+			}
+			any_country = {
+				limit = { civilized = yes }
+				money = 35000
+			}
+			any_country = {
+				limit = { civilized = no }
+				money = 10000
+			}
 		}
 	}
 }

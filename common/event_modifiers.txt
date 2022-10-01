@@ -1273,3 +1273,8 @@ monthly_timer = {
 john_cena_cooldown = {
 	icon = 15
 }
+
+ghostland = {
+	global_immigrant_attract = -10000
+	icon = 9
+}

@@ -25,6 +25,7 @@ REVANCHISM_EXPLANATION;§gRevanchism, from the French word for 'revenge', is the 
 UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
 john_cena_cooldown;John Cena Cooldown;;;;;;;;;;;;;
 john_cena_cooldown_desc;Prevent spam of Event to allow duplicate generals.;;;;;;;;;;;;;
+great_power_decay;Great Power;;;;;;;;;;;;;
 no_personality;§W0 Defence;;;;;;;;;;;;;;
 no_background;§W0 Attack;;;;;;;;;;;;;;
 attack_1.1;+1 Attack;;;;;;;;;;;;;;
