@@ -1,6 +1,5 @@
 capital = 768
-primary_culture = slovene
-culture = croat
+primary_culture = croat
 culture = serb
 culture = bosniak
 religion = orthodox

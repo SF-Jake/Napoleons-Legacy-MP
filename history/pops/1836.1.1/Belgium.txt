@@ -26,55 +26,55 @@
 	}
 
 	aristocrats = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1500
 	}
 
 	officers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 200
 	}
 
 	bureaucrats = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 800
 	}
 
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1625
 	}
 
 	clerks = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 150
 	}
 
 	craftsmen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 3000
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 6000
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 3000
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 145725
 	}
@@ -136,31 +136,31 @@
 #Bruges (456000/114000 POPS)
 388 = {
 	aristocrats = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1150
 	}
 
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1125
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 10000
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1200
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 100525
 	}
@@ -168,31 +168,31 @@
 #Ghent (704000/176000 POPS)
 389 = {
 	aristocrats = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1750
 	}
 
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1750
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 16000
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1750
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 149750
 	}
@@ -230,31 +230,31 @@
 	}
 
 	aristocrats = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 825
 	}
 
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 875
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 13600
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1000
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 67700
 	}
@@ -280,31 +280,31 @@
 #Hasselt (272000/68000 POPS)
 391 = {
 	aristocrats = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 650
 	}
 
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 675
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 3500
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1000
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 62175
 	}
@@ -368,25 +368,25 @@
 	}
 
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 150
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 3000
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 125
 	}
 
 	labourers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 7825
 	}
@@ -406,25 +406,25 @@
 #Tournai (292000/73000 POPS)
 393 = {
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 100
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1000
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 100
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 8800
 	}
@@ -474,25 +474,25 @@
 #Charleroi (396000/99000 POPS)
 394 = {
 	clergymen = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 100
 	}
 
 	artisans = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 1500
 	}
 
 	soldiers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 125
 	}
 
 	farmers = {
-		culture = flemish
+		culture = dutch
 		religion = catholic
 		size = 10275
 	}

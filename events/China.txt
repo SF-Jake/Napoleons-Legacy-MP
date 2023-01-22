@@ -1946,7 +1946,6 @@ country_event = {
 		}
 		inherit = MCK
 		primary_culture = beifaren
-		add_accepted_culture = nanfaren
 		remove_country_modifier = late_qing_reform
 		remove_country_modifier = sunset_of_qing
 		remove_country_modifier = conser_of_qing

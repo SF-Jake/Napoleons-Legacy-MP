@@ -1104,6 +1104,11 @@ the_walhalla = {
 	icon = 15
 }
 
+### PLC - Poland ###
+plc_buff = {
+	mobilisation_size = 0.025
+}
+
 ######CB generation######
  CB_gen_plus = {
 	cb_generation_speed_modifier = 0.25

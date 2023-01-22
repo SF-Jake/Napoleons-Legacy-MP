@@ -87,13 +87,13 @@
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 25
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 1475
 	}
@@ -971,13 +971,13 @@
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 25
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 1475
 	}
@@ -1027,13 +1027,13 @@
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 10
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 490
 	}
@@ -1225,13 +1225,13 @@
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 75
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 2925
 	}
@@ -1345,13 +1345,13 @@
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 10
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 490
 	}

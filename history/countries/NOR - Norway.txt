@@ -1,5 +1,5 @@
 capital = 313
-primary_culture = norwegian
+primary_culture = danish
 culture = sami
 religion = protestant
 government = hms_government

@@ -24,6 +24,7 @@ upper_house = {
 admin_reform = yes_admin_reform
 foreign_weapons = yes_foreign_weapons
 military_constructions = yes_military_constructions
+foreign_training = yes_foreign_training
 
 post_napoleonic_thought = 1
 flintlock_rifles = 1

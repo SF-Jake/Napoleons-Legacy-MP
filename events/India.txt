@@ -1090,10 +1090,6 @@ country_event = {
 			}
 		}
 		change_tag = HND
-		add_accepted_culture = assamese
-		add_accepted_culture = bihari
-		add_accepted_culture = manipuri
-		add_accepted_culture = oriya
 		add_accepted_culture = sinhala
 		add_accepted_culture = avadhi
 		add_accepted_culture = kanauji
@@ -1102,8 +1098,6 @@ country_event = {
 		add_accepted_culture = gujarati
 		add_accepted_culture = marathi
 		add_accepted_culture = rajput
-		add_accepted_culture = kannada
-		add_accepted_culture = malayalam
 		add_accepted_culture = tamil
 		add_accepted_culture = telegu
 		any_country = {

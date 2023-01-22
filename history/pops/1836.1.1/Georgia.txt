@@ -99,31 +99,31 @@
 	}
 
 	aristocrats = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 450
 	}
 
 	soldiers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	farmers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 2400
 	}
@@ -233,31 +233,31 @@
 	}
 
 	aristocrats = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 150
 	}
 
 	soldiers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	farmers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 2700
 	}
@@ -339,31 +339,31 @@
 	}
 
 	aristocrats = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 100
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 250
 	}
 
 	soldiers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 50
 	}
 
 	farmers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 4550
 	}

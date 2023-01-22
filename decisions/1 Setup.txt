@@ -20,6 +20,20 @@ political_decisions = {
 					duration = -1
 				}
 			}
+			PLC = {
+				add_country_modifier = {
+					name = plc_buff
+					duration = 8760
+				}
+			}
+			AUS = {
+				any_pop = {
+					limit = {
+						has_pop_culture = hungarian
+					}
+					literacy = 0.2
+				}
+			}
 			any_country = {
 				limit = {
 					ai = no

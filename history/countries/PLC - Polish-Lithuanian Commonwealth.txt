@@ -1,6 +1,6 @@
 capital = 706
 primary_culture = polish
-culture = lithuanian
+culture = byelorussian
 religion = catholic
 government = prussian_constitutionalism
 plurality = 25.0

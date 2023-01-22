@@ -95,7 +95,6 @@ enact_triple_monarchy = {
 			}		
 			add_accepted_culture = croat
 			add_accepted_culture = bosniak
-			add_accepted_culture = slovene
 			change_tag = DNC
 			TUR_788 = {
 				add_core = DNC

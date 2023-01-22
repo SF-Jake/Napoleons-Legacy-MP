@@ -55,6 +55,7 @@ political_decisions = {
 			add_accepted_culture = bosniak
 			add_accepted_culture = berber
 			set_country_flag = tanzimat_reforms_enacted
+		}
 	}
 	
 	kanun_i_esasi = {

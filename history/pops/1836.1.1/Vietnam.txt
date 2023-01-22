@@ -51,19 +51,19 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 50
 	}
 
 	artisans = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 1250
 	}
 
 	farmers = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 700
 	}
@@ -137,19 +137,19 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 50
 	}
 
 	artisans = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 1250
 	}
 
 	farmers = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 700
 	}
@@ -419,19 +419,19 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 75
 	}
 
 	artisans = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 1650
 	}
 
 	farmers = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 1275
 	}
@@ -563,19 +563,19 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 75
 	}
 
 	artisans = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 4000
 	}
 
 	farmers = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 2925
 	}
@@ -717,19 +717,19 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 25
 	}
 
 	artisans = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 550
 	}
 
 	farmers = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 425
 	}
@@ -905,19 +905,19 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 75
 	}
 
 	artisans = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 2100
 	}
 
 	farmers = {
-		culture = yue
+		culture = beifaren
 		religion = mahayana
 		size = 1825
 	}
@@ -1071,25 +1071,25 @@
 	}
 
 	clergymen = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 300
 	}
 
 	artisans = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 1450
 	}
 
 	soldiers = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 250
 	}
 
 	farmers = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 27000
 	}
@@ -1127,25 +1127,25 @@
 	}
 
 	clergymen = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 150
 	}
 
 	artisans = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 800
 	}
 
 	soldiers = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 150
 	}
 
 	farmers = {
-		culture = khmer
+		culture = vietnamese
 		religion = theravada
 		size = 14900
 	}

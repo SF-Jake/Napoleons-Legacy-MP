@@ -507,7 +507,7 @@ country_event = {
 		prestige = 3
 		any_pop = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}
@@ -557,7 +557,7 @@ country_event = {
 		name = "EVTOPTA36401" 
 		any_pop = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}
@@ -605,7 +605,7 @@ country_event = {
 		prestige = 5
 		any_pop = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}
@@ -653,25 +653,25 @@ country_event = {
 		prestige = 5
 		labourers = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}
 		farmers = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}
 		artisans = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}
 		craftsmen = {
 			limit = { 
-				has_pop_culture = norwegian
+				has_pop_culture = danish
 			}
 			consciousness = 1
 		}

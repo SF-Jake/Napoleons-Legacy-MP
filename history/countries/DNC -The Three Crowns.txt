@@ -2,7 +2,6 @@ capital = 619
 primary_culture = south_german
 culture = croat
 culture = serb
-culture = slovene
 culture = hungarian
 religion = catholic
 government = absolute_monarchy

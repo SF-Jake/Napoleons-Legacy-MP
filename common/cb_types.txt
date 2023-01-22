@@ -2685,7 +2685,6 @@ treaty_port_casus_belli = {
 				}
 				THIS = {
 					civilized = yes
-					NOT = { primary_culture = nanfaren }
 					NOT = { primary_culture = beifaren }
 					NOT = { primary_culture = manchu }
 					num_of_ports = 1

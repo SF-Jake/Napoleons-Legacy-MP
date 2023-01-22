@@ -175,19 +175,19 @@
 	}
 
 	clergymen = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 25
 	}
 
 	artisans = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 100
 	}
 
 	farmers = {
-		culture = armenian
+		culture = kurdish
 		religion = orthodox
 		size = 1875
 	}

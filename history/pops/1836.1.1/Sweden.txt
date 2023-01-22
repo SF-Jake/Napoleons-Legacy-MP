@@ -102,7 +102,7 @@
 	}
 
 	labourers = {
-		culture = norwegian
+		culture = danish
 		religion = protestant
 		size = 1000
 	}
@@ -134,7 +134,7 @@
 	}
 
 	farmers = {
-		culture = finnish
+		culture = swedish
 		religion = protestant
 		size = 1000
 	}
@@ -166,7 +166,7 @@
 	}
 
 	artisans = {
-		culture = finnish
+		culture = swedish
 		religion = protestant
 		size = 100
 	}
@@ -178,7 +178,7 @@
 	}
 
 	farmers = {
-		culture = finnish
+		culture = swedish
 		religion = protestant
 		size = 1000
 	}
