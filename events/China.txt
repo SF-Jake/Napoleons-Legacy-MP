@@ -2971,3 +2971,26 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	
+	id = 97671
+	title = "China Nerf" #The Northern Islands
+	desc = ""
+	picture = "Southpole3"
+	
+	trigger = {
+		OR = {
+			tag = CHI
+			tag = TPG
+		}
+		NOT = { has_country_modifier = unciv_research_points_on_conquer }
+	}
+
+	option = {
+		name = "Doh"
+		add_country_modifier = {
+			name = unciv_research_points_on_conquer
+			duration = -1
+		}
+	}
+}

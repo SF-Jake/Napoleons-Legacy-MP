@@ -2788,3 +2788,268 @@ country_event = {
 		GHO = { civilized = yes }
 	}
 }
+
+#########################################################################
+# 							RELEASE VASSALS								#
+#########################################################################
+country_event = {
+	id = 91306
+	title = "EVTNAME91306"
+	desc = "EVTDESC91306"
+	picture = upper_house
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91306"
+		any_country = {
+			limit = { vassal_of = THIS }
+			country_event = { id = 91307 days = 0 }
+		}
+	}
+	option = {
+		name = "EVTOPTB91306"
+	}
+}
+country_event = {
+	id = 91307
+	title = "EVTNAME91307"
+	desc = "EVTDESC91307"
+	picture = upper_house
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91307"
+		overlord = { country_event = { id = 91308 days = 0} }
+	}
+}
+country_event = {
+	id = 91308
+	title = "EVTNAME91308"
+	desc = "EVTDESC91308"
+	picture = upper_house
+
+	allow_multiple_instances = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91308"
+		release_vassal = FROM
+	}
+	option = {
+		name = "EVTOPTB91308"
+	}
+}
+
+#########################################################################
+# 						AI MINE EXPANSION								#
+#########################################################################
+country_event = {
+	id = 91311
+	title = "AI Mine Expansion Trigger"
+
+
+	trigger = {
+		year = 1837
+		tag = JAN
+		NOT = { has_country_modifier = admin_counter }
+	}
+
+	option = {
+		any_country = {
+			any_owned = {
+				limit = {
+					state_scope = {
+						NOT = { total_pops = 150000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1860
+					state_scope = {
+						NOT = { total_pops = 200000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1885
+					state_scope = {
+						NOT = { total_pops = 300000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					state_scope = {
+						NOT = { total_pops = 450000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1860 }
+					state_scope = { total_pops = 150000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1885 }
+					state_scope = { total_pops = 200000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1910 }
+					state_scope = { total_pops = 300000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					state_scope = { total_pops = 450000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					state_scope = {
+						total_pops = 150000
+						NOT = { total_pops = 300000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1860
+					state_scope = {
+						total_pops = 200000
+						NOT = { total_pops = 400000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1885
+					state_scope = {
+						total_pops = 300000
+						NOT = { total_pops = 600000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					state_scope = {
+						total_pops = 450000
+						NOT = { total_pops = 900000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1860 }
+					state_scope = { total_pops = 300000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1885 }
+					state_scope = { total_pops = 400000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1910 }
+					state_scope = { total_pops = 600000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					state_scope = { total_pops = 900000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			limit = {
+				ai = yes
+				money = 1000000
+				any_owned_province = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= oil
+						trade_goods= sulphur
+						trade_goods= precious_metal
+					}
+					NOT = { has_province_modifier = mine_expansion }
+				}
+			}
+			country_event = { id = 91312 days = 0 }
+		}
+	}
+}

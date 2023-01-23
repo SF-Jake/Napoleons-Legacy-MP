@@ -18,6 +18,25 @@ political_decisions = {
 				activate_technology = early_classical_theory_and_critique
 				leadership = 40
 			}
+			any_country = {
+				any_owned = {
+					limit = {
+						state_scope = {
+							NOT = { total_pops = 150000 }
+						}
+					}
+					add_core = SMA
+				}
+				any_owned = {
+					limit = {
+						state_scope = {
+							total_pops = 150000
+							NOT = { total_pops = 300000 }
+						}
+					}
+					add_core = MST
+				}
+			}
 			CHI = {
 				add_country_modifier = {
 					name = unciv_research_points_on_conquer

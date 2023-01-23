@@ -99,9 +99,11 @@ on_colony_to_state =
 {
 	100 = 70000
 	100 = 70001
+	100 = 70004
 }
 on_state_conquest = {
 	100 = 70000
+	100 = 70004
 }
 
 on_colony_to_state_free_slaves =
@@ -115,7 +117,7 @@ on_debtor_default =
 
 on_debtor_default_small =
 {
-	100 = 70004
+	100 = 70005
 }
 
 on_debtor_default_second =
