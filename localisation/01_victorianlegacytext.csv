@@ -995,3 +995,11 @@ mine_expansion;Mine Expansion;;;;;;;;;;;;;x
 EVTNAME70004;RGO Expansion in $STATE$;;;;;;;;;;;;;x
 EVTDESC70004;In Victoria 2, when a province changes owners or is turned from a colony to a state, all old province modifiers are automatically removed. This province event adds an RGO expansion modifier to any recently acquired provinces and former colonies that previously had them.;;;;;;;;;;;;;x
 EVTOPTA70004;Excellent.;;;;;;;;;;;;;x
+acquire_small_state;Acquire small state;;;;;;;;;;;;;x
+acquire_small_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_small_state_short;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_small_state_desc;Can use on states <150K population before 1860, <200k between 1860-1885, <300k between 1885-1910, <450k after 1910.;;;;;;;;;;;;;x
+acquire_mid_state;Acquire medium state;;;;;;;;;;;;;x
+acquire_mid_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_mid_state_short;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_mid_state_desc;Can use on states <300K population before 1860, <400k between 1860-1885, <600k between 1885-1910, <900k after 1910.;;;;;;;;;;;;;x
