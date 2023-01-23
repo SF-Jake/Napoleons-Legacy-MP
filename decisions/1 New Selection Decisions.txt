@@ -1,0 +1,3401 @@
+political_decisions = {
+#########################################################################
+# 								RELEASE VASSALS							#
+#########################################################################
+release_vassals = {
+	alert = no
+	picture = gtfo
+	potential = {
+		has_country_flag = show_options_Y
+		ai = no
+		num_of_vassals = 1
+	}
+	allow = {
+	}
+	effect = {
+		country_event = { id = 91306 days = 0 }
+	}
+}
+
+#########################################################################
+# 							SUPPRESSION									#
+#########################################################################
+
+	zcountry_suppression = {
+		picture = martial_law
+		alert = no
+		potential = {
+			has_country_flag = show_options_Y
+			ai = no
+		}	
+		allow = {
+			civilized = yes
+		}
+		effect = {
+			country_event = { id = 91705 days = 0 }
+		}
+	}
+
+#########################################################################
+# 							UNOCCUPY PROVINCES							#
+#########################################################################
+
+unoccupy_provinces = {
+	picture = cease_fire
+	potential = {
+		has_country_flag = show_options_Y
+		ai = no
+	}
+	allow = {
+		war = yes
+		NOT = { has_country_modifier = requesting_cease_fire }
+		war_countries = { ai = no }
+	}
+	effect = {
+		add_country_modifier = { name = requesting_cease_fire duration = 20 }
+		any_owned = {
+			limit = {
+				NOT = { controlled_by = THIS }
+				controller = { ai = no }
+			}
+			controller = {
+				country_event = { id = 91711 days = 0 }
+			}
+		}
+	}
+}
+
+#########################################################################
+# 							PROVINCE SUPPLY								#
+#########################################################################
+zcreate_supply_depot = {
+	picture = supply_depot
+	alert = yes
+	potential = {
+		has_country_flag = show_options_G
+		NOT = { any_owned_province = { has_province_modifier = supply_depot } }
+		ai = no
+	}
+	allow = {
+		money = 500000
+		any_owned_province = { has_building = province_selector }
+	}
+	effect = {
+		treasury = -500000
+		random_owned = {
+			limit = { has_building = province_selector }
+			add_province_modifier = { name = supply_depot duration = -1 }
+			province_selector = -1
+		}
+	}
+}
+
+zdismantle_supply_depot = {
+	picture = supply_depot
+	alert = no
+	potential = {
+		has_country_flag = show_options_G
+		any_owned_province = { has_province_modifier = supply_depot }
+		ai = no
+	}
+	allow = {
+	}
+	effect = {
+		any_owned = {
+			limit = { has_province_modifier = supply_depot }
+			remove_province_modifier = supply_depot
+		}
+	}
+}
+
+#########################################################################
+# 							RGO EXPANSION								#
+#########################################################################
+
+	zprovince_mining = {
+		picture = blood_and_iron
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { any_owned_province = { has_building = province_selector	} }
+		}
+		allow = {
+			money = 500000
+			any_owned_province = { 
+				has_building = province_selector
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= sulphur
+					trade_goods= oil
+					trade_goods= precious_metal
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+					NOT = {
+						has_province_modifier = mine_expansion
+					}
+				}
+				add_province_modifier = { name = mine_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+
+
+	zprovince_mining_expansion = {
+		picture = blood_and_iron
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+			}
+		}
+		allow = {
+			money = 250000
+			any_owned_province = { 
+				has_building = province_selector
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= sulphur
+					trade_goods= oil
+					trade_goods= precious_metal
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+			}
+		}
+		effect = {
+			money = -250000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+					NOT = {
+						has_province_modifier = mine_expansion
+					}
+				}
+				add_province_modifier = { name = mine_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_500k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				NOT = {
+					state_scope = { total_pops = 500000 }
+				}
+			}
+		}
+		allow = {
+			money = 500000
+			any_owned_province = {
+				has_building = province_selector
+				NOT = {
+					state_scope = { total_pops = 500000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					NOT = { state_scope = { total_pops = 500000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						limit = {
+							NOT = { has_pop_type = labourers }
+						}
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						add_core = PRO
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_1M = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 500000 }
+				NOT = {
+					state_scope = { total_pops = 1000000 }
+				}
+			}
+		}
+		allow = {
+			money = 1000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 500000 }
+				NOT = {
+					state_scope = { total_pops = 1000000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 500000 }
+					NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						limit = {
+							NOT = { has_pop_type = labourers }
+						}
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						add_core = PRO
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_2M = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 1000000 }
+				NOT = {
+					state_scope = { total_pops = 2000000 }
+				}
+			}
+		}
+		allow = {
+			money = 2000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 1000000 }
+				NOT = {
+					state_scope = { total_pops = 2000000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 1000000 }
+					NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						limit = {
+							NOT = { has_pop_type = labourers }
+						}
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						add_core = PRO
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_4M = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 2000000 }
+				NOT = {
+					state_scope = { total_pops = 4000000 }
+				}
+			}
+		}
+		allow = {
+			money = 4000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 2000000 }
+				NOT = {
+					state_scope = { total_pops = 4000000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 2000000 }
+					NOT = { state_scope = { total_pops = 4000000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						limit = {
+							NOT = { has_pop_type = labourers }
+						}
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						add_core = PRO
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_4M+ = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 4000000 }
+			}
+		}
+		allow = {
+			money = 6000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 4000000 }
+				NOT = {
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 4000000 }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						limit = {
+							NOT = { has_pop_type = labourers }
+						}
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						add_core = PRO
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zprovince_agriculture_expansion = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { any_owned_province = { has_building = province_selector	} }
+		}	
+		allow = {
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { has_province_modifier = agriculture_expansion }
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_100k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				NOT = {
+					total_pops = 100000
+				}
+			}
+		}	
+		allow = {
+			money = 100000
+			any_owned_province = {
+				has_building = province_selector
+				NOT = {
+					total_pops = 100000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -100000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					NOT = {
+						OR = {
+							total_pops = 100000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_200k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 100000
+				NOT = {
+					total_pops = 200000
+				}
+			}
+		}	
+		allow = {
+			money = 200000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 100000
+				NOT = {
+					total_pops = 200000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 100000
+					NOT = {
+						OR = {
+							total_pops = 200000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_300k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 200000
+				NOT = {
+					total_pops = 300000
+				}
+			}
+		}	
+		allow = {
+			money = 300000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 200000
+				NOT = {
+					total_pops = 300000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -300000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 200000
+					NOT = {
+						OR = {
+							total_pops = 300000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_400k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 300000
+				NOT = {
+					total_pops = 400000
+				}
+			}
+		}	
+		allow = {
+			money = 400000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 300000
+				NOT = {
+					total_pops = 400000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 300000
+					NOT = {
+						OR = {
+							total_pops = 400000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_500k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 400000
+				NOT = {
+					total_pops = 500000
+				}
+			}
+		}	
+		allow = {
+			money = 500000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 400000
+				NOT = {
+					total_pops = 500000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 400000
+					NOT = {
+						OR = {
+							total_pops = 500000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_600k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 500000
+				NOT = {
+					total_pops = 600000
+				}
+			}
+		}	
+		allow = {
+			money = 600000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 500000
+				NOT = {
+					total_pops = 600000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 500000
+					NOT = {
+						OR = {
+							total_pops = 600000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_700k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 600000
+				NOT = {
+					total_pops = 700000
+				}
+			}
+		}	
+		allow = {
+			money = 700000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 600000
+				NOT = {
+					total_pops = 700000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -700000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 600000
+					NOT = {
+						OR = {
+							total_pops = 1000000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+
+	zprovince_agriculture_expansion_800k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 700000
+				NOT = {
+					total_pops = 800000
+				}
+			}
+		}	
+		allow = {
+			money = 800000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 700000
+				NOT = {
+					total_pops = 800000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 700000
+					NOT = {
+						OR = {
+							total_pops = 800000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_900k = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 800000
+				NOT = {
+					total_pops = 900000
+				}
+			}
+		}	
+		allow = {
+			money = 900000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 800000
+				NOT = {
+					total_pops = 900000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -900000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 800000
+					NOT = {
+						OR = {
+							total_pops = 900000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_1M = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 900000
+				NOT = {
+					total_pops = 1000000
+				}
+			}
+		}	
+		allow = {
+			money = 1000000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 900000
+				NOT = {
+					total_pops = 1000000
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 900000
+					NOT = {
+						OR = {
+							total_pops = 1000000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+	
+	zprovince_agriculture_expansion_1M+ = {
+		picture = rgo_expansion
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 1000000
+			}
+		}	
+		allow = {
+			money = 1200000
+			any_owned_province = { 
+				has_building = province_selector
+				total_pops = 1000000
+				NOT = {
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 1000000
+					NOT = {
+						OR = {
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
+					}
+				}
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
+				add_core = PRO
+				province_selector = -1
+			}
+		}
+	}
+
+#########################################################################
+# 						CHANGE AGRICULTURE RGO							#
+#########################################################################
+	zprovince_rgo_change_agriculture = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { any_owned_province = { has_building = province_selector	} }
+			NOT = { has_country_flag = deciding }
+		}	
+		allow = {
+			any_owned_province = {
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				province_event = { id = 91737 days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_100k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 200000
+			any_owned_province = {
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -200000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					NOT = { total_pops = 100000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					NOT = { total_pops = 100000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					NOT = { total_pops = 100000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					NOT = { total_pops = 100000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_200k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 100000
+				NOT = { total_pops = 200000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 400000
+			any_owned_province = {
+				total_pops = 100000
+				NOT = { total_pops = 200000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -400000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_300k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 200000
+				NOT = { total_pops = 300000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 600000
+			any_owned_province = {
+				total_pops = 200000
+				NOT = { total_pops = 300000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -600000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+
+	zprovince_rgo_change_agriculture_400k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 300000
+				NOT = { total_pops = 400000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 800000
+			any_owned_province = {
+				total_pops = 300000
+				NOT = { total_pops = 400000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -800000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_500k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 400000
+				NOT = { total_pops = 500000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 1000000
+			any_owned_province = {
+				total_pops = 400000
+				NOT = { total_pops = 500000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1000000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_600k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 500000
+				NOT = { total_pops = 600000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 1200000
+			any_owned_province = {
+				total_pops = 500000
+				NOT = { total_pops = 600000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1200000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_700k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 600000
+				NOT = { total_pops = 700000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 1400000
+			any_owned_province = {
+				total_pops = 600000
+				NOT = { total_pops = 700000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1400000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_800k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 700000
+				NOT = { total_pops = 800000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 1600000
+			any_owned_province = {
+				total_pops = 700000
+				NOT = { total_pops = 800000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1600000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_900k = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 800000
+				NOT = { total_pops = 900000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 1800000
+			any_owned_province = {
+				total_pops = 800000
+				NOT = { total_pops = 900000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1800000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_1M = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 900000
+				NOT = { total_pops = 1000000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 2000000
+			any_owned_province = {
+				total_pops = 900000
+				NOT = { total_pops = 1000000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_1.2M = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 1000000
+				NOT = { total_pops = 1200000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 2400000
+			any_owned_province = {
+				total_pops = 1000000
+				NOT = { total_pops = 1200000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1200000
+			money = -1200000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_1.4M = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 1200000
+				NOT = { total_pops = 1400000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 2800000
+			any_owned_province = {
+				total_pops = 1200000
+				NOT = { total_pops = 1400000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1400000
+			money = -1400000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_1.6M = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 1400000
+				NOT = { total_pops = 1600000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 3200000
+			any_owned_province = {
+				total_pops = 1400000
+				NOT = { total_pops = 1600000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1600000
+			money = -1600000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_1.8M = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 1600000
+				NOT = { total_pops = 1800000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 3600000
+			any_owned_province = {
+				total_pops = 1600000
+				NOT = { total_pops = 1800000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1800000
+			money = -1800000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_2M = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 1800000
+				NOT = { total_pops = 2000000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 4000000
+			any_owned_province = {
+				total_pops = 1800000
+				NOT = { total_pops = 2000000 }
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 1800000
+					NOT = { total_pops = 2000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1800000
+					NOT = { total_pops = 2000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1800000
+					NOT = { total_pops = 2000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 1800000
+					NOT = { total_pops = 2000000 }
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+	zprovince_rgo_change_agriculture_2M+ = {
+		picture = agriculture
+		potential = {
+			has_country_flag = show_options_G
+			ai = no
+			NOT = { has_country_flag = deciding }
+			any_owned_province = {
+				total_pops = 2000000
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}	
+		allow = {
+			money = 5000000
+			any_owned_province = {
+				total_pops = 2000000
+				has_building = province_selector
+				NOT = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = tropical_wood
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			money = -1000000
+			set_country_flag = deciding
+			random_owned = {
+				limit = {
+					total_pops = 2000000
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+				}
+				add_province_modifier = { name = changing_agriculture duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 2000000
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91739  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 2000000
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91738  days = 0 }
+			}
+			random_owned = {
+				limit = {
+					total_pops = 2000000
+					has_building = province_selector
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+					has_province_modifier = changing_agriculture
+				}
+				remove_province_modifier = changing_agriculture
+				province_event = { id = 91737  days = 0 }
+			}
+		}
+	}
+	
+#########################################################################
+# 						RESET PROVINCE SELECTOR							#
+#########################################################################
+
+	zzreset_province_selector = {
+		picture = province_selector
+		potential = {
+			ai = no
+		}	
+		allow = {
+			any_owned_province = { has_building = province_selector }
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				province_selector = -1
+			}
+		}
+	}
+}

@@ -680,3 +680,326 @@ defence_4.4;§R+4 Defence;;;;;;;;;;;;;;
 defence_5.1;§W+5 Defence;;;;;;;;;;;;;;
 plc_buff;PLC Mob Buff;;;;;;;;;;;;;;
 CSA;Confederate States of America;;;;;;;;;;;;;;
+province_selector;Province Selector;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+economic_thought_and_critique;National Ideas;;;;;;;;;;;;;
+early_classical_theory_and_critique;Unlock Province Selector;;;;;;;;;;;;;
+late_classical_theory;1st National Idea;;;;;;;;;;;;;
+collectivist_theory;2nd National Idea;;;;;;;;;;;;;
+the_historical_theory;3rd National Idea;;;;;;;;;;;;;
+neoclassical_theory;4th National Idea;;;;;;;;;;;;;
+keynesian_economics;5th National Idea;;;;;;;;;;;;;
+neoliberal_theory;6th National Idea;;;;;;;;;;;;;;
+commerce_row_completion1;Commerce Row Completion 1;;;;;;;;;x;;;;
+commerce_row_completion1_desc; ;;;;;;;;;x;;;;
+commerce_row_completion2;Commerce Row Completion 2;;;;;;;;;x;;;;
+commerce_row_completion2_desc; ;;;;;;;;;x;;;;
+commerce_row_completion3;Commerce Row Completion 3;;;;;;;;;x;;;;
+commerce_row_completion3_desc; ;;;;;;;;;x;;;;
+commerce_row_completion4;Commerce Row Completion 4\n§G-10% §WSupply Consumption;;;;;;;;;x;;;;
+commerce_row_completion4_desc; ;;;;;;;;;x;;;;
+commerce_row_completion5;Commerce Row Completion 5\n§G-50% §WPension Level;;;;;;;;;x;;;;
+commerce_row_completion5_desc; ;;;;;;;;;x;;;;
+commerce_row_completion6;Commerce Row Completion 6;;;;;;;;;x;;;;
+commerce_row_completion6_desc; ;;;;;;;;;x;;;;
+culture_row_completion1;Culture Row Completion 1;;;;;;;;;x;;;;
+culture_row_completion1_desc; ;;;;;;;;;x;;;;
+culture_row_completion2;Culture Row Completion 2;;;;;;;;;x;;;;
+culture_row_completion2_desc; ;;;;;;;;;x;;;;
+culture_row_completion3;Culture Row Completion 3\n§G+5 §WLand Unit Starting Experience;;;;;;;;;x;;;;
+culture_row_completion3_desc; ;;;;;;;;;x;;;;
+culture_row_completion4;Culture Row Completion 4;;;;;;;;;x;;;;
+culture_row_completion4_desc; ;;;;;;;;;x;;;;
+culture_row_completion5;Culture Row Completion 5;;;;;;;;;x;;;;
+culture_row_completion5_desc; ;;;;;;;;;x;;;;
+culture_row_completion6;Culture Row Completion 6;;;;;;;;;x;;;;
+culture_row_completion6_desc; ;;;;;;;;;x;;;;
+industry_row_completion1;Industry Row Completion 1;;;;;;;;;x;;;;
+industry_row_completion1_desc; ;;;;;;;;;x;;;;
+industry_row_completion2;Industry Row Completion 2;;;;;;;;;x;;;;
+industry_row_completion2_desc; ;;;;;;;;;x;;;;
+industry_row_completion3;Industry Row Completion 3;;;;;;;;;x;;;;
+industry_row_completion3_desc; ;;;;;;;;;x;;;;
+industry_row_completion4;Industry Row Completion 4;;;;;;;;;x;;;;
+industry_row_completion4_desc; ;;;;;;;;;x;;;;
+industry_row_completion5;Industry Row Completion 5;;;;;;;;;x;;;;
+industry_row_completion5_desc; ;;;;;;;;;x;;;;
+navy_row_completion1;Navy Row Completion 1;;;;;;;;;x;;;;
+navy_row_completion1_desc; ;;;;;;;;;x;;;;
+navy_row_completion2;Navy Row Completion 2;;;;;;;;;x;;;;
+navy_row_completion2_desc; ;;;;;;;;;x;;;;
+navy_row_completion3;Navy Row Completion 3;;;;;;;;;x;;;;
+navy_row_completion3_desc; ;;;;;;;;;x;;;;
+navy_row_completion4;Navy Row Completion 4;;;;;;;;;x;;;;
+navy_row_completion4_desc; ;;;;;;;;;x;;;;
+army_row_completion1;Army Row Completion 1;;;;;;;;;x;;;;
+army_row_completion1_desc; ;;;;;;;;;x;;;;
+army_row_completion2;Army Row Completion 2\n§G+0.05 §WLeadership Points;;;;;;;;;x;;;;
+army_row_completion2_desc; ;;;;;;;;;x;;;;
+army_row_completion3;Army Row Completion 3;;;;;;;;;x;;;;
+army_row_completion3_desc; ;;;;;;;;;x;;;;
+army_row_completion4;Army Row Completion 4;;;;;;;;;x;;;;
+army_row_completion4_desc; ;;;;;;;;;x;;;;
+PS_unlocked;PS Building Unlocked;;;;;;;;;;;;;x
+PS_unlocked_desc;You can now build Province Selector buildings.;;;;;;;;;;;;;x
+PRO;§WProvince RGO Expansion Flag\n§YIn Victoria 2, when a province changes owners, all old province modifiers are automatically removed. This flag allows RGO expansions to be remembered and transferred if a province changes ownership.;;;;;;;;;;;;;x
+SMA;§YSmall State CB Flag\n§WThis flag enables the Acquire Small State CB to be used against this state and is automatically added to all states with less than 150K population before 1860, less than 200k between 1860-1885, less than 300k between 1885-1910, and less than 450k after 1910. When this state's population rises above the small state threshold this flag will be removed at the start of the following year. §RSmall State CB cannot be used on capital states or uncivilized Sub-Saharan African nations.§!;;;;;;;;;;;;;x
+MST;§YMedium State CB Flag\n§WThis flag enables the Acquire Small State CB to be used against this state and is automatically added to all states with less than 300K population before 1860, less than 400k between 1860-1885, less than 600k between 1885-1910, and less than 900k after 1910. When this state's population rises above the small state threshold this flag will be removed at the start of the following year. §RMedium State CB cannot be used on capital states or uncivilized Sub-Saharan African nations.§!;;;;;;;;;;;;;x
+national_idea1;§GNational Idea;;;;;;;;;;;;;;
+national_idea1_desc;This invention unlocks another national idea.;;;;;;;;;;;;;;
+national_idea1_invented;1 National Idea;;;;;;;;;;;;;;
+national_idea2;§GNational Idea;;;;;;;;;;;;;;
+national_idea2_desc;This invention unlocks another national idea.;;;;;;;;;;;;;;
+national_idea2_invented;2 National Ideas;;;;;;;;;;;;;;
+national_idea3;§GNational Idea;;;;;;;;;;;;;;
+national_idea3_desc;This invention unlocks another national idea.;;;;;;;;;;;;;;
+national_idea3_invented;3 National Ideas;;;;;;;;;;;;;;
+national_idea4;§GNational Idea;;;;;;;;;;;;;;
+national_idea4_desc;This invention unlocks another national idea.;;;;;;;;;;;;;;
+national_idea4_invented;4 National Ideas;;;;;;;;;;;;;;
+national_idea5;§GNational Idea;;;;;;;;;;;;;;
+national_idea5_desc;This invention unlocks another national idea.;;;;;;;;;;;;;;
+national_idea5_invented;5 National Ideas;;;;;;;;;;;;;;
+national_idea6;§GNational Idea;;;;;;;;;;;;;;
+national_idea6_desc;This invention unlocks another national idea.;;;;;;;;;;;;;;
+national_idea6_invented;6 National Ideas;;;;;;;;;;;;;;
+army_morale_idea;Army Morale National Idea;;;;;;;;;;;;;;
+army_morale_idea_desc;This effect is additive, e.g. if your army morale is 200%, this will raise it to 250%.;;;;;;;;;;;;;;
+army_organisation_idea;Army Organisation National Idea;;;;;;;;;;;;;;
+army_organisation_idea_desc;This effect is multiplicative. The max organization of a land unit is (base organization of unit + army organization from techs) * (1 + land organization). An infantry brigade has a base organization of 30, so without any techs researched the max org it will have with this modifier is (30 + 0) * (1 + 0.2) = 36.;;;;;;;;;;;;;;
+military_supplies;Military Supplies National Idea\n§WSupply Consumption §G-15%;;;;;;;;;;;;;;
+military_supplies_desc;This reduces supply consumption for all units by 15%.;;;;;;;;;;;;;;
+military_supplies_idea;Military Supplies National Idea;;;;;;;;;;;;;;
+military_supplies_idea_desc;This gives -15% Supply Consumption Bonus. For example, if the base supply consumption of your armies is increased to 200% from techs, this will lower it to 170%.;;;;;;;;;;;;;;
+military_hospitals_idea;Military Hospital Idea\n§WMilitary Hospitals: §G+20%;;;;;;;;;;;;;;
+military_hospitals_idea_desc;This bonus reduces POP deaths from combat casualties to a rate of 1 to 0.208, down from a base rate of 1 to 0.25. POP deaths from combat casualties is calculated as SOLDIER_TO_POP_DAMAGE/(1 + military_hospital modifier). The base SOLDIER_TO_POP_DAMAGE in this mod is 0.25, so a military hospital modifier of 20% or 0.2, reduces POP deaths to 0.25/(1 + 0.2) = 0.208.;;;;;;;;;;;;;;
+military_hospitals_idea_invention;Military Hospitals National Idea;;;;;;;;;;;;;;
+military_hospitals_idea_invention_desc;This bonus reduces POP deaths from combat casualties to a rate of 1 to 0.208, down from a base rate of 1 to 0.25. POP deaths from combat casualties is calculated as SOLDIER_TO_POP_DAMAGE/(1 + military_hospital modifier). The base SOLDIER_TO_POP_DAMAGE in this mod is 0.25, so a military hospital modifier of 20% (0.2), reduces POP deaths to 0.25/(1 + 0.2) = 0.208.;;;;;;;;;;;;;;
+army_experience_idea;Army Experience National Idea;;;;;;;;;;;;;;
+army_experience_idea_desc;Each point of experience lowers the damage taken during combat at the same rate as one point of military tactics.;;;;;;;;;;;;;;
+reinforce_rate_idea;Reinforce Rate Idea\n§WReinforcement: §G+15%;;;;;;;;;;;;;;
+reinforce_rate_idea_desc;This bonus increases reinforce rate by +15%. No matter the reinforce rate however, your units' reinforce rate is multiplied by the amount of supplies they are getting, so if your armies aren't getting any supplies they won't reinforce even with a large reinforce rate bonus.;;;;;;;;;;;;;;
+reinforce_rate_idea_invention;Reinforce Rate Idea;;;;;;;;;;;;;;
+reinforce_rate_idea_invention_desc;Your units' reinforce rate is multiplied by the amount of supplies they are getting, so if your armies aren't getting any supplies they won't reinforce even with a large reinforce rate bonus.;;;;;;;;;;;;;;
+leadership_idea;Leadership National Idea;;;;;;;;;;;;;;
+leadership_idea_desc;Increased Monthly Base Leadership.;;;;;;;;;;;;;;
+prestige_idea;Prestige National Idea;;;;;;;;;;;;;;
+prestige_idea_desc;Increased Monthly Base Prestige.;;;;;;;;;;;;;;
+navy_build_speed_idea;Navy Build Speed National Idea\n§WNavies: Build Time §G-30%\n§WLocal Ship Repair Speed: §G+50%;;;;;;;;;;;;;;
+navy_build_speed_idea_desc;Base build time of ships is reduced by 30% and repair is 50% faster. The base build time reduction stacks with base build time reductions from port levels and other techs.;;;;;;;;;;;;;;
+navy_build_speed_idea_modifier;Naval Build Speed National Idea;;;;;;;;;;;;;;
+navy_organisation_idea;Navy Organisation National Idea;;;;;;;;;;;;;;
+navy_organisation_idea_desc;This effect is multiplicative. The max organization of a naval unit is (base organization of unit + navy organization from techs) * (1 + navy organization). For example, a frigate has a base org of 30, and if it has +18 org from techs, the max org it will have with this modifier is (30 + 18) * (1 + 0.15) = 55.2.;;;;;;;;;;;;;;
+expansion_idea;Expansion National Idea;;;;;;;;;;;;;;
+expansion_idea_desc;Increased Monthly Infamy Decay.;;;;;;;;;;;;;;
+assimilation_idea;Assimilation National Idea;;;;;;;;;;;;;;
+assimilation_idea_desc;Assimilation rate is multiplied by the assimilation chance to determine the amount of assimilation in a POP. If either assimilation rate or chance is 0, or there is no assimilation target, then no assimilation will take place. POPs will never assimilate in a province they have a core in, so e.g. Romanian POPs in Romanian cored land won't assimilate but Romanian POPs in non Romanian land will assimilate.;;;;;;;;;;;;;;
+farming_idea;Farming National Idea;;;;;;;;;;;;;;
+farming_idea_desc;+Increased Farming Efficiency.;;;;;;;;;;;;;;
+mining_idea;Mining National Idea;;;;;;;;;;;;;;
+mining_idea_desc;Increased Mining Efficiency.;;;;;;;;;;;;;;
+consumer_goods_idea;Consumer Goods National Idea;;;;;;;;;;;;;;
+consumer_goods_idea_desc;Provides an output bonus to various factory produced consumer goods.;;;;;;;;;;;;;;
+industrial_goods_idea;Industrial Goods National Idea;;;;;;;;;;;;;;
+industrial_goods_idea_desc;Provides an output bonus to various factory produced industrial goods.;;;;;;;;;;;;;;
+domestic_idea;Unlock Migration Attraction National Idea;;;;;;;;;;;;;;
+domestic_idea_desc;Unlocks Migration Attraction decision, which redirects incoming immigrants and internal migrants to the targetted province. This does NOT increase the amount of outside POPs that immigrate to your country.;;;;;;;;;;;;;;
+education_idea;Education National Idea;;;;;;;;;;;;;;
+education_idea_desc;Increased Education Efficiency.;;;;;;;;;;;;;;
+zprovince_migration_reset_title;§RReset Province Migration;;;;;;;;;x;;;;
+zprovince_migration_reset_desc;Removes all current province migration modifiers.;;;;;;;;;x;;;;
+zstate_baby_boom_title;§GBaby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_desc;Gives a small baby boom modifier to the selected state and adds a 15 year cooldown timer. The duration is inversely proportional to the size of the state, e.g. a state with 90K population will have the modifier last 10x longer than a state with 900K population. Cannot be used on states above 1M population.;;;;;;;;;x;;;;
+zstate_baby_boom_100k_title;§G0-100k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_100k_desc;Gives a small baby boom modifier to the selected state for 3000 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_200k_title;§G100k-200k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_200k_desc;Gives a small baby boom modifier to the selected state for 2700 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_300k_title;§G200k-300k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_300k_desc;Gives a small baby boom modifier to the selected state for 2400 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_400k_title;§G300k-400k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_400k_desc;Gives a small baby boom modifier to the selected state for 2100 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_500k_title;§G400k-500k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_500k_desc;Gives a small baby boom modifier to the selected state for 1800 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_600k_title;§G500k-600k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_600k_desc;Gives a small baby boom modifier to the selected state for 1500 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_700k_title;§G600k-700k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_700k_desc;Gives a small baby boom modifier to the selected state for 1200 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_800k_title;§G700k-800k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_800k_desc;Gives a small baby boom modifier to the selected state for 900 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_900k_title;§G800k-900k State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_900k_desc;Gives a small baby boom modifier to the selected state for 600 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zstate_baby_boom_1M_title;§G900k-1M State Population Baby Boom;;;;;;;;;x;;;;
+zstate_baby_boom_1M_desc;Gives a small baby boom modifier to the selected state for 300 days and adds a 15 year cooldown timer.;;;;;;;;;x;;;;
+zprovince_mining_title;§GMine RGO Expansion.;;;;;;;;;x;;;;
+zprovince_mining_desc;Gives a permanent boost to mine size to the selected province.;;;;;;;;;x;;;;
+zprovince_mining_expansion_title;§GMine RGO Expansion.;;;;;;;;;x;;;;
+zprovince_mining_expansion_desc;Gives a permanent boost to mine size to the selected province. Costs 500,000 pounds.;;;;;;;;;x;;;;
+zprovince_large_mining_expansion_title;§GLarge Mine RGO Expansion.;;;;;;;;;x;;;;
+zprovince_large_mining_expansion_desc;Gives a permanent boost to mine size to the selected province. Costs 1,500,000 pounds.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_title;§GAgriculture RGO Expansion;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_desc;Gives a permanent boost to farm size to the selected province. Costs 100,000 pounds per every 100k POP in the province rounded up.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_100k_title;§G0-100k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_100k_desc;Costs 100,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_200k_title;§G100k-200k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_200k_desc;Costs 200,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_300k_title;§G200k-300k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_300k_desc;Costs 300,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_400k_title;§G300k-400k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_400k_desc;Costs 400,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_500k_title;§G400k-500k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_500k_desc;Costs 500,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_600k_title;§G500k-600k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_600k_desc;Costs 600,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_700k_title;§G600k-700k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_700k_desc;Costs 700,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_800k_title;§G700k-800k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_800k_desc;Costs 800,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_900k_title;§G800k-900k Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_800k_desc;Costs 900,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_1M_title;§G900k-1M Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_1M_desc;Costs 1,000,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_1M+_title;§G1M+ Province Agriculture RGO Expansion.;;;;;;;;;x;;;;
+zprovince_agriculture_expansion_1M+_desc;Costs 1,500,000 pounds to give a permanent boost to farm size to the selected province.;;;;;;;;;x;;;;
+zstate_agriculture_expansion_500k_title;§G0-500k State Agriculture RGO Expansion;;;;;;;;;x;;;;
+zstate_agriculture_expansion_500k_desc;Costs 500,000 pounds to give a permanent boost to farm size to every province in the selected state.;;;;;;;;;x;;;;
+zstate_agriculture_expansion_1M_title;§G500k-1M State Agriculture RGO Expansion;;;;;;;;;x;;;;
+zstate_agriculture_expansion_1M_desc;Costs 1,000,000 pounds to give a permanent boost to farm size to every province in the selected state.;;;;;;;;;x;;;;
+zstate_agriculture_expansion_2M_title;§G1M-2M State Agriculture RGO Expansion;;;;;;;;;x;;;;
+zstate_agriculture_expansion_2M_desc;Costs 2,000,000 pounds to give a permanent boost to farm size to every province in the selected state.;;;;;;;;;x;;;;
+zstate_agriculture_expansion_4M_title;§G2M-4M State Agriculture RGO Expansion;;;;;;;;;x;;;;
+zstate_agriculture_expansion_4M_desc;Costs 4,000,000 pounds to give a permanent boost to farm size to every province in the selected state.;;;;;;;;;x;;;;
+zstate_agriculture_expansion_4M+_title;§G4M+ State Agriculture RGO Expansion;;;;;;;;;x;;;;
+zstate_agriculture_expansion_4M+_desc;Costs 6,000,000 pounds to give a permanent boost to farm size to every province in the selected state.;;;;;;;;;x;;;;
+zprovince_blood_and_iron_title;§GBlood and Iron RGO.;;;;;;;;;x;;;;
+zprovince_blood_and_iron_desc;Gives a permanent RGO efficiency bonus and +0.03 militancy modifier to the selected province. Cannot use on gold mines and has a 10 year cooldown.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_title;§GChange Agriculture RGO;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_desc;Allows the switching of RGO in a province to the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years. Costs 100k pounds per every 100k POP in the province rounded up.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_100k_title;§G0-100k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_100k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_200k_title;§G100k-200k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_200k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_300k_title;§G200k-300k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_300k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_400k_title;§G300k-400k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_400k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_500k_title;§G400k-500k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_500k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_600k_title;§G500k-600k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_600k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_700k_title;§G600k-700k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_700k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_800k_title;§G700k-800k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_800k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_900k_title;§G800k-900k Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_900k_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1M_title;§G900k-1M Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1M_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.2M_title;§G1M-1.2M Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.2M_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.4M_title;§G1.2M-1.4M Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.4M_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.6M_title;§G1.4M-1.6M Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.6M_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.8M_title;§G1.6M-1.8M Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_1.8M_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_2M_title;§G1.8M-2M Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_2M_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_2M+_title;§G2M+ Province Change Agriculture RGO.;;;;;;;;;x;;;;
+zprovince_rgo_change_agriculture_2M+_desc;Choose one of the following types: Grain, Fruit, Cattle, Wool, Cotton, Opium, Dye, Silk, Coffee Beans, Tea Leaves, or Tobacco. Gives a 50% output and 50% throughput debuff for 15 years.;;;;;;;;;x;;;;
+zprovince_establish_financial_center_title;Establish Financial Center;;;;;;;;;x;;;;
+zprovince_establish_financial_center_desc;Changes the selected province's trade good to precious metal to represent the new financial hub of your country. Can only use this decision once and it must be on core territory.;;;;;;;;;x;;;;
+zzreset_province_selector_title;§RReset Province Selector;;;;;;;;;x;;;;
+zzreset_province_selector_desc;Destroys all currently built province selectors.;;;;;;;;;x;;;;
+zuser_show_options_Y_title;[=]§YShow Generic Decisions;;;;;;;;;;;;x
+zuser_show_options_Y_desc;Request Trade Deal, Money Grants, Non-Accepted Culture Craftsmen Promotion, Spread Ideology, Pass Reform, Martial Law, Restore The Academioa, Non-Accepted Bureacrats, and Research and Development;;;;;;;;;;;;x
+zuser_hide_options_Y_title;[=]§YHide Generic Decisions;;;;;;;;;;;;x
+zuser_hide_options_Y_desc;Request Trade Deal, Money Grants, Non-Accepted Culture Craftsmen Promotion, Spread Ideology, Pass Reform, Martial Law, Restore The Academioa, Non-Accepted Bureacrats, and Research and Development;;;;;;;;;;;;x
+zuser_show_options_G_title;[=]§GShow Province Selector Decisions;;;;;;;;;;;;x
+zuser_show_options_G_desc;Create Supply Depot, Baby Boom, Literacy Campaign, Mine RGO Expansion, Agriculture RGO Expansion, and Change Agriculture RGO, Genocide Province;;;;;;;;;;;;x
+zuser_hide_options_G_title;[=]§GHide Province Selector Decisions;;;;;;;;;;;;x
+zuser_hide_options_G_desc;Create Supply Depot, Baby Boom, Literacy Campaign, Mine RGO Expansion, Agriculture RGO Expansion, and Change Agriculture RGO, Genocide Province;;;;;;;;;;;;x
+zcreate_supply_depot_title;§GCreate Supply Depot;;;;;;;;;;;;;x
+zcreate_supply_depot_desc;A province with a supply depot will reduce attrition to 0 regardless of supply cap and should be used as a rallying point for mobilized troops. You can only have one supply depot at a time, it must not be overseas, and if a battle occurs in a province with a supply depot or the province is occupied by an enemy army it will be destroyed.;;;;;;;;;;;;;x
+zdismantle_supply_depot_title;§RDismantle Supply Depot;;;;;;;;;;;;;x
+zdismantle_supply_depot_desc;Removes the Supply Depot modifier from all provinces.;;;;;;;;;;;;;x
+supply_depot;Supply Depot;;;;;;;;;;;;;x
+supply_depot_destroyed;Supply Depot Recently Destroyed;;;;;;;;;;;;;x
+supply_depot_destroyed_desc;We require time to procure new supplies before we can build another supply depot.;;;;;;;;;;;;;x
+EVTNAME91711;§R$FROMCOUNTRY$§b Requests Cease Fire;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91711;If you say yes to this event, all of §R$FROMCOUNTRY$'s§b provinces under our control (not ownership) will revert back to their control. The purpose of this event is to speed up the addition of wargoals in case the side that occupies more territory surrenders during a multiplayer war.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91711;Return their occupied provinces.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91711;Do not return their occupied provinces.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91712;§R$FROMCOUNTRY$§b Accepts Cease Fire;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91712;§R$FROMCOUNTRY$§b has agreed to unoccupy our territory in order to help speed up negotiations.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91712;Good.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91713;§R$FROMCOUNTRY$§b Rejects Cease Fire;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91713;§R$FROMCOUNTRY$§b has not agreed to unoccupy our territory.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91713;Understandable.;;;;;;;;;;;;;;;;;;;;;;;x
+requesting_cease_fire;Requesting Cease Fire;;;;;;;;;;;;;;;;;;;;;;;x
+requesting_cease_fire_desc;In order to prevent spamming, we cannot ask for another cease fire until this timer runs out.;;;;;;;;;;;;;;;;;;;;;;;x
+unoccupy_provinces_title;§YRequest Cease Fire;;;;;;;;;;;;;x
+unoccupy_provinces_desc;This will trigger an event to all player controlled nations that occupy your provinces. If they accept, all your provinces that are controlled (not owned) by that country will revert to your control. This is to help speed up the adding of wargoals during peace talks in multiplayer games. §WDon't use this decision unless one side has surrendered.;;;;;;;;;;;;;x
+EVTNAME91737;Agriculture RGO Change;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91737;Choose to change a province to the following RGO types.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTA;Change province to produce Wool.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTB;Change province to produce Fruit.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTC;Change province to produce Cotton.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTD;Change province to produce Cattle.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTE;Change province to produce Grain.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTF;Change province to produce Tea Leaves.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTG;Change province to produce Coffee Beans.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTH;Change province to produce Opium.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTI;Change province to produce Dye.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTJ;Change province to produce Silk.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTK;Change province to produce Tobacco.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTL;Change province to produce Fish.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTM;Change province to produce Timber.;;;;;;;;;;;;;;;;;;;;;;;x
+EVT91737OPTZ;I'd rather not change anything.;;;;;;;;;;;;;;;;;;;;;;;x
+changing_agriculture;Changing Agriculture;;;;;;;;;;;;;x
+zcountry_suppression_title;§YMartial Law;;;;;;;;;x;;;;
+zcountry_suppression_desc;Add or remove the martial law modifier which gives -0.07 militancy/consciousness, -0.05% tax efficiency, and a debuff to POP promotion.;;;;;;;;;x;;;;
+release_vassals_title;§YManage Vassals;;;;;;;;;;;;;;;;;;;;;;;x
+release_vassals_desc;Trigger an event for each vassal which then triggers an event from them to us in which we can decide to free them or not.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91705;Martial Law;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91705;Should we declare or rescind martial law?;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91705;Declare martial law.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91705;Rescind martial law.;;;;;;;;;;;;;;;;;;;;;;;x
+suppression;Martial Law;;;;;;;;;;;;;x
+suppression_desc;This province is currently under martial law.;;;;;;;;;;;;;x
+country_suppression;Martial Law;;;;;;;;;;;;;x
+country_suppression_desc;The country is currently under martial law. This negatively impacts POP promotion rate.;;;;;;;;;;;;;x
+EVTNAME91306;Manage Vassals;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91306;Trigger an event for each vassal which then triggers an event from them to us in which we can decide to free them or not.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91306;Make each vassal send an event to us that lets use choose to free them or not.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91306;Do nothing.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91307;Freedom?;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91307;Our overlord is considering granting us our freedom.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91307;One can only hope.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91308;$FROMCOUNTRY$ Requests Independence;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91308;We can grant independence to $FROMCOUNTRY$.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91308;Let them be free.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91308;Don't let them be free.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91308;Geneva Convention Signed;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91308;The geneva convention military hospital and infamy modifiers will be added to your country now;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91308;Ok.;;;;;;;;;;;;;;;;;;;;;;;x
+switched_production;Switched Production;;;;;;;;;;;;;x
+zprovince_migration_title;§GMigration Attraction;;;;;;;;;x;;;;
+zprovince_migration_desc;Gives a large bonus to migration to the targeted province. This decision does not increase the chance of receiving immigrants from other countries, it only redirects them to the targetted province. If a province has more than 5% RGO unemployment then the modifier will stop working and should be reset.;;;;;;;;;x;;;;
+zprovince_migration_new_world_title;§GMigration Attraction;;;;;;;;;x;;;;
+zprovince_migration_new_world_desc;Gives a large bonus to migration to the targeted province. This decision does not increase the chance of receiving immigrants from other countries, it only redirects them to the targetted province. If a province has more than 5% RGO unemployment then the modifier will stop working and should be reset.;;;;;;;;;x;;;;
+province_attract_immigrants;Immigration Focus;;;;;;;;;;;;;x
+new_world_province_attract_immigrants;Immigration Focus;;;;;;;;;;;;;x
+EVTNAME91601;New National Idea Researched;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91601;You may pick from one of the following national idea groups.;;;;;;;;;;;;;;;;;;;;;;;x
+agriculture_expansion;Agriculture Expansion;;;;;;;;;;;;;x
+mine_expansion;Mine Expansion;;;;;;;;;;;;;x
+EVTNAME70004;RGO Expansion in $STATE$;;;;;;;;;;;;;x
+EVTDESC70004;In Victoria 2, when a province changes owners or is turned from a colony to a state, all old province modifiers are automatically removed. This province event adds an RGO expansion modifier to any recently acquired provinces and former colonies that previously had them.;;;;;;;;;;;;;x
+EVTOPTA70004;Excellent.;;;;;;;;;;;;;x
+acquire_small_state;Acquire small state;;;;;;;;;;;;;x
+acquire_small_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_small_state_short;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_small_state_desc;Can use on states <150K population before 1860, <200k between 1860-1885, <300k between 1885-1910, <450k after 1910.;;;;;;;;;;;;;x
+acquire_mid_state;Acquire medium state;;;;;;;;;;;;;x
+acquire_mid_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_mid_state_short;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_mid_state_desc;Can use on states <300K population before 1860, <400k between 1860-1885, <600k between 1885-1910, <900k after 1910.;;;;;;;;;;;;;x

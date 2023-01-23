@@ -36,7 +36,6 @@ private_banks = 1
 no_standard = 1
 ideological_thought = 1
 state_n_government = 1
-early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 classicism_n_early_romanticism = 1
@@ -57,7 +56,6 @@ naval_professionalism = 1
 stock_exchange = 1
 ad_hoc_money_bill_printing = 1
 private_bank_money_bill_printing = 1
-late_classical_theory = 1
 market_structure = 1
 
 #Inventions
@@ -180,8 +178,6 @@ plurality = 60
 	no_standard = 1
 	ad_hoc_money_bill_printing = 1
 	private_bank_money_bill_printing = 1
-	early_classical_theory_and_critique = 1
-	late_classical_theory = 1
 	freedom_of_trade = 1
 	market_structure = 1
 	guild_based_production = 1

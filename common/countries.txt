@@ -343,6 +343,8 @@ JAN 	= "countries/JanMayen.txt"
 CIV		= "countries/Civilizing.txt"
 PRO		= "countries/Province Flag.txt"
 GHO		= "countries/Ghost Country.txt"
+SMA		= "countries/Small State CB.txt"
+MST		= "countries/Medium State CB.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions
