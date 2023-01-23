@@ -1,6 +1,6 @@
 capital = 1053 #Gunib(Mahachkala)
 primary_culture = north_caucasian
-culture = azerbaijani
+culture = persian
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0

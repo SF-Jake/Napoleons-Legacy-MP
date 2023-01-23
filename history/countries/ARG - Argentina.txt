@@ -1,8 +1,8 @@
 capital = 2348
 primary_culture = platinean
 culture = south_andean
-culture = quechua
-culture = aimara
+culture = south_andean
+culture = south_andean
 religion = catholic
 government = democracy
 plurality = 25.0

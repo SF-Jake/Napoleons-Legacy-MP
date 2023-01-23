@@ -1,5 +1,5 @@
 capital = 1102
-primary_culture = azerbaijani
+primary_culture = persian
 culture = turkish
 religion = sunni
 government = democracy

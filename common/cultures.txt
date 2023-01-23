@@ -689,19 +689,6 @@ turko_semitic = {
 			Bey Pasha 
 		}
 	}
-	azerbaijani = {
-		color = {47 44 107}
-		first_names = { 
-			Ahmad Aliagha Ali Bahram Elbay Farhad Firudin Hamid Hasan Heydar
-			Huseyin Ibrahim Ismayil Jalil Mahmud Malik Mehdi Mohammad Murad Samad 
-			Tahir Zahid
-			}
-		
-		last_names = {
-			Ahmadbek Ahmadzade Akbarzade Edigar Ganjavi Ibrahimbek Mehmandar Nakhchivani 
-			Qasimbek Qasimzade Rasulzade Tahirzade Talishkhan Topchubashi Zardabi
-			}
-	}
 	north_caucasian = {
 		color = {252 255 161}
 		first_names = {
@@ -1288,26 +1275,6 @@ oceanic = {
 native_american = {
 	leader = nativeamerican
 	is_overseas = no
-	zapotec = {
-		color = {87 199 81}
-		first_names = { Agustín Alberto Alfonso Alfredo Andrés Benito Carlos César Eduardo Eugenio
-		Felipe Fernando Gabriel Gilberto Gregorio Jacinto Jesús José Juan Julio
-		Macario Manuel Miguel Nazario Nicolás Oliverio Pablo Porfirio Rodolfo Rufino }
-
-		last_names = { Alonso Antúnez Cabrera Cajigas Chacón Chiñas Cortés Fernández Gamboa García
-		González Gutiérrez Guzmán Henestrosa Isael Jiménez Juárez López Matus Mérida
-		Morales Nayeli Orozco Ortíz Pineda Rojas Ruíz Suárez Tamayo Vichido }
-	}
-	mayan = {
-		color = {98 88 142}
-		first_names = { Agustín Akbal Alejandro Andrés Aníbal Antonio Armando Bernardo Carlos Crescencio
-		Cristóbal Cuautéhmoc Diego Felipe Gaspar Hernando Hilario Humberto Ignacio Jacinto 
-		Jesús Luis Marcial Martín Miguel Ramiro Rodolfo Rolando Santiago Yumil }
-
-		last_names = { Ak'ab'al Cal Canek Canul Carrillo Ceh Chee Chi Choc Coc
-		Curruchic Ixquiac López Manzanero Mas Menchú Mérida Mes Osorio Pek
-		Poot Pop Puk Shal Sho Tecú Teul Tuyuc Xicara Xiloj }
-	}
 	nahua = {
 		color = {88 175 160}
 		first_names = { Antonio Carlos Diego Emiliano Emilio Felipe Fernando Francisco Gaspar Hernando
@@ -1317,82 +1284,6 @@ native_american = {
 		last_names = { Ahuactzin Altamirano Atlanteco Badiano Bernardino Coaguila Coyotl Cuautlaxahue Gutiérrez Hernández
 		Huanitzin Itzel Ixtlilxochitl Jiménez Matlacuahuac Mayahuel Moxo Muñoz Nahui Ocelotl
 		Panecatl Tlaxca Tletla Tzehe Valeriano Xaxalpa Zicoténcatl Xochitl Zapata Zapotitla }
-	}
-	tarascan = {
-		color = {87 188 192}
-		first_names = { Agustín Alberto Alfredo Antonio Armando Arturo Carlos Cenobio Daniel Diego
-		Everardo Gerardo Gumersindo Héctor Jesús Juan Leobardo Luis Manuel Marcial
-		"Marco Antonio" Melchor Pedro Ricardo Salvador Samuel Sergio Silvano Silvestre Víctor }
-
-		last_names = { Almonte Arredondo Arriaga Aureoles Bernal Brito Calderón Cano Carrillo Cristóbal
-		Cuevas Dimas Esquivel Estrada Galeana Gallardo García Gómez López Maciel
-		Magaña Medrano Mena Ocampo Ochoa Paniagua Tinoco Toryo Vargas Zendejas }
-	}
-	quechua = {
-		color = {178 141 85}
-		first_names = { Agustín Alejandro Antauro Antonio Basilio Daniel Diego Eugenio Facundo Felipe
-		Francisco Gustavo Hilario Inca Isaac "José María" Julio Lorenzo Manuel Marcos
-		Mariano Martín Nicolás Osvaldo René Roberto Simón Túpac Ulises Víctor }
-
-		last_names = { Arguedas Barrientos Cajahuanca Canchata Chambi Chihuán Cusurichi Espejo Frisancho Gamarra
-		Guaman Guayasamín Gutiérrez Heredia Humala Iturri Lazarte Ludueña Melgarejo Palacios
-		Patiño Quispe Rodríguez Roncaglia "Santa Cruz" Sosa Sumac Toledo Vargas Zapata }
-	}
-	guarani = {
-		color = {89 80 175}
-		first_names = { Aniceto Antonio Bartolomé Camilo Carlos Claudio David Emiliano Eugenio Felipe
-		Félix Fernando Gregorio Jacinto Jesús José Juan Julio Luis Manuel
-		Marcos Máximo Narciso Pablo Pedro Rodrigo Roque Simón Teodoro Víctor }
-
-		last_names = { Abjaisu Álvarez Ayegua Camba Chuaie Correa Cunhagatú Díaz Fernández Galeano 
-		Gómez González Guaracay Guaraní Guerrero Jopara López Mongelós Morla Ortíz
-		Paravé Picagua Riquelme Rivarola "Santa Cruz" Tarayú Torga Velázquez Yaguarete Yrahi }
-	}
-	aimara = {
-		color = {190 45 23}
-		first_names = { Agustín Alejandro Antonio Bartolomé Carlos David Eduardo Enrique Evo Facundo
-		Felipe Francisco Gregorio Hugo José Juan "Juan José" Manuel Marcos Mario
-		Máximo Nicolás Osvaldo Ramón Roberto Santiago Túpac Vicente Víctor "Víctor Hugo" }
-
-		last_names = { Apaza Ayme Calisaya Cardenas Castilla Chino Choquehuanca Condori Corahua Cusicanqui
-		Hoffmann Huachua Huallpa Katari Larico Machaca Mamani Morales Paredes Peñaranda
-		Puma Quilca Quispe Rivera Sisa Tamayo Taquiri Torres Yllanes Yucra }
-	}
-	amazonian = {
-		color = {4 255 84}
-		first_names = { Aníbal Augusto Bento Bernardo César Daniel David Donato Duarte Ernesto
-		Estevão Fernando Francisco Gabriel Graciano Hugo João Julio Leopoldo Lucas
-		Miguel Nuno Óscar Rafael Roberto Sebastião Sergio Simão Vasco Zeferino }
-
-		last_names = { Arawá Arawak Bororo Garifuna Gê Guayaná Jeikó Kaingang Kalinago Kamakán
-		Karajá Kayapó Matsés Maxakalí Purí Timbira Xavante Xerente Xokieng Yanomamö }
-	}
-	patagonian = {
-		color = {88 99 133}
-		first_names = { Agustín Antonio Aquiles Arturo Aurelio Bernardo Carlos Claudio Diego Facundo
-		Félix Fernando Francisco Gerardo Gregorio Hugo Ignacio José Juan Luis
-		Manuel Marcos Martín Máximo Melchor Pedro Ramón Raúl Santiago Víctor }
-
-		last_names = { Aliwen Amuylifko Aukan Ayllapan Chiguay Cumin Curumilla Epulewfu Foyelkay Guaiquil
-		Huichaman Ilwen Kayupi Kumlafken Kvlapi Leviñanco Lincoman Marifil Melifilu Millakoyam
-		Millapani Nahuel Ñanku Paillacar Pillancar Quelin Remultray Unquen Waikimill Yankvleufu }
-	}
-	guajiro = {
-		color = {221 248 75}
-		first_names = { Baltasar Bernardo Carlos Celestino Diego Emilio Felipe Fernando Fidel Francisco
-		Gaspar Gregorio Hugo Ignacio José Juan Manuel Marcos Mario Mateo
-		Melchor Narciso Pablo Pedro Ramón Roberto Santiago Sebastián Simón Tomás }
-
-		last_names = { Atapashuna Epieyu Iguana Jayaliyuu Jusayuu Pausayuu Sapuana Tijuana Uliana Uliyuu
-		Uraliyyu Ulewana Walapuana Walepushana }
-	}
-	tupinamba = {
-		color = {43 212 67}
-		first_names = { Álvaro André Carlos Diogo Emilio Eusébio Fábio Fernando Filipe Francisco
-		Gabriel Gaspar Gonçalo Gustavo Henrique João José Luís Manuel Inácio
-		Jordão Lúcio Mateus Nicolau Paulo Pedro Roque Sergio Tomás Vítor }
-
-		last_names = { Caetés Potiguara Tabajara Tamoios Temiminó Tupinambá Tupiniquim 	}
 	}
 	inuit = {
 		color = {210 243 242}
@@ -1458,16 +1349,6 @@ american_cultures = {
 		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
 		Davis Lane Posey Scales Warner Imboden Jenkins
 		}
-	}
-	texan = {
-		color = {153 0 0}
-		first_names = {Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
-		Henry Allison Horace Felix Jerome Lawrence Alexander Louis
-		}
-		last_names = {Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
-		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
-		}
-		radicalism = 10
 	}
 }
 
@@ -1738,7 +1619,14 @@ east_african = {
 	leader = african
 	is_overseas = no
 	unit = AfricanGC
-	
+	somali = {
+		color = {226 22 48}
+		first_names = { Yusuf Mahamud Ahmed Osman Ali Aul Shire Mohamud Naleye Abdikarim Dalmar Ghdi Labaan Roble Taban Erasto Abdi
+		}
+
+		last_names = { Ibrahim Adeer Hassan Gurey Hirsi Doreh Dekiye Afrah Mujahid Kenadid
+		}
+	}
 }
 
 southern_african = {

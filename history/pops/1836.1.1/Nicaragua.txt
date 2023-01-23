@@ -163,28 +163,28 @@
 	}
 
 	clergymen = {
-		culture = afro_caribbean
+		culture = central_american
 		religion = catholic
 		size = 50
 		militancy = 9
 	}
 
 	artisans = {
-		culture = afro_caribbean
+		culture = central_american
 		religion = catholic
 		size = 100
 		militancy = 9
 	}
 
 	soldiers = {
-		culture = afro_caribbean
+		culture = central_american
 		religion = catholic
 		size = 50
 		militancy = 9
 	}
 
 	farmers = {
-		culture = afro_caribbean
+		culture = central_american
 		religion = catholic
 		size = 1800
 		militancy = 9

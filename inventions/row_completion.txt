@@ -77,8 +77,6 @@ consumer_goods_idea = {
 			furniture = 0.08
 			luxury_furniture = 0.08
 			radio = 0.08
-			pharmaceuticals = 0.08
-			cigarettes = 0.08
 			tea = 0.08
 			coffee = 0.08
 		}
