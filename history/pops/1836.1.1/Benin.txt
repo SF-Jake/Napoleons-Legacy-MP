@@ -3,37 +3,37 @@
 #Cotonou (272000/68000 POPS)
 1919 = {
 	aristocrats = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 975
 	}
 
 	clergymen = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 500
 	}
 
 	artisans = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 2050
 	}
 
 	soldiers = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 500
 	}
 
 	farmers = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 29975
 	}
 
 	slaves = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 2000
 	}
@@ -113,49 +113,49 @@
 #Abomey (240000/60000 POPS)
 1920 = {
 	aristocrats = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 1050
 	}
 
 	bureaucrats = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 50
 	}
 
 	officers = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 500
 	}
 
 	artisans = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 2125
 	}
 
 	soldiers = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 550
 	}
 
 	farmers = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 42625
 	}
 
 	slaves = {
-		culture = fon
+		culture = yoruba
 		religion = animist
 		size = 4000
 	}

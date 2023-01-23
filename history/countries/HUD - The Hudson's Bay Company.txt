@@ -1,7 +1,7 @@
 capital = 37
 primary_culture = british
 culture = anglo_canadian
-culture = metis
+culture = native_american_minor
 culture = yankee
 religion = protestant
 government = presidential_dictatorship

@@ -296,7 +296,7 @@
 	}
 
 	slaves = {
-		culture = oromo
+		culture = somali
 		religion = animist
 		size = 7000
 	}
@@ -374,32 +374,32 @@
 	}
 
 	aristocrats = {
-		culture = afar
+		culture = somali
 		religion = sunni
 		size = 50
 	}
 
 	clergymen = {
-		culture = afar
+		culture = somali
 		religion = sunni
 		size = 75
 	}
 
 	artisans = {
-		culture = afar
+		culture = somali
 		religion = sunni
 		size = 200
 	}
 
 	soldiers = {
-		culture = afar
+		culture = somali
 		religion = sunni
 		size= 50
 
 	}
 
 	farmers = {
-		culture = afar
+		culture = somali
 		religion = sunni
 		size = 3625
 	}

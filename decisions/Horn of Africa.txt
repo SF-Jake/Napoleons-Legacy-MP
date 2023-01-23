@@ -3,8 +3,8 @@ begin_zemene_mesafint = {
 		picture = zemene_mesafint
 		potential = {
 			civilized = no
-			primary_culture = amhara
-			any_neighbor_country = { primary_culture = amhara }
+			primary_culture = somali
+			any_neighbor_country = { primary_culture = somali }
 			NOT = { 
 				has_global_flag = is_negusa_nagast
 				has_country_modifier = zemene_mesafint
@@ -14,7 +14,7 @@ begin_zemene_mesafint = {
 		
 		allow = {
 			any_neighbor_country = {
-				primary_culture = amhara
+				primary_culture = somali
 				war_with = THIS
 			}
 		}
@@ -38,7 +38,7 @@ begin_zemene_mesafint = {
 				tag = SHW
 				tag = TIG
 			}
-			primary_culture = amhara
+			primary_culture = somali
 			ETH = { exists = no }
 		}
 		
@@ -52,9 +52,7 @@ begin_zemene_mesafint = {
 						province_id = 1848
 						province_id = 1849
 						province_id = 1850
-						owner = {
-							NOT = { primary_culture = amhara }
-						}
+						
 					}
 				}
 			}
@@ -64,8 +62,6 @@ begin_zemene_mesafint = {
 			set_global_flag = is_negusa_nagast
 			prestige = 10
 			years_of_research = 0.5
-			add_accepted_culture = tigray
-			add_accepted_culture = sidama
 			GON = {
 				all_core = { remove_core = GON }
 			}
@@ -73,7 +69,7 @@ begin_zemene_mesafint = {
 				all_core = { remove_core = SHW }
 			}
 			TIG = {
-				primary_culture = tigray
+				primary_culture = somali
 				all_core = { remove_core = TIG }
 			}
 			1856 = { add_core = TIG }

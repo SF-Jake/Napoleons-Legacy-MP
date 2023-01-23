@@ -2432,7 +2432,7 @@ sioux_nation = {
 		modifier = {
 			factor = 0
 			NOT = {
-				culture = dakota 
+				culture = native_american_minor 
 			}
 		}
 		modifier = {
@@ -2488,7 +2488,7 @@ sioux_nation = {
 		}
 		any_pop = {
 			limit = {
-				culture = dakota 
+				culture = native_american_minor 
 			}
 			militancy = 10
 		}
