@@ -679,7 +679,6 @@ defence_4.3;§R+4 Defence;;;;;;;;;;;;;;
 defence_4.4;§R+4 Defence;;;;;;;;;;;;;;
 defence_5.1;§W+5 Defence;;;;;;;;;;;;;;
 plc_buff;PLC Mob Buff;;;;;;;;;;;;;;
-CSA;Confederate States of America;;;;;;;;;;;;;;
 province_selector;Province Selector;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 economic_thought_and_critique;National Ideas;;;;;;;;;;;;;
 early_classical_theory_and_critique;Unlock Province Selector;;;;;;;;;;;;;
@@ -1003,3 +1002,9 @@ acquire_mid_state;Acquire medium state;;;;;;;;;;;;;x
 acquire_mid_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
 acquire_mid_state_short;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
 acquire_mid_state_desc;Can use on states <300K population before 1860, <400k between 1860-1885, <600k between 1885-1910, <900k after 1910.;;;;;;;;;;;;;x
+integrate_central_american_title;Some Text;;;;;;;;;;;;;x
+integrate_central_american_desc;Some Text;;;;;;;;;;;;;x
+integrate_the_jewish_title;Some Text;;;;;;;;;;;;;x
+integrate_the_jewish_desc;Some Text;;;;;;;;;;;;;x
+integrate_the_ukraine_title;Some Text;;;;;;;;;;;;;x
+integrate_the_ukraine_desc;Some Text;;;;;;;;;;;;;x
