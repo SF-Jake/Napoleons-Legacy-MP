@@ -179,30 +179,42 @@ zdismantle_supply_depot = {
 					trade_goods= oil
 					trade_goods= precious_metal
 				}
-				NOT = {
-					has_province_modifier = mine_expansion
-				}
+				NOT = { has_province_modifier = mine_expansion }
+				NOT = { has_province_modifier = mine_expansion_asia }
 			}
 		}
 		effect = {
 			money = -250000
 			random_owned = {
 				limit = {
-					has_building = province_selector
 					OR = {
 						trade_goods= coal
 						trade_goods= iron
-						trade_goods= sulphur
 						trade_goods= oil
+						trade_goods= sulphur
 						trade_goods= precious_metal
 					}
-					NOT = {
-						has_province_modifier = mine_expansion
+					continent = asia
+					has_building = province_selector
+					NOT = { has_province_modifier = mine_expansion_asia }
+				}
+				add_province_modifier = { name = mine_expansion_asia duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= oil
+						trade_goods= sulphur
+						trade_goods= precious_metal
 					}
+					has_building = province_selector
+					NOT = { continent = asia }
+					NOT = { has_province_modifier = mine_expansion }
+					
 				}
 				add_province_modifier = { name = mine_expansion duration = -1 }
-				add_core = PRO
-				province_selector = -1
 			}
 		}
 	}

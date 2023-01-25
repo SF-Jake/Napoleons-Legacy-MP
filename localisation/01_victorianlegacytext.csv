@@ -991,6 +991,7 @@ EVTNAME91601;New National Idea Researched;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91601;You may pick from one of the following national idea groups.;;;;;;;;;;;;;;;;;;;;;;;x
 agriculture_expansion;Agriculture Expansion;;;;;;;;;;;;;x
 mine_expansion;Mine Expansion;;;;;;;;;;;;;x
+mine_expansion_asia;Mine Expansion;;;;;;;;;;;;;x
 EVTNAME70004;RGO Expansion in $STATE$;;;;;;;;;;;;;x
 EVTDESC70004;In Victoria 2, when a province changes owners or is turned from a colony to a state, all old province modifiers are automatically removed. This province event adds an RGO expansion modifier to any recently acquired provinces and former colonies that previously had them.;;;;;;;;;;;;;x
 EVTOPTA70004;Excellent.;;;;;;;;;;;;;x

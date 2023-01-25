@@ -228,14 +228,26 @@ country_event = {
 
     option = {
         name = "EVTOPTA70004"
+		
 		any_owned = {
 			limit = {
 				has_pop_type = labourers
 				is_core = PRO
+				has_building = province_selector
+				NOT = { continent = asia }
 				NOT = { has_province_modifier = mine_expansion }
-				NOT = { has_province_modifier = treaty_port }
 			}
 			add_province_modifier = { name = mine_expansion duration = -1 }
+		}
+		any_owned = {
+			limit = {
+				has_pop_type = labourers
+				is_core = PRO
+				continent = asia
+				has_building = province_selector
+				NOT = { has_province_modifier = mine_expansion_asia }
+			}
+			add_province_modifier = { name = mine_expansion_asia duration = -1 }
 		}
 		any_owned = {
 			limit = {

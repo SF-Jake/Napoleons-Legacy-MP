@@ -1465,6 +1465,13 @@ mine_expansion = {
 	icon = 13
 }
 
+mine_expansion_asia = {
+	mine_rgo_size = 0.05
+	local_RGO_output = 0.15
+	local_RGO_throughput = 0.15
+	icon = 13
+}
+
 reactionary_influence = {
 	core_pop_militancy_modifier = 0.05
 	icon = 14

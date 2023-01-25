@@ -1094,6 +1094,8 @@ liberate_country = {
 							tag = YUG
 							#tag = ROM # TODO: shoudl we let the rest be liberated too?
 							tag = CZH
+							tag = SMA
+							tag = MST
 						}
 					}
 				}
@@ -2591,6 +2593,7 @@ acquire_small_state = {
 	is_triggered_only = yes
 	months = 12
 	construction_speed = 0.5
+	crisis = no
 	
 	badboy_factor = 0.8
 	prestige_factor = 2
@@ -2607,10 +2610,6 @@ acquire_small_state = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		OR = {
-			ai = yes
-			year = 1837
-		}
 		THIS = {
 			OR = {
 				NOT = { has_country_flag = chinese }
@@ -2746,6 +2745,7 @@ acquire_mid_state = {
 	is_triggered_only = yes
 	months = 12
 	construction_speed = 0.5
+	crisis = no
 	
 	badboy_factor = 1.2
 	prestige_factor = 2
@@ -2762,10 +2762,6 @@ acquire_mid_state = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		OR = {
-			ai = yes
-			year = 1837
-		}
 		NOT = {
 			OR = {
 				has_country_flag = neutral

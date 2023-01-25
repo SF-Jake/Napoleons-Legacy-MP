@@ -219,46 +219,46 @@ country_event = {
 
 #SPA gets the news
 country_event = {
-        id = 600027
-        title = "EVTNAME600027"
-        desc = "EVTDESC600027"
+    id = 600027
+    title = "EVTNAME600027"
+    desc = "EVTDESC600027"
 	picture = "Monarchy"
  
-        is_triggered_only = yes
+    is_triggered_only = yes
  
-	#on ILY's terms
-        option = {
-                name = "EVTOPTA600027"
-                ILY = {
+	#On ILY's terms
+    option = {
+        name = "EVTOPTA600027"
+        ILY = {
 			country_event = 600028
 		}
-                ai_chance = {
-                        factor = 30
-                }
+        ai_chance = {
+            factor = 30
         }
- 
+    }
 	#On SPA's terms
-        option = {
-                name = "EVTOPTB600027"
-                ILY = {
+    option = {
+        name = "EVTOPTB600027"
+        ILY = {
 			country_event = 600029
 		}
 		prestige = 5
-                ai_chance = {
-                        factor = 0
-                }
+        ai_chance = {
+            factor = 0
         }
+    }
 	#No deal
 	option = {
-                name = "EVTOPTC600027"
-                ILY = {
+        name = "EVTOPTC600027"
+        ILY = {
 			country_event = 600030
 		}
+		country_event = 40052
 		set_country_flag = cuba_unlocked
-                ai_chance = {
-                        factor = 1
-                }
+        ai_chance = {
+            factor = 1
         }
+    }
 }
 
 #On ILY's terms
@@ -324,43 +324,43 @@ country_event = {
  
 	#On SPA's terms
         option = {
-		name = "EVTOPTA600029"
-		political_reform = yes_slavery
-		political_reform = wealth_voting
-		political_reform = censored_press
-		political_reform = non_socialist
-		political_reform = non_secret_ballots
-		SPA = {
-			inherit = ILY
-		}
-		prestige = 5
-		badboy = 2
-		add_accepted_culture = south_italian
-		relation = { who = FRA value = -100 }
-		754 = { remove_core = ILY }
-		756 = { remove_core = ILY }
-		760 = { remove_core = ILY }
-		761 = { remove_core = ILY }
-		2567 = { remove_core = ILY }
-		755 = { remove_core = ILY }
-		757 = { remove_core = ILY }
-		753 = { remove_core = ILY }
-		759 = { remove_core = ILY }
-		758 = { remove_core = ILY }
-		capital = 762
-		SPA = {
-			country_event = 600032
-		}
-		SIC_763 = {
-			add_core = SPA
-		}
-		854 = {
-			remove_core = SPA
-		}
-		government = absolute_monarchy
-                ai_chance = {
-                        factor = 40
-                }
+			name = "EVTOPTA600029"
+			political_reform = yes_slavery
+			political_reform = wealth_voting
+			political_reform = censored_press
+			political_reform = non_socialist
+			political_reform = non_secret_ballots
+			SPA = {
+				inherit = ILY
+			}
+			prestige = 5
+			badboy = 2
+			add_accepted_culture = south_italian
+			relation = { who = FRA value = -100 }
+			754 = { remove_core = ILY }
+			756 = { remove_core = ILY }
+			760 = { remove_core = ILY }
+			761 = { remove_core = ILY }
+			2567 = { remove_core = ILY }
+			755 = { remove_core = ILY }
+			757 = { remove_core = ILY }
+			753 = { remove_core = ILY }
+			759 = { remove_core = ILY }
+			758 = { remove_core = ILY }
+			capital = 762
+			SPA = {
+				country_event = 600032
+			}
+			SIC_763 = {
+				add_core = SPA
+			}
+			854 = {
+				remove_core = SPA
+			}
+			government = absolute_monarchy
+			ai_chance = {
+				factor = 40
+			}
         }
 }
 
@@ -856,4 +856,30 @@ country_event = {
 			516 = { remove_core = SPA }
 			add_accepted_culture = basque
         }
+}
+country_event = {
+	id = 40052
+	title = "EVTNAME600027"
+    desc = "Gran Colombia has come to us with an offer to join our Great Monarchy."
+	picture = "Monarchy"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA600033"
+		inherit = GCO
+		capital = 2247
+		add_accepted_culture = north_andean
+		GCO = {
+			all_core = {
+				remove_core = GCO
+				add_core = SPA
+			}
+		}
+	}
+
+	option = {
+		name = "No"
+		prestige = 10
+	}
 }
