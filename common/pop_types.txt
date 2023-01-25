@@ -661,6 +661,11 @@ assimilation_chance =
 			NOT = { unemployment = 0.05 }
 		}
 	}
+
+	modifier = {
+		factor = 0.07
+		country = { has_country_flag = assimilation_idea }
+	}
 }
 
 #general conversion mtth, same for all pops
