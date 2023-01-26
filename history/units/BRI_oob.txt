@@ -234,139 +234,127 @@ leader = {
 }
 
 army = {
-	name = "1st Corps"
-	location = 300
+	name = "Mob Stack"
+	location = 293
 	regiment = {
-		name= "1.1st Cavalry Division"
-		type = cavalry
+		name= "Hussar Division"
+		type = hussar
 		home = 300
 	}
 
 	regiment = {
-		name= "2.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 294
 	}
 
 	regiment = {
-		name= "3.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 291
 	}
 
 	regiment = {
-		name= "1.1st Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 300
 	}
 
 	regiment = {
-		name= "2.1st Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 293
 	}
 
 	regiment = {
-		name= "3.1st Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 295
 	}
 
 }
 
 army = {
-	name = "2nd Division"
-	location = 288
+	name = "Mob Stack"
+	location = 300
 	regiment = {
-		name= "1.2nd Division"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 288
 	}
 
 	regiment = {
-		name= "2.2nd Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 287
 	}
 
 	regiment = {
-		name= "3.2nd Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 256
 	}
 
-}
-
-army = {
-	name = "3rd Division"
-	location = 273
 	regiment = {
-		name= "1.3rd Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 273
 	}
 
 	regiment = {
-		name= "2.3rd Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 266
 	}
 
 	regiment = {
-		name= "3.3rd Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 270
 	}
-
 }
 
 army = {
-	name = "5th Division"
-	location = 269
+	name = "Mob Stack"
+	location = 295
 	regiment = {
-		name= "1.5th Division"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 269
 	}
 
 	regiment = {
-		name= "2.5th Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 271
 	}
 
 	regiment = {
-		name= "3.5th Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 267
 	}
 
-}
-
-army = {
-	name = "The Canada Garrison"
-	location = 277 
 	regiment = {
-		name= "1.6th Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 277
 	}
 
 	regiment = {
-		name= "2.6th Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 292
 	}
 
 	regiment = {
-		name= "3.6th Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 276
 	}
-
 }
 
-navy = 
+navy = {
 	name = "2nd Reserve Squadron"
 	location = 303
 	ship = {

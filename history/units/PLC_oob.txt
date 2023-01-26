@@ -55,40 +55,40 @@ leader = {
 }
 
 army = {
-	name = "1st Army"
-	location = 699
+	name = "Mob Stack"
+	location = 710
 	regiment = {
-		name= "1.1st Division"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 706
 	}
 
 	regiment = {
-		name= "2.1st Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 706
 	}
 
 	regiment = {
-		name= "3.1st Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 701
 	}
 
 	regiment = {
-		name= "4.1st Division"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 701
 	}
 
 	regiment = {
-		name= "5.1st Division"
+		name= "Artillery Division"
 		type = artillery
 		home = 699
 	}
 
 	regiment = {
-		name= "4.1st Division"
+		name= "Artillery Division"
 		type = artillery
 		home = 701
 	}
@@ -96,48 +96,42 @@ army = {
 }
 
 army = {
-	name = "2nd Army"
+	name = "Mob Stack"
 	location = 706
 	regiment = {
-		name= "1.1st Cavalry Division"
-		type = cavalry
+		name= "Hussar Division"
+		type = hussar
 		home = 706
 	}
 
 	regiment = {
-		name= "2.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 703
 	}
 
 	regiment = {
-		name= "3.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 712
 	}
 
-}
-
-army = {
-	name = "3rd Army"
-	location = 706
 	regiment = {
-		name= "1.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 699
 	}
 
 	regiment = {
-		name= "2.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 699
 	}
 
 	regiment = {
-		name= "3.1st Cavalry Division"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 712
 	}
-
 }
 

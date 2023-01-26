@@ -55,6 +55,7 @@ late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 water_wheel_power = 1
 publishing_industry = 1
+malthusian_thought = 1
 
 # Inventions
 

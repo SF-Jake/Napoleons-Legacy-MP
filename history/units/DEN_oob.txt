@@ -20,97 +20,83 @@ leader = {
 	background = attack_1.1
 }
 army = {
-	name = "Danske Haeren"
+	name = "Mob Stack"
 	location = 372
 	regiment = {
-		name= "1.1. Infanteridivision"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 372
 	}
 
 	regiment = {
-		name= "2.1. Infanteridivision"
-		type = infantry
-		home = 372
-	}
-
-	regiment = {
-		name= "3.1. Infanteridivision"
-		type = infantry
-		home = 372
-	}
-
-	regiment = {
-		name= "4.1. Infanteridivision"
+		name= "Artillery Division"
 		type = artillery
 		home = 372
 	}
 
 	regiment = {
-		name= "1.2. Infanteridivision"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
+		home = 372
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 372
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
 		home = 366
 	}
 
 	regiment = {
-		name= "2.2. Infanteridivision"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 366
 	}
-
-	regiment = {
-		name= "3.2. Infanteridivision"
-		type = infantry
-		home = 366
-	}
-
-	regiment = {
-		name= "1.1. Kavalleridivision"
-		type = cavalry
-		home = 373
-	}
-
-	regiment = {
-		name= "2.1. Kavalleridivision"
-		type = cavalry
-		home = 373
-	}
-
-	regiment = {
-		name= "3.1. Kavalleridivision"
-		type = cavalry
-		home = 373
-	}
-
 }
 
 army = {
-	name = "Army of Norway"
+	name = "Mob Stack"
 	location = 313
 	regiment = {
-		name= "1.1. Infanteridivision"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 313
 	}
 
 	regiment = {
-		name= "2.1. Infanteridivision"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 310
 	}
 
 	regiment = {
-		name= "1.1. Kavalleridivision"
-		type = cavalry
-		home = 309
-	}
-
-	regiment = {
-		name= "2.1. Kavalleridivision"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 305
 	}
 
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 366
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 373
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 373
+	}
 }
 
 navy = {

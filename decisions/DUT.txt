@@ -14,7 +14,7 @@ political_decisions = {
 			NOT = {
 				exists = JAV
 			}
-			invention = mission_to_civilize
+			ideological_thought = 1
 		}
 
 		effect = {

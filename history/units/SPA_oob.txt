@@ -95,37 +95,37 @@ POR = {
 }
 
 army = {
-	name = "Ejército de Cuba"
+	name = "Mob Stack"
 	location = 2209
 	
 	regiment = {
-		name = "1. Brigada Colonial"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 1455
 	}
 	
 	regiment = {
-		name = "2. Brigada Colonial"
-		type = infantry
-		home = 2209
-	}
-	regiment = {
-		name = "3. Brigada Colonial"
-		type = infantry
-		home = 1456
-	}
-	regiment = {
-		name = "12. Brigada Colonial"
+		name= "Artillery Division"
 		type = artillery
 		home = 2209
 	}
 	regiment = {
-		name = "10. Brigada Colonial"
+		name= "Artillery Division"
+		type = artillery
+		home = 1456
+	}
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 2209
+	}
+	regiment = {
+		name= "Artillery Division"
 		type = artillery
 		home = 1457
 	}
 	regiment = {
-		name = "11. Brigada Colonial"
+		name= "Artillery Division"
 		type = artillery
 		home = 2222
 	}
@@ -134,36 +134,36 @@ army = {
 
 
 army = {
-	name = "Ejército de Filipinas"
-	location = 1455
+	name = "Mob Stack"
+	location = 1456
 	
 	regiment = {
-		name = "4. Brigada Colonial"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 1455
 	}
 	regiment = {
-		name = "5. Brigada Colonial"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 1457
 	}
 	regiment = {
-		name = "6. Brigada Colonial"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 1463
 	}
 	regiment = {
-		name = "7. Brigada Colonial"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 1461
 	}
 	regiment = {
-		name = "8. Brigada Colonial"
+		name= "Artillery Division"
 		type = artillery
 		home = 1462
 	}
 	regiment = {
-		name = "9. Brigada Colonial"
+		name= "Artillery Division"
 		type = artillery
 		home = 1460
 	}

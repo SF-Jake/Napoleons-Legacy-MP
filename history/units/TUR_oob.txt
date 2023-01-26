@@ -137,318 +137,319 @@ WAL = {
  
 
 RUS = {
-	value = -200} army = {
-	name = "Imperial Guards"
-	location = 860
-	regiment = {
-		name= "1. Bostancy-yy Hassa"
-		type = infantry
-		home = 860
-	}
+	value = -200
+}
 
+army = {
+	name = "Mob Stack"
+	location = 862
 	regiment = {
-		name= "2. Bostancy-yy Hassa"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 828
 	}
 
 	regiment = {
-		name= "3. Bostancy-yy Hassa"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 859
 	}
 
 	regiment = {
-		name= "4. Bostancy-yy Hassa"
+		name= "Artillery Division"
 		type = artillery
 		home = 861
 	}
 
-}
-
-army = {
-	name = "Army of the Danube"
-	location = 810
 	regiment = {
-		name= "1. Sipahis"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 798
 	}
 
 	regiment = {
-		name= "2. Sipahis"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 799
 	}
+}
 
+army = {
+	name = "Mob Stack"
+	location = 861
 	regiment = {
-		name= "3. Sipahis"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 802
 	}
 
 	regiment = {
-		name= "1. Piyade Tümeni"
-		type = infantry
-		home = 802
-	}
-
-	regiment = {
-		name= "2. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 803
 	}
 
 	regiment = {
-		name= "3. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 803
 	}
 
 	regiment = {
-		name= "4. Piyade Tümeni"
+		name= "Artillery Division"
 		type = artillery
 		home = 804
 	}
 
 	regiment = {
-		name= "1. Redif Izmir"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 806
-	}
-
-	regiment = {
-		name= "2. Redif Izmir"
-		type = irregular
-		home = 807
-	}
-
-	regiment = {
-		name= "3. Redif Izmir"
-		type = irregular
-		home = 807
 	}
 }
 	
 army = {
-	name = "Redif Bursa"
-	location = 849
-	
-
+	name = "Mob Stack"
+	location = 829
 	regiment = {
-		name= "1. Redif Bursa"
-		type = irregular
-		home = 849
-	}
-
-	regiment = {
-		name= "2. Redif Bursa"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 850
 	}
 
 	regiment = {
-		name= "3. Redif Bursa"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 851
 	}
 
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 807
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 807
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 882
+	}
 }
 
 army = {
-	name = "Army of Anatolia"
-	location = 878
+	name = "Mob Stack"
+	location = 830
 	regiment = {
-		name= "5. Piyade Tümeni"
-		type = infantry
-		home = 882
-	}
-
-	regiment = {
-		name= "6. Piyade Tümeni"
-		type = infantry
-		home = 884
-	}
-
-	regiment = {
-		name= "7. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 879
 	}
 
 	regiment = {
-		name= "8. Piyade Tümeni"
+		name= "Artillery Division"
 		type = artillery
 		home = 888
 	}
 
 	regiment = {
-		name= "1. Redif Kars"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 888
 	}
 
 	regiment = {
-		name= "2. Redif Kars"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 887
 	}
 
 	regiment = {
-		name= "3. Redif Kars"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 887
 	}
-
-	regiment = {
-		name= "1. Redif Trabzon"
-		type = irregular
-		home = 876
-	}
-
-	regiment = {
-		name= "2. Redif Trabzon"
-		type = irregular
-		home = 883
-	}
-
-	regiment = {
-		name= "3. Redif Trabzon"
-		type = irregular
-		home = 869
-	}
-
 }
 
 army = {
-	name = "Army of Silistria"
-	location = 818
+	name = "Mob Stack"
+	location = 828
 	regiment = {
-		name= "4. Sipahis"
-		type = cavalry
-		home = 810
-	}
-
-	regiment = {
-		name= "5. Sipahis"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 811
 	}
 
 	regiment = {
-		name= "6. Sipahis"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 812
 	}
 
 	regiment = {
-		name= "9. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 813
 	}
 
 	regiment = {
-		name= "10. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 818
 	}
 
 	regiment = {
-		name= "11. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 674
 	}
-
-	regiment = {
-		name= "1. Redif Diyarbakir"
-		type = irregular
-		home = 675
-	}
-
-	regiment = {
-		name= "2. Redif Diyarbakir"
-		type = irregular
-		home = 809
-	}
-
-	regiment = {
-		name= "3. Redif Diyarbakir"
-		type = irregular
-		home = 814
-	}
-
 }
 
 army = {
-	name = "Army of Arabia"
-	location = 925
+	name = "Mob Stack"
+	location = 859
 	regiment = {
-		name= "12. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 925
 	}
 
 	regiment = {
-		name= "13. Piyade Tümeni"
-		type = infantry
-		home = 925
-	}
-
-	regiment = {
-		name= "14. Piyade Tümeni"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 926
 	}
 
 	regiment = {
-		name= "1. Redif Halab"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 923
 	}
 
 	regiment = {
-		name= "2. Redif Halab"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 923
 	}
 
 	regiment = {
-		name= "3. Redif Halab"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 923
 	}
-
 }
 
 army = {
-	name = "Army of the Bashaw of Tripoli"
-	location = 1733
-	regiment = {
-		name= "7. Sipahis"
-		type = cavalry
-		home = 1733
-	}
+	name = "Mob Stack"
+	location = 858
 
 	regiment = {
-		name= "8. Sipahis"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 1731
 	}
+	
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 675
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 809
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 814
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 876
+	}
 }
 
 army = {
-	name = "Army of the Bey of Benghazi"
-	location = 1735
+	name = "Mob Stack"
+	location = 1733
 	regiment = {
-		name= "1. Askäris"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 1735
 	}
 
 	regiment = {
-		name= "2. Askäris"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 1734
+	}
+	
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 883
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 869
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 810
+	}
+
+	regiment = {
+		name= "Infantry Division"
+		type = infantry
+		home = 925
+	}
+
+	regiment = {
+		name= "Infantry Division"
+		type = infantry
+		home = 884
+	}
+
+	regiment = {
+		name= "Infantry Division"
+		type = infantry
+		home = 849
+	}
+
+	regiment = {
+		name= "Infantry Division"
+		type = infantry
+		home = 802
+	}
+}
+
+army = {
+	name = "Mob Stack"
+	location = 860
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 860
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 1733
 	}
 }
 

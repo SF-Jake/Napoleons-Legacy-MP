@@ -28,112 +28,104 @@ CHI = {
 	value = 125		#relation
 }
 army = {
-	name = "II Corpo do exército"
-	location = 2447
+	name = "Mob Stack"
+	location = 522
 	regiment = {
-		name= "1. Brigada de Infantaria"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 2447
 	}
 
 	regiment = {
-		name= "2. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 2450
 	}
 
 	regiment = {
-		name= "3. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 2436
 	}
 
 	regiment = {
-		name= "1. Brigada de Cavalaria"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 2429
 	}
 
 	regiment = {
-		name= "2. Brigada de Cavalaria"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 2434
 	}
 
 	regiment = {
-		name= "3. Brigada de Cavalaria"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 2426
 	}
 
 }
 
-
 army = {
-	name = "Exército Português"
-	location = 521
+	name = "Mob Stack"
+	location = 523
 	regiment = {
-		name= "1. Brigada de Infantaria"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 521
 	}
 
 	regiment = {
-		name= "2. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 524
 	}
 
 	regiment = {
-		name= "3. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 518
 	}
 
 	regiment = {
-		name= "4. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 520
 	}
 
 	regiment = {
-		name= "5. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 522
 	}
 
 	regiment = {
-		name= "6. Brigada de Infantaria"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 519
 	}
 
 }
 
 army = {
-	name = "Exército do Africa Ocidental"
-	location = 1999
+	name = "Mob Stack"
+	location = 2447
 	
 	regiment = {
-		name = "1. Divisão Colonial"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 525
 	}
 	regiment = {
-		name = "2. Divisão Colonial"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 2134
 	}
-}
-
-
-army = {
-	name = "Exército da Índia"
-	location = 1303
-	
 	regiment = {
-		name = "3. Divisão Colonial"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 1303
 	}
 }

@@ -61,17 +61,17 @@ leader = {
 	prestige = 0.0
 }
 army = {
-	name = "Esercito di Modena"
-	location = 739
+	name = "Mob Stack"
+	location = 726
 	regiment = {
-		name= "1. Fanteria di Linea"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 739
 	}
 
 	regiment = {
-		name= "2. Fanteria di Linea"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 726
 	}
 }

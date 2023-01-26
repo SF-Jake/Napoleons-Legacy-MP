@@ -61,31 +61,31 @@ army = {
 	location = 1266
 	regiment = {
 		name= "1.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1240
 	}
 
 	regiment = {
 		name= "2.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1240
 	}
 
 	regiment = {
 		name= "3.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1240
 	}
 
 	regiment = {
 		name= "3.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1241
 	}
 
 	regiment = {
 		name= "3.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1241
 	}
 
@@ -96,31 +96,31 @@ army = {
 	location = 1269
 	regiment = {
 		name= "1.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1270
 	}
 
 	regiment = {
 		name= "2.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1270
 	}
 
 	regiment = {
 		name= "2.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1269
 	}
 
 	regiment = {
 		name= "2.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1269
 	}
 
 	regiment = {
 		name= "2.Mughal Contingent"
-		type = irregular
+		type = cavalry
 		home = 1268
 	}	
 

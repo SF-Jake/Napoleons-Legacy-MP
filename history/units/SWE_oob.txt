@@ -34,68 +34,71 @@ leader = {
 	prestige = 0.2
 }
 army = {
-	name = "Svenska Armén"
-	location = 322
+	name = "Mob Stack"
+	location = 324
 	regiment = {
-		name= "Svea Livgarde"
-		type = guard
+		name= "Hussar Division"
+		type = hussar
 		home = 322
 	}
 
 	regiment = {
-		name= "Södermanlands Regemente"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 326
 	}
 
 	regiment = {
-		name= "Första Livgrenadjärregementet"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 325
 	}
 
 	regiment = {
-		name= "Upplands Regemente"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 324
 	}
 
 	regiment = {
-		name= "Västgöta Regemente"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 330
 	}
 
 	regiment = {
-		name= "Kalmar Regemente"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 332
 	}
+}
 
+army = {
+	name = "Mob Stack"
+	location = 322
 	regiment = {
-		name= "Jönköpings Regemente"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 333
 	}
 
 	regiment = {
-		name= "Södra Skånska Infanteriregementet"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 334
 	}
 
 	regiment = {
-		name= "Kronprinsens Husarregemente"
-		type = cavalry
+		name= "Artillery Division"
+		type = artillery
 		home = 335
 	}
 
 	regiment = {
-		name= "Norrlands Dragonregemente"
-		type = dragoon
+		name= "Artillery Division"
+		type = artillery
 		home = 321
 	}
-
 }
 
 navy = {

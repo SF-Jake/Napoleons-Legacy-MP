@@ -18,60 +18,56 @@ army = {
 	name = "Ejército del Norte"
 	location = 2146
 	regiment = {
-		name= "1.Division Cos"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 2174
 	}
 
 	regiment = {
-		name= "2.Division Cos"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 2174
 	}
 
 	regiment = {
-		name= "3.Division Cos"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 2174
 	}
 	regiment = {
-		name= "1.Oajaca y Tlaxcala"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 2177
 	}
 
 	regiment = {
-		name= "2.Oajaca y Tlaxcala"
-		type = irregular
-		home = 2177
-	}
-
-	regiment = {
-		name= "3.Oajaca y Tlaxcala"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 2177
 	}
 	regiment = {
-		name= "1.Division Comonfort"
+		name= "Infantry Division"
+		type = infantry
+		home = 2177
+	}
+	regiment = {
+		name= "Infantry Division"
 		type = infantry
 		home = 2176
 	}
 
 	regiment = {
-		name= "2.Division Comonfort"
-		type = irregular
+		name= "Infantry Division"
+		type = infantry
 		home = 2176
 	}
 
 	regiment = {
-		name= "3.Division Comonfort"
-		type = irregular
+		name= "Infantry Division"
+		type = infantry
 		home = 2176
 	}
-
 }
-
-
 
 navy = {
 	name = "Armada de Mexico"

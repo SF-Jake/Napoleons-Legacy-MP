@@ -33,7 +33,7 @@ leader = {
 	prestige = 0.0
 }
 army = {
-	name = "1e Divisie"
+	name = "Mob Stack"
 	location = 1399
 	regiment = {
 		name= "1e Cavalerie Brigade"
@@ -74,7 +74,7 @@ army = {
 }
 
 army = {
-	name = "2e Divisie"
+	name = "Mob Stack"
 	location = 1399
 	regiment = {
 		name = "4e Infanterie Brigade"
@@ -97,42 +97,26 @@ army = {
 }
 
 army = {
-	name = "3e Divisie"
-	location = 1399
-	regiment = {
-		name = "7e Infanterie Brigade"
-		type = infantry
-		home = 383
-	}
-
-	regiment = {
-		name = "8e Infanterie Brigade"
-		type = infantry
-		home = 384
-	}
-
-	regiment = {
-		name = "9e Infanterie Brigade"
-		type = infantry
-		home = 385
-	}
-
-}
-
-army = {
-	name = "K.N.I.L."
+	name = "Mob Stack"
 	location = 1413
 	regiment = {
-		name = "1e Indische Brigade"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
+		home = 1403
+	}
+
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
 		home = 1413
 	}
 
 	regiment = {
-		name = "Banisaren Korps"
-		type = irregular
+		name= "Artillery Division"
+		type = artillery
 		home = 1421
 	}
+
 }
 
 navy = {

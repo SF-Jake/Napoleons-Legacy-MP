@@ -60,89 +60,93 @@ FRA = {
 
 #Army
 army = {
-	name = "Ejército Cristino del Centro"
-	location = 487
+	name = "Mob Stack"
+	location = 488
 	regiment = {
-		name= "1. Granaderos del Rey"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 487
 	}
 
 	regiment = {
-		name= "2. Granaderos del Rey"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 489
 	}
 
 	regiment = {
-		name= "3. Guardia Real"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 481
 	}
 
 	regiment = {
-		name= "1. Brigada de Infantería 'El Ramillete'"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 503
 	}
 
 	regiment = {
-		name= "2. Brigada de Infantería"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 509
 	}
 
 	regiment = {
-		name= "3. Brigada de Infantería"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 513
-	}
-
-	regiment = {
-		name= "1. Brigada de Ingenieros"
-		type = engineer
-		home = 495
-	}
-
-	regiment = {
-		name= "1. Granaderos del Rey"
-		type = cavalry
-		home = 487
 	}
 }
 
 army = {
-	name = "Ejército del Sur"
-	location = 512
+	name = "Mob Stack"
+	location = 483
 
 	regiment = {
-		name= "8. Brigada de Infantería"
-		type = infantry
+		name= "Hussar Division"
+		type = hussar
 		home = 512
 	}
 
 	regiment = {
-		name= "9. Brigada de Infantería"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 514
 	}
 
 	regiment = {
-		name= "10. Brigada de Infantería"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 510
 	}
 
 	regiment = {
-		name= "11. Brigada de Infantería"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 516
 	}
 	
 	regiment = {
-		name= "12. Brigada de Infantería"
-		type = infantry
+		name= "Artillery Division"
+		type = artillery
 		home = 515
+	}
+	
+	regiment = {
+		name= "Artillery Division"
+		type = artillery
+		home = 495
+	}
+}
+
+army = {
+	name = "Mob Stack"
+	location = 487
+	regiment = {
+		name= "Hussar Division"
+		type = hussar
+		home = 487
 	}
 }
 
