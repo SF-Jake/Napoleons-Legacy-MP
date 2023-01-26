@@ -587,7 +587,7 @@ assimilation_chance =
 	}
 
 	modifier = {
-    	factor = -20
+    	factor = -5
 		has_culture_core = yes
 	}
 	modifier = {

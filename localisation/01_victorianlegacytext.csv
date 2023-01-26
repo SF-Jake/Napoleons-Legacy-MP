@@ -1003,9 +1003,11 @@ acquire_mid_state;Acquire medium state;;;;;;;;;;;;;x
 acquire_mid_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
 acquire_mid_state_short;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
 acquire_mid_state_desc;Can use on states <300K population before 1860, <400k between 1860-1885, <600k between 1885-1910, <900k after 1910.;;;;;;;;;;;;;x
-integrate_central_american_title;Some Text;;;;;;;;;;;;;x
-integrate_central_american_desc;Some Text;;;;;;;;;;;;;x
-integrate_the_jewish_title;Some Text;;;;;;;;;;;;;x
-integrate_the_jewish_desc;Some Text;;;;;;;;;;;;;x
-integrate_the_ukraine_title;Some Text;;;;;;;;;;;;;x
-integrate_the_ukraine_desc;Some Text;;;;;;;;;;;;;x
+integrate_central_american_title;Integrate the Central Americans;;;;;;;;;;;;;x
+integrate_central_american_desc;The USCA served no purpose but to disunite the people of Spanish North America. This insult to Mexico's sovereignty has been corrected for;;;;;;;;;;;;;x
+integrate_the_jewish_title;Conscript the Jews;;;;;;;;;;;;;x
+integrate_the_jewish_desc;While the Jewish don't fit in to all aspects of polish society, foreign threats call for unification. We must utilize our large Ashkenazi population to defend our homeland and end their exemption from conscription.;;;;;;;;;;;;;x
+integrate_the_ukraine_title;Triumph in Ukraine;;;;;;;;;;;;;x
+integrate_the_ukraine_desc;We have achieved victory in Ukraine against the Russians. It is time to bring the Ruthenians back into the fold. ;;;;;;;;;;;;;x
+peasant_reform;Peasant Reform;;;;;;;;;;;;;x
+peasant_reform_desc;The institution of serfdom -- unfree farm labour tied to the land of a local noble, effectively a form of feudal slavery -- had existed in various forms in Russia since the Kievan Rus of the 11th century. Throughout the ages the institution had undergone several reforms and changes, but the first steps toward a complete abolishment were taken only in the 1810s, when the institution was abolished in the Russian domains of Kurland, Estonia and Livonia. Even when the Decembrist Revolution overthrew autocracy, the government refused to attempt to abolish it, as the powerful nobles were too fond of the system.;;;;;;;;;;;;;x
