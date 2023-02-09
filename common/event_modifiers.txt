@@ -1580,3 +1580,27 @@ requesting_cease_fire = {
 changing_agriculture = {
 	icon = 14
 }
+
+#Row Completion
+
+army_row_completion2 = {
+	leadership = 0.05
+}
+culture_row_completion3 = {
+	land_unit_start_experience = 5
+}
+commerce_row_completion4 = {
+	supply_consumption = -0.1
+}
+commerce_row_completion5 = {
+	pension_level = -0.5
+}
+
+#Bureaucrats Cooldown
+bureaucrats_fix_cooldown = {
+	icon = 12
+}
+
+immunity_from_influenza = {
+	icon = 17
+}

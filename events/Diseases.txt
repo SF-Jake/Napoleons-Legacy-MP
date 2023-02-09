@@ -216,7 +216,11 @@ country_event = {
 		name = "EVTOPTA21030"
 		add_country_modifier = {
 			name = pandemic_influenza
-			duration = 365
+			duration = 438
+		}
+		add_country_modifier = {
+			name = immunity_from_influenza
+			duration = 4015
 		}
 		add_tax_relative_income	= -5
 	}
@@ -225,7 +229,11 @@ country_event = {
 		name = "EVTOPTB21030"
 		add_country_modifier = {
 			name = pandemic_influenza
-			duration = 480
+			duration = 576
+		}
+		add_country_modifier = {
+			name = immunity_from_influenza
+			duration = 4015
 		}
 	}
 }

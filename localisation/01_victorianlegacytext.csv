@@ -1011,3 +1011,9 @@ integrate_the_ukraine_title;Triumph in Ukraine;;;;;;;;;;;;;x
 integrate_the_ukraine_desc;We have achieved victory in Ukraine against the Russians. It is time to bring the Ruthenians back into the fold. ;;;;;;;;;;;;;x
 peasant_reform;Peasant Reform;;;;;;;;;;;;;x
 peasant_reform_desc;The institution of serfdom -- unfree farm labour tied to the land of a local noble, effectively a form of feudal slavery -- had existed in various forms in Russia since the Kievan Rus of the 11th century. Throughout the ages the institution had undergone several reforms and changes, but the first steps toward a complete abolishment were taken only in the 1810s, when the institution was abolished in the Russian domains of Kurland, Estonia and Livonia. Even when the Decembrist Revolution overthrew autocracy, the government refused to attempt to abolish it, as the powerful nobles were too fond of the system.;;;;;;;;;;;;;x
+bureaucrats_fix_cooldown;Non-Accepted Bureaucrats Fix Cooldown;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;
+bureaucrats_fix_cooldown_desc;Non-Accepted Bureaucrats Fix Cooldown is 10 years.;;;;;;;;;;;;;x,,,,,,,,,,,,;;;;;;;;;;;
+bureaucrats_fix_title;§YNon-Accepted Bureacrats (10 year cooldown);;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+bureaucrats_fix_desc;Turns unaccepted bureacrats into artisans;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+immunity_from_influenza;Immunity from Influenza;;;;;;;;;;;;;x
+immunity_from_influenza_desc;Prevents Pandemic Influenza from recurring in your country as long as modifier is active.;;;;;;;;;;;;;x
