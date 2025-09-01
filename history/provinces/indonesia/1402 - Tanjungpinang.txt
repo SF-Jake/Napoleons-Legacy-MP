@@ -1,5 +1,0 @@
-owner = SAK
-controller = SAK
-add_core = SAK
-life_rating = 30
-trade_goods = timber

@@ -1,7 +1,0 @@
-owner = MUG
-controller = MUG
-add_core = MUG
-add_core = JAI
-add_core = HND
-trade_goods = iron
-life_rating = 35

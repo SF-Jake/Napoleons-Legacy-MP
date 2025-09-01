@@ -1,6 +1,0 @@
-owner = SPA
-controller = SPA
-add_core = SPA
-add_core = CUB
-life_rating = 35
-trade_goods = tobacco

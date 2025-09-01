@@ -1,4 +1,0 @@
-owner = CAN
-controller = CAN
-trade_goods = wool
-life_rating = 35

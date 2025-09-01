@@ -1,8 +1,0 @@
-owner = CAN
-controller = CAN
-add_core = QUE
-add_core = CAN
-add_core = BRI
-life_rating = 35
-naval_base = 2
-trade_goods = grain
