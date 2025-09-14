@@ -1,28 +1,3 @@
-CHI = {
-	value = 200		#relation
-	military_access = yes
-}
-
-MCK = {
-	value = 200
-	military_access = yes
-}
-
-XIN = {
-	value = 200
-	military_access = yes
-}
-
-KOR = {
-	value = 200
-	military_access = yes
-}
-
-MGL = {
-	value = 200
-	military_access = yes
-}
-
 army = {
 	name = "Army of Tibet"
 	location = 1587

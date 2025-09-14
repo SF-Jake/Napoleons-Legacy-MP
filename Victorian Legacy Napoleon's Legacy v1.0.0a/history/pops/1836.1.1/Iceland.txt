@@ -4,25 +4,25 @@
 252 = {
 	bureaucrats = {
 		culture = icelandic
-		religion = placeholder
+		religion = protestant
 		size = 25
 	}
 
 	clergymen = {
 		culture = icelandic
-		religion = placeholder
+		religion = protestant
 		size = 100
 	}
 
 	artisans = {
 		culture = icelandic
-		religion = placeholder
+		religion = protestant
 		size = 750
 	}
 
 	farmers = {
 		culture = icelandic
-		religion = placeholder
+		religion = protestant
 		size = 13125
 	}
 }

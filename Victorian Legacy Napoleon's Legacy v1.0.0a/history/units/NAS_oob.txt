@@ -7,4 +7,10 @@ army = {
 		type = infantry
 		home = 565
 	}
+	
+	regiment = {
+		name = "2. Infanteriebrigade"
+		type = infantry
+		home = 565
+	}
 }

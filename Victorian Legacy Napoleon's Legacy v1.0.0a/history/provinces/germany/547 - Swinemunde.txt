@@ -1,7 +1,7 @@
-owner = PRU
-controller = PRU
-add_core = PRU
-#add_core = GER
+owner = SWE
+controller = SWE
+add_core = SWE
+add_core = GER
 trade_goods = fruit
-life_rating = 38
-
+life_rating = 37
+naval_base = 1

@@ -1,7 +1,6 @@
-owner = ENG
-controller = ENG
+owner = TRA
+controller = TRA
+add_core = TRA
 add_core = HND
-trade_goods = grain
-life_rating = 30
-colonial = 1
-
+trade_goods = dye
+life_rating = 35

@@ -4,67 +4,67 @@
 1876 = {
 	aristocrats = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	bureaucrats = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	artisans = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 250
 	}
 
 	soldiers = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	farmers = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
-		culture = afro_asiatic
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 150
 	}
 
 	artisans = {
-		culture = afro_asiatic
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 700
 	}
 
 	soldiers = {
-		culture = afro_asiatic
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 150
 	}
 
 	farmers = {
-		culture = afro_asiatic
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 13500
 	}
 
 	slaves = {
-		culture = afro_asiatic
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 4000
 	}
 

@@ -13,7 +13,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400 #COMMON
+		months = 200 #COMMON
 		
 		modifier = {
 			factor = 0.9
@@ -78,7 +78,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400 #COMMON
+		months = 200 #COMMON
 		modifier = {
 			factor = 1.1
 			ruling_party_ideology = conservative
@@ -311,7 +311,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 430
+		months = 230
 		modifier = {
 			factor = 0.9
 			average_consciousness = 8
@@ -391,7 +391,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 200
 		
 		modifier = {
 			factor = 4
@@ -665,7 +665,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 250
 		modifier = {
 			factor = 0.9
 			war_exhaustion = 4
@@ -3245,6 +3245,17 @@ country_event = {
 			}
 		}
 	}
+	
+	option = {
+		name = "EVTOPTB4420"
+		any_neighbor_country = {
+			add_casus_belli = {	
+				target = THIS
+				type = conquest
+				months = 12
+			}
+		}
+	}
 }
 
 # Liberals Protest Harassment
@@ -3573,11 +3584,12 @@ country_event = {
 	trigger = {
 		civilized = yes
 		upper_house_composition = party_appointed
+		civilized = yes
 		political_reform_want = 0.15
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 200
 		
 		modifier = {
 			factor = 0.9
@@ -3620,6 +3632,88 @@ country_event = {
 		name = "EVTOPTB4430"
 		any_pop = {
 			militancy = 2
+		}
+	}
+}
+
+country_event = {
+	id = 86008
+	title = "EVTNAME86008"
+	desc = "EVTDESC86008"
+	picture = "Slaves"
+
+	trigger = {
+		slavery = yes_slavery
+		civilized = yes
+		NOT = {
+			tag = USA
+			tag = CSA
+		}
+		NOT = {
+                	has_country_modifier = slave_trade
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			civilized = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86008"
+		any_pop = {
+			limit = {
+				pop_type = slaves
+			}
+		reduce_pop = 1.08
+		}
+		add_country_modifier = {
+			name = slave_trade
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = 86009
+	title = "EVTNAME86009"
+	desc = "EVTDESC86009"
+	picture = "Slaves"
+
+	trigger = {
+		slavery = yes_slavery
+		civilized = yes
+		OR = {
+			tag = USA
+			tag = CSA
+		}
+		NOT = {
+                	has_country_modifier = slave_births
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			civilized = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA86009"
+		any_pop = {
+			limit = {
+				pop_type = slaves
+			}
+		reduce_pop = 1.02
+		}
+		add_country_modifier = {
+			name = slave_births
+			duration = 1825
 		}
 	}
 }

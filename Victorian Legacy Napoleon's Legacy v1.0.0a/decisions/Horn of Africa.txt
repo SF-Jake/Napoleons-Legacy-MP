@@ -1,0 +1,157 @@
+political_decisions = {
+begin_zemene_mesafint = {
+		picture = zemene_mesafint
+		potential = {
+			civilized = no
+			primary_culture = amhara
+			any_neighbor_country = { primary_culture = amhara }
+			NOT = { 
+				has_global_flag = is_negusa_nagast
+				has_country_modifier = zemene_mesafint
+				foreign_training = yes_foreign_training
+			}
+		}
+		
+		allow = {
+			any_neighbor_country = {
+				primary_culture = amhara
+				war_with = THIS
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = zemene_mesafint
+				duration = 365
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	become_negusa_nagast = {
+		potential = {
+			OR = {
+				tag = GON
+				tag = SHW
+				tag = TIG
+			}
+			primary_culture = amhara
+			ETH = { exists = no }
+		}
+		
+		allow = {
+			war = no
+			ETH = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						province_id = 1848
+						province_id = 1849
+						province_id = 1850
+						owner = {
+							NOT = { primary_culture = amhara }
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = is_negusa_nagast
+			prestige = 10
+			years_of_research = 0.5
+			add_accepted_culture = tigray
+			add_accepted_culture = sidama
+			GON = {
+				all_core = { remove_core = GON }
+			}
+			SHW = {
+				all_core = { remove_core = SHW }
+			}
+			TIG = {
+				primary_culture = tigray
+				all_core = { remove_core = TIG }
+			}
+			1856 = { add_core = TIG }
+			1857 = { add_core = TIG }
+			1848 = { add_core = TIG }
+			1849 = { add_core = TIG }
+			1850 = { add_core = TIG }
+			relation = {
+				who = EGY
+				value = 100
+			}
+			change_tag = ETH
+			any_pop = { militancy = -4 }
+		}
+	}
+
+
+	build_addis_ababa = {
+		picture = move_capital_to_algiers
+		potential = {
+			tag = ETH
+			owns = 1859
+			NOT = { has_country_flag = addis_ababa_built }
+		}
+		
+		allow = {
+			war = no
+			civilized = yes
+			owns = 1859
+		}
+		
+		effect = {
+			set_country_flag = addis_ababa_built
+			prestige = 5
+			1859 = {
+				change_province_name = "Addis Ababa"
+				life_rating = 5
+			}
+			capital = 1859
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	unite_somalia = {
+		potential = {
+			OR = {
+				tag = GEL
+				tag = MAJ
+				tag = WRS
+			}
+			NOT = { has_global_flag = somalia_united }
+		}
+
+		allow = {
+			war = no
+			1868 = { owned_by = THIS }
+			1872 = { owned_by = THIS }
+			1873 = { owned_by = THIS }
+		}
+
+		effect = {
+			set_global_flag = somalia_united
+			prestige = 5
+			change_tag = SOM
+			SOM_1868 = { add_core = SOM }
+			SOM_1872 = { add_core = SOM }
+			ETH_1865 = { add_core = SOM }
+			2031 = { add_core = SOM }
+			GEL = { all_core = { remove_core = GEL } }
+			MAJ = { all_core = { remove_core = MAJ } }
+			WRS = { all_core = { remove_core = WRS } }
+			any_pop = { militancy = -4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

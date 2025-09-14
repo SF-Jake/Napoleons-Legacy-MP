@@ -1,6 +1,6 @@
 capital = 1277
-primary_culture = indo_aryan
-religion = placeholder
+primary_culture = marathi
+religion = hindu
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -22,6 +22,16 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "NAG_oob.txt"
+1861.1.1 = {
+	oob = "/1861/NAG_oob.txt"
+}
+
+admin_reform = yes_admin_reform
+foreign_weapons = yes_foreign_weapons
+foreign_training = yes_foreign_training
+military_constructions = yes_military_constructions
+
+flintlock_rifles = 1
 
 slavery = no_slavery
 upper_house_composition = appointed

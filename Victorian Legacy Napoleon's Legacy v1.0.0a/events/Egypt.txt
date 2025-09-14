@@ -1,0 +1,19 @@
+# Event to Inherit
+country_event = {
+	id = 400500
+	title = "Egypt Civilized"
+	desc = "EVTDESC11101"
+	picture = "Celebration"
+
+	trigger = {
+		tag = HDJ
+		EGY = {civilized = yes}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Time for incorporation"
+		EGY = {inherit = HDJ}
+		}
+}

@@ -1,7 +1,6 @@
-owner = OLD
-controller = OLD
+owner = FRA
+controller = FRA
 add_core = OLD
-#add_core = GER
+add_core = GER
 trade_goods = coal
-life_rating = 40
-
+life_rating = 37

@@ -1,44 +1,16 @@
-owner = PRU
-controller = PRU
-add_core = PRU
-#add_core = GER
-trade_goods = coal
-life_rating = 40
-fort = 1
+owner = FRA
+controller = FRA
+add_core = FRA
+
+add_core = CLG
+add_core = GER
+
 state_building = {
 	level = 1
-	building = fabric_factory
+	building = machine_parts_factory
 	upgrade = yes
-}
-state_building = {
-	level = 1
-	building = steel_factory
-	upgrade = yes
-}
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = artillery_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 2
-		building = machine_parts_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 2
-		building = fabric_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 2
-		building = steel_factory
-		upgrade = yes
-	}
-}
-1861.1.1 = { 
-	railroad = 3 
-	fort = 3
 }
 
+trade_goods = coal
+
+life_rating = 37

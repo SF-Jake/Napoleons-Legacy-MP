@@ -1,8 +1,8 @@
 capital = 1455
 primary_culture = filipino
-religion = placeholder
+religion = catholic
 government = democracy
-plurality = 25.0
+plurality = 0.0
 nationalvalue = nv_liberty
 literacy = 0.28
 civilized = yes

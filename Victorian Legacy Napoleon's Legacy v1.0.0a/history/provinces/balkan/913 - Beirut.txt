@@ -1,14 +1,13 @@
-owner = EGY
-controller = EGY
-add_core = EGY
+owner = TUR
+controller = TUR
 add_core = TUR
-add_core = SYR
+add_core = LEB
 trade_goods = fruit
 life_rating = 35
+
 1861.1.1 = {
 	controller = TUR 
 	owner = TUR
-	colonial = 0
 }
 1861.1.1 = {
 	state_building = {
@@ -17,4 +16,3 @@ life_rating = 35
 		upgrade = yes
 	}
 }
-

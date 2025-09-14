@@ -1,6 +1,6 @@
 capital = 1244
-primary_culture = indo_aryan
-religion = placeholder
+primary_culture = avadhi
+religion = shiite
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -22,6 +22,9 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "AWA_oob.txt"
+1861.1.1 = {
+	oob = "/1861/AWA_oob.txt"
+}
 
 slavery = no_slavery
 upper_house_composition = appointed

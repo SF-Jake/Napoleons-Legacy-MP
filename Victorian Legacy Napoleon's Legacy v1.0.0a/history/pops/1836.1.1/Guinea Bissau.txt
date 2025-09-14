@@ -4,61 +4,61 @@
 1877 = {
 	aristocrats = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 10
 	}
 
 	clergymen = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 15
 	}
 
 	bureaucrats = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 5
 	}
 
 	artisans = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	soldiers = {
 		culture = portuguese
-		religion = placeholder
+		religion = catholic
 		size = 20
 	}
 
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 50
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 375
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 75
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 5500
 	}
 
 	slaves = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = african_minor
+		religion = catholic
 		size = 2000
 	}
 }
@@ -66,38 +66,38 @@
 #Gabu (76000/19000 POPS)
 1878 = {
 	aristocrats = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = mande
+		religion = animist
 		size = 200
 	}
 
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = mande
+		religion = animist
 		size = 200
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1100
+		culture = mande
+		religion = animist
+		size = 1000
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = mande
+		religion = animist
 		size = 200
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = mande
+		religion = animist
 		size = 14400
 	}
 
 	slaves = {
-		culture = niger_congo_a
-		religion = placeholder
+		culture = african_minor
+		religion = animist
 		size = 3000
 	}
 

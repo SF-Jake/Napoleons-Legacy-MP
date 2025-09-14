@@ -1,6 +1,6 @@
-owner = AUS
-controller = AUS
-add_core = VEN
+owner = MOD
+controller = MOD
+add_core = MOD
 trade_goods = fish
 life_rating = 35
 naval_base = 1
@@ -16,4 +16,3 @@ naval_base = 1
 	upgrade = yes
 	}
 }
-

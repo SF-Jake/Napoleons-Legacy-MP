@@ -1,0 +1,110 @@
+
+# Arabian Event to Inherit
+country_event = {
+	id = 111011928
+	title = "EVTNAME111011928"
+	desc = "EVTDESC111011928"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA111011928"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB111011928"
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -100
+		}
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				NOT = {
+					relation = { who = FROM value = 100 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+        id = 86010
+	title = "EVTNAME86010"
+	desc = "EVTDESC86010"
+	picture = "Administration"
+
+	fire_only_once = yes
+       
+        trigger = {
+                tag = OMA
+                war = no
+                owns = 2048
+                year = 1856
+        }
+       
+        mean_time_to_happen = {
+                months = 1
+        }
+       
+        option = {
+               name = "EVTOPTA86010"
+                prestige = 20
+                any_pop = {
+                        limit = {
+                                has_pop_culture = swahili
+                                location = { is_core = ZAN }
+                        }
+                        militancy = -8
+                }
+                any_pop = {
+                        limit = {
+                                has_pop_culture = bedouin
+                                location = { is_core = OMA }
+                        }
+                        militancy = 2
+                }
+		any_owned = {
+                        limit = {
+                                is_core = ZAN
+                        }
+                        remove_core = OMA
+                }
+                release = ZAN
+                relation = { who = ZAN value = 100 }
+                ai_chance = { factor = 75 }
+        }
+       
+        option = {
+                 name = "EVTOPTB86010"
+                prestige = -10
+                any_pop = {
+                        limit = {
+                                has_pop_culture = bedouin
+                                location = { is_core = OMA }
+                        }
+                        militancy = -4
+                }
+                any_pop = {
+                        limit = {
+                                has_pop_culture = swahili
+                                location = { is_core = ZAN }
+                        }
+                        militancy = 8
+                }
+                ai_chance = { factor = 25 }    
+        }
+}

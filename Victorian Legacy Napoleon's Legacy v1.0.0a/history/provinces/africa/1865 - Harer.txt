@@ -1,6 +1,8 @@
-#owner = ETH
-#controller = ETH
+owner = SHW
+controller = SHW
+add_core = SHW
+add_core = TIG
+add_core = GON
 add_core = ETH
 trade_goods = coffee
-life_rating = 20
-
+life_rating = 30

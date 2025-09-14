@@ -1,0 +1,262 @@
+political_decisions = {
+	force_open_japan = {
+		potential = {
+			owns = 1496
+			civilized = yes
+			exists = JAP
+			JAP = {
+				NOT = {
+					civilized = yes
+				}
+			}
+			NOT = {
+				has_global_flag = japan_open
+			}
+		}
+		
+		allow = {
+			owns = 1496
+		}
+		
+		effect = {
+			prestige = 10
+			diplomatic_influence = {
+				who = JAP
+				value = 400
+			}
+			set_global_flag = japan_open
+		}
+	}
+
+	self_strengthening_movement = {
+		potential = {
+			civilized = no
+			tag = CHI
+			NOT = {
+				has_global_flag = self_strength
+			}
+			year = 1868
+			war = no
+		}
+		
+		allow = {
+			civilized = no
+		}
+		
+		effect = {
+			prestige = 2
+			years_of_research = 2.5
+			any_pop = {
+				limit = {
+					ideology = reactionary
+				}
+				militancy = 2
+			}
+			add_country_modifier = {
+				name = strengthening_movement
+				duration = 7500
+			}
+			set_global_flag = self_strength
+		}
+	}
+
+	force_open_korea = {
+		potential = {
+			civilized = yes
+			tag = JAP
+			NOT = {
+				has_global_flag = korea_open
+			}
+			exists = KOR
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			prestige = 25
+			diplomatic_influence = {
+				who = KOR
+				value = 400
+			}
+			set_global_flag = korea_open
+		}
+	}
+
+	the_korean_restoration = {
+		potential = {
+			civilized = no
+			tag = KOR
+			vassal_of = JAP
+			NOT = { has_country_modifier = korea_restoration_boost }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			years_of_research = 5
+			prestige = 10
+			add_country_modifier = {
+				name = korea_restoration_boost
+				duration = -1
+			}
+		}
+	}
+
+	hundred_days_reform = {
+		potential = {
+			civilized = no
+			tag = CHI
+			has_global_flag = Sino_Jap_war
+			NOT = { has_country_flag = hundred_days_china }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			years_of_research = 5
+			any_pop = {
+				limit = {
+					OR = {
+						ideology = reactionary
+						ideology = conservative
+					}
+				}
+				militancy = 3
+			}
+			add_country_modifier = {
+				name = hundred_days_china
+				duration = 104
+			}
+			set_country_flag = hundred_days_china
+		}
+	}
+
+	annex_korea = {
+		potential = {
+			KOR = {
+				civilized = yes
+				vassal_of = JAP
+			}
+			tag = JAP
+			NOT = { has_country_flag = korea_taken }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			badboy = 2
+			KOR = {	
+				country_event = { id=121355 days=0 }
+			}
+			prestige = 20
+			set_country_flag = korea_taken
+		}
+	}
+
+	taiwan_administration = {
+		potential = {
+			tag = JAP
+			owns = 1485
+			owns = 2562
+			NOT = { has_country_flag = taiwan_administration }
+		}
+		allow = {
+			civilized = yes
+			owns = 1485
+			owns = 2562
+		}
+		effect = {
+			prestige = 1
+			1485 = {
+				change_province_name = "Taihoku"
+				add_core = THIS
+			}
+			2562 = {
+				change_province_name = "Takao"
+				add_core = THIS
+				state_scope = {
+					change_region_name = "Takasago"
+				}
+			}
+			set_country_flag = taiwan_administration
+		}	
+	}
+
+	late_qing_reform = {
+		potential = {
+			civilized = no
+			tag = CHI
+			year = 1895
+			has_country_flag = Box_rebels
+			NOT = { has_country_flag = late_qing }
+		}
+		allow = {
+			OR = {
+				war = no
+				year = 1905
+			}
+		}
+		effect = {
+			years_of_research = 5
+			add_country_modifier = {
+				name = late_qing_reform
+				duration = -1
+			}
+			remove_country_modifier = conser_of_qing
+			set_country_flag = late_qing
+		}
+	}
+
+	Northern_Expedition = {
+		potential = {
+			civilized = yes
+			tag = CHI
+			NOT = {
+				has_country_modifier = northern_countdown
+			}
+			has_country_flag = China_fractures
+			exists = ZHI
+			exists = ANU
+			any_neighbor_country = {
+				OR = {
+					tag = ZHI
+					tag = ANU
+				}
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			years_of_research = 5
+			add_country_modifier = {
+				name = nothern_expedition
+				duration = 500
+			}
+			casus_belli = {
+				target = ZHI
+				type = conquest
+				months = 1
+			}  
+			casus_belli = {
+				target = ANU
+				type = conquest
+				months = 1
+			} 
+			war = {
+                		target = ZHI
+                       		attacker_goal = {
+                        		casus_belli = conquest
+                       		}
+                	}
+			war = {
+                		target = ANU
+                       		attacker_goal = {
+                        		casus_belli = conquest
+                       		}
+                	}  
+		}
+	}
+}

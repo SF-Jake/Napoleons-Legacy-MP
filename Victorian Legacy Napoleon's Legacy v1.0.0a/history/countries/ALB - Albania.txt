@@ -1,6 +1,6 @@
 capital = 849
 primary_culture = albanian
-religion = placeholder
+religion = sunni
 government = absolute_monarchy
 plurality = 0.4
 nationalvalue = nv_order
@@ -35,4 +35,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/ALB_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

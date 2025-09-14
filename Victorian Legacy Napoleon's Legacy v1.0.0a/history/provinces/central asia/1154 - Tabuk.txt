@@ -3,4 +3,3 @@ controller = HDJ
 add_core = HDJ
 trade_goods = wool
 life_rating = 35
-

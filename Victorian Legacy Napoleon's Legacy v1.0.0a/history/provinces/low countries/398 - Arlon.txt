@@ -1,12 +1,8 @@
-owner = BEL
-controller = BEL
-add_core = BEL
-add_core = NET
-#add_core = WLL
+owner = FRAcontroller = FRA
+add_core = FRA
+
+
+
 trade_goods = timber
 life_rating = 35
-1861.1.1 = { 
-	railroad = 3 
-	remove_core = NET
-}
-
+1861.1.1 = { railroad = 3 }

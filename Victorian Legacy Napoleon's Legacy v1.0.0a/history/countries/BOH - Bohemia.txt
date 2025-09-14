@@ -1,8 +1,8 @@
 capital = 625
 primary_culture = czech
 culture = slovak
-religion = placeholder
-government = absolute_monarchy
+religion = catholic
+government = hms_government
 plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.7
@@ -11,12 +11,12 @@ civilized = yes
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
+vote_franschise = wealth_voting
 public_meetings = yes_meeting
-press_rights = state_press
-trade_unions = no_trade_unions
+press_rights = censored_press
+trade_unions = non_socialist
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -36,4 +36,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/BOH_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

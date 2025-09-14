@@ -1,9 +1,12 @@
-owner = ENG
-controller = ENG
-add_core = ENG
-trade_goods = iron
+owner = BRI
+
+controller = BRI
+
+add_core = BRI
+
+
+add_core = CAN
+
+trade_goods = fish
 life_rating = 35
 1861.1.1 = { railroad = 3 }
-
-
-

@@ -25,12 +25,11 @@ country_event = {
 						NOT = {
 							OR = {
 								tag = AUS
-								tag = KUK
+								tag = KUH
+								tag = DNC
 								}
 							}
 						}
-					tag = WAL
-					tag = MOL
 					tag = MON
 					tag = BOS
 					tag = SER
@@ -38,7 +37,8 @@ country_event = {
 					AND = {
 						OR = {
 							tag = AUS
-							tag = KUK
+							tag = KUH
+							tag = DNC
 						}
 						exists = HUN
 						part_of_sphere = no
@@ -56,8 +56,6 @@ country_event = {
 		political_reform = secret_ballots
 		government = hms_government
 		add_accepted_culture = union
-		prestige = -15
-		badboy = 10
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -91,7 +89,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTB11100"
-		prestige = 2
+		prestige = 20
 		ai_chance = {
 			factor = 95
 			modifier = {
@@ -120,13 +118,22 @@ country_event = {
 			inherit = THIS
 		}
 		ai_chance = {
-			factor = 500
+			factor = 90
+			modifier = {
+				factor = -90
+				OR = {
+					tag = SIC
+					tag = MOD
+					tag = PAP
+					tag = SPA
+				}
+			}
 		}
 	}
 
 	option = {
 		name = "EVTOPTB11101"
-		prestige = 1
+		prestige = 20
 		relation = {
 			who = FROM
 			value = -100
@@ -134,6 +141,18 @@ country_event = {
 		any_pop = {
 			militancy = 3
 			consciousness = 2
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 90
+				OR = {
+					tag = SIC
+					tag = MOD
+					tag = PAP
+					tag = SPA
+				}
+			}
 		}
 	}
 }
@@ -153,6 +172,67 @@ country_event = {
 		change_tag = ITA
 		add_accepted_culture = north_italian
 		add_accepted_culture = south_italian
+					472 = {
+				add_core = ITA
+			}
+			734 = {
+				add_core = ITA
+			}
+			SAR_466 = {
+				add_core = ITA
+			}
+			SAR_765 = {
+				add_core = ITA
+			}
+			SAR_720 = {
+				add_core = ITA
+			}
+			AUS_726 = {
+				add_core = ITA
+			}
+			MOD_739 = {
+				add_core = ITA
+			}
+			AUS_729 = {
+				add_core = ITA
+			}
+			PAP_741 = {
+				add_core = ITA
+			}
+			TUS_744 = {
+				add_core = ITA
+			}
+			PAP_752 = {
+				add_core = ITA
+			}
+			SIC_753 = {
+				add_core = ITA
+			}
+			SIC_754 = {
+				add_core = ITA
+			}
+			764 = {
+				add_core = ITA
+			}
+			763 = {
+				add_core = ITA
+			}
+			762 = {
+				add_core = ITA
+			}
+			any_owned_province = { 
+			remove_core = LOM
+			remove_core = LUC
+			remove_core = MOD
+			remove_core = PAP
+			remove_core = PAR
+			remove_core = SAR
+			remove_core = SIC
+			remove_core = ILY
+			remove_core = TRE
+			remove_core = TUS
+			remove_core = VEN
+					}
 		any_country = {
 			limit = {
 				NOT = {
@@ -166,19 +246,7 @@ country_event = {
 		}
 		prestige = 10
 		ai_chance = {
-			factor = 100
-		}
-	}
-
-	option = {
-		name = "EVTOPTB11103"
-		prestige = 5
-		set_country_flag = does_not_want_to_be_unified
-		ai_chance = {
-			factor = 0
-		}
-		any_pop = {
-			militancy = 2
+			factor = 95
 		}
 	}
 }

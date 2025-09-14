@@ -1,15 +1,10 @@
-owner = KRA
-controller = KRA
-#add_core = KRA
+owner = PLC
+controller = PLC
 add_core = PLC
-#add_core = RUT
-#add_core = PLC
-##add_core = RUT
 trade_goods = coal
-life_rating = 40
+life_rating = 35
 1861.1.1 = {
 	owner = AUS
 	controller = AUS
 }
 1861.1.1 = { railroad = 3 }
-

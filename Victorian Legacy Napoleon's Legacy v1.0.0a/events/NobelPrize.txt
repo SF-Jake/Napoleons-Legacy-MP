@@ -5,17 +5,10 @@
 # Establishment of the Nobel Prizes
 country_event = {
 
-	id = 23450
-	news = yes
-	news_desc_long = "EVTDESC23450_NEWS_LONG"
-	news_desc_medium = "EVTDESC23450_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC23450_NEWS_SHORT"
+	id = 23450 
 
 	trigger = {
-		OR = {
-			tag = SWE
-			tag = SCA
-		} 
+		tag = SWE 
 		year = 1898
 		not = {
 			year = 1905
@@ -1984,7 +1977,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelChemistry
-		has_global_flag = 6NobelChemistry
+		has_global_flag = 8NobelChemistry
 		year = 1907
 		electricity = 1
 		not = {
@@ -3629,7 +3622,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelMedicine
-		has_global_flag = 6NobelMedicine
+		has_global_flag = 8NobelMedicine
 		year = 1907
 		organic_chemistry = 1
 		not = {
@@ -5274,7 +5267,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelLiterature
-		has_global_flag = 6NobelLiterature
+		has_global_flag = 8NobelLiterature
 		year = 1907
 		impressionism = 1
 		not = {
@@ -6919,7 +6912,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelPeace
-		has_global_flag = 6NobelPeace
+		has_global_flag = 8NobelPeace
 		year = 1907
 		idealism = 1
 		not = {

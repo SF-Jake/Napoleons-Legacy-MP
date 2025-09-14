@@ -1,9 +1,5 @@
 owner = CHI
 controller = CHI
 add_core = CHI
-#add_core = SXI
 trade_goods = iron
-life_rating = 30
-
-
-
+life_rating = 35

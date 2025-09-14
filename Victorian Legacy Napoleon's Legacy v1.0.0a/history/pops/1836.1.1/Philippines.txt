@@ -4,115 +4,103 @@
 1455 = {
 	aristocrats = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 200
 	}
 
 	bureaucrats = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 400
 	}
 
 	clergymen = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 250
 	}
 
 	artisans = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 1050
 	}
 
 	soldiers = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 1250
 	}
 
 	bureaucrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 450
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 750
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
-		size = 10000
-	}
-
-	artisans = {
-		culture = filipino
-		religion = placeholder
-		size = 10000
-	}
-
-	artisans = {
-		culture = filipino
-		religion = placeholder
-		size = 9000
+		religion = catholic
+		size = 29000
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
-		size = 4000
+		religion = catholic
+		size = 6000
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
-		size = 136550
+		religion = catholic
+		size = 134550
 	}
 
 	artisans = {
 		culture = nanfaren
-		religion = placeholder
+		religion = catholic
 		size = 1200
 	}
 
 	farmers = {
 		culture = nanfaren
-		religion = placeholder
+		religion = catholic
 		size = 800
 	}
 
 	clergymen = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 75
 	}
 
 	artisans = {
 		culture = malay
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	soldiers = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 200
 	}
 
 	farmers = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 17725
 	}
 }
@@ -120,55 +108,55 @@
 1456 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 625
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 7350
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 1500
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 134525
 	}
 
 	clergymen = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = catholic
 		size = 50
 	}
 
 	artisans = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = catholic
 		size = 250
 	}
 
 	soldiers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = catholic
 		size = 50
 	}
 
 	farmers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = catholic
 		size = 6650
 	}
 }
@@ -176,55 +164,55 @@
 1457 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 625
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 6500
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
-		size = 1350
+		religion = catholic
+		size = 4350
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
-		size = 122525
+		religion = catholic
+		size = 119525
 	}
 
 	clergymen = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	artisans = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 500
 	}
 
 	soldiers = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	farmers = {
 		culture = malay
-		religion = placeholder
+		religion = catholic
 		size = 8350
 	}
 }
@@ -232,55 +220,55 @@
 1458 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 400
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 175
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 2100
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 450
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 38875
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 125
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 750
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 11025
 	}
 
@@ -291,85 +279,85 @@
 1459 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 200
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 3700
 	}
 
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 75
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 50
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 300
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 75
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 5500
 	}
 
 	clergymen = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 450
 	}
 
 	soldiers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 9375
 	}
 }
@@ -377,55 +365,55 @@
 1460 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 650
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 350
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 3500
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
-		size = 750
+		religion = catholic
+		size = 3750
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
-		size = 64750
+		religion = catholic
+		size = 61750
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 75
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 500
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 7325
 	}
 }
@@ -433,111 +421,111 @@
 1461 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 750
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 625
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 4250
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
-		size = 850
+		religion = catholic
+		size = 3850
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
-		size = 80125
+		religion = catholic
+		size = 77125
 	}
 }
 #Cebu (304000/76000 POPS)
 2565 = {
 	bureaucrats = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 125
 	}
 
 	clergymen = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	soldiers = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 675
 	}
 
 	bureaucrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 375
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 450
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 3500
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 750
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 64050
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 50
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 500
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 75
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 5375
 	}
 
@@ -548,115 +536,115 @@
 1463 = {
 	bureaucrats = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 75
 	}
 
 	clergymen = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	soldiers = {
 		culture = spanish
-		religion = placeholder
+		religion = catholic
 		size = 25
 	}
 
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 850
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 14800
 	}
 
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 600
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 11100
 	}
 
 	farmers = {
 		culture = malay
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	aristocrats = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 350
 	}
 
 	soldiers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 7375
 	}
 }
@@ -665,85 +653,85 @@
 1462 = {
 	aristocrats = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 600
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 500
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = sunni
 		size = 2500
 	}
 
 	soldiers = {
 		culture = filipino
-		religion = placeholder
-		size = 500
+		religion = sunni
+		size = 3500
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
-		size = 44900
+		religion = sunni
+		size = 41900
 	}
 
 	clergymen = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	artisans = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 750
 	}
 
 	farmers = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 12200
 	}
 
 	slaves = {
 		culture = filipino
-		religion = placeholder
+		religion = catholic
 		size = 4000
 	}
 
 	aristocrats = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 300
 	}
 
 	soldiers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = filipino
-		religion = placeholder
+		culture = asian_minor
+		religion = animist
 		size = 8525
 	}
 }
@@ -751,43 +739,43 @@
 1464 = {
 	aristocrats = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	bureaucrats = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 75
 	}
 
 	officers = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 75
 	}
 
 	clergymen = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 100
 	}
 
 	artisans = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 600
 	}
 
 	soldiers = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 225
 	}
 
 	farmers = {
 		culture = malay
-		religion = placeholder
+		religion = sunni
 		size = 9825
 	}
 

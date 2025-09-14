@@ -3,7 +3,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			has_country_flag = serfdom_not_abolished
-			#government = absolute_monarchy
+			government = hms_government
 		}
 		allow = {
 			OR = {
@@ -30,14 +30,21 @@ political_decisions = {
 				militancy = -2
 				consciousness = 1
 			}
+			aristocrats = {
+				militancy = 10
+				consciousness = 5
+			}
 			badboy = -4
-			#years_of_research = 0.05
+			years_of_research = 0.05
 			clr_country_flag = serfdom_not_abolished
 		}
 	}
 	establish_the_sovnarkom = {
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = TSA
+			}
 			NOT = {
 				has_country_flag = big_brother_is_watching
 			}
@@ -64,7 +71,7 @@ political_decisions = {
 	manifesto_on_unshakable_autocracy = {
 		potential = {
 			tag = RUS
-			government = absolute_monarchy
+			government = hms_government
 			NOT = {
 				has_country_flag = the_manifesto
 			}
@@ -77,10 +84,10 @@ political_decisions = {
 		
 		effect = {
 			prestige = 5
-			badboy = 3
+			badboy = -3
 			any_pop = {
-				consciousness = -0.5
-				militancy = -0.5
+				consciousness = 0.5
+				militancy = 0.5
 			}
 			set_country_flag = the_manifesto
 		}
@@ -88,13 +95,16 @@ political_decisions = {
 	
 	promulgate_the_ems_ukaz = {
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = TSA
+			}
 			NOT = {
 				has_country_flag = ems_ukaz_dispatched
 			}
-			government = absolute_monarchy
+			government = hms_government
 			owns = 958
-			revolution_n_counterrevolution = 1
+			phenomenalism = 1
 			exists = GER
 			GER = {
 				owns = 570
@@ -119,7 +129,10 @@ political_decisions = {
 
 	protect_eastern_christians = {
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = TSA
+			}
 			is_greater_power = yes
 			government = absolute_monarchy
 			NOT = {
@@ -163,46 +176,13 @@ political_decisions = {
 			}
 		}
 	}
-	
-	peking_convention = {
-		potential = {
-			tag = RUS
-			MCK = {
-					owns = 1082 }
-			NOT = {
-				has_country_flag = peking_convention
-				war_with = CHI
-			}
-			OR = {
-				is_sphere_leader_of = MCK
-				has_global_flag = summer_palace_torched
-			}
-		}
-		
-		allow = {
-			is_greater_power = yes
-		}
-		
-		effect = {
-			CHI_1082 = {
-				add_core = RUS
-			}
-			1469 = {
-				add_core = RUS
-				remove_core = CHI
-			}
-			set_country_flag = peking_convention			
-			CHI = {
-				country_event = { id=80000 days=0 }
-			}
-			prestige = 2
-			badboy = 2
-		}
-	}
 
 	russian_vladivostok = {
 		potential = {
-		tag = RUS
+		OR = {
+			tag = RUS
+			tag = TSA
+		}
 		owns = 1085
 		owns = 1084
 		owns = 2617
@@ -215,6 +195,7 @@ political_decisions = {
 		
 		allow = {
 			prestige = 10
+		
 		}
 		
 		effect = {
@@ -244,8 +225,10 @@ political_decisions = {
 	move_capital_to_moscow = {
 		potential = {
 			tag = RUS
-			NOT = { owns = 339 } # Viipuri
-			NOT = { is_our_vassal = FIN }
+			OR = {
+				NOT = { owns = 339 } # Viipuri
+				NOT = { owns = 350 } 
+			}
 			owns = 1008 # Moscow
 			capital = 994
 		}
@@ -262,84 +245,69 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	found_the_imperial_academy = {
-			potential = {
-				tag = RUS
-				NOT = { tech_school = russian_tech_school }
+
+	demand_sofianove = {
+		potential = {
+			tag = RUS
+			NOT = {
+				owns = 1469
+				has_country_flag = sofianova_sought
 			}
-			
-			allow = {
-				owns = 994
-				idealism = 1
-				army_professionalism = 1
+			CHI = {
+				war_with = TPG
+				owns = 1469
 			}
-			
-			effect = {
-				tech_school = russian_tech_school
-				prestige = 5
+		}
+		
+		allow = {
+			CHI = {
+				war_with = TPG
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = { 
-					factor = 0
-					NOT = { business_banks = 1 }
-				}
-				modifier = { 
-					factor = 0
-					NOT = { biologism = 1 }
-				}
+		}
+		
+		effect = {
+			prestige = 5
+			CHI = {
+				country_event = { id=121338 days=0 }
 			}
+			set_country_flag = sofianova_sought
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
-	russian_sakhalin = {
-			picture = map_yellow_sea
-			potential = {
-				tag = RUS
-				OR = {
-					owns = 1086 #Pogobi
-					owns = 1087 #Ootomari
-				}
-				OR = {
-					has_global_flag = japanese_sakhalin
-					NOT = { has_global_flag = russian_sakhalin }
-				}
+	peking_convention = {
+		potential = {
+			tag = RUS
+			MCK = {
+					owns = 1082 }
+			NOT = {
+				has_country_flag = peking_convention
+				war_with = MCK
 			}
-			allow = {
+			OR = {
+				is_sphere_leader_of = MCK
+				has_global_flag = summer_palace_torched
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			CHI_1082 = {
+				add_core = RUS
+			}
+			1469 = {
+				add_core = RUS
+			}
+			set_country_flag = peking_convention			
+			MCK = {
+				country_event = { id=80000 days=0 }
+			}
+			prestige = 2
+		}
+	}
 	
-				owns = 1086 #Pogobi/Sagaren
-				owns = 1087 #Ootomari/Toyohara
-				owns = 1088 #Shumshu/Shumushu
-				owns = 1089 #Etorofu
-			}
-			effect = {
-				prestige = 5
-				any_country = {
-					limit = {
-						tag = JAP
-						exists = yes
-					}
-					prestige = -10
-				}
-				1088 = {
-					change_province_name = "Shumshu"
-				}
-				1089 = {
-					change_province_name = "Iturrup"
-				}
-				1086 = {
-					change_province_name = "Yuzhno"
-				}
-				1086 = {
-					change_province_name = "Pogobi"
-					state_scope = {
-						change_region_name = "Sakhalin"
-						any_owned = { add_core = THIS }
-					}
-				}
-				clr_global_flag = japanese_sakhalin
-				set_global_flag = russian_sakhalin
-			}
-			ai_will_do = {
-				factor = 1
-			}
-	}
 }

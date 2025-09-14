@@ -1,7 +1,8 @@
-owner = SIC
-controller = SIC
+owner = ILY
+controller = ILY
+add_core = ILY
+
 add_core = SIC
-#add_core = ITA
 
 trade_goods = sulphur
 life_rating = 35
@@ -13,5 +14,5 @@ life_rating = 35
 1861.1.1 = {
 	controller = ITA
 	owner = ITA
-	#add_core = ITA
+	add_core = ITA
 }

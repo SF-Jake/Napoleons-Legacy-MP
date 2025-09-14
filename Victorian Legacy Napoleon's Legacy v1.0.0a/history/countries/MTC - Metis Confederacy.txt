@@ -1,15 +1,13 @@
 capital = 37
-primary_culture = polar_bears
-religion = placeholder
+primary_culture = metis
+religion = animist
 government = democracy
-plurality = 5.0
-nationalvalue = nv_productivity
+plurality = 0.05
+nationalvalue = nv_liberty
 literacy = 0.17
 civilized = yes
 is_releasable_vassal = no
 
-set_country_flag = new_world_nation
-set_country_flag = north_american_immigrant_nation
 
 # Political reforms
 slavery = no_slavery
@@ -39,4 +37,12 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+1861.1.1 = {
+	oob = "/1861/MTC_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

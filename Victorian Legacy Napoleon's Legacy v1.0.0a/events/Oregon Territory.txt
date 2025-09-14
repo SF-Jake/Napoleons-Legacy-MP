@@ -1,0 +1,674 @@
+
+	
+#COL responds to USA decision
+country_event = {
+    	id = 600001
+    	title = "EVTNAME600001"
+    	desc = "EVTDESC600001"
+    	picture = "administration"
+	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600001"
+        	CAN = {
+        		country_event = { id=600002 days=0 }
+        	}
+        	ai_chance = {
+        	    factor = 90
+        	}
+        }
+        option = {
+        	name = "EVTOPTB600001"
+		prestige = 10
+        	USA = {
+        		country_event = { id=600003 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 10
+        	}
+    	}
+}
+
+#CAN responds to USA decision
+country_event = {
+    	id = 600002
+    	title = "EVTNAME600002"
+    	desc = "EVTDESC600002"
+    	picture = "administration"
+	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600002"
+        	USA = {
+                        country_event = 600004
+                }
+        	ai_chance = {
+        		factor = 70
+        	}
+        }
+        option = {
+        	name = "EVTOPTB600002"
+		relation = {
+			who = USA
+			value = -100
+		}
+		prestige = 10
+		USA = {
+                        country_event = 600005
+                }
+        	HUD = {
+                        country_event = 600006
+                }
+        	ai_chance = {
+        		factor = 30
+        	}
+    	}
+}
+
+#COL wants to negotiate
+country_event = {
+    	id = 600003
+    	title = "EVTNAME600003"
+    	desc = "EVTDESC600003"
+    	picture = "administration"
+    	is_triggered_only = yes
+    
+    	option = {
+    	name = "EVTOPTA600003"
+        	relation = {
+        		who = HUD
+        		value = -100
+        	}
+        	HUD = {
+        		country_event = { id=600007 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 30
+        	}
+    	}
+    	option = {
+    	name = "EVTOPTB600003"
+        	HUD = {
+        		country_event = { id=600008 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 70
+        	}
+    	}
+}
+
+#USA responds to CAN request to negotiate
+country_event = {
+    	id = 600004
+    	title = "EVTNAME600004"
+    	desc = "EVTDESC600004"
+    	picture = "administration"
+    	is_triggered_only = yes
+    
+    	option = {
+    	name = "EVTOPTA600004"
+        	CAN = {
+        		country_event = { id=600009 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 35
+        	}
+    	}
+    	option = {
+    	name = "EVTOPTB600004"
+        	CAN = {
+        		country_event = { id=600021 days=0 }
+        	}
+		relation = {
+        		who = USA
+        		value = -100
+        	}
+        	ai_chance = {
+        		factor = 65
+        	}
+    	}
+}
+
+#CAN declares protection of COL- USA
+country_event = {
+    	id = 600005
+    	title = "EVTNAME600005"
+    	desc = "EVTDESC600006"
+    	picture = "administration"
+    	is_triggered_only = yes
+    
+    	option = {
+    		name = "EVTOPTA600005"
+    	}
+}
+
+#CAN declares protection of COL- COL
+country_event = {
+    	id = 600006
+    	title = "EVTNAME600006"
+    	desc = "EVTDESC600006"
+    	picture = "administration"
+    	is_triggered_only = yes
+    
+    	option = {
+    		name = "EVTOPTA600006"
+    	}
+}
+
+#USA will not negotiate
+country_event = {
+    	id = 600007
+    	title = "EVTNAME600007"
+    	desc = "EVTDESC600007"
+   	picture = "administration"
+   	is_triggered_only = yes
+
+	option = {
+    	name = "EVTOPTA600007"
+        	CAN = {
+        		country_event = { id=600002 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 100
+        	}
+    	}
+    	option = {
+    		name = "EVTOPTB600007"
+		prestige = 30
+        	ai_chance = {
+        		factor = 0
+        	}
+    	}
+}
+   
+#USA will negotiate
+country_event = {
+    	id = 600008
+    	title = "EVTNAME600008"
+    	desc = "EVTDESC600008"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600008"
+        	USA = {
+        		country_event = { id=600011 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 50
+        	}
+    	}
+    	option = {
+    	name= "EVTOPTB600008"
+        	USA = {
+        		country_event = { id=600012 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 50
+        	}
+    	}
+}
+        
+#USA wants all the land
+country_event = {
+    	id = 600009
+    	title = "EVTNAME600009"
+    	desc = "EVTDESC600009"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600009"
+        	USA = {
+        		country_event = { id=600013 days=0 }
+        	}
+        	HUD = {
+        		country_event = { id=600014 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 30
+        	}
+    	}
+    	option = {
+    	name = "EVTOPTB600009"
+        	USA = {
+        		country_event = { id=600015 days=0 }
+        	}
+        	HUD = {
+        		country_event = { id=600016 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 70
+        	}
+    	}
+}
+
+#USA wants half the land
+country_event = {
+    	id = 600021
+    	title = "EVTNAME600021"
+    	desc = "EVTDESC600021"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600021"
+        	USA = {
+        		country_event = { id=600017 days=0 }
+        	}
+        	HUD = {
+        		country_event = { id=600018 days=0 }
+        	}
+		relation = {
+        		who = USA
+        		value = 30
+        	}
+        	ai_chance = {
+        		factor = 80
+        	}
+    	}
+    	option = {
+    	name = "EVTOPTB600021"
+    		USA = {
+        		country_event = { id=600015 days=0 }
+        	}
+        	HUD = {
+        		country_event = { id=600016 days=0 }
+        	}
+		relation = {
+        		who = USA
+        		value = -100
+        	}
+        	ai_chance = {
+        		factor = 20
+        	}
+    	}
+}
+        
+#Will USA accept money?
+country_event = {
+    	id = 600011
+    	title = "EVTNAME600011"
+    	desc = "EVTDESC600011"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600011"
+        	HUD = {
+        		country_event = { id=600019 days=0 }
+        	}
+        	money = 100000
+		21 = {
+            		remove_core = USA
+            	}
+            	20 = {
+            		remove_core = USA
+            	}
+            	19 = {
+            		remove_core = USA
+            	}
+            	14 = {
+            		remove_core = USA
+            	}
+            	13 = {
+            		remove_core = USA
+            	}
+        	ai_chance = {
+        		factor = 35
+        	}
+    	}
+    	option = {
+    	name = "EVTOPTB600011"
+        	HUD = {
+        		country_event = { id=600007 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 65
+        	}
+    	}
+}
+        
+#Will USA accept half land?
+country_event = {
+    	id = 600012
+    	title = "EVTNAME600012"
+    	desc = "EVTDESC600012"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600012"
+        	HUD = {
+        		country_event = { id=600022 days=0 }
+        	}
+		21 = {
+            		remove_core = USA
+            	}
+            	20 = {
+            		remove_core = USA
+            	}
+            	19 = {
+            		remove_core = USA
+            	}
+            	14 = {
+            		remove_core = USA
+            	}
+            	13 = {
+            		remove_core = USA
+            	}
+		114 = {
+            		remove_core = USA
+            	}
+            	93 = {
+            		remove_core = USA
+            	}
+            	92 = {
+            		remove_core = USA
+            	}
+                91 = {
+            		remove_core = USA
+            	}
+            	83 = {
+            		remove_core = USA
+            	}
+            	82 = {
+                	remove_core = USA
+            	}
+            	81 = {
+            		remove_core = USA
+            	}
+            	80 = {
+            		remove_core = USA
+            	}
+            	79 = {
+            		remove_core = USA
+            	}
+            	78 = {
+            		remove_core = USA
+            	}
+        	ai_chance = {
+        		factor = 80
+        	}
+    	}
+    	option = {
+    	name = "EVTOPTB600012"
+        	HUD = {
+        		country_event = { id=600007 days=0 }
+        	}
+        	ai_chance = {
+        		factor = 20
+        	}
+    	}
+}
+    
+#CAN gives USA all the land - USA
+country_event = {
+    	id = 600013
+    	title = "EVTNAME600013"
+    	desc = "EVTDESC600013"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600013"    
+        	HUD = {
+            	114 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	93 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	92 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+                91 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	83 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	82 = {
+                	remove_core = HUD
+            		secede_province = USA
+            	}
+            	81 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	80 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	79 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	78 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	21 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	20 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	19 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	14 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	13 = {
+            		remove_core = HUD
+            		secede_province = USA
+            	}
+            	remove_accepted_culture = yankee
+        	}
+    	}
+}
+
+#CAN gives USA all the land - COL
+country_event = {
+    	id = 600014
+    	title = "EVTNAME600014"
+    	desc = "EVTDESC600014"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600014"
+    	}
+}
+
+#Can tells USA to fuck off
+country_event = {
+    	id = 600015
+    	title = "EVTNAME600015"
+    	desc = "EVTDESC600015"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600015"
+    	}
+}
+
+#Can tells USA to fuck off
+country_event = {
+    	id = 600016
+    	title = "EVTNAME600016"
+    	desc = "EVTDESC600016"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600017"
+    	}
+}
+
+#CAN gives USA half the land - USA
+country_event = {
+    	id = 600017
+    	title = "EVTNAME600017"
+    	desc = "EVTDESC600017"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600017"
+        	HUD = {
+        		114 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		93 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		92 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+               		91 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		83 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		82 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		81 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		80 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		79 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		78 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            	remove_accepted_culture = yankee
+        	}
+		21 = {
+            		remove_core = USA
+            	}
+            	20 = {
+            		remove_core = USA
+            	}
+            	19 = {
+            		remove_core = USA
+            	}
+            	14 = {
+            		remove_core = USA
+            	}
+            	13 = {
+            		remove_core = USA
+            	}
+    	}
+}
+
+#CAN gives USA half the land - COL
+country_event = {
+    	id = 600018
+    	title = "EVTNAME600018"
+    	desc = "EVTDESC600018"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600018"
+    	}
+}
+
+#USA accepts money
+country_event = {
+    	id = 600019
+    	title = "EVTNAME600019"
+    	desc = "EVTDESC600019"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    		name = "EVTOPTA600019"
+        	HUD = {
+        	money = -100000
+        	}
+    	}
+}
+
+#USA accepts half the land
+country_event = {
+    	id = 600022
+    	title = "EVTNAME600022"
+    	desc = "EVTDESC600022"
+    	picture = "administration"
+    	is_triggered_only = yes
+
+    	option = {
+    	name = "EVTOPTA600022"
+        	HUD = {
+        		114 = {
+        			remove_core = HUD
+            			secede_province = USA
+            		}
+            		93 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		92 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+               		91 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		83 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		82 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		81 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		80 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		79 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            		78 = {
+            			remove_core = HUD
+            			secede_province = USA
+            		}
+            	remove_accepted_culture = yankee
+        	}
+    	}
+}

@@ -1,8 +1,8 @@
 capital = 726
 primary_culture = north_italian
-religion = placeholder
+religion = catholic
 government = absolute_monarchy
-plurality = 0.0
+plurality = 25.0
 nationalvalue = nv_order
 literacy = 0.4
 civilized = yes
@@ -36,4 +36,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/LOM_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

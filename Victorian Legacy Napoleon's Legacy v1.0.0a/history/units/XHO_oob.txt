@@ -1,0 +1,31 @@
+BSH = {
+	value = 50
+}
+
+#SUA = {
+#	value = 30
+#}
+
+ZUL = {
+	value = 30
+}
+
+leader = {
+   name = "Maqoma"
+   type = land
+   date = 1836.1.1
+   background = expert_raider
+   personality = merciless
+}
+
+army = {
+	name = "Army of the Xhosa"
+	location = 2100	
+	regiment = {
+		name= "1st Xhosa Warriors"
+		type = irregular
+		home = 2100
+	}
+}
+
+

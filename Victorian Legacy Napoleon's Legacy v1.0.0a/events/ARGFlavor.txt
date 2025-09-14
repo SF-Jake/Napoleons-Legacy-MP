@@ -1,10 +1,6 @@
 country_event = {
 
 	id = 46600 
-	news = yes
-	news_desc_long = "EVTDESC46600_NEWS_LONG"
-	news_desc_medium = "EVTDESC46600_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC46600_NEWS_SHORT"
 
 	trigger = {
 		tag = ARG  
@@ -93,11 +89,7 @@ country_event = {
 
 country_event = {
 
-	id = 46601
-	news = yes
-	news_desc_long = "EVTDESC46601_NEWS_LONG"
-	news_desc_medium = "EVTDESC46601_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC46601_NEWS_SHORT" 
+	id = 46601 
 
 	trigger = {
 		tag = ARG  
@@ -156,22 +148,4 @@ country_event = {
 		set_country_flag = Facundo
 	}
 
-}
-
-#The King of Sardinia visits Argentina
-country_event = { #original VIP event by Generalisimo
-	id = 146603
-	title = "EVTNAME146603"
-	desc = "EVTDESC146603"
-	picture = "treaty"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTBV"
-		prestige = 3
-		SAR = {
-			relation = { who = THIS value = 25 }
-		}
-	}
 }

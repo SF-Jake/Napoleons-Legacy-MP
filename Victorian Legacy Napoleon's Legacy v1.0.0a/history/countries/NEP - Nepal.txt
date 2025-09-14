@@ -1,7 +1,7 @@
 capital = 1326
 primary_culture = nepali
 culture = tibetan
-religion = placeholder
+religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -23,6 +23,9 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "NEP_oob.txt"
+1861.1.1 = {
+	oob = "/1861/NEP_oob.txt"
+}
 
 slavery = no_slavery
 upper_house_composition = appointed

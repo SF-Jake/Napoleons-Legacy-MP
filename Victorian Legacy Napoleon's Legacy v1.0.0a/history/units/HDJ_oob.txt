@@ -1,17 +1,3 @@
-#Relations
-
-TUR = {
-	value = -100
-}
-
-NEJ = {
-	value = -200
-}
-
-EGY = {
-	value = -200
-}
-
 army = {
 	name = "Bedouins"
 	location = 1153

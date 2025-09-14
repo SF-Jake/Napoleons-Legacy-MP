@@ -537,7 +537,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 2 # 1.5
+			factor = 1.5
 			owner = {
 				nationalism_n_imperialism = 1
 			}
@@ -597,7 +597,7 @@ province_event = {
 			average_militancy = 5
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			NOT = {
 				owner = {
 					average_consciousness = 5
@@ -622,7 +622,7 @@ province_event = {
 	option = {
 		name = "EVTOPTB14590"
 		owner = {
-			prestige = -1
+			prestige = -5
 		}
 		state_scope = {
 			any_pop = {
@@ -641,10 +641,6 @@ country_event = {
 	id = 14600
 	title = "EVTNAME14600"
 	desc = "EVTDESC14600"
-	news = yes
-	news_desc_long = "EVTDESC14600_NEWS_LONG"
-	news_desc_medium = "EVTDESC14600_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC14600_NEWS_SHORT"
 	picture = "Rebellion"
 	
 	trigger = {
@@ -733,6 +729,63 @@ province_event = {
 		state_scope = {
 			any_pop = {
 				militancy = -1
+			}
+		}
+	}
+}
+
+#$STATENAME$ Emergency
+province_event = {
+	id = 14620
+	title = "EVTNAME14620"
+	desc = "EVTDESC14620"
+	
+	trigger = {
+		is_colonial = yes
+		average_militancy = 4
+	}
+	
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				mass_politics = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA14620"
+		state_scope = {
+			any_pop = {
+				reduce_pop = 0.95
+				militancy = -1
+				consciousness = 1
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTB14620"
+		state_scope = {
+			any_pop = {
+				reduce_pop = 0.80
+				militancy = -2
 			}
 		}
 	}
@@ -1015,10 +1068,6 @@ country_event = {
 	id = 14670
 	title = "EVTNAME14670"
 	desc = "EVTDESC14670"
-	news = yes
-	news_desc_long = "EVTDESC14670_NEWS_LONG"
-	news_desc_medium = "EVTDESC14670_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC14670_NEWS_SHORT"
 	major = yes
 	
 	trigger = {
@@ -1451,10 +1500,6 @@ country_event = {
 	id = 14740
 	title = "EVTNAME14740"
 	desc = "EVTDESC14740"
-	news = yes
-	news_desc_long = "EVTDESC14740_NEWS_LONG"
-	news_desc_medium = "EVTDESC14740_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC14740_NEWS_SHORT"
 	major = yes
 	
 	trigger = {

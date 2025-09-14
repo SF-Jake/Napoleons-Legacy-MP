@@ -1,0 +1,414 @@
+# Mysterious Whale Sinks Ship!
+country_event = {
+	id = 23300
+	title = "EVTNAME23300"
+	desc = "EVTDESC23300"
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = american_civil_war_has_happened
+		has_global_flag = motala_verkstad_expanded
+		has_global_flag = doctrine_of_lapse_has_been_used
+		has_global_flag = suez_canal_built
+		has_global_flag = ruhr_boom_has_happened
+		is_greater_power = yes
+		colonial_nation = yes
+		iron_steamers = 1
+		steamer_convoy = 1
+		clipper_convoy = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 20000
+		
+		modifier = {
+			factor = 0.002
+			year = 1865
+			NOT = {
+				year = 1875
+			}
+		}
+				
+		modifier = {
+			factor = 0.7
+			tag = USA
+		}
+		modifier = {
+			factor = 0.8
+			tag = BRI
+		}
+		modifier = {
+			factor = 0.9
+			tag = FRA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA23300"
+		clipper_convoy = -1
+		steamer_convoy = -1
+		set_country_flag = i_am_chasing_nemo
+		set_global_flag = mobilis_in_mobile
+	}
+	
+	option = {
+		name = "EVTOPTB23300"
+		prestige = 2
+		clipper_convoy = -1
+		set_country_flag = i_do_not_want_to_chase_nemo
+	}
+}
+
+# Nemo sinks a ship of yours
+country_event = {
+	id = 23301
+	title = "EVTNAME23301"
+	desc = "EVTDESC23301"
+	picture = "emigration"
+	
+	trigger = {
+		has_global_flag = mobilis_in_mobile
+		steamer_convoy = 1
+		clipper_convoy = 1
+		NOT = {
+			has_country_flag = i_do_not_want_to_chase_nemo
+			has_country_flag = i_am_chasing_nemo_to
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.4
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.9
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 0.9
+			iron_steamers = 1
+		}
+		modifier = {
+			factor = 0.9
+			naval_logistics = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA23300"
+		clipper_convoy = -1
+		steamer_convoy = -1
+		set_country_flag = i_am_chasing_nemo_to
+	}
+	
+	option = {
+		name = "EVTOPTB23300"
+		prestige = 2
+		clipper_convoy = -1
+		set_country_flag = i_do_not_want_to_chase_nemo
+	}
+}
+
+# Arronax washes ashore
+country_event = {
+	id = 23302
+	title = "EVTNAME23302"
+	desc = "EVTDESC23302"
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = mobilis_in_mobile
+		OR = {
+			has_country_flag = i_am_chasing_nemo
+			has_country_flag = i_am_chasing_nemo_to
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		
+		modifier = {
+			factor = 0.4
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.9
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 0.9
+			iron_steamers = 1
+		}
+		modifier = {
+			factor = 0.9
+			naval_logistics = 1
+		}
+		modifier = {
+			factor = 0.8
+			has_country_flag = i_am_chasing_nemo
+		}
+		modifier = {
+			factor = 0.8
+			tag = NOR
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA23302"
+		prestige = 20
+		years_of_research = 0.5
+		clr_global_flag = mobilis_in_mobile
+	}
+}
+
+#Nothing Happens
+country_event = {
+	id = 32421
+	title = "EVTNAME32421"
+	desc = "EVTDESC32421"
+	picture = "riot"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32421"
+		set_country_flag = box_done
+	}
+}
+
+#Angel of Death
+country_event = {
+	id = 32422
+	title = "EVTNAME32422"
+	desc = "EVTDESC32422"
+	picture = "cityfire"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32422"
+		1151 = {
+			any_pop = {
+				reduce_pop = 0.1
+			}
+			life_rating = -10
+		}
+		set_country_flag = box_done
+	}
+}
+
+#Muhammad
+country_event = {
+	id = 32423
+	title = "EVTNAME32423"
+	desc = "EVTDESC32423"
+	picture = "Opium"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32423"
+		any_pop = {
+			limit = {
+				is_culture_group = turko_semitic
+				is_culture_group = arab
+				is_culture_group = iranian_turanian
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -10
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -5
+			}
+			ideology = {
+				value = socialist
+				factor = 0.30
+			}
+			ideology = {
+				value = liberal
+				factor = 0.30
+			}
+			dominant_issue = {
+				factor = 0.2
+				value = pro_atheism
+			}
+		}
+		set_country_flag = box_done
+	}
+}
+
+#Religious Relics
+country_event = {
+	id = 32424
+	title = "EVTNAME32424"
+	desc = "EVTDESC32424"
+	picture = "vision"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32424"
+		scaled_militancy = {
+			ideology = reactionary
+			factor = -5
+		}
+		scaled_militancy = {
+			ideology = conservative
+			factor = -3
+		}
+		any_pop = {
+			consciousness = 3
+		}
+		plurality = 6
+		prestige = 80
+		set_country_flag = box_done
+	}
+}
+
+#Body of Christ
+country_event = {
+	id = 32425
+	title = "EVTNAME32425"
+	desc = "EVTDESC32425"
+	picture = "christ"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32425"
+		prestige = 20
+		badboy = 2
+		}
+		set_country_flag = box_done
+	}
+}
+
+#Lodsofemone
+country_event = {
+	id = 32426
+	title = "EVTNAME32426"
+	desc = "EVTDESC32426"
+	picture = "WilhelmIV"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32426"
+		money = 400000
+		set_country_flag = box_done
+	}
+}
+
+#House of Wisdom
+country_event = {
+	id = 32427
+	title = "EVTNAME32427"
+	desc = "EVTDESC32427"
+	picture = "BengaliNovel"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32427"
+		years_of_research = 2
+		set_country_flag = box_done
+	}
+}
+
+#Damascus Steel
+country_event = {
+	id = 32428
+	title = "EVTNAME32428"
+	desc = "EVTDESC32428"
+	picture = "Nobel_Chemistry"
+	
+	trigger = {
+		has_country_flag = box_opened
+		NOT = {
+			has_country_flag = box_done
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA32428"
+		add_country_modifier = {
+			name = turkish_imports
+			duration = 10950
+		}
+		set_country_flag = box_done
+	}
+}

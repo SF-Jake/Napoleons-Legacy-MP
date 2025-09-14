@@ -1,15 +1,12 @@
 capital = 2201
 primary_culture = central_american
-religion = placeholder
+religion = catholic
 government = democracy
 plurality = 0.1
-nationalvalue = nv_productivity
+nationalvalue = nv_liberty
 literacy = 0.17
 civilized = yes
-is_releasable_vassal = no
 
-set_country_flag = new_world_nation
-set_country_flag = north_american_immigrant_nation
 
 # Political reforms
 slavery = no_slavery
@@ -39,4 +36,51 @@ upper_house = {
 	anarcho_liberal = 5
 	socialist = 12
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/COS_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+	post_napoleonic_thought = 1
+	flintlock_rifles = 1
+	bronze_muzzle_loaded_artillery = 1
+	iron_muzzle_loaded_artillery = 1
+	army_command_principle = 1
+	private_banks = 1
+	no_standard = 1
+	freedom_of_trade = 1
+	guild_based_production = 1
+	classicism_n_early_romanticism = 1
+	late_enlightenment_philosophy = 1
+	idealism = 1
+	enlightenment_thought = 1
+	water_wheel_power = 1
+	publishing_industry = 1
+	mechanical_production = 1
+	interchangeable_parts = 1
+	experimental_railroad = 1
+	early_railroad = 1
+	iron_railroad = 1
+	post_nelsonian_thought = 1
+	the_command_principle = 1
+
+#Inventions
+	jacquard_power_loom = yes
+	pitts_threshing_machine = yes
+	mechanized_slaughtering_block = yes
+	northrop_power_loom = yes
+	mechanical_precision_saw = yes
+	precision_work = yes
+	mechanical_saw = yes
+	machine_tools = yes
+	whitney_n_colts_standardized_small_arms = yes
+	integral_distillery_process = yes
+	hegelian_idealism = yes
+	sharp_n_roberts_power_loom = yes
+	proto_existentialism = yes
+	food_packing_system = yes
+	neokantian_idealism = yes
+	hussey_n_mccormicks_reaping_machine = yes
 }

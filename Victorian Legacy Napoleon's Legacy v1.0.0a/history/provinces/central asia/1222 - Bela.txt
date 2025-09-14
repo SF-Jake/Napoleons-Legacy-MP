@@ -1,7 +1,6 @@
 owner = MAK
 controller = MAK
 add_core = MAK
-#add_core = HND
+add_core = HND
 trade_goods = tea
-life_rating = 30
-
+life_rating = 35

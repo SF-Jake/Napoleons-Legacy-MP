@@ -1,18 +1,62 @@
-EVTNAME19356;A war to end all wars;;;;;;;;;;;;;x
-EVTDESC19356;It has become increasingly clear that we have entered a new era of unprecedented warfare. The conflicts of our time are no longer mere local issues, but instead reach every corner of the world. Considering the ever increasing stakes and the terrifying impact of these hostilities on the nations involved, there is no longer any need for restrain.\n\n From now on a great war will allow a side that is clearly winning the ability to add even more wargoals;;;;;;;;;;;;;x
-EVTOPTA19356;Gentlemen, all I ask for is war, a war so grand as to make Hell itself tremble;;;;;;;;;;;;;x
-EVTDESC19356_NEWS_LONG;It has become increasingly clear that we have entered a new era of unprecedented warfare. The conflicts of our time are no longer mere local issues, but instead reach every corner of the world. Considering the ever increasing stakes and the terrifying impact of these hostilities on the nations involved, there is no longer any need for restrain.;;;;;;;;;;;;;x
-EVTDESC19356_NEWS_MEDIUM;It has become increasingly clear that we have entered a new era of unprecedented warfare. The conflicts of our time are no longer mere local issues, but instead reach every corner of the world. Considering the ever increasing stakes and the terrifying impact of these hostilities on the nations involved, there is no longer any need for restrain.;;;;;;;;;;;;;x
-EVTDESC19356_NEWS_SHORT;It has become increasingly clear that we have entered a new era of unprecedented warfare.;;;;;;;;;;;;;x
-ASSIMILATE_EFFECT;Assimilate all Pops in state\n;;;;;;;;;;;;;x
-WORLD_WARS_ENABLE_DESC;Great wars can now become World wars;;;;;;;;;;;;;x
-WORLD_WARS_ENABLED_DESC;World wars are enabled;;;;;;;;;;;;;x
-WORLD_WARS_DISABLED_DESC;World wars are NOT enabled;;;;;;;;;;;;;x
-SM_WINDOW;Window mode;;;;;;;;;;;;;x
-SM_WINDOWED;Windowed;;;;;;;;;;;;;x
-SM_FULLSCREEN;Fullscreen;;;;;;;;;;;;;x
-SM_BORDERLESS;Borderless;;;;;;;;;;;;;x
-IGNORE_DECISION_ON;This decision is set to NOT notify the player when it is available to be taken.\n\n§GClick to change notification status.§!;;;;;;;;;;;;;x
-IGNORE_DECISION_OFF;This decision is set to notify the player when it is available to be taken.\n\n§GClick to change notification status.§!;;;;;;;;;;;;;x
-SPLITINHALF;Split in Half;;;;;;;;;;;;;x
-SPLITINHALF_DRO;Split in half will split the current unit into two roughly even-sized units and select the larger of the two units.;;;;;;;;;;;;;x
+col_liferate_techs;Researching the following will help deal with the local life rating:;;Folgende Forschungen zu erfoschen wird mit den lokalen Lebensbeschaffenheiten helfen:;;;;;;;;x;;;
+LACK_OF_MAINTENANCE_GOODS;Lack of maintenance goods;;Ungenügend Wartungsgüter;;;;;;;;x;;;
+AIREASON_TOO_MANY_CRISIS_WARGOALS;Added Wargoals;;Hinzugefügte Kriegsziele;;;;;;;;x;;;
+AIREASON_NOT_OVERLORD;Not my Overlord;;Nicht mein Herrscher;;;;;;;;x;;;
+SOIS_HAS_REBELS_WARNING;Rebels have risen against our Sphere members: §Y$LIST$§!;;Rebellen haben bei Spherenmitgliedern rebelliert: §Y$LIST$§!;;;;;;;;x;;;
+ALLIANCE_INVALID_GPS_IN_CRISIS;The Alliance between §Ytwo Great Powers§! can't be formed when the §Ycrisis§! is active.;;Eine Allianz zwischen §Yzwei Großmächten§! kann nicht geformt werden während die §YKrise§! aktiv ist.;;;;;;;;x;;;
+BP_TOOL_ARROW_MEDIUM_1_DASHED;Medium Dashed Arrow 1;;Mittlerer gestrichelter Pfeil 1;;;;;;;;x;;;
+BP_TOOL_ARROW_MEDIUM_2_DASHED;Medium Dashed Arrow 2;;Mittlerer gestrichelter Pfeil 2;;;;;;;;x;;;
+BP_TOOL_ARROW_MEDIUM_3_DASHED;Medium Dashed Arrow 3;;Mittlerer gestrichelter Pfeil 3;;;;;;;x;;;;
+BP_TOOL_ARROW_THICK_DASHED;Thick Dashed Arrow;;Dicker gestrichelter Pfeil;;;;;;;;x;;;
+BP_TOOL_ARROW_SLIM_DASHED;Slim Dashed Arrow;;Dünner gestrichelter Pfeil;;;;;;;;x;;;
+BP_OPEN_TOOLTIP;Open/Close the battle plan editor.;;Öffnen/Schließen des Schlachtplaners.;;;;;;;;;;;
+BP_TOGGLE_TOOLTIP;Show/Hide the current battle plans.;;Anzeigen/Verbergen des aktuellen Schlachtplanes.;;;;;;;;;;;
+COUNTRYALERT_ColonialGood_invest;§GWe can invest in our a colony in §!§Y$REGION$§!;;§GWir können in eine unserer Kolonien in §!§YREGION$§! investieren!;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;x;
+;;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;x;

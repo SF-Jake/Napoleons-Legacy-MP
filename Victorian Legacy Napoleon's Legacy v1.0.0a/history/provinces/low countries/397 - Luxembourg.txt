@@ -1,19 +1,7 @@
-owner = BEL
-controller = BEL
+owner = FRAcontroller = FRA
+add_core = FRA
 add_core = LUX
-add_core = BEL
-add_core = NET
+add_core = GER
 trade_goods = iron
 life_rating = 35
-fort = 1
-1861.1.1 = {
-	owner = LUX
-	controller = LUX
-	remove_core = NET
-	remove_core = BEL
-	railroad = 3
-	fort = 2
-}
-
-
-
+1861.1.1 = { railroad = 3 }

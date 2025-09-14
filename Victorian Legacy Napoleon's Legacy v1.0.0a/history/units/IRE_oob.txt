@@ -1,0 +1,88 @@
+leader = {
+	name = "Sir George Anson"
+	type = land
+	date="1836.1.1"
+	personality = able
+	background = adventurer
+}
+leader = {
+	name = "Sir James Charles Chatterton"
+	type = land
+	date="1836.1.1"
+	personality = brilliant
+	background = school_of_defense
+}
+leader = {
+	name = "Henry Murray"
+	type = land
+	date="1836.1.1"
+	personality = competent
+	background = uncommonly_young
+}
+#Sphere of Influence
+
+CAN = {
+	value = -200
+}
+
+FRA = {
+	value = 150
+}
+
+BRI = {
+	value = -50
+}
+
+army = {
+	name = "1st Corps"
+	location = 263
+	regiment = {
+		name= "1.1st Cavalry Division"
+		type = hussar
+		home = 263
+	}
+
+	regiment = {
+		name= "1.1st Division"
+		type = infantry
+		home = 259
+	}
+
+	regiment = {
+		name= "2.1st Division"
+		type = infantry
+		home = 264
+	}
+
+	regiment = {
+		name= "3.1st Division"
+		type = infantry
+		home = 261
+	}
+
+	regiment = {
+		name= "4.1st Division"
+		type = infantry
+		home = 260
+	}
+
+	regiment = {
+		name= "5.1st Division"
+		type = infantry
+		home = 258
+	}
+	regiment = {
+		name= "6.1st Division"
+		type = artillery
+		home = 262
+	}
+	regiment = {
+		name= "7.1st Division"
+		type = artillery
+		home = 263
+	}
+
+}
+
+
+

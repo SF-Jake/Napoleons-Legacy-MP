@@ -1,7 +1,6 @@
-owner = AUS
-controller = AUS
-add_core = LOM
-#add_core = ITA
+owner = MOD
+controller = MOD
+add_core = MOD
 trade_goods = silk
 life_rating = 35
 1861.1.1 = {
@@ -9,4 +8,3 @@ life_rating = 35
 	controller = ITA
 }
 1861.1.1 = { railroad = 3 }
-

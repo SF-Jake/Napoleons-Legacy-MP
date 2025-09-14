@@ -1,13 +1,13 @@
 capital = 549
 primary_culture = north_german
 culture = south_german
-religion = placeholder
+culture = rhenish
+religion = protestant
 government = absolute_monarchy
 plurality = 0.15
 nationalvalue = nv_order
 literacy = 0.87
 civilized = yes
-is_releasable_vassal = no
 
 # Political reforms
 slavery = no_slavery
@@ -28,12 +28,6 @@ unemployment_subsidies = low_subsidies
 pensions = good_pensions 
 school_reforms = no_schools
 
-govt_flag = 
-{
-	government = hms_government
-	flag = presidential_dictatorship
-}
-
 ruling_party = GER_conservative
 upper_house = {
 	fascist = 0
@@ -46,3 +40,17 @@ upper_house = {
 }
 
 schools = army_tech_school
+
+govt_flag = {
+	government = hms_government
+	flag = democracy
+}
+
+1861.1.1 = {
+	oob = "/1861/GER_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
+}

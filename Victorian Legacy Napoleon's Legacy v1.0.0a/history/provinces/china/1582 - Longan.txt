@@ -1,9 +1,6 @@
 owner = CHI
 controller = CHI
 add_core = CHI
-#add_core = SZC
-#add_core = TPG
-add_core = TIB
+add_core = XBI
 trade_goods = coal
-life_rating = 30
-
+life_rating = 35

@@ -1,11 +1,102 @@
+# Great Power Contention
+country_event = {
+	id = 19000
+	title = "EVTNAME19000"
+	desc = "EVTDESC19000"
+	picture = "greatpowers"
+
+	trigger = {
+		any_greater_power = {
+			diplomatic_influence = {
+				who = THIS
+				value = 30
+			}
+		}
+		any_greater_power = {
+			diplomatic_influence = {
+				who = THIS
+				value = 5
+			}
+			NOT = {
+				diplomatic_influence = {
+					who = THIS
+					value = 30
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.9
+			prestige = 10
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 15
+		}
+		modifier = {
+			factor = 1.1
+			military_score = 5
+		}
+		modifier = {
+			factor = 1.2
+			military_score = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19000"
+		any_greater_power = {
+			limit = {
+				diplomatic_influence = {
+					who = THIS
+					value = 5
+					}
+				NOT = {
+					diplomatic_influence = {
+					who = THIS
+ 					value = 75
+ 					}
+ 				}
+			}
+			country_event = { id=19005 days=0 }
+		}
+	}
+}
+
+# Reply to Above
+country_event = {
+	id = 19005
+	title = "EVTNAME19005"
+	desc = "EVTDESC19005"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA19005"
+		diplomatic_influence = {
+			who = FROM
+			value = 5
+		}
+		badboy = 1
+	}
+
+	option = {
+		name = "EVTOPTB19005"
+		diplomatic_influence = {
+			who = FROM
+			value = -5
+		}
+		prestige = -5
+	}
+}
 
 # Parade
 country_event = {
 	id = 19010
-	news = yes
-	news_desc_long = "EVTDESC19010_NEWS_LONG"
-	news_desc_medium = "EVTDESC19010_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC19010_NEWS_SHORT"
 	title = "EVTNAME19010"
 	desc = "EVTDESC19010"
 	picture = "greatpowers"
@@ -350,10 +441,6 @@ country_event = {
 # Crimean war
 country_event = {
 	id = 19030
-	news = yes
-	news_desc_long = "EVTDESC19030_NEWS_LONG"
-	news_desc_medium = "EVTDESC19030_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC19030_NEWS_SHORT"
 	title = "EVTNAME19030"
 	desc = "EVTDESC19030"
 	picture = "Ottoman"
@@ -621,10 +708,6 @@ country_event = {
 #Tutankhamun's Tomb
 country_event = {
 	id = 19046
-	news = yes
-	news_desc_long = "EVTDESC19046_NEWS_LONG"
-	news_desc_medium = "EVTDESC19046_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC19046_NEWS_SHORT"
 	title = "EVTNAME19046"
 	desc = "EVTDESC19046"
 	picture = "Egyptian"
@@ -695,41 +778,38 @@ country_event = {
 		}
 		casus_belli = {
 			target = FROM
-			type = humiliate
+			type = cut_down_to_size
 		}
 	}
 }
 
 # The Statue of Liberty (fired by French decision)
 country_event = {
-	id = 19300
-	title = "EVTNAME19300"
-	desc = "EVTDESC19300"
-
-	is_triggered_only = yes
-	major = yes
-
-	option = {
-		name = "EVTOPTA19300"
-		prestige = 5
-		relation = {
-			who = FRA
-			value = 100
-		}
-		add_country_modifier = {
-			name = the_statue_of_liberty
-			duration = -1
-		}
-	}
+        id = 19300
+        title = "EVTNAME19300"
+        desc = "EVTDESC19300"
+ 
+        is_triggered_only = yes
+        major = yes
+ 
+        option = {
+                name = "EVTOPTA19300"
+                prestige = 5
+                relation = {
+                        who = FROM
+                        value = 100
+                }
+		plurality = 5
+                add_country_modifier = {
+                        name = the_statue_of_liberty
+                        duration = -1
+                }
+        }
 }
 
 # The Mandate of Heaven
 country_event = {
 	id = 19310
-	news = yes
-	news_desc_long = "EVTDESC19310_NEWS_LONG"
-	news_desc_medium = "EVTDESC19310_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC19310_NEWS_SHORT"
 	title = "EVTNAME19310"
 	desc = "EVTDESC19310"
 	picture = "asian_ruler"
@@ -752,10 +832,6 @@ country_event = {
 # The Empire of the Sun
 country_event = {
 	id = 19320
-	news = yes
-	news_desc_long = "EVTDESC19320_NEWS_LONG"
-	news_desc_medium = "EVTDESC19320_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC19320_NEWS_SHORT"
 	title = "EVTNAME19320"
 	desc = "EVTDESC19320"
 	picture = "japanese_power"
@@ -772,6 +848,126 @@ country_event = {
 		any_pop = {
 			militancy = -3
 		}
+	}
+}
+
+# Rubber in the congo
+country_event = {
+	id = 19345
+	title = "EVTNAME19345"
+	desc = "EVTDESC19345"
+	picture = "Congorubber"
+
+	trigger = {
+		exists = CNG
+		CNG = {
+			vassal_of = THIS
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.8
+			citizenship_policy = residency
+		}
+		modifier = {
+			factor = 0.9
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 1.1
+			citizenship_policy = full_citizenship
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				average_consciousness = 3
+			}
+		}
+		modifier = {
+			factor = 1.1
+			average_consciousness = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19345"
+		CNG = {
+			random_owned = {
+				limit = {
+					NOT = {
+						trade_goods = rubber
+					}
+				}
+				trade_goods = rubber
+				any_pop = {
+					militancy = 2
+				}
+			}
+			badboy = 15
+		}
+		rubber = 15
+		badboy = 2
+		set_global_flag = in_the_rubber_coils
+	}
+}
+
+# The Congo Reform Association
+country_event = {
+	id = 19350
+	title = "EVTNAME19350"
+	desc = "EVTDESC19350"
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		exists = CNG
+		CNG = {
+			vassal_of = THIS
+		}
+		has_global_flag = in_the_rubber_coils
+		CNG = {
+			badboy = 0.24
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 75
+		modifier = {
+			factor = 0.5
+			CNG = {
+				badboy = 0.32
+			}
+		}
+		modifier = {
+			factor = 0.5
+			CNG = {
+				badboy = 0.4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			badboy = 0.4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19350"
+		add_country_modifier = {
+			name = the_congo_reform_association
+			duration = -1
+		}
+		set_global_flag = congo_reform_association_active
 	}
 }
 

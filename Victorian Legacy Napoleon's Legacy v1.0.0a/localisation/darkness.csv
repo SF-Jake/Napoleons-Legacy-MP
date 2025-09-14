@@ -336,7 +336,7 @@ apache_name;Apache;Apache;Apache;;Apache;;;;;;;;;x;
 apache_desc;The Apache rise to defend their ancestral lands from the encroachment of American settlers and soldiers. They are angered by broken promises from Washington, and will fight fiercely to halt the colonization of the West.;;Die Apachen erheben sich und verteidigen das Land ihrer Vorfahren gegen das Vordringen der amerikanischen Siedler und Soldaten. Die gebrochenen Versprechen Washingtons befeuern ihren Zorn und sie werden entschlossen kämpfen, um die Kolonisation des Westens aufzuhalten.;;;;;;;;;;;x;
 apache_army;Apache War Party;Expédition guerrière Apache;Apache-Kriegspartei;;Parte de guerra Apache;;;;;;;;;x;
 EVTNAME160001;The Taiping Rebellion;;Die Taiping-Rebellion;;;;;;;;;;;x;
-EVTDESC160001;A great rebellion has sundered all under Heaven!;;Eine große Rebellion hat alle unter den Weiten des Himmels aufgespalten.;;;;;;;;;;;x;
+EVTDESC160001;[placeholder] (Warning: I advise you to save and reload the game, or else you and Taping tropps might not be able to move);;;;;;;;;;;x;
 EVTOPTA160001;Crush them!;;Vernichtet sie!;;;;;;;;;;;x;
 EVTOPTB160001;Out with the Manchu!;;Weg mit den Manchu!;;;;;;;;;;;x;
 EVTNAME160502;Anti-Manchu feeling;;Anti-Manchu Bewegung;;;;;;;;;;;x;

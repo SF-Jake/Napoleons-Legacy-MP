@@ -44,8 +44,6 @@ gtfo_LSK_title;Grant Alaska Independence;;;;;;;;;;;;x,,
 gtfo_LSK_desc;We've had a good run, but it's time to end our rulership of Alaska: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_MRU_title;Grant Maritime Republic Independence;;;;;;;;;;;;x,,
 gtfo_MRU_desc;We've had a good run, but it's time to end our rulership of Maritime Republic: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_PRI_title;Grant Puerto Rico Independence;;;;;;;;;;;;x,,
-gtfo_PRI_desc;We've had a good run, but it's time to end our rulership of Puerto Rico: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TTB_title;Grant Trinidad Independence;;;;;;;;;;;;x,,
 gtfo_TTB_desc;We've had a good run, but it's time to end our rulership of Trinidad: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_UAL_title;Grant Alabama Independence;;;;;;;;;;;;x,,
@@ -160,12 +158,8 @@ gtfo_AKH_title;Grant Astrakhan Independence;;;;;;;;;;;;x,,
 gtfo_AKH_desc;We've had a good run, but it's time to end our rulership of Astrakhan: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_ALT_title;Grant Altai Republic Independence;;;;;;;;;;;;x,,
 gtfo_ALT_desc;We've had a good run, but it's time to end our rulership of Altai Republic: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_CPL_title;Grant Congress Poland Independence;;;;;;;;;;;;x,,
-gtfo_CPL_desc;We've had a good run, but it's time to end our rulership of Congress Poland: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_DON_title;Grant Cossack Republic Independence;;;;;;;;;;;;x,,
 gtfo_DON_desc;We've had a good run, but it's time to end our rulership of Cossack Republic: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_KAZ_title;Grant Kazakhstan Independence;;;;;;;;;;;;x,,
-gtfo_KAZ_desc;We've had a good run, but it's time to end our rulership of Kazakhstan: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_KAM_title;Grant Kamchatka Independence;;;;;;;;;;;;x,,
 gtfo_KAM_desc;We've had a good run, but it's time to end our rulership of Kamchatka: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_KMK_title;Grant Kalmykia Independence;;;;;;;;;;;;x,,
@@ -174,10 +168,6 @@ gtfo_KRL_title;Grant Karelia Independence;;;;;;;;;;;;x,,
 gtfo_KRL_desc;We've had a good run, but it's time to end our rulership of Karelia: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_SIB_title;Grant Siberian Republic Independence;;;;;;;;;;;;x,,
 gtfo_SIB_desc;We've had a good run, but it's time to end our rulership of Siberian Republic: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_TAR_title;Grant Tatarstan Independence;;;;;;;;;;;;x,,
-gtfo_TAR_desc;We've had a good run, but it's time to end our rulership of Tatarstan: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_TNT_title;Grant Tannu Tuva Independence;;;;;;;;;;;;x,,
-gtfo_TNT_desc;We've had a good run, but it's time to end our rulership of Tannu Tuva: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_URA_title;Grant Ural Republic Independence;;;;;;;;;;;;x,,
 gtfo_URA_desc;We've had a good run, but it's time to end our rulership of Ural Republic: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_YAK_title;Grant Yakutia Independence;;;;;;;;;;;;x,,
@@ -192,8 +182,6 @@ gtfo_ASY_title;Grant Assyria Independence;;;;;;;;;;;;x,,
 gtfo_ASY_desc;We've had a good run, but it's time to end our rulership of Assyria: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_BHR_title;Grant Bahrain Independence;;;;;;;;;;;;x,,
 gtfo_BHR_desc;We've had a good run, but it's time to end our rulership of Bahrain: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_CIR_title;Grant Circassia Independence;;;;;;;;;;;;x,,
-gtfo_CIR_desc;We've had a good run, but it's time to end our rulership of Circassia: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_DAG_title;Grant Caucasian Imamate Independence;;;;;;;;;;;;x,,
 gtfo_DAG_desc;We've had a good run, but it's time to end our rulership of Caucasian Imamate: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_DUR_title;Grant Pashtunistan Independence;;;;;;;;;;;;x,,
@@ -216,8 +204,6 @@ gtfo_NYE_title;Grant North Yemen Independence;;;;;;;;;;;;x,,
 gtfo_NYE_desc;We've had a good run, but it's time to end our rulership of North Yemen: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_PLS_title;Grant Palestine Independence;;;;;;;;;;;;x,,
 gtfo_PLS_desc;We've had a good run, but it's time to end our rulership of Palestine: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_SYR_title;Grant Syria Independence;;;;;;;;;;;;x,,
-gtfo_SYR_desc;We've had a good run, but it's time to end our rulership of Syria: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TAJ_title;Grant Tajikstan Independence;;;;;;;;;;;;x,,
 gtfo_TAJ_desc;We've had a good run, but it's time to end our rulership of Tajikstan: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TCA_title;Grant Transcaucasia Independence;;;;;;;;;;;;x,,
@@ -236,8 +222,6 @@ gtfo_BIH_title;Grant Bihar Independence;;;;;;;;;;;;x,,
 gtfo_BIH_desc;We've had a good run, but it's time to end our rulership of Bihar: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_BLC_title;Grant Baluchistan Independence;;;;;;;;;;;;x,,
 gtfo_BLC_desc;We've had a good run, but it's time to end our rulership of Baluchistan: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_BNG_title;Grant Bengal Independence;;;;;;;;;;;;x,,
-gtfo_BNG_desc;We've had a good run, but it's time to end our rulership of Bengal: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_DRA_title;Grant Dravidistan Independence;;;;;;;;;;;;x,,
 gtfo_DRA_desc;We've had a good run, but it's time to end our rulership of Dravidistan: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_HDU_title;Grant Hindustan Independence;;;;;;;;;;;;x,,
@@ -352,8 +336,6 @@ gtfo_NGR_title;Grant Nigeria Independence;;;;;;;;;;;;x,,
 gtfo_NGR_desc;We've had a good run, but it's time to end our rulership of Nigeria: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_NIG_title;Grant Niger Independence;;;;;;;;;;;;x,,
 gtfo_NIG_desc;We've had a good run, but it's time to end our rulership of Niger: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_OYO_title;Grant Oyo Independence;;;;;;;;;;;;x,,
-gtfo_OYO_desc;We've had a good run, but it's time to end our rulership of Oyo: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_RWA_title;Grant Rwanda Independence;;;;;;;;;;;;x,,
 gtfo_RWA_desc;We've had a good run, but it's time to end our rulership of Rwanda: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_SEG_title;Grant Bambara Independence;;;;;;;;;;;;x,,
@@ -370,8 +352,6 @@ gtfo_SOM_title;Grant Somaliland Independence;;;;;;;;;;;;x,,
 gtfo_SOM_desc;We've had a good run, but it's time to end our rulership of Somaliland: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_SUA_title;Grant Suazi Independence;;;;;;;;;;;;x,,
 gtfo_SUA_desc;We've had a good run, but it's time to end our rulership of Suazi: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_SUD_title;Grant Sudan Independence;;;;;;;;;;;;x,,
-gtfo_SUD_desc;We've had a good run, but it's time to end our rulership of Sudan: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TIG_title;Grant Tigray Independence;;;;;;;;;;;;x,,
 gtfo_TIG_desc;We've had a good run, but it's time to end our rulership of Tigray: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TNZ_title;Grant Tanganyika Independence;;;;;;;;;;;;x,,
@@ -418,18 +398,8 @@ gtfo_BIM_title;Grant Bima Independence;;;;;;;;;;;;x,,
 gtfo_BIM_desc;We've had a good run, but it's time to end our rulership of Bima: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_DJA_title;Grant Jambi Independence;;;;;;;;;;;;x,,
 gtfo_DJA_desc;We've had a good run, but it's time to end our rulership of Jambi: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_FJN_title;Grant Fujian Independence;;;;;;;;;;;;x,,
-gtfo_FJN_desc;We've had a good run, but it's time to end our rulership of Fujian: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_GMJ_title;Grant Guominjun Independence;;;;;;;;;;;;x,,
 gtfo_GMJ_desc;We've had a good run, but it's time to end our rulership of Guominjun: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_GNG_title;Grant Guangdong Independence;;;;;;;;;;;;x,,
-gtfo_GNG_desc;We've had a good run, but it's time to end our rulership of Guangdong: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_COM_title;Grant The Commonwealth Independence;;;;;;;;;;;;x,,
-gtfo_COM_desc;We've had a good run, but it's time to end our rulership of the Commonwealth: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_HNN_title;Grant Hunan Independence;;;;;;;;;;;;x,,
-gtfo_HNN_desc;We've had a good run, but it's time to end our rulership of Hunan: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_HUI_title;Grant Anhui Independence;;;;;;;;;;;;x,,
-gtfo_HUI_desc;We've had a good run, but it's time to end our rulership of Anhui: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_INO_title;Grant Indonesia Independence;;;;;;;;;;;;x,,
 gtfo_INO_desc;We've had a good run, but it's time to end our rulership of Indonesia: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_KCH_title;Grant Kachin Independence;;;;;;;;;;;;x,,
@@ -456,16 +426,12 @@ gtfo_SUL_title;Grant Sulu Independence;;;;;;;;;;;;x,,
 gtfo_SUL_desc;We've had a good run, but it's time to end our rulership of Sulu: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_SWK_title;Grant Sarawak Independence;;;;;;;;;;;;x,,
 gtfo_SWK_desc;We've had a good run, but it's time to end our rulership of Sarawak: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_SZC_title;Grant Sichuan Independence;;;;;;;;;;;;x,,
-gtfo_SZC_desc;We've had a good run, but it's time to end our rulership of Sichuan: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TAI_title;Grant Formosa Independence;;;;;;;;;;;;x,,
 gtfo_TAI_desc;We've had a good run, but it's time to end our rulership of Formosa: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TPG_title;Grant Heavenly Kingdom Independence;;;;;;;;;;;;x,,
 gtfo_TPG_desc;We've had a good run, but it's time to end our rulership of Heavenly Kingdom: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_AOT_title;Grant Aotearoa Independence;;;;;;;;;;;;x,,
 gtfo_AOT_desc;We've had a good run, but it's time to end our rulership of Aotearoa: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_FIJ_title;Grant Fiji Independence;;;;;;;;;;;;x,,
-gtfo_FIJ_desc;We've had a good run, but it's time to end our rulership of Fiji: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_SNZ_title;Grant New Munster Independence;;;;;;;;;;;;x,,
 gtfo_SNZ_desc;We've had a good run, but it's time to end our rulership of New Munster: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_TGA_title;Grant Tonga Independence;;;;;;;;;;;;x,,
@@ -826,8 +792,6 @@ gtfo_GUA_title;Grant Guatemala Independence;;;;;;;;;;;;x,,
 gtfo_GUA_desc;We've had a good run, but it's time to end our rulership of Guatemala: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_HAI_title;Grant Haiti Independence;;;;;;;;;;;;x,,
 gtfo_HAI_desc;We've had a good run, but it's time to end our rulership of Haiti: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_WIF_title;Grant West Indies Federation Independence;;;;;;;;;;;;x,,
-gtfo_WIF_desc;We've had a good run, but it's time to end our rulership of West Indies Federation: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_HAW_title;Grant Hawaii Independence;;;;;;;;;;;;x,,
 gtfo_HAW_desc;We've had a good run, but it's time to end our rulership of Hawaii: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_MAN_title;Grant Manhattan Commune Independence;;;;;;;;;;;;x,,
@@ -918,21 +882,3 @@ gtfo_BNG_title;Grant Bengal Independence;;;;;;;;;;;;x,,
 gtfo_BNG_desc;We've had a good run, but it's time to end our rulership of Bengal: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_SIE_title;Grant Siebenbürgen Independence;;;;;;;;;;;;
 gtfo_SIE_desc;We've had a good run, but it's time to end our rulership of Siebenbürgen: if you love something, let it go!;;;;;;;;;;;;
-gtfo_D01_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D01_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D02_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D02_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D03_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D03_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D04_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D04_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D05_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D05_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D06_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D06_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D07_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D07_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D08_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D08_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x
-gtfo_D09_title;Grant Generic Dominion Independence;;;;;;;;;;;;x,,
-gtfo_D09_desc;We've had a good run, but it's time to end our rulership of this dominion: if you love something, let it go!;;;;;;;;;;;;x

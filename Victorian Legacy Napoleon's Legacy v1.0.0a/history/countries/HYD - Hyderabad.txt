@@ -1,32 +1,12 @@
 capital = 1283
-primary_culture = indo_aryan
-culture = dravidian
-religion = placeholder
+primary_culture = avadhi
+culture = marathi
+culture = telegu
+religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.05
-non_state_culture_literacy = 0.05
-
-#Political Reforms
-slavery = no_slavery
-upper_house_composition = appointed
-vote_franschise = none_voting
-public_meetings = no_meeting
-press_rights = state_press
-trade_unions = no_trade_unions
-voting_system = jefferson_method
-political_parties = underground_parties
-
-#Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions 
-school_reforms = no_schools
+literacy = 0.02
 
 ruling_party = HYD_conservative
 upper_house = {
@@ -43,4 +23,32 @@ upper_house = {
 consciousness = 0
 nonstate_consciousness = 0
 
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+
 oob = "HYD_oob.txt"
+1861.1.1 = {
+	oob = "/1861/HYD_oob.txt"
+}
+
+admin_reform = yes_admin_reform
+foreign_weapons = yes_foreign_weapons
+foreign_training = yes_foreign_training
+military_constructions = yes_military_constructions
+
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = no_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = jefferson_method
+political_parties = underground_parties
+
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools

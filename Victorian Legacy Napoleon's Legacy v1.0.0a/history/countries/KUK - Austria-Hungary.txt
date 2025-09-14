@@ -1,9 +1,7 @@
 capital = 619
 primary_culture = south_german
 culture = hungarian
-culture = czech
-culture = slovak
-religion = placeholder
+religion = catholic
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -39,4 +37,12 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+1861.1.1 = {
+	oob = "/1861/KUK_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

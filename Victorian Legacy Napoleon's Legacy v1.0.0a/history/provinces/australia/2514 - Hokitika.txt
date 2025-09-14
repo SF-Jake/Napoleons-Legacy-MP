@@ -1,8 +1,8 @@
-add_core = COM
+add_core = NZL
 trade_goods = wool
 life_rating = 30
-1836.1.2 = {
-	remove_core = COM
-	add_core = AST
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = yes
 }
-

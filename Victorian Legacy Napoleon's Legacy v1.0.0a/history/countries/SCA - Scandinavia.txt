@@ -3,7 +3,7 @@ primary_culture = swedish
 culture = finnish
 culture = norwegian
 culture = danish
-religion = placeholder
+religion = protestant
 government = hms_government
 plurality = 0.05
 nationalvalue = nv_order
@@ -39,4 +39,13 @@ upper_house = {
 	anarcho_liberal = 10
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/SCA_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

@@ -3,278 +3,266 @@
 603 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 450
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 1300
 	}
 
 	capitalists = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 100
 	}
 
 	clerks = {
 		culture = swiss
-		religion = placeholder
-		size = 400
+		religion = protestant
+		size = 60
 	}
 
 	craftsmen = {
 		culture = swiss
-		religion = placeholder
-		size = 9800
+		religion = protestant
+		size = 1200
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 3300
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = protestant
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 73650
+		religion = protestant
+		size = 82590
 	}
 
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 250
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 500
 	}
 
 	clerks = {
 		culture = swiss
-		religion = placeholder
-		size = 200
+		religion = catholic
+		size = 30
 	}
 
 	craftsmen = {
 		culture = swiss
-		religion = placeholder
-		size = 5000
+		religion = catholic
+		size = 600
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 1900
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 41150
+		religion = catholic
+		size = 45720
 	}
 }
 #Basel (272000/68000 POPS)
 604 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 150
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 275
 	}
 
 	clerks = {
 		culture = swiss
-		religion = placeholder
-		size = 135
+		religion = protestant
+		size = 35
 	}
 
 	craftsmen = {
 		culture = swiss
-		religion = placeholder
-		size = 3500
+		religion = protestant
+		size = 750
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 2250
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = protestant
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 30690
+		religion = protestant
+		size = 33540
 	}
 
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 150
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 250
 	}
 
 	clerks = {
 		culture = swiss
-		religion = placeholder
-		size = 130
+		religion = catholic
+		size = 30
 	}
 
 	craftsmen = {
 		culture = swiss
-		religion = placeholder
-		size = 1500
+		religion = catholic
+		size = 600
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 1900
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 24800
+		religion = catholic
+		size = 25800
 	}
 }
 #Bern (352000/88000 POPS)
 605 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 450
 	}
 
 	officers = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 350
 	}
 
 	bureaucrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 800
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 625
 	}
 
 	clerks = {
 		culture = swiss
-		religion = placeholder
-		size = 275
+		religion = protestant
+		size = 75
 	}
 
 	craftsmen = {
 		culture = swiss
-		religion = placeholder
-		size = 7000
+		religion = protestant
+		size = 1500
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
-		size = 3500
+		religion = protestant
+		size = 4500
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = protestant
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 74300
+		religion = protestant
+		size = 79000
 	}
 }
 #Lucerne (204000/51000 POPS)
 606 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 175
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
-		size = 450
+		religion = catholic
+		size = 350
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
-		size = 2500
+		religion = catholic
+		size = 3500
 	}
 
-	clerks = {
-		culture = swiss
-		religion = placeholder
-		size = 100
-	}
-	
-	craftsmen = {
-		culture = swiss
-		religion = placeholder
-		size = 2900
-	}
-	
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 42725
+		religion = catholic
+		size = 30975
 	}
 
 }
@@ -283,141 +271,117 @@
 607 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 200
 	}
 
 	bureaucrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 120
 	}
 
 	officers = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 60
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 300
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
-		size = 3000
+		religion = protestant
+		size = 4000
 	}
 
-	clerks = {
-		culture = swiss
-		religion = placeholder
-		size = 100
-	}
-	
-	craftsmen = {
-		culture = swiss
-		religion = placeholder
-		size = 2500
-	}
-	
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = protestant
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 35720
+		religion = protestant
+		size = 37320
 	}
 
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 300
 	}
 
 	bureaucrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 80
 	}
 
 	officers = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 350
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 3000
 	}
 
-	clerks = {
-		culture = swiss
-		religion = placeholder
-		size = 100
-	}
-	
-	craftsmen = {
-		culture = swiss
-		religion = placeholder
-		size = 1500
-	}
-	
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
-		size = 29630
+		religion = catholic
+		size = 31230
 	}
 }
 #Neuchatel (56000/14000 POPS)
 608 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 100
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 125
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 3000
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 150
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 10625
 	}
 }
@@ -425,31 +389,31 @@
 609 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 150
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 175
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 15675
 	}
 
@@ -459,43 +423,43 @@
 2568 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 250
 	}
 
 	bureaucrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	officers = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 50
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 275
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 1250
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 24075
 	}
 }
@@ -503,61 +467,61 @@
 611 = {
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 275
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 650
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
-		size = 1100
+		religion = catholic
+		size = 1000
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
+		religion = catholic
 		size = 11275
 	}
 
 	aristocrats = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 50
 	}
 
 	clergymen = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 50
 	}
 
 	artisans = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 350
 	}
 
 	soldiers = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 75
 	}
 
 	farmers = {
 		culture = swiss
-		religion = placeholder
+		religion = protestant
 		size = 6475
 	}
 

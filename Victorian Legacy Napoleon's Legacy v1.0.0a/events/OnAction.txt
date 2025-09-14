@@ -9,6 +9,7 @@ country_event = {
 			slavery = yes_slavery
 			capital_scope = {
 				NOT = { continent = europe }
+				NOT = { continent = asia }
 			}
 		}
 	}
@@ -23,13 +24,7 @@ country_event = {
 				limit = {
 					is_slave = no
 				}
-				any_pop = { consciousness = 1 }
-			}
-			any_state = {
-				limit = {
-					is_slave = yes
-				}
-				any_pop = { consciousness = -0.5 }
+				any_pop = { consciousness = 2 }
 			}
 		}
 		ai_chance = {
@@ -48,6 +43,7 @@ country_event = {
 						province_id = 155 #Minnesota
 						province_id = 116 #Montana
 						province_id = 97 #Nevada-Utah
+						province_id = 94
 						province_id = 117 #N. Dakota
 						province_id = 120 #S. Dakota
 						province_id = 81 #Oregon
@@ -109,14 +105,8 @@ country_event = {
 				limit = {
 					is_slave = yes
 				}
-				any_pop = { consciousness = 1 }
-			}
-			any_state = {
-				limit = {
-					is_slave = no
-				}
-				any_pop = { consciousness = -0.5 }
-			}
+				any_pop = { consciousness = 2 }
+			}		
 		}
 		ai_chance = {
 			factor = 50
@@ -215,6 +205,26 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 32430
+	title = "EVTNAME70002"
+	desc = "EVTDESC70002"
+	picture = "Bankruptcy"
+	trigger = {
+		NOT = { tag = FROM }
+		tag = BRZ
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA32430"
+		casus_belli = {
+			type = gunboat
+			target = FROM
+		}
+	}
+}
+
 # Nation that owns your debt goes bankrupt in definace of our gunboats
 country_event = {
 	id = 70003
@@ -229,7 +239,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA70002"
 		casus_belli = {
-			type = humiliate
+			type = cut_down_to_size
 			target = FROM
 		}
 	}

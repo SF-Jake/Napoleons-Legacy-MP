@@ -1,13 +1,12 @@
 capital = 2221
 primary_culture = nanfaren
-culture = manchu
-#culture = beifaren
-religion = placeholder
+culture = beifaren
+religion = protestant
 government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_equality
+nationalvalue = nv_tradition
 literacy = 0.05
-non_state_culture_literacy = 0.02
+non_state_culture_literacy = 0
 is_releasable_vassal = no
 
 # Starting Consciousness
@@ -25,6 +24,12 @@ upper_house = {
 	communist = 0
 }
 
+land_reform = yes_land_reform
+
+1861.1.1 = {
+	oob = "/1861/TPG_oob.txt"
+}
+
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
@@ -37,8 +42,7 @@ political_parties = underground_parties
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
-
-health_care = no_health_care
+health_care = trinket_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
@@ -51,3 +55,7 @@ late_enlightenment_philosophy = 1
 water_wheel_power = 1
 
 # Inventions
+
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0

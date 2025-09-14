@@ -1,9 +1,25 @@
+BSH = {
+	value = 50
+}
+
+SUA = {
+	value = 100
+}
+
+XHO = {
+	value = 30
+}
+
+POR = {
+	value = 30
+}
+
 leader = {
-	name = "Dingane"
-	date = 1828.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
+   name = "Dingane kaSenzangakhona"
+   type = land
+   date = 1836.1.1
+   background = incompetent
+   personality = aggressive
 }
 
 army = {

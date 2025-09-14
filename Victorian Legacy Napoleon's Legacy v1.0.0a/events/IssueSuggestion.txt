@@ -357,6 +357,12 @@ country_event = {
 				ideology = conservative
 				factor = 4
 			}
+			random_province = {
+				add_province_modifier = {
+					name = government_sanitarium
+					duration = -1
+				}
+			}
 		}
 	}
 	
@@ -1790,8 +1796,8 @@ country_event = {
 	
 	option = {	
 		name = "EVTOPTB3701"
-		social_reform = twelve_hours
 		poor_strata = {
+			social_reform = twelve_hours
 			militancy = -1
 		}
 		rich_strata = {

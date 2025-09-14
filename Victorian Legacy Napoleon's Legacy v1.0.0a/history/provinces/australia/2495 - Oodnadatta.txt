@@ -1,9 +1,3 @@
-add_core = COM
-trade_goods = iron
-life_rating = 25
-
-1836.1.2 = {
-	remove_core = COM
-	add_core = AST
-}
-
+add_core = AST
+trade_goods = fruit
+life_rating = 20

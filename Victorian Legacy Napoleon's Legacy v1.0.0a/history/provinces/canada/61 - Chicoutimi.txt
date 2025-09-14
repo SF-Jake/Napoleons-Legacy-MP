@@ -1,14 +1,7 @@
-owner = COM
-controller = COM
-add_core = COM
+owner = CAN
+controller = CAN
+add_core = CAN
 add_core = QUE
+add_core = BRI
+life_rating = 35
 trade_goods = grain
-life_rating = 30
-
-1836.1.2 = {
-	remove_core = COM
-	owner = CAN
-	controller = CAN
-	add_core = CAN
-	colonial = 0
-}

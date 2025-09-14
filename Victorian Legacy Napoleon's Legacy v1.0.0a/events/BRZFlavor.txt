@@ -1,0 +1,471 @@
+country_event = {
+
+	id = 600108
+
+	trigger = {
+		tag = POR
+		NOT = {
+			owns = 521
+			owns = 526
+			owns = 518
+		}
+		
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Exiled to Brazil!"
+	desc = "We have been pushed out of Iberia for the second time in the same century. This massive hit to our nation and our prestige cannot be tolerated. We must regroup as one United Kingdom!"
+	major = yes
+
+	option = {
+		name = "We will come back once more!" 
+		prestige = -30
+		set_country_flag = BRPR_union_done
+			POR = {
+				all_core = {
+					remove_core = BRZ
+				}
+			}
+			POR = {
+				all_core = {
+					remove_core = GAL
+				}
+			clr_country_flag = move_PR
+			clr_country_flag = stay_BR
+			remove_country_modifier = UR_tensions
+			average_consciousness = -4
+			average_militancy = -3
+			}
+	}
+}
+
+country_event = {
+
+	id = 46300
+
+	trigger = {
+		tag = POR
+		year = 1864
+		romanticism = 1 #has romanticism tech
+		slavery = yes_slavery
+		NOT = {
+			year = 1872
+		}
+		NOT = {
+			exists = BRZ
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1865
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1867
+		}
+	}
+
+	title = "EVTNAME46300"
+	desc = "EVTDESC46300"
+	picture = "NavioNegreiro"
+
+	option = {
+		name = "EVTOPTA46300" 
+		any_pop = {
+			limit = {
+				consciousness = 4
+			}
+			dominant_issue = {
+				value = no_slavery
+				factor = 0.3
+			}
+		}
+		slaves = {
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 46301
+
+	trigger = {
+		tag = POR
+		year = 1895
+		NOT = {
+			year = 1910
+		}
+		NOT = {
+			exists = BRZ
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 18
+
+		modifier = {
+			factor = 0.55 #increase likelihood to happen
+			year = 1898
+		}
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1902
+		}
+	}
+
+	title = "EVTNAME46301"
+	desc = "EVTDESC46301"
+	picture = "football"
+
+	option = {
+		name = "EVTOPTA46301" 
+		set_country_flag = JogoBonito
+		prestige = 1
+		poor_strata = {
+			militancy = 2
+		}
+	}
+}
+
+province_event = {
+
+	id = 46302
+
+	trigger = {
+		province_id = 2436 #Bahia
+		owned_by = POR
+		year = 1837
+		owner = { slavery = yes_slavery }
+		NOT = {
+			year = 1840
+		}
+		NOT = {
+			exists = BRZ
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 18
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+
+		modifier = {
+			factor = 0.80 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	title = "EVTNAME46302"
+	desc = "EVTDESC46302"
+	picture = "Slaves"
+
+	option = {
+		name = "EVTOPTA46302" 
+		set_country_flag = Sabinada
+		slaves = {
+			militancy = 6
+		}		
+	}
+}
+
+country_event = {
+
+	id = 32499
+
+	trigger = {
+		tag = POR
+		year = 1836
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		days = 1
+
+		modifier = {
+			factor = 0.55
+			year = 1837
+		}
+
+		modifier = {
+			factor = 0.75 
+			year = 1838
+		}
+	}
+
+	title = "EVTNAME32499"
+	desc = "EVTDESC32499"
+	picture = "greatpowers"
+
+	option = {
+		name = "EVTOPTA32499" 
+		set_country_flag = stay_BR
+		add_country_modifier = {
+			name = UR_tensions
+			duration = 99999
+		}
+		POR = {
+			any_owned = {
+				remove_core = BRZ
+			}
+		}
+		COL = {
+			any_owned = {
+				remove_core = BRZ
+			}
+		}
+		GCO = {
+			any_owned = {
+				remove_core = BRZ
+			}
+		}
+		PRG = {
+			any_owned = {
+				remove_core = BRZ
+			}
+		}
+		BOL = {
+			any_owned = {
+				remove_core = BRZ
+			}
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+
+	option = {
+		name = "EVTOPTB32499"
+		set_country_flag = move_PR
+		add_country_modifier = {
+			name = UR_tensions
+			duration = 99999
+		}
+		capital = 521
+		POR = {
+			any_owned = {
+				remove_core = GAL
+			}
+		}
+		ai_chance = {
+			factor = 55
+		}
+	}
+}
+
+country_event = {
+     
+            id = 32498
+     
+            trigger = {
+                    has_country_flag = stay_BR
+                    NOT = {
+                            has_global_flag = BRPR_civil_war_has_happened
+                    }
+            }
+     
+            title = "EVTNAME32498"
+            desc = "EVTDESC32498"
+     
+            picture = "greatpowers"
+     
+            mean_time_to_happen = {
+                    months = 3
+            }
+     
+            option = {
+                    name = "EVTOPTA32498"
+                    random_owned = {
+                            limit = {
+                                    is_core = GAL
+                            }
+                            any_pop = {
+                                    consciousness = 1
+                                    militancy = 1
+                            }
+                            add_province_modifier = {
+                                    name = PR_rebellion
+                                    duration = 1825
+                            }
+                    }
+            }
+    }
+
+    country_event = {
+     
+            id = 32497
+     
+            trigger = {
+                    has_country_flag = move_PR
+                    NOT = {
+                            has_global_flag = BRPR_civil_war_has_happened
+                    }
+            }
+     
+            title = "EVTNAME32497"
+            desc = "EVTDESC32497"
+     
+            picture = "greatpowers"
+     
+            mean_time_to_happen = {
+                    months = 3
+            }
+     
+            option = {
+                    name = "EVTOPTA32497"
+                    random_owned = {
+                            limit = {
+                                    is_core = BRZ
+                            }
+                            any_pop = {
+                                    consciousness = 1
+                                    militancy = 1
+                            }
+                            add_province_modifier = {
+                                    name = PR_rebellion
+                                    duration = 1825
+                            }
+                    }
+            }
+    }
+
+
+country_event = {
+        id = 32496
+	title = "EVTNAME32496"
+	desc = "EVTDESC32496"
+	picture = "greatpowers"
+        
+	is_triggered_only = yes
+     
+     
+        option = {
+        	name = "EVTOPTA32496"
+                any_pop = {
+                        militancy = 6
+                        consciousness = 4
+                }
+                ENG_2068 = {
+                        remove_core = THIS
+                        secede_province = CAN
+                }
+                ENG_2014 = {
+                        remove_core = THIS
+                        secede_province = CAN
+                }
+                relation = {
+                        with = CAN
+                        value = 25
+                }
+                CAN = {
+                        country_event = 32495
+                }
+                prestige = -30
+		ai_chance = {
+			factor = 80
+		}
+        }
+     
+        option = {
+                name = "EVTOPTB32496"
+                any_pop = {
+                        militancy = -3
+                        consciousness = -2
+                }
+                CAN = {
+                        country_event = 32494
+                }
+                relation = {
+                        with = CAN
+                        value = -25
+                }
+                prestige = 10
+		ai_chance = {
+			factor = 20
+		}
+        }
+     
+}
+     
+country_event = {
+        
+	id = 32495
+	title = "EVTNAME32495"
+	desc = "EVTDESC32495"
+	picture = "greatpowers"
+            
+	is_triggered_only = yes
+     
+        
+     
+        option = {
+                name = "EVTOPTA32495"
+                relation = {
+                        with = POR
+                        value = 25
+                }
+                prestige = 20
+        }
+}
+     
+country_event = {
+        id = 32494
+	title = "EVTNAME32494"
+	desc = "EVTDESC32494"
+	picture = "greatpowers"
+
+        is_triggered_only = yes
+     
+        option = {
+        	name = "EVTOPTA32494"
+                war = {
+                     target = POR
+                     attacker_goal = {
+                     	casus_belli = acquire_core_state
+                        state = ENG_2068
+                     }
+                     defender_goal = {
+                     	casus_belli = status_quo
+                     }
+	        }
+		ai_chance = {
+			factor = 50
+		}
+         }
+     
+         option = {
+                name = "EVTOPTB32494"   
+                     any_pop = {
+                         scaled_militancy = {
+                             issue = jingoism
+                             factor = 2
+                         }
+                     }
+                prestige = -50
+		ai_chance = {
+			factor = 50
+		}
+         }
+}

@@ -3,10 +3,6 @@ country_event = {
 	id = 13000
 	title = "EVTNAME13000"
 	desc = "EVTDESC13000"
-	news = yes
-	news_desc_long = "EVTDESC13000_NEWS_LONG"
-	news_desc_medium = "EVTDESC13000_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13000_NEWS_SHORT"
 	picture = "Western"
 
 	trigger = {
@@ -30,7 +26,7 @@ country_event = {
 			duration = -1
 		}
 		ai_chance = {
-			factor = 1
+			factor = 0.75
 		}
 	}
 	option = {
@@ -148,7 +144,7 @@ country_event = {
 		name = "EVTOPTA13015"
 		casus_belli = {
 			target = FROM
-			type = humiliate
+			type = cut_down_to_size
 			months = 12
 		}
 		relation = {
@@ -188,9 +184,62 @@ province_event = {
 
 	trigger = {
 		is_coastal = yes
-		OR = {
+		owner = {
+			has_country_modifier = uncivilized_isolationism
+		}
+	}
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
 			owner = {
-				has_country_modifier = uncivilized_isolationism
+				num_of_ports = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 40
 			}
 		}
 	}
@@ -321,7 +370,7 @@ province_event = {
 		any_pop = {
 			militancy = 4
 		}
-		owner = { treasury = 5000 }
+		treasury = 5000
 	}
 }
 
@@ -334,9 +383,8 @@ province_event = {
 	trigger = {
 		is_coastal = yes
 		owner = {
-			#has_country_modifier = uncivilized_isolationism
+			has_country_modifier = uncivilized_isolationism
 			NOT = { has_country_modifier = foreign_trading_post }
-			civilized = no
 		}
 	}
 
@@ -400,19 +448,6 @@ province_event = {
 				total_num_of_ports = 40
 			}
 		}
-		modifier = {
-			factor = 0.01
-			owner = { 
-				tag = CHI
-			}
-		}
-		modifier = {
-			factor = 0.01
-			OR = { 
-				province_id = 1493 #Canton
-				province_id = 1496 #Hong Kong
-			}
-		}
 	}
 
 	option = {
@@ -427,13 +462,13 @@ province_event = {
 			consciousness = 1
 		}
 	}
-	#option = {
-	#	name = "EVTOPTB13040"
-	#	any_pop = {
-	#		consciousness = 3
-	#		militancy = 3
-	#	}
-	#}
+	option = {
+		name = "EVTOPTB13040"
+		any_pop = {
+			consciousness = 3
+			militancy = 3
+		}
+	}
 }
 
 #Point of Trade sells Opium
@@ -456,22 +491,15 @@ province_event = {
 
 	mean_time_to_happen = {
 		months = 120
-		modifier = {
-			factor = 0.1
-			OR = { 
-				province_id = 1493 #Canton
-				province_id = 1496 #Hong Kong
-			}
-		}
 	}
 
-	#option = {
-	#	name = "EVTOPTA13050"
-	#	add_province_modifier = {
-	#		name = "local_opium_habit"
-	#		duration = -1
-	#	}
-	#}
+	option = {
+		name = "EVTOPTA13050"
+		add_province_modifier = {
+			name = "local_opium_habit"
+			duration = -1
+		}
+	}
 
 	option = {
 		name = "EVTOPTB13050"
@@ -483,22 +511,22 @@ province_event = {
 		}
 	}
 
-	#option = {
-	#	name = "EVTOPTC13050"
-	#	owner = {
-	#		remove_country_modifier = foreign_trading_post
-	#	}
-	#	random_country = {
-	#		limit = {
-	#			civilized = yes
-	#			is_greater_power = yes
-	#		}
-	#		relation = {
-	#			who = THIS
-	#			value = -40
-	#		}
-	#	}
-	#}
+	option = {
+		name = "EVTOPTC13050"
+		owner = {
+			remove_country_modifier = foreign_trading_post
+		}
+		random_country = {
+			limit = {
+				civilized = yes
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+	}
 }
 
 #Opium addiction spreads to coastal province
@@ -775,62 +803,58 @@ province_event = {
 }
 
 #Microscope imported
-#province_event = {
-#	id = 13090
-#	title = "EVTNAME13090"
-#	desc = "EVTDESC13090"
-#
-#	trigger = {
-#		owner = {
-#			has_country_modifier = foreign_trading_post
-#		}
-#	}
-#
-#	mean_time_to_happen = {
-#		months = 500
-#		modifier = {
-#			factor = 0.9
-#			average_consciousness = 3
-#		}
-#		modifier = {
-#			factor = 0.9
-#			average_consciousness = 4
-#		}
-#		modifier = {
-#			factor = 0.9
-#			average_consciousness = 5
-#		}
-#		modifier = {
-#			factor = 1.1
-#			average_militancy = 3
-#		}
-#		modifier = {
-#			factor = 1.1
-#			average_militancy = 4
-#		}
-#		modifier = {
-#			factor = 1.1
-#			average_militancy = 5
-#		}
-#	}
-#
-#	option = {
-#		name = "EVTOPTA13090"
-#		owner = {
-#			#years_of_research = 0.05
-#		}
-#	}
-#}
+province_event = {
+	id = 13090
+	title = "EVTNAME13090"
+	desc = "EVTDESC13090"
+
+	trigger = {
+		owner = {
+			has_country_modifier = foreign_trading_post
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13090"
+		owner = {
+			years_of_research = 0.05
+		}
+	}
+}
 
 #Anti-foreign revolt
 province_event = {
 	id = 13100
 	title = "EVTNAME13100"
 	desc = "EVTDESC13100"
-	news = yes
-	news_desc_long = "EVTDESC13100_NEWS_LONG"
-	news_desc_medium = "EVTDESC13100_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13100_NEWS_SHORT"
 
 	trigger = {
 		average_militancy = 3
@@ -933,20 +957,20 @@ country_event = {
 	option = {
 		name = "EVTOPTA13110"
 		set_country_flag = princes_recieve_foreign_education
-		#years_of_research = 0.01
+		years_of_research = 0.01
 		any_pop = {
 			consciousness = 2
 		}
 	}
 
-	#option = {
-	#	name = "EVTOPTB13110"
-	#	remove_country_modifier = western_influences
-	#	add_country_modifier = {
-	#		name = uncivilized_isolationism
-	#		duration = -1
-	#	}
-	#}
+	option = {
+		name = "EVTOPTB13110"
+		remove_country_modifier = western_influences
+		add_country_modifier = {
+			name = uncivilized_isolationism
+			duration = -1
+		}
+	}
 }
 
 #Foreign governant
@@ -954,10 +978,6 @@ country_event = {
 	id = 13120
 	title = "EVTNAME13120"
 	desc = "EVTDESC13120"
-	news = yes
-	news_desc_long = "EVTDESC13120_NEWS_LONG"
-	news_desc_medium = "EVTDESC13120_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13120_NEWS_SHORT"
 	picture = "Western_education"
 
 	trigger = {
@@ -975,17 +995,17 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA13120"
-		#years_of_research = 0.01
+		years_of_research = 0.01
 	}
 
-	#option = {
-	#	name = "EVTOPTB13120"
-	#	political_reform = no_slavery
-	#	prestige = 5
-	#	any_pop = {
-	#		militancy = 3
-	#	}
-	#}
+	option = {
+		name = "EVTOPTB13120"
+		political_reform = no_slavery
+		prestige = 5
+		any_pop = {
+			militancy = 3
+		}
+	}
 }
 
 #Military Mission
@@ -1189,7 +1209,7 @@ province_event = {
 			limit = {
 				militancy = 4
 			}
-			#reduce_pop = 0.95
+			reduce_pop = 0.95
 		}
 	}
 }
@@ -1270,19 +1290,19 @@ province_event = {
 		}
 	}
 
-	#option = {
-	#	name = "EVTOPTB13160"
-	#	random_country = {
-	#		limit = {
-	#			is_greater_power = yes
-	#			NOT = { tag = THIS }
-	#		}
-	#		country_event = { id=13170 days=0 }
-	#	}
-	#	ai_chance = {
-	#		factor = 0.05
-	#	}
-	#}
+	option = {
+		name = "EVTOPTB13160"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = { tag = THIS }
+			}
+			country_event = { id=13170 days=0 }
+		}
+		ai_chance = {
+			factor = 0.05
+		}
+	}
 }
 
 #Sailor Executed
@@ -1299,7 +1319,7 @@ country_event = {
 		prestige = 5
 		casus_belli = {
 			target = FROM
-			type = humiliate
+			type = cut_down_to_size
 			months = 12
 		}
 	}
@@ -1309,14 +1329,14 @@ country_event = {
 		prestige = 5
 		casus_belli = {
 			target = FROM
-			type = humiliate
+			type = cut_down_to_size
 			months = 12
 		}
 		war = {
 			target = FROM
 			call_ally = yes
 			attacker_goal = {
-				casus_belli = humiliate
+				casus_belli = cut_down_to_size
 			}
 		}
 	}
@@ -1468,14 +1488,14 @@ country_event = {
 		}
 		casus_belli = {
 			target = FROM
-			type = humiliate
+			type = cut_down_to_size
 			months = 12
 		}
 		war = {
 			target = FROM
 			call_ally = yes
 			attacker_goal = {
-				casus_belli = acquire_treaty_port
+				casus_belli = cut_down_to_size
 			}
 		}
 	}
@@ -1606,10 +1626,6 @@ province_event = {
 	id = 13230
 	title = "EVTNAME13230"
 	desc = "EVTDESC13230"
-	news = yes
-	news_desc_long = "EVTDESC13230_NEWS_LONG"
-	news_desc_medium = "EVTDESC13230_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13230_NEWS_SHORT"
 
 	trigger = {
 		has_province_modifier = legation_quarter
@@ -1689,7 +1705,6 @@ province_event = {
 		NOT = {
 			has_province_modifier = local_opium_habit
 		}
-		NOT = { tag = CHI }
 
 	}
 
@@ -1711,13 +1726,13 @@ province_event = {
 		}
 	}
 
-	#option = {
-	#	name = "EVTOPTB13240"
-	#	add_province_modifier = {
-	#		name = local_opium_habit
-	#		duration = -1
-	#	}
-	#}
+	option = {
+		name = "EVTOPTB13240"
+		add_province_modifier = {
+			name = local_opium_habit
+			duration = -1
+		}
+	}
 }
 
 # Our ship turned away
@@ -1740,10 +1755,10 @@ country_event = {
 		}
 	}
 
-	#option = {
-	#	name = "EVTOPTB13250"
-	#	prestige = -5
-	#}
+	option = {
+		name = "EVTOPTB13250"
+		prestige = -5
+	}
 }
 
 #Foreigners demand a lifting of import restrictions
@@ -1767,61 +1782,31 @@ country_event = {
 				who = THIS
 				value = -5
 			}
+			country_event = { id=13270 days=0 }
 		}
 	}
 }
 
 #The Opium War
-#country_event = {
-#	id = 13270
-#	title = "EVTNAME13270"
-#	desc = "EVTDESC13270"
-#	news = yes
-#	news_desc_long = "EVTDESC13270_NEWS_LONG"
-#	news_desc_medium = "EVTDESC13270_NEWS_MEDIUM"
-#	news_desc_short = "EVTDESC13270_NEWS_SHORT"
-#	picture = "Opiumwar"
-#
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = "We shall take a Small Concession!"
-#		casus_belli = {
-#			target = FROM
-#			type = demand_concession_casus_belli_small
-#			months = 12
-#		}
-#	}
-#	
-#	option = {
-#		name = "We shall take a Medium Concession!"
-#		casus_belli = {
-#			target = FROM
-#			type = demand_concession_casus_belli_medium
-#			months = 12
-#		}
-#	}
-#	
-#	option = {
-#		name = "We shall take a Large Concession!"
-#		casus_belli = {
-#			target = FROM
-#			type = demand_concession_casus_belli_large
-#			months = 12
-#		}
-#	}
-#	
-#	option = {
-#		name = "We shall take a Huge Concession!"
-#		casus_belli = {
-#			target = FROM
-#			type = demand_concession_casus_belli_huge
-#			months = 12
-#		}
-#	}
-#	
-#}
+country_event = {
+	id = 13270
+	title = "EVTNAME13270"
+	desc = "EVTDESC13270"
+	picture = "Opiumwar"
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13270"
+		prestige = -5
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+	}
+}
 
 
 #Angered aristocracy
@@ -1884,7 +1869,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA13290"
-		#years_of_research = 0.4
+		years_of_research = 0.4
 		bureaucrats = {
 			militancy = 1
 		}
@@ -1898,7 +1883,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTB13290"
-		#years_of_research = 0.2
+		years_of_research = 0.2
 	}
 }
 
@@ -1926,58 +1911,14 @@ country_event = {
 	id = 13355
 	title = "EVTNAME13355"
 	desc = "EVTDESC13355"
-	news = yes
-	news_desc_long = "EVTDESC13355_NEWS_LONG"
-	news_desc_medium = "EVTDESC13355_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13355_NEWS_SHORT"
 	major = yes
-	picture = "cityfire"
 
 	is_triggered_only = yes
 
-#	option = {
-#		name = "EVTOPTA13355"
-#		prestige = -25
-#		war_exhaustion = 5
-#	}
-	
-	option = {
-		name = "The Chinese deserved it"
-		FROM = {
-			badboy = -1
-		}
-		CHI = {
-			war_exhaustion = 2
-		}
-		ai_chance = {
-			factor = 70
-			modifier = {
-				factor = 200
-				OR = {
-					tag = JAP
-					tag = RUS
-					tag = ENG
-				}
-			}
-		}
-	}
-	
 	option = {
 		name = "EVTOPTA13355"
-		FROM = {
-			badboy = 1
-		}
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 200
-				OR = {
-					tag = CHI
-					tag = BRZ
-					alliance_with = CHI
-				}
-			}
-		}
+		prestige = -25
+		war_exhaustion = 5
 	}
 }
 
@@ -1986,10 +1927,6 @@ country_event = {
 	id = 13356
 	title = "EVTNAME13356"
 	desc = "EVTDESC13356"
-	news = yes
-	news_desc_long = "EVTDESC13356_NEWS_LONG"
-	news_desc_medium = "EVTDESC13356_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13356_NEWS_SHORT"
 	picture = "Rebellion"
 
 	is_triggered_only = yes
@@ -2005,140 +1942,9 @@ country_event = {
 	}
 }
 
-#Doctrine of Lapse 1/2
-country_event = {
-	id = 13357
-	title = "EVTNAME13357"
-	desc = "EVTDESC13357"
-
-	picture = "Rebellion"
-
-	trigger = {
-		year = 1885
-#		ENG = {
-#			NOT = {
-#				has_country_flag = empress_of_india
-#			}
-#		}
-		NOT = { has_country_flag = has_lapsed }
-		OR = {
-			vassal_of = ENG
-			substate_of = ENG
-		}
-#		NOT = {
-#			prestige = 15
-#		}
-		OR = {
-			primary_culture = indo_aryan
-			primary_culture = dravidian
-#			primary_culture = assamese
-#			primary_culture = bengali
-#			primary_culture = bihari
-#			primary_culture = manipuri
-#			primary_culture = nepali
-#			primary_culture = oriya
-#			primary_culture = sinhala
-#			primary_culture = avadhi
-#			primary_culture = kanauji
-#			primary_culture = panjabi
-#			primary_culture = kashmiri
-#			primary_culture = gujarati
-#			primary_culture = marathi
-#			primary_culture = sindi
-#			primary_culture = rajput
-#			primary_culture = kannada
-#			primary_culture = malayalam
-#			primary_culture = tamil
-#			primary_culture = telegu
-		}
-	}
-
-#	mean_time_to_happen = {
-#		months = 500
-#		modifier = {
-#			factor = 0.9
-#			average_militancy = 4
-#		}
-#		modifier = {
-#			factor = 0.9
-#			average_militancy = 5
-#		}
-#		modifier = {
-#			factor = 0.9
-#			NOT = {
-#				prestige = 10
-#			}
-#		}
-#		modifier = {
-#			factor = 0.9
-#			NOT = {
-#				prestige = 5
-#			}
-#		}
-#		modifier = {
-#			factor = 0.1
-#			NOT = {
-#				government = absolute_monarchy
-#			}
-#		}
-#	}
-
-	option = {
-		name = "EVTOPTA13357"
-		set_country_flag = has_lapsed
-		any_pop = {
-			militancy = 4
-			consciousness = 1
-		}
-		ENG = {
-			country_event = { id=13358 days=0 }
-		}
-	}
-}
-
-# Doctrine of Lapse 2/2
-country_event = {
-	id = 13358
-	title = "EVTNAME13358"
-	desc = "EVTDESC13358"
-	news = yes
-	news_desc_long = "EVTDESC13358_NEWS_LONG"
-	news_desc_medium = "EVTDESC13358_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13358_NEWS_SHORT"
-
-	picture = "Rebellion"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA13358"
-		prestige = 4
-		inherit = FROM
-		any_owned = {
-			limit = {
-				is_core = HND
-			}
-			any_pop = {
-				militancy = 3
-				consciousness = 1
-			}
-		}
-		set_global_flag = doctrine_of_lapse_has_been_used
-	}
-
-	option = {
-		name = "EVTOPTB13358"
-		prestige = -2
-	}
-}
-
 country_event = {
 	title = "westernize_nation_title"
 	desc = "westernize_nation_desc"
-	news = yes
-	news_desc_long = "westernize_nation_desc_NEWS_LONG"
-	news_desc_medium = "westernize_nation_desc_NEWS_MEDIUM"
-	news_desc_short = "westernize_nation_desc_NEWS_SHORT"
 	picture = "Prosper"
 
 	id = 90910
@@ -2147,12 +1953,6 @@ country_event = {
 	
 	trigger = {
 		NOT = { tag = CHI }
-		NOT = { tag = GXI }
-		NOT = { tag = MCK }
-		NOT = { tag = XIN }
-		NOT = { tag = YNN }
-		NOT = { tag = XBI }
-		NOT = { tag = MGL }
 		}
 
 	option = {				

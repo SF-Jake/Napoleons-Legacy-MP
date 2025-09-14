@@ -1,0 +1,86 @@
+#Removes Indian Minors Cores
+country_event = {
+	id = 123412347
+	title = "Separatist Sentiments Removed"
+	desc = "Now that India is United, the people no longer view themselves as Bengali or Kashmiri, but Indian."
+	picture = "Administration"
+	
+	
+	trigger = {
+		tag = HND
+		NOT = {primary_culture = bengali}
+	} 
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "To National Unification"
+		all_core = {
+			remove_core = AWA
+			remove_core = BAS
+			remove_core = BEN
+			remove_core = BER
+			remove_core = BHO
+			remove_core = BIK
+			remove_core = BUN
+			remove_core = EIC
+			remove_core = GWA
+			remove_core = HYD
+			remove_core = IND
+			remove_core = JAI
+			remove_core = JAS
+			remove_core = JOD
+			remove_core = KAL
+			remove_core = KAN
+			remove_core = KAS
+			remove_core = KUT
+			remove_core = LAD
+			remove_core = MAK
+			remove_core = MEW
+			remove_core = MYS
+			remove_core = NAG
+			remove_core = NEP
+			remove_core = ORI
+			remove_core = PAN
+			remove_core = SHI
+			remove_core = SIK
+			remove_core = SIN
+			remove_core = TRA
+		}
+	}
+}
+#Removes Indian Minors Cores
+country_event = {
+	id = 123412348
+	title = "Separatist Sentiments Removed"
+	desc = "Now that India is United, the people no longer view themselves as Bengali or Kashmiri, but Indian."
+	picture = "Administration"
+	
+	
+	trigger = {
+		tag = HND
+		primary_culture = bengali
+	} 
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "To National Unification"
+		all_core = {
+			remove_core = EIC
+			remove_core = ORI
+			remove_core = HYD
+			remove_core = MYS
+			remove_core = BEN
+			
+		}
+	}
+}

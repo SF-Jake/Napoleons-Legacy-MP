@@ -1,6 +1,7 @@
 capital = 1385
-primary_culture = polar_bears
-religion = placeholder
+primary_culture = malay
+culture = yue
+religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -22,7 +23,9 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "JOH_oob.txt"
-
+1861.1.1 = {
+	oob = "/1861/JOH_oob.txt"
+}
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting

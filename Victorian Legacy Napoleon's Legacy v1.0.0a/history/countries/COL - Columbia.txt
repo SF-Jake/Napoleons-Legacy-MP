@@ -2,16 +2,14 @@ capital = 14
 primary_culture = anglo_canadian
 culture = british
 culture = french_canadian
-religion = placeholder
+religion = protestant
 government = democracy
-plurality = 0.5
-nationalvalue = nv_productivity
+plurality = 25.0
+nationalvalue = nv_liberty
 literacy = 0.6
 civilized = yes
 prestige = 1
 
-set_country_flag = new_world_nation
-set_country_flag = south_american_immigrant_nation
 
 # Political reforms
 slavery = no_slavery
@@ -41,4 +39,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/COL_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

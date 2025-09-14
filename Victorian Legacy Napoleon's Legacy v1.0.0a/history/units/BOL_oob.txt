@@ -1,39 +1,18 @@
-	
 leader = {
-	name = "Manuel Blanco"
-	picture = aus_gen_windischgraetz
-	date = 1826.1.1
+	name = "Jose Ballivián"
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "Jose Joaquú‹ Prieto"
-	picture = aus_gen_rukavina
-	date = 1829.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Manuel Bulnes"
-	picture = aus_gen_nugent
-	date = 1815.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
+	date = 1836.1.1
+	background = generals_aide
+	personality = bold
 }
 
 army = {
 	name = "Ejército de Bolivia"
-	location = 2309
+	location = 2313 #Chuquisaca (Sucre)
 	regiment = {
 		name= "1. Brigada de Infanteria"
 		type = infantry
-		home = 2310
+		home = 2313
 	}
 
 	regiment = {
@@ -45,101 +24,12 @@ army = {
 	regiment = {
 		name= "3. Brigada de Infanteria"
 		type = infantry
-		home = 2310
-	}
-	
-	regiment = {
-		name= "4. Brigada de Infanteria"
-		type = infantry
-		home = 2310
-	}
-
-	regiment = {
-		name= "1. Hussar"
-		type = hussar
-		home = 2310
-	}
-
-	regiment = {
-		name= "1. Artillery"
-		type = artillery
-		home = 2310
-	}
-	
-	regiment = {
-		name= "2. Artillery"
-		type = artillery
-		home = 2310
-	}
-	
-	regiment = {
-		name= "3. Artillery"
-		type = artillery
-		home = 2311
-	}
-	
-	regiment = {
-		name= "4. Artillery"
-		type = artillery
-		home = 2311
-	}
-	
-	regiment = {
-		name= "5. Artillery"
-		type = artillery
 		home = 2311
 	}
 }
 
-army = {
-	name = "Ejército de Bolivia 2nd"
-	location = 2310
-	regiment = {
-		name= "1. Brigada de Infanteria"
-		type = infantry
-		home = 2310
+PEU=
+	{
+		value=200
 	}
-
-	regiment = {
-		name= "2. Brigada de Infanteria"
-		type = infantry
-		home = 2310
-	}
-	
-	regiment = {
-		name= "3. Brigada de Infanteria"
-		type = infantry
-		home = 2310
-	}
-
-	regiment = {
-		name= "1. Hussar"
-		type = hussar
-		home = 2310
-	}
-
-	regiment = {
-		name= "1. Artillery"
-		type = artillery
-		home = 2310
-	}
-	
-	regiment = {
-		name= "2. Artillery"
-		type = artillery
-		home = 2311
-	}
-	
-	regiment = {
-		name= "3. Artillery"
-		type = artillery
-		home = 2311
-	}
-	
-	regiment = {
-		name= "4. Artillery"
-		type = artillery
-		home = 2311
-	}
-}
 	

@@ -1,5 +1,134 @@
 country_event = {
 
+	id = 36700
+
+	trigger = {
+		tag = BEL 
+		year = 1837
+		NOT = {
+			year = 1840
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	title = "EVTNAME36700"
+	desc = "EVTDESC36700"
+	picture = "lion"
+
+	option = {
+		name = "EVTOPTA36700" 
+		prestige = 5
+		any_pop = {
+			limit = {
+				has_pop_culture = flemish
+			}
+			consciousness = 2
+		}
+	}
+}
+
+country_event = {
+
+	id = 36701
+
+	trigger = {
+		tag = BEL 
+		year = 1846
+		NOT = {
+			year = 1850
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1847
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1848
+		}
+	}
+
+	title = "EVTNAME36701"
+	desc = "EVTDESC36701"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA36701" 
+		any_pop = {
+			limit = {
+				has_pop_culture = flemish
+			}
+			consciousness = 3
+			militancy = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 32402
+
+	trigger = {
+		tag = FRA
+		year = 1950
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+
+		modifier = {
+			factor = 1
+			year = 1837
+		}
+	}
+
+	title = "EVTNAME32402"
+	desc = "EVTDESC32402"
+	picture = "Revolution"
+
+	option = {
+		name = "EVTOPTA32402"
+		set_country_flag = french_revolts
+		add_country_modifier = {
+			name = french_revolts
+			duration = 12000
+		}
+	}
+}
+
+country_event = {
+
 	id = 37200
 
 	trigger = {
@@ -7,8 +136,6 @@ country_event = {
 		year = 1837
 		NOT = {
 			year = 1840
-			war_with = SWI
-			has_global_flag = LouisNapoleonExtradite
 		}
 	
 	}
@@ -30,22 +157,16 @@ country_event = {
 
 	title = "EVTNAME37200"
 	desc = "EVTDESC37200"
-	picture = "napoleon3"
+	picture = "Monarchy"
 
 	option = {
 		name = "EVTOPTA37200" 
-		relation = { who = SWI value = -50 }
-		set_global_flag = LouisNapoleonExtradite
-	}
-
-	option = {
-		name = "EVTOPTB37200" 
-		relation = { who = SWI value = 50 }
 		any_pop = {
-			limit = { 
-				has_pop_culture = french
-				 } 
-			consciousness = 1
+			is_accepted_culture = yes
+			ideology = {
+				value = reactionary
+				factor = 0.05
+			}
 		}
 	}
 }
@@ -53,10 +174,6 @@ country_event = {
 country_event = {
 
 	id = 37201
-	news = yes
-	news_desc_long = "EVTDESC37201_NEWS_LONG"
-	news_desc_medium = "EVTDESC37201_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37201_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -96,7 +213,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA37201" 
-		prestige = 5
+		prestige = 10
 	}
 
 }
@@ -137,7 +254,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA37202" 
-		prestige = 5
+		prestige = 15
 	}
 
 }
@@ -149,9 +266,7 @@ country_event = {
 	trigger = {
 		tag = FRA
 		year = 1840
-		war = no
-		government = hms_government
-		ruling_party_ideology = liberal
+		ruling_party_ideology = conservative
 		NOT = {
 			year = 1843
 			}
@@ -177,7 +292,7 @@ country_event = {
 
 	title = "EVTNAME37203"
 	desc = "EVTDESC37203"
-	picture = "napoleon3"
+	picture = "Monarchy"
 
 	option = {
 		name = "EVTOPTA37203" 
@@ -189,10 +304,6 @@ country_event = {
 country_event = {
 
 	id = 37204
-	news = yes
-	news_desc_long = "EVTDESC37204_NEWS_LONG"
-	news_desc_medium = "EVTDESC37204_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37204_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -223,7 +334,7 @@ country_event = {
 
 	title = "EVTNAME37204"
 	desc = "EVTDESC37204"
-	picture = "Bonaparte"
+	picture = "Parade"
 
 	option = {
 		name = "EVTOPTA37204" 
@@ -320,7 +431,7 @@ country_event = {
 
 	trigger = {
 		tag = FRA
-		year = 1846
+		year = 1844
 		war = no
 		NOT = {
 			year = 1849
@@ -334,7 +445,7 @@ country_event = {
 
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
-			year = 1847
+			year = 1844
 		}
 
 
@@ -347,7 +458,7 @@ country_event = {
 
 	title = "EVTNAME37207"
 	desc = "EVTDESC37207"
-	picture = "napoleon3"
+	picture = "Monarchy"
 
 	option = {
 		name = "EVTOPTA37207"
@@ -360,58 +471,6 @@ country_event = {
 	}
 
 }
-
-country_event = {
-
-	id = 37208
-
-	trigger = {
-		tag = FRA
-		year = 1845
-		government = democracy
-		war = no
-		NOT = {
-			year = 1851
-		}
-	
-	}
-	
-	fire_only_once = yes
- 
-	mean_time_to_happen =  {
-		months = 5
-
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			year = 1847
-		}
-
-
-		modifier = {
-			factor = 0.95 #increase likelihood to happen
-			year = 1848
-		}
-
-		modifier = {
-			factor = 0.95 #increase likelihood to happen
-			year = 1849
-		}
-	}
-
-	title = "EVTNAME37208"
-	desc = "EVTDESC37208"
-	picture = "napoleon3"
-
-	option = {
-		name = "EVTOPTA37207" 
-		prestige = 25
-		any_pop = {
-			ideology = { factor = 0.10 value = liberal }
-		}
-	}
-
-}
-
 
 country_event = {
 
@@ -584,10 +643,6 @@ country_event = {
 country_event = {
 
 	id = 37213
-	news = yes
-	news_desc_long = "EVTDESC37213_NEWS_LONG"
-	news_desc_medium = "EVTDESC37213_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37213_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -674,10 +729,6 @@ country_event = {
 country_event = {
 
 	id = 37216
-	news = yes
-	news_desc_long = "EVTDESC37216_NEWS_LONG"
-	news_desc_medium = "EVTDESC37216_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37216_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -738,10 +789,6 @@ country_event = {
 country_event = {
 
 	id = 37217
-	news = yes
-	news_desc_long = "EVTDESC37217_NEWS_LONG"
-	news_desc_medium = "EVTDESC37217_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37217_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -803,10 +850,6 @@ country_event = {
 country_event = {
 
 	id = 37218
-	news = yes
-	news_desc_long = "EVTDESC37218_NEWS_LONG"
-	news_desc_medium = "EVTDESC37218_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37218_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -857,10 +900,6 @@ country_event = {
 country_event = {
 
 	id = 37220
-	news = yes
-	news_desc_long = "EVTDESC37220_NEWS_LONG"
-	news_desc_medium = "EVTDESC37220_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC37220_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
@@ -1115,40 +1154,517 @@ country_event = {
 		}
 }
 
+#country_event = {
+#
+#	id = 37226
+#	
+#	trigger = {
+#		OR = {
+#			tag = FRA
+#			tag = BOR
+#			tag = REP
+#		}
+#	}
+#	
+#	fire_only_once = yes
+# 
+#	mean_time_to_happen =  {
+#		days = 1
+#
+#		modifier = {
+#			factor = 0.001 #increase likelihood to happen
+#			year = 1936
+#		}
+#
+#	}
+#
+#	title = "EVTNAME37226"
+#	desc = "EVTDESC37226"
+#	picture = "ballet"
+#
+#	option = {
+#		name = "EVTOPTA37226" 
+#		any_owned = { 
+#			limit = { 
+#			AND = { pop_majority_culture = french
+#				is_core = FRA
+#			 NOT = { province_id = 425
+#			       }
+#			      }
+#				}
+#		life_rating = -3
+#		}
+#	}
+#}
+
+#NSA Revolts against France
 country_event = {
 
 	id = 37227
-
+	
 	trigger = {
-		tag = FRA
-		exists = ALD
+		tag = NSA
+		exists = FRA
+		NSA = {
+			vassal_of = FRA
+		}
+		OR = {
+			FRA = {
+				war_with = BOR
+			}
+			FRA = {
+				war_with = REP
+			}
+		}
 	}
-			
+	
+	fire_only_once = yes
+ 
 	mean_time_to_happen =  {
-		months = 4
+		months = 1
+
 		modifier = {
-			factor = 0.25 #increase likelihood to happen
-			year = 1840
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
 		}
-		modifier = {
-			factor = 12 #decrease likelihood to happen
-			FRA = { ai = no }
-		}
+
 	}
 
 	title = "EVTNAME37227"
 	desc = "EVTDESC37227"
-	picture = arab_revolt
+	picture = "Monarchy"
 
 	option = {
 		name = "EVTOPTA37227" 
-		diplomatic_influence = {
-				who = ALD
-				value = -10
+		FRA = {
+			release_vassal = NSA
 		}
 		relation = {
-				who = ALD
-				value = -20
+			who = FRA
+			value = -150
+		}
+		FRA = {
+                	country_event = 37228
+                }
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37227" 
+		prestige = -5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#France responds
+country_event = {
+
+	id = 37228
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME37228"
+	desc = "EVTDESC37228"
+	picture = "Riot"
+
+	option = {
+		name = "EVTOPTA37228" 
+		casus_belli = {
+			target = FROM
+			type = make_puppet
+			months = 1
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37228" 
+		prestige = -15
+	}
+}
+
+#FED declares war on the non-AFA French nation
+country_event = {
+
+	id = 37229
+	
+	trigger = {
+		OR = {
+			tag = FED
+			tag = GER
+		}
+		exists = AFA
+		NOT = {
+			vassal_of = AUS
+		}
+		OR = {
+			AFA = {
+				alliance_with = BOR
+			}
+			AFA = {
+				alliance_with = REP
+			}
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
+		}
+
+	}
+
+	title = "EVTNAME37229"
+	desc = "EVTDESC37229"
+	picture = "Monarchy"
+
+	option = {
+		name = "EVTOPTA37229" 
+		create_alliance = AFA
+		military_access = AFA
+		casus_belli = {
+			target = FRA
+			type = cut_down_to_size
+			months = 1
+		}
+		war = {
+			target = FRA
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+		set_global_flag = German_war_of_lib
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37229" 
+		prestige = -15
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#FED declares war on the non-AFA French nation (BOR exists)
+country_event = {
+
+	id = 37230
+	
+	trigger = {
+		OR = {
+			tag = FED
+			tag = GER
+		}
+		exists = AFA
+		exists = BOR
+		AFA = {
+			alliance_with = FRA
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
+		}
+
+	}
+
+	title = "EVTNAME37230"
+	desc = "EVTDESC37230"
+	picture = "Monarchy"
+
+	option = {
+		name = "EVTOPTA37229" 
+		create_alliance = AFA
+		military_access = AFA
+		casus_belli = {
+			target = BOR
+			type = cut_down_to_size
+			months = 1
+		}
+		war = {
+			target = BOR
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+		set_global_flag = German_war_of_lib
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37229" 
+		prestige = -15
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#FED declares war on the non-AFA French nation (REP exists)
+country_event = {
+
+	id = 37231
+	
+	trigger = {
+		OR = {
+			tag = FED
+			tag = GER
+		}
+		exists = AFA
+		exists = REP
+		AFA = {
+			alliance_with = FRA
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
+		}
+
+	}
+
+	title = "EVTNAME37230"
+	desc = "EVTDESC37230"
+	picture = "Monarchy"
+
+	option = {
+		name = "EVTOPTA37229" 
+		create_alliance = AFA
+		military_access = AFA
+		casus_belli = {
+			target = REP
+			type = cut_down_to_size
+			months = 1
+		}
+		war = {
+			target = REP
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+		set_global_flag = German_war_of_lib
+		ai_chance = {
+			factor = 65
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37229" 
+		prestige = -15
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#FED makes peace with France, wins war
+country_event = {
+
+	id = 37232
+	
+	trigger = {
+		OR = {
+			tag = FED
+			tag = GER
+		}
+		has_global_flag = German_war_of_lib
+		NOT = {	
+			exists = AFA
+		}
+		exists = LUX
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
+		}
+
+	}
+
+	title = "EVTNAME37232"
+	desc = "EVTDESC37232"
+	picture = "Celebration"
+
+	option = {
+		name = "EVTOPTA37232" 
+		end_war = FRA
+		end_war = BOR
+		end_war = REP
+		prestige = 30
+		set_global_flag = German_war_over
+	}
+}
+
+#German states want to join FED
+country_event = {
+
+	id = 37233
+	
+	trigger = {
+		OR = {
+			tag = OST
+			tag = PAL
+			tag = OLD
+			tag = BRE
+			tag = HAM
+			tag = MUN
+			tag = CLG
+		}
+		has_global_flag = German_war_over
+		exists = FED
+	}
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
+		}
+
+	}
+
+	title = "EVTNAME37233"
+	desc = "EVTDESC37233"
+	picture = "Celebration"
+
+	option = {
+		name = "EVTOPTA37233" 
+		FED = {
+                	country_event = 37234
+                }
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37233" 
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#FED accepts German states
+country_event = {
+
+	id = 37234
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME37234"
+	desc = "EVTDESC37234"
+	picture = "Celebration"
+
+	option = {
+		name = "EVTOPTA37233" 
+		FROM = {
+			any_owned = {
+				add_core = THIS
+			}
+		}
+		inherit = FROM
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37233" 
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#German states want to join FED
+country_event = {
+
+	id = 37235
+	
+	trigger = {
+		OR = {
+			tag = OST
+			tag = PAL
+			tag = OLD
+			tag = BRE
+			tag = HAM
+			tag = MUN
+			tag = CLG
+			tag = LUX
+		}
+		has_global_flag = German_war_over
+		exists = GER
+	}
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.001 #increase likelihood to happen
+			year = 1836
+		}
+
+	}
+
+	title = "EVTNAME37233"
+	desc = "EVTDESC37233"
+	picture = "Celebration"
+
+	option = {
+		name = "EVTOPTA37233" 
+		GER = {
+                	country_event = 37234
+                }
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37233" 
+		ai_chance = {
+			factor = 10
 		}
 	}
 }

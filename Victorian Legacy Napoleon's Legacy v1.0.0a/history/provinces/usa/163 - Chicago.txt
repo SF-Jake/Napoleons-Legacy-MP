@@ -1,7 +1,10 @@
-owner = USA
-controller = USA
-add_core = USA
-trade_goods = cattle
-life_rating = 30
-1861.1.1 = { railroad = 3 }
+owner = INC
 
+controller = INC
+
+add_core = INC
+add_core = USA
+
+trade_goods = coal
+life_rating = 35
+1861.1.1 = { railroad = 3 }

@@ -1,47 +1,24 @@
-ENG = {
-	value = 0
-}
-
-PRU = {
-	value = 49
-}
-
 leader = {
-	name = "Frederik af Hessen"
-	picture = den_gen_frederikhessen
-	date = 1789.1.1
+	name = "Jørgen Conrad de Falsen"
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.5
+	date="1836.1.1"
+	personality = confident
+	background = cursed_luck
 }
 leader = {
-	name = "Christian Ove Haxthausen"
-	picture = den_gen_haxthausen
-	date = 1829.1.1
+	name = "Prince Charles of Hesse-Kassel"
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
+	date="1836.1.1"
+	personality = defiant
+	background = warmonger
 }
 leader = {
-	name = "Peter von Scholten"
-	picture = den_gen_scholten
-	date = 1829.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
+	name = "Jens Schou Fabricius"
+	type = sea
+	date="1836.1.1"
+	personality = defiant
+	background = warmonger
 }
-
-leader = {
-	name = "Olaf Rye"
-	date = 1836.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-}
-
 army = {
 	name = "Danske Haeren"
 	location = 372
@@ -62,7 +39,13 @@ army = {
 		type = infantry
 		home = 372
 	}
-	
+
+	regiment = {
+		name= "4.1. Infanteridivision"
+		type = artillery
+		home = 372
+	}
+
 	regiment = {
 		name= "1.2. Infanteridivision"
 		type = infantry
@@ -83,8 +66,49 @@ army = {
 
 	regiment = {
 		name= "1.1. Kavalleridivision"
-		type = dragoon
+		type = cavalry
 		home = 373
+	}
+
+	regiment = {
+		name= "2.1. Kavalleridivision"
+		type = cavalry
+		home = 373
+	}
+
+	regiment = {
+		name= "3.1. Kavalleridivision"
+		type = cavalry
+		home = 373
+	}
+
+}
+
+army = {
+	name = "Army of Norway"
+	location = 313
+	regiment = {
+		name= "1.1. Infanteridivision"
+		type = infantry
+		home = 313
+	}
+
+	regiment = {
+		name= "2.1. Infanteridivision"
+		type = infantry
+		home = 310
+	}
+
+	regiment = {
+		name= "1.1. Kavalleridivision"
+		type = cavalry
+		home = 309
+	}
+
+	regiment = {
+		name= "2.1. Kavalleridivision"
+		type = cavalry
+		home = 305
 	}
 
 }
@@ -143,6 +167,20 @@ navy = {
 
 	ship = {
 		name= "3rd Transport Flotilla"
+		type = clipper_transport
+	}
+	ship = {
+		name= "4th Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5th Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "6th Transport Flotilla"
 		type = clipper_transport
 	}
 

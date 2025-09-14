@@ -1,7 +1,6 @@
-owner = TRN
-controller = TRN
-add_core = TRN
-add_core = COM
-trade_goods = coal
+owner = SUA
+controller = SUA
+add_core = SUA
+add_core = ZUL
+trade_goods = grain
 life_rating = 35
-

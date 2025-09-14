@@ -1,11 +1,10 @@
 capital = 1328
 primary_culture = nepali
-religion = placeholder
+religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.01
-is_releasable_vassal = no	#In accordance with group rules
 
 ruling_party = SIK_conservative
 upper_house = {
@@ -24,6 +23,10 @@ nonstate_consciousness = 0
 
 oob = "SIK_oob.txt"
 
+1861.1.1 = {
+	oob = "/1861/SIK_oob.txt"
+}
+
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
@@ -36,7 +39,6 @@ political_parties = underground_parties
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
-
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 

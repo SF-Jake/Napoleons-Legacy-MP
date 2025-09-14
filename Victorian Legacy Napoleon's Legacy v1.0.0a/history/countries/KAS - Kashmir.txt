@@ -1,14 +1,11 @@
-capital = 1224
-primary_culture = indo_aryan
+capital = 1225
+primary_culture = kashmiri
 culture = tibetan
-religion = placeholder
+religion = hindu
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.05
-non_state_culture_literacy = 0.05
-
-set_country_flag = has_lapsed
+literacy = 0.02
 
 ruling_party = KAS_conservative
 upper_house = {
@@ -26,6 +23,10 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "KAS_oob.txt"
+1861.1.1 = {
+	oob = "/1861/KAS_oob.txt"
+}
+
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -39,7 +40,6 @@ political_parties = underground_parties
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
-
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 

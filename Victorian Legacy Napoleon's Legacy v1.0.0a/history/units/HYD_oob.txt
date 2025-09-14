@@ -1,3 +1,10 @@
+leader = {
+	name = "Ceferino Namuncurá"
+	type = land
+	date = 1836.1.1
+	personality = agressive
+	background = elderly
+}
 army = {
 	name = "Army of the Nizam of Hyderabad"
 	location = 1283

@@ -1,14 +1,6 @@
-owner = RUS
-
-controller = RUS
-
+owner = PLC
+controller = PLC
 add_core = PLC
-
-#add_core = PLC
-
-#add_core = CPL
 trade_goods = wool
-
-life_rating = 39
+life_rating = 35
 1861.1.1 = { railroad = 3 }
-

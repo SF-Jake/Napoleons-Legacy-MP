@@ -1,26 +1,6 @@
-#Relations
-
-USA = {
-	value = 10		#relation
-}
-
-BUR = {
-	value = -200		#relation
-}
-
-ENG = {
-	value = 75		#relation
-}
-
-#Leaders
-
-leader = {
-	name = "Prince Isares Rangsan"
-	date = 1836.1.1 #1838
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	picture = sia_gen_pinklao
+DAI = {
+	value = -50
+	truce_until = 1840.1.1
 }
 
 army = {

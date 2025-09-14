@@ -1,6 +1,6 @@
-owner = CHI
-controller = CHI
+owner = MCK
+controller = MCK
 add_core = CHI
-trade_goods = silk
-life_rating = 30
-
+add_core = MCK
+trade_goods = timber
+life_rating = 35

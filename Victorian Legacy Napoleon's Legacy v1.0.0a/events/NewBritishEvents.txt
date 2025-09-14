@@ -1,0 +1,82 @@
+country_event = {
+
+	id = 600104
+
+	trigger = {
+		in_sphere = CAN
+		CAN = {exists = no}
+	}
+	
+ 
+	mean_time_to_happen =  {
+		days = 1
+
+		
+
+
+	}
+
+	title = "Remove from British Empire sphere"
+	desc = "The Empire is gone, we are no longer in their sphere."
+
+	option = {
+		name = "Bye Bye Britain" 
+		CAN = {diplomatic_influence = { who = THIS value = -100 } }}
+	}
+
+}
+country_event = {
+
+	id = 600105
+
+	trigger = {
+		in_sphere = BRI
+		BRI = {exists = no}
+	}
+	
+ 
+	mean_time_to_happen =  {
+		days = 1
+
+		
+
+
+	}
+
+	title = "Remove from British Union sphere"
+	desc = "The Union is gone, we are no longer in their sphere."
+
+	option = {
+		name = "Bye Bye Britain" 
+		BRI = {diplomatic_influence = { who = THIS value = -100 } }}
+	}
+
+}
+country_event = {
+
+	id = 600106
+
+	trigger = {
+		tag = CAN
+		year = 1860
+	}
+	
+ 	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		days = 1
+
+		
+
+
+	}
+
+	title = "British Unification Sentiment Soars!"
+	desc = "After Decades of being divided into two nations, the British people in both the Empire and the Isles want to be unified, the only question is which government will lead them?"
+
+	option = {
+		name = "War is on the Horizon" 
+	}
+
+}
+

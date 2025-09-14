@@ -1,5 +1,5 @@
-owner = SPA
-controller = SPA
+owner = NSA
+controller = NSA
 add_core = SPA
 trade_goods = fruit
 life_rating = 35
@@ -21,9 +21,8 @@ life_rating = 35
 	}
 	state_building = {
 		level = 1
-		building = ammunition_factory
+		building = luxury_clothes_factory
 		upgrade = yes
 	}
 }
 1861.1.1 = { railroad = 2 }
-

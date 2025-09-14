@@ -1,7 +1,6 @@
 capital = 729
 primary_culture = north_italian
-culture = slovene
-religion = placeholder
+religion = catholic
 government = democracy
 plurality = 0.1
 nationalvalue = nv_order
@@ -37,4 +36,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/VEN_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

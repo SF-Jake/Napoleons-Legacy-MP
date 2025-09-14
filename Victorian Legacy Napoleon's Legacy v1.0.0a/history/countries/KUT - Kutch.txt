@@ -1,11 +1,10 @@
 capital = 1293
-primary_culture = indo_aryan
-religion = placeholder
+primary_culture = gujarati
+religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.02
-is_releasable_vassal = no
 
 ruling_party = KUT_conservative
 upper_house = {
@@ -23,6 +22,10 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "KUT_oob.txt"
+1861.1.1 = {
+	oob = "/1861/KUT_oob.txt"
+}
+
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -36,7 +39,6 @@ political_parties = underground_parties
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
-
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 

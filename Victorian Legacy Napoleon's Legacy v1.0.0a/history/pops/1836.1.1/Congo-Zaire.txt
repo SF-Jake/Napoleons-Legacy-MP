@@ -1,986 +1,909 @@
-#Congo Region (1804000)
-##under the rule of Kongo in 1836
-#Kinshasa (1408000/352000 POPS)
+#Congo Region (164000)
+#uncolonized in 1836/ruled by Teke in 1836
+#Kinshasa (128000/32000 POPS)
 1982 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 6175
-	}
-	
-	bureaucrats = {
-		culture = bantu
-		religion = placeholder
-		size = 700
+		culture = bakongo
+		religion = animist
+		size = 625
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 3575
+		culture = bakongo
+		religion = animist
+		size = 325
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 10000
-	}
-	
-	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 4025
+		culture = bakongo
+		religion = animist
+		size = 1275
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 3000
-
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 575
-
+		culture = bakongo
+		religion = animist
+		size = 325
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 246950
+		culture = bakongo
+		religion = animist
+		size = 22450
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 77000
+		culture = bakongo
+		religion = animist
+		size = 7000
 	}
 }
-#Boma (396000/99000 POPS)
+#Boma (36000/9000 POPS)
 1983 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 640
+		culture = bakongo
+		religion = animist
+		size = 175
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 365
+		culture = bakongo
+		religion = animist
+		size = 100
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 4375
+		culture = bakongo
+		religion = animist
+		size = 375
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
-
+		culture = bakongo
+		religion = animist
+		size = 100
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 74250
+		culture = bakongo
+		religion = animist
+		size = 5250
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 20000
+		culture = bakongo
+		religion = animist
+		size = 3000
 	}
 }
-#Kasai Region (5456000)
-#under the rule of Kuba in 1836
-#Kananga (2024000/506000 POPS)
+#Kasai Region (496000)
+#uncolonized in 1836/under Lunda control
+#Kananga (184000/46000 POPS)
 1984 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
+		culture = lunda
+		religion = animist
+		size = 75
+	}
+
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
+
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 200
+	}
+
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
+
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 625
+	}
+
+	aristocrats = {
+		culture = african_minor
+		religion = animist
+		size = 800
+	}
+
+	clergymen = {
+		culture = african_minor
+		religion = animist
+		size = 400
+	}
+
+	artisans = {
+		culture = african_minor
+		religion = animist
+		size = 1650
+	}
+
+	soldiers = {
+		culture = african_minor
+		religion = animist
+		size = 425
+	}
+
+	farmers = {
+		culture = african_minor
+		religion = animist
+		size = 30725
+	}
+
+	slaves = {
+		culture = african_minor
+		religion = animist
+		size = 11000
+	}
+}
+#Kumbana (124000/31000 POPS)
+1985 = {
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 300
+	}
+
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 150
+	}
+
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 650
+	}
+
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 175
+	}
+
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 12725
+	}
+
+	aristocrats = {
+		culture = african_minor
+		religion = animist
 		size = 275
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 180
+		culture = african_minor
+		religion = animist
+		size = 150
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 730
+		culture = african_minor
+		religion = animist
+		size = 750
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 550
-
+		culture = african_minor
+		religion = animist
+		size = 150
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 16875
-	}
-
-	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 2290
-	}
-
-	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 1465
-	}
-
-	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 6050
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 3000
-
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1675
-
-	}
-
-	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 132660
+		culture = african_minor
+		religion = animist
+		size = 13675
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 50300
+		culture = african_minor
+		religion = animist
+		size = 2000
 	}
 }
-#Kumbana (1364000/341000 POPS)
-1985 = {
-	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
-	}
-
-	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 550
-	}
-
-	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2380
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1925
-
-	}
-
-	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 79660
-	}
-
-	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 3000
-	}
-
-	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
-	}
-
-	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 550
-	}
-
-	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2750
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1650
-
-	}
-
-	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 73140
-	}
-
-	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 20300
-	}
-}
-#under the rule of Luba in 1836
-#Lusambo (2068000/517000 POPS)
+#uncolonized in 1836/dominated by the Luba
+#Lusambo (188000/47000 POPS)
 1986 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
+		culture = luba
+		religion = animist
+		size = 300
 	}
-	
+
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 550
+		culture = luba
+		religion = animist
+		size = 150
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2380
+		culture = luba
+		religion = animist
+		size = 650
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1925
-
+		culture = luba
+		religion = animist
+		size = 175
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 41990
+		culture = luba
+		religion = animist
+		size = 8725
 	}
 
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 2200
+		culture = african_minor
+		religion = animist
+		size = 600
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
+		culture = african_minor
+		religion = animist
+		size = 300
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 5680
+		culture = african_minor
+		religion = animist
+		size = 1550
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1575
-
+		culture = african_minor
+		religion = animist
+		size = 325
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 108490
+		culture = african_minor
+		religion = animist
+		size = 28225
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 27000
+		culture = african_minor
+		religion = animist
+		size = 6000
 	}
 }
-#Katanga Region (9156400)
-#under the rule of Kazembe in 1836
-#Bunkeya (4888400/1222100 POPS)
+#Katanga Region (832000)
+#uncolonized in 1836/under the rule of Kazembe
+#Bunkeya (444000/111000 POPS)
 1987 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 7150
+		culture = lunda
+		religion = animist
+		size = 1950
 	}
 
 	bureaucrats = {
-		culture = bantu
-		religion = placeholder
-		size = 75
+		culture = lunda
+		religion = animist
+		size = 20
 	}
 
 	officers = {
-		culture = bantu
-		religion = placeholder
-		size = 290
+		culture = lunda
+		religion = animist
+		size = 80
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 3575
+		culture = lunda
+		religion = animist
+		size = 975
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 10000
-	}
-	
-	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 4390
+		culture = lunda
+		religion = animist
+		size = 3925
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 3000
-
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1030
-
+		culture = lunda
+		religion = animist
+		size = 1000
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 297180
+		culture = lunda
+		religion = animist
+		size = 81050
 	}
 
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 920
+		culture = african_minor
+		religion = animist
+		size = 250
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 460
+		culture = african_minor
+		religion = animist
+		size = 125
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2380
+		culture = african_minor
+		religion = animist
+		size = 650
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1375
-
+		culture = african_minor
+		religion = animist
+		size = 125
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 43450
+		culture = african_minor
+		religion = animist
+		size = 11850
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 33000
+		culture = african_minor
+		religion = animist
+		size = 9000
 	}
 }
-#under the rule of Luba in 1836
-#Mussumba (1188000/297000 POPS)
+#uncolonized in 1836/under Lunda control
+#Mussumba (108000/27000 POPS)
 1988 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
+		culture = lunda
+		religion = animist
+		size = 300
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 640
+		culture = lunda
+		religion = animist
+		size = 175
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2475
+		culture = lunda
+		religion = animist
+		size = 675
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1925
-
+		culture = lunda
+		religion = animist
+		size = 175
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 35475
+		culture = lunda
+		religion = animist
+		size = 9675
 	}
 
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 640
+		culture = luba
+		religion = animist
+		size = 175
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 370
+		culture = luba
+		religion = animist
+		size = 100
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 1830
+		culture = luba
+		religion = animist
+		size = 500
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
-
+		culture = luba
+		religion = animist
+		size = 100
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 33460
+		culture = luba
+		religion = animist
+		size = 9125
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 22000
+		culture = luba
+		religion = animist
+		size = 6000
 	}
 }
-#under the rule of Luba in 1836
-#Munza (3080000/770000 POPS)
+#uncolonized in 1836/dominated by the Luba
+#Munza (280000/70000 POPS)
 1989 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 4030
+		culture = luba
+		religion = animist
+		size = 1000
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 1830
+		culture = luba
+		religion = animist
+		size = 500
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 7520
+		culture = luba
+		religion = animist
+		size = 2050
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 2775
-
+		culture = luba
+		religion = animist
+		size = 525
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 124390
+		culture = luba
+		religion = animist
+		size = 33925
 	}
 
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1280
+		culture = african_minor
+		religion = animist
+		size = 350
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 730
+		culture = african_minor
+		religion = animist
+		size = 200
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 3480
+		culture = african_minor
+		religion = animist
+		size = 950
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 2200
-
+		culture = african_minor
+		religion = animist
+		size = 200
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 63070
+		culture = african_minor
+		religion = animist
+		size = 17200
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 47670
+		culture = african_minor
+		religion = animist
+		size = 13000
 	}
 }
-#Maniema Region (3304400)
-#under the rule of Luba in 1836
-#Nyangwe (1144000/286000 POPS)
+#Maniema Region (300000)
+#uncolonized in 1836/dominated by the Luba
+#Nyangwe (104000/26000 POPS)
 1990 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 825
+		culture = luba
+		religion = animist
+		size = 225
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 460
+		culture = luba
+		religion = animist
+		size = 125
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 1925
+		culture = luba
+		religion = animist
+		size = 525
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1375
-
+		culture = luba
+		religion = animist
+		size = 125
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 39330
+		culture = luba
+		religion = animist
+		size = 8000
 	}
 
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 920
+		culture = african_minor
+		religion = animist
+		size = 250
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 460
+		culture = african_minor
+		religion = animist
+		size = 125
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2380
+		culture = african_minor
+		religion = animist
+		size = 650
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1375
-
+		culture = african_minor
+		religion = animist
+		size = 125
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 53450
+		culture = african_minor
+		religion = animist
+		size = 11850
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 19670
+		culture = african_minor
+		religion = animist
+		size = 4000
 	}
 }
-#Uvira (836000/209000 POPS)
+#Uvira (76000/19000 POPS)
 1991 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1375
+		culture = african_minor
+		religion = animist
+		size = 375
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 730
+		culture = african_minor
+		religion = animist
+		size = 200
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2840
+		culture = african_minor
+		religion = animist
+		size = 775
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 2200
-
+		culture = african_minor
+		religion = animist
+		size = 200
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 59320
+		culture = african_minor
+		religion = animist
+		size = 13450
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 19670
+		culture = african_minor
+		religion = animist
+		size = 4000
 	}
 }
-#Basoko (1324400/331100 POPS)
+#Basoko (120000/30000 POPS)
 1992 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 2110
+		culture = mongo
+		religion = animist
+		size = 575
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
+		culture = mongo
+		religion = animist
+		size = 300
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 4400
+		culture = mongo
+		religion = animist
+		size = 1200
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
-
+		culture = mongo
+		religion = animist
+		size = 300
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 85990
+		culture = mongo
+		religion = animist
+		size = 20725
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 25670
+		culture = mongo
+		religion = animist
+		size = 7000
 	}
 }
-#Equateur Region (2552000)
+#Equateur Region (232000)
 #uncolonized in 1836
-#Irebu (660000/165000 POPS)
+#Irebu (60000/15000 POPS)
 1993 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
+		culture = mongo
+		religion = animist
+		size = 275
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
-		size = 550
+		culture = mongo
+		religion = animist
+		size = 150
 	}
 
 	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2200
+		culture = mongo
+		religion = animist
+		size = 600
 	}
 
 	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1650
-
+		culture = mongo
+		religion = animist
+		size = 150
 	}
 
 	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 59690
+		culture = mongo
+		religion = animist
+		size = 10825
 	}
 
 	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 15000
+		culture = mongo
+		religion = animist
+		size = 3000
 	}
 }
-#Nsheng (660000/165000 POPS)
+#Nsheng (60000/15000 POPS)
 1994 = {
 	aristocrats = {
-		culture = bantu
-		religion = placeholder
-		size = 1100
+		culture = african_minor
+		religion = animist
+		size = 275
 	}
 
 	clergymen = {
-		culture = bantu
-		religion = placeholder
+		culture = african_minor
+		religion = animist
+		size = 150
+	}
+
+	artisans = {
+		culture = african_minor
+		religion = animist
+		size = 600
+	}
+
+	soldiers = {
+		culture = african_minor
+		religion = animist
+		size = 150
+	}
+
+	farmers = {
+		culture = african_minor
+		religion = animist
+		size = 10825
+	}
+
+	slaves = {
+		culture = african_minor
+		religion = animist
+		size = 3000
+	}
+}
+#Gemena (112000/28000 POPS)
+1995 = {
+	aristocrats = {
+		culture = mongo
+		religion = animist
 		size = 550
 	}
 
-	artisans = {
-		culture = bantu
-		religion = placeholder
-		size = 2200
-	}
-
-	soldiers = {
-		culture = bantu
-		religion = placeholder
-		size = 1650
-
-	}
-
-	farmers = {
-		culture = bantu
-		religion = placeholder
-		size = 59690
-	}
-
-	slaves = {
-		culture = bantu
-		religion = placeholder
-		size = 15000
-	}
-}
-#Gemena (1232000/308000 POPS)
-1995 = {
-	aristocrats = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 2000
-	}
-
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1100
+		culture = mongo
+		religion = animist
+		size = 275
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 4125
+		culture = mongo
+		religion = animist
+		size = 1125
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1100
-
+		culture = mongo
+		religion = animist
+		size = 300
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 79750
+		culture = mongo
+		religion = animist
+		size = 21750
 	}
 
 	slaves = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 14670
+		culture = mongo
+		religion = animist
+		size = 4000
 	}
 }
-#Ituri-Uele Region (3740000)
+#Ituri-Uele Region (337000)
 #uncolonized in 1836/dominated by Luba
-#Kisangani (1716000/429000 POPS)
+#Kisangani (156000/39000 POPS)
 1996 = {
 	aristocrats = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 2840
+		culture = african_minor
+		religion = animist
+		size = 775
 	}
 
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1470
+		culture = african_minor
+		religion = animist
+		size = 400
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 5775
+		culture = african_minor
+		religion = animist
+		size = 1575
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1470
-
+		culture = african_minor
+		religion = animist
+		size = 400
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 122120
+		culture = african_minor
+		religion = animist
+		size = 27850
 	}
 
 	slaves = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 39330
+		culture = african_minor
+		religion = animist
+		size = 8000
 	}
 }
 #uncolonized in 1836/under the domination of the Azande
-#Mungbane (836000/209000 POPS)
+#Mungbane (76000/19000 POPS)
 1997 = {
 	aristocrats = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 640
+		culture = azande
+		religion = animist
+		size = 175
 	}
 
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 370
+		culture = azande
+		religion = animist
+		size = 100
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1375
+		culture = azande
+		religion = animist
+		size = 375
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1100
-
+		culture = azande
+		religion = animist
+		size = 100
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 32920
+		culture = azande
+		religion = animist
+		size = 6250
 	}
 
 	aristocrats = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 640
+		culture = african_minor
+		religion = animist
+		size = 175
 	}
 
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 370
+		culture = african_minor
+		religion = animist
+		size = 100
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1830
+		culture = african_minor
+		religion = animist
+		size = 500
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1100
-
+		culture = african_minor
+		religion = animist
+		size = 100
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 40460
+		culture = african_minor
+		religion = animist
+		size = 9125
 	}
 
 	slaves = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 10330
+		culture = african_minor
+		religion = animist
+		size = 2000
 	}
 }
-#Baramo (1188000/297000 POPS)
+#Baramo (108000/27000 POPS)
 1998 = {
 	aristocrats = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1925
+		culture = azande
+		religion = animist
+		size = 525
 	}
 
 	clergymen = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 1100
+		culture = azande
+		religion = animist
+		size = 275
 	}
 
 	artisans = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 4950
+		culture = azande
+		religion = animist
+		size = 1350
 	}
 
 	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 3000
-
-	}
-
-	soldiers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 25
-
+		culture = azande
+		religion = animist
+		size = 275
 	}
 
 	farmers = {
-		culture = niger_congo_a
-		religion = placeholder
-		size = 90110
+		culture = azande
+		religion = animist
+		size = 24575
 	}
 
 }

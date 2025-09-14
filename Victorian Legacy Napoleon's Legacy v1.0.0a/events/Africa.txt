@@ -1,0 +1,370 @@
+#The Berlin Conference 
+country_event = {
+
+	id = 55091
+
+	title = "EVTNAME55091"
+	desc = "EVTDESC55091"
+	picture = "greatpowers"
+
+	trigger = {
+		# NOT = { has_global_flag = berlin_conference_held } #delete the "#" at the start of this line for the congo events to happen
+		has_global_flag = berlin_conference_held #delete this line if you want the congo events to happen
+		year = 1875
+		war = no
+		is_greater_power = yes
+		OR = {
+			capital_scope = { continent = europe }
+			tag = CAN
+			tag = POR
+		}
+		NOT = {
+			has_global_flag = berlin_conference_to_be_held
+			has_country_flag = will_not_hold_conference
+			has_country_flag = hosting_berlin_conference
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 1
+			year = 1860
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55091"
+		prestige = 20
+		set_global_flag = berlin_conference_to_be_held
+		set_country_flag = hosting_berlin_conference
+		has_country_flag = berlin_conference_participant
+		any_country = {
+			limit = {
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+				OR = {
+					capital_scope = { continent = europe }
+					capital_scope = { continent = africa }
+					tag = CAN
+					tag = POR
+				}
+				NOT = {
+					tag = THIS
+					tag = AFA
+				}
+			}
+			country_event = 55093
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				AND = {
+					OR = {
+						capital_scope = { continent = north_america }
+						capital_scope = { continent = south_america }
+					}
+					NOT = {
+						OR = {
+							tag = CAN
+							tag = POR
+						}
+					}
+				}
+			}
+			country_event = 55092
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55091"
+		set_country_flag = will_not_hold_berlin_conference
+		prestige = -5
+		ai_chance = {
+			factor = 25			
+		}
+	}
+}
+
+# Send a delegate to the congo conference - Western Hemisphere
+country_event = {
+	id = 55092
+	title = "EVTNAME55092"
+	desc = "EVTDESC55092"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA55092"
+		treasury = -10000
+		badboy = 5
+		set_country_flag = berlin_conference_participant
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB55092"
+		prestige = 20
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+# Send a delegate to the congo conference - Europe
+country_event = {
+	id = 55093
+	title = "EVTNAME55093"
+	desc = "EVTDESC55093"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA55092"
+		treasury = -10000
+		badboy = 2
+		set_country_flag = berlin_conference_participant
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB55092"
+		prestige = -10
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+#Countries with weak navies who are GPs
+country_event = {
+
+	id = 55094
+
+	title = "EVTNAME55094"
+	desc = "EVTDESC55094"
+	picture = "meeting3"
+
+	trigger = {
+		has_country_flag = berlin_conference_participant
+		OR = {
+			NOT = {
+				colonial_nation = yes
+			}
+		}
+		is_greater_power = yes
+		NOT = {
+			has_country_flag = wants_colonies
+			has_country_flag = wants_balance
+			tag = RUS
+			tag = TSA
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 1
+			year = 1860
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55094"
+		prestige = 5
+		set_country_flag = wants_colonies
+		ai_chance = {
+			factor = 45
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55094"
+		set_country_flag = wants_balance
+		badboy = -5
+		ai_chance = {
+			factor = 55			
+		}
+	}
+}
+
+
+# The Congo Free State declared
+country_event = {
+	id = 55095
+	title = "EVTNAME55095"
+	desc = "EVTDESC55095"
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = berlin_conference_participant
+		year = 1876
+		total_num_of_ports = 1
+		NOT = {
+			has_global_flag = Congo_released
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.01
+			has_country_flag = CFS_explored
+		}
+		modifier = {
+			factor = 0.1
+			year = 1877
+		}
+		modifier = {
+			factor = 0.2
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.6
+			government = hms_government
+		}
+		modifier = {
+			factor = 0.8
+			government = prussian_constitutionalism
+		}
+		modifier = {
+			factor = 3
+			NOT = {
+				total_num_of_ports = 1
+			}
+		}
+		modifier = {
+			factor = 0.9
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 1.5
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.5
+			badboy = 10
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				capital_scope = { continent = north_america }
+				NOT = {
+					OR = {
+						tag = CAN
+						tag = POR
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			capital_scope = { continent = south_america }
+		}
+		modifier = {
+			factor = 4
+			tag = RUS
+		}
+		modifier = {
+			factor = 4
+			tag = TSA
+		}
+		modifier = {
+			factor = 2
+			badboy = 20
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = wants_balance
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZON_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZTW_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZTH_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZFO_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZFI_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZSI_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZSE_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZEI_owned
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = ZNI_owned
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55095"
+		prestige = 50
+		BEL_1987 = {
+			add_core = CNG
+			life_rating = 14
+		}
+		BEL_1990 = {
+			add_core = CNG
+			life_rating = 14
+		}
+		BEL_1984 = {
+			add_core = CNG
+			life_rating = 14
+		}
+		BEL_1977 = {
+			add_core = CNG
+			life_rating = 14
+		}
+		BEL_1992 = {
+			add_core = CNG
+			life_rating = 14
+		}
+		any_country = {
+			limit = {
+				NOT = {
+					tag = CNG
+				}
+			}
+			release = CNG
+		}
+		create_vassal = CNG
+		CNG = {
+			government = absolute_monarchy
+		}
+		set_country_flag = CFS_owned
+		set_global_flag = Congo_released
+	}
+}

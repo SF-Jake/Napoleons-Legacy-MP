@@ -1,12 +1,7 @@
-owner = SPA
-controller = SPA
+owner = NSA
+controller = NSA
 add_core = SPA
 trade_goods = iron
 life_rating = 35
 naval_base = 1
-1861.1.1 = { 
-	naval_base = 3
-}
-
-
-
+1861.1.1 = { railroad = 3 }

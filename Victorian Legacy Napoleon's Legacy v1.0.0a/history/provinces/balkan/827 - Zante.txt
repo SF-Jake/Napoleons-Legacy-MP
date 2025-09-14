@@ -1,7 +1,5 @@
-owner = ION
-controller = ION
-add_core = ION
+owner = BRI
+controller = BRI
 add_core = GRE
 trade_goods = fish
 life_rating = 35
-

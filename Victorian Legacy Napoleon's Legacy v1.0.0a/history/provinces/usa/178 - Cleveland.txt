@@ -1,6 +1,9 @@
-owner = USA
-controller = USA
+owner = INC
+controller = INC
+
+add_core = INC
 add_core = USA
+
 trade_goods = coal
 life_rating = 35
 railroad = 1
@@ -26,4 +29,3 @@ railroad = 1
 	}
 }
 1861.1.1 = { railroad = 3 }
-

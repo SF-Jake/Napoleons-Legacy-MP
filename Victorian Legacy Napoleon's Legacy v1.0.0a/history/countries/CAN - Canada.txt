@@ -1,33 +1,30 @@
 capital = 57
 primary_culture = anglo_canadian
+#culture = british
 culture = french_canadian
-culture = afro_american
-religion = placeholder
-government = absolute_monarchy
-plurality = 0.2
-nationalvalue = nv_productivity
+religion = protestant
+government = hms_government
+plurality = 25.0
+nationalvalue = nv_order
 literacy = 0.6
 civilized = yes
-
-set_country_flag = new_world_nation
-set_country_flag = north_american_immigrant_nation
 
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = landed_voting
+vote_franschise = universal_weighted_voting
 public_meetings = yes_meeting
-press_rights = state_press
-trade_unions = no_trade_unions
-voting_system = jefferson_method
-political_parties = non_secret_ballots
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = gerrymandering
 
 # Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
+wage_reform = trinket_wage
+work_hours = twelve_hours
+safety_regulations = trinket_safety
+health_care = trinket_health_care
+unemployment_subsidies = trinket_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
@@ -60,18 +57,13 @@ experimental_railroad = 1
 basic_chemistry = 1
 practical_steam_engine = 1
 mechanical_production = 1
-clean_coal = 1
 battleship_column_doctrine = 1
-naval_professionalism = 1
 stock_exchange = 1
 ad_hoc_money_bill_printing = 1
+private_bank_money_bill_printing = 1
 late_classical_theory = 1
 market_structure = 1
-
-# Inventions
-#corvettes = yes
-commerce_raiders = yes
-precision_work = yes
+fire_control_systems = 1
 
 ruling_party = CAN_conservative
 upper_house = {
@@ -82,4 +74,13 @@ upper_house = {
 	anarcho_liberal = 7
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/CAN_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

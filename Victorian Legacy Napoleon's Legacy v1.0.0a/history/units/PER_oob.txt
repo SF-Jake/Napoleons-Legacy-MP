@@ -1,16 +1,14 @@
-#Leaders
 leader = {
-	name = "Mohammed Shah Qajar"
+	name = "Muhammad Shah"
 	date = 1834.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
+	personality = charismatic
+	background = pawn
 	prestige = 0.5
 }
-
 army = {
 	name = "Army of Persia"
-	location = 1121
+	location = 1120
 	regiment = {
 		name= "1. Cavalry Brigade"
 		type = cavalry
@@ -66,7 +64,7 @@ army = {
 	regiment = {
 		name= "6. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1117
+		home = 1130
 	}
 
 	regiment = {
@@ -84,13 +82,13 @@ army = {
 	regiment = {
 		name= "9. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1135
+		home = 1120
 	}
 }
 
 army = {
 	name = "Northern Army of Persia"
-	location = 1149
+	location = 1112
 	regiment = {
 		name= "10. Bakhsh-i Piyadenizam"
 		type = infantry
@@ -100,7 +98,7 @@ army = {
 	regiment = {
 		name= "11. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1150
+		home = 1112
 	}
 
 	regiment = {
@@ -118,7 +116,7 @@ army = {
 	regiment = {
 		name= "14. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1150
+		home = 1116
 	}
 
 	regiment = {
@@ -131,17 +129,17 @@ army = {
 
 army = {
 	name = "Southern Army of Persia"
-	location = 1108
+	location = 1142
 	regiment = {
 		name= "16. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1121
+		home = 1142
 	}
 
 	regiment = {
 		name= "17. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1114
+		home = 1141
 	}
 
 	regiment = {

@@ -19,4 +19,3 @@ party_loyalty = {
 	add_core = CSA
 }
 1861.1.1 = { railroad = 3 }
-

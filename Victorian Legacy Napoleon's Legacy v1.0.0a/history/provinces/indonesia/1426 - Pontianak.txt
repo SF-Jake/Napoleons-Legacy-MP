@@ -1,5 +1,6 @@
+owner = LAN
+controller = LAN
+add_core = LAN
 add_core = KLM
-#add_core = INO
 trade_goods = grain
-life_rating = 15
-
+life_rating = 30

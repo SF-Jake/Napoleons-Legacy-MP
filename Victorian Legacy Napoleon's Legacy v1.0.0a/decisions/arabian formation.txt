@@ -6,16 +6,45 @@ political_decisions = {
 		potential = {
 			ARA = { exists = no }
 			is_culture_group = arab
-			tag = EGY
 		}
 		
-		allow = { 
-			prestige = 90
-			state_n_government = 1
-			war = no
+		allow = {
+			OR = { 
+				AND = { 
+					is_greater_power = yes
+					any_neighbor_country = {
+						in_sphere = this
+						is_culture_group = arab
+						relation = { who = THIS value = 100 }
+					}
+				}
+				AND = {
+				tag = EGY
+				civilized = yes
+				owns = 1745
+				owns = 897
+				owns = 926
+				owns = 1151
+				}
+				AND = {
+					tag = NEJ
+					HDJ = { 
+						all_core = { 
+							owned_by = THIS 
+						} 
+					}
+				}
+			}
 		}
 		effect = {
 			prestige = 20
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				remove_core = THIS 
+				add_core = ARA
+			}
 			change_tag = ARA
 			random_country = {
 				limit = {
@@ -29,16 +58,37 @@ political_decisions = {
 				country_event = 111011928
 			}
 			add_accepted_culture = union
-			EGY = { all_core = { remove_core = EGY add_core = ARA } }
-			HDJ = { all_core = { remove_core = HDJ add_core = ARA } }
-			NEJ = { all_core = { remove_core = NEJ add_core = ARA } }
-			YEM = { all_core = { remove_core = YEM add_core = ARA } }
-			OMA = { all_core = { remove_core = OMA add_core = ARA } }
-			IRQ = { all_core = { remove_core = IRQ add_core = ARA } }
-			SYR = { all_core = { remove_core = SYR add_core = ARA } }
+			any_country = {
+				limit = {
+					is_culture_group = THIS
+				}
+				all_core = {
+					add_core = ARA
+				}
+			}
+			
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	become_yemen = {
+		potential = {
+			tag = NYE
+		}
+		
+		allow = {
+			owns = 1178
+			owns = 1173
+			YEM = { exists = no }
+		}
+		
+		effect = {
+			prestige = 10
+			all_core = { add_core = YEM }
+			change_tag = YEM
+			any_pop = { militancy = -4 }
 		}
 	}	
 }

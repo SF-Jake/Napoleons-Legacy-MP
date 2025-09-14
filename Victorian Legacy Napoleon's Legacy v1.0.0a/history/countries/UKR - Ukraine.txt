@@ -3,7 +3,7 @@ primary_culture = ukrainian
 culture = russian
 culture = byelorussian
 culture = ugrian
-religion = placeholder
+religion = orthodox
 government = absolute_monarchy
 plurality = 0.02
 nationalvalue = nv_order
@@ -39,4 +39,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/UKR_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

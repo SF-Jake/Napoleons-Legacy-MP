@@ -1,16 +1,5 @@
 army = {
 	name = "Esercito Toscano"
-
-	leader = {
-		name = "Leopoldo II d'Asburgo"
-		picture = tus_gen_leopoldo
-		date = 1824.1.1
-		type = land
-		personality = defence_1.1
-		background = attack_1.1
-		prestige = 0.5
-	}
-	
 	location = 744
 	regiment = {
 		name= "1. Fanteria di Linea"

@@ -4,31 +4,31 @@
 2190 = {
 	artisans = {
 		culture = british
-		religion = placeholder
+		religion = protestant
 		size = 25
 	}
 
 	clergymen = {
 		culture = afro_caribbean
-		religion = placeholder
+		religion = protestant
 		size = 15
 	}
 
 	artisans = {
 		culture = afro_caribbean
-		religion = placeholder
+		religion = protestant
 		size = 100
 	}
 
 	soldiers = {
 		culture = afro_caribbean
-		religion = placeholder
+		religion = protestant
 		size = 10
 	}
 
 	farmers = {
 		culture = afro_caribbean
-		religion = placeholder
+		religion = protestant
 		size = 1650
 	}
 

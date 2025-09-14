@@ -1,9 +1,9 @@
 capital = 252
 primary_culture = icelandic
-religion = placeholder
+religion = protestant
 government = democracy
 plurality = 0.5
-nationalvalue = nv_productivity
+nationalvalue = nv_liberty
 literacy = 0.87
 civilized = yes
 
@@ -36,4 +36,13 @@ upper_house = {
 	anarcho_liberal = 2
 	socialist = 3
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/ICL_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

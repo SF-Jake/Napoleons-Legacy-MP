@@ -1,6 +1,6 @@
 capital = 1157
 primary_culture = bedouin
-religion = placeholder
+religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -22,6 +22,10 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "NEJ_oob.txt"
+1861.1.1 = {
+	oob = "/1861/NEJ_oob.txt"
+}
+
 
 slavery = no_slavery
 upper_house_composition = appointed

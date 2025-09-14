@@ -1,13 +1,16 @@
-capital = 1268
-primary_culture = indo_aryan
-culture = dravidian
-
-religion = placeholder
+capital = 1251
+primary_culture = marathi
+culture = avadhi
+culture = bihari
+culture = tamil
+culture = kanauji
+religion = hindu
 government = democracy
 plurality = 0.0
 nationalvalue = nv_equality
 literacy = 0.02
-civilized = no
+
+is_releasable_vassal = no
 
 ruling_party = HND_conservative
 upper_house = {
@@ -23,6 +26,9 @@ upper_house = {
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+1861.1.1 = {
+	oob = "/1861/HND_oob.txt"
+}
 
 slavery = no_slavery
 upper_house_composition = appointed

@@ -65,15 +65,16 @@ political_decisions = {
 	the_congo_conference = {
 		potential = {
 			is_greater_power = yes
-			invention = mission_to_civilize
-			invention = expansionism
-			tag = ENG
-			year = 1875
+			#invention = mission_to_civilize
+			#invention = expansionism
+			tag = BRI
+			year = 1880
 			NOT = {
 				has_global_flag = congo_conference_held
 			}
 		}
 		allow = {
+			1982 = { empty = yes }
 			1986 = { empty = yes }
 			1987 = { empty = yes }
 			1993 = { empty = yes }
@@ -123,6 +124,46 @@ political_decisions = {
 			inherit = CNG
 			prestige = -40
 			remove_country_modifier = the_congo_reform_association
+		}
+	}
+
+	sphere_me_onii_chan = {
+		
+		alert = no
+
+		potential = {
+			NOT = {
+				is_greater_power = yes
+				tag = CHI
+				tag = TPG
+			}
+			ai = no
+			year = 1837
+		}
+		
+		allow = {
+			NOT = {
+				has_country_modifier = my_sphere_is_moving_on_its_own
+			}			
+		}
+		effect = {
+			prestige = -5
+			random_country = {
+				limit = {
+					relation = {
+						who = THIS
+						value = 200
+					}
+				}
+				country_event = 121290	
+			}
+			add_country_modifier = {
+				name = my_sphere_is_moving_on_its_own
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

@@ -1,9 +1,10 @@
-owner = AUS
-controller = AUS
-add_core = LOM
-#add_core = ITA
+owner = MOD
+
+controller = MOD
+add_core = MOD
+
 trade_goods = iron
-life_rating = 40
+life_rating = 35
 fort = 1
 #state_building = {
 #	level = 1
@@ -16,22 +17,14 @@ fort = 1
 }
 1861.1.1 = { 
 	state_building = {
-	level = 2
+	level = 1
 	building = steel_factory
 	upgrade = yes
 	}
 	state_building = {
 	level = 1
-	building = ammunition_factory
-	upgrade = yes
-	}
-	state_building = {
-	level = 2
-	building = canned_food_factory
+	building = luxury_clothes_factory
 	upgrade = yes
 	}
 }
 1861.1.1 = { railroad = 3 }
-
-
-

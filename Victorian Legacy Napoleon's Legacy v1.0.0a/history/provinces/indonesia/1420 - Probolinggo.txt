@@ -1,8 +1,6 @@
-owner = NET
-controller = NET
+owner = DUT
+controller = DUT
+add_core = DUT
 add_core = JAV
-#add_core = INO
 trade_goods = sulphur
 life_rating = 30
-colonial = 2
-

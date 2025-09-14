@@ -1,0 +1,149 @@
+capital = 749
+primary_culture = north_italian
+culture = south_italian
+religion = catholic
+government = hms_government
+plurality = 0.12
+nationalvalue = nv_order
+literacy = 0.28
+civilized = yes
+
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = censored_press
+trade_unions = non_socialist
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = twelve_hours
+safety_regulations = no_safety
+health_care = trinket_health_care
+unemployment_subsidies = no_subsidies
+pensions = trinket_pensions 
+school_reforms = no_schools
+
+ruling_party = ITA_conservative
+upper_house = {
+	fascist = 0
+	liberal = 50
+	conservative = 20
+	reactionary = 5
+	anarcho_liberal = 10
+	socialist = 15
+	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/ITA_oob.txt"
+}
+1861.1.1 = {
+
+	prestige = 75
+	plurality = 60
+	
+# Technologies
+	post_napoleonic_thought = 1
+	strategic_mobility = 1
+	flintlock_rifles = 1
+	bronze_muzzle_loaded_artillery = 1
+	iron_muzzle_loaded_artillery = 1
+	military_staff_system = 1
+	military_plans = 1
+	army_command_principle = 1
+	private_banks = 1
+	stock_exchange = 1
+	no_standard = 1
+	ad_hoc_money_bill_printing = 1
+	early_classical_theory_and_critique = 1
+	late_classical_theory = 1
+	freedom_of_trade = 1
+	guild_based_production = 1
+	organized_factories = 1
+	classicism_n_early_romanticism = 1
+	romanticism = 1
+	late_enlightenment_philosophy = 1
+	idealism = 1
+	malthusian_thought = 1
+	positivism = 1
+	enlightenment_thought = 1
+	ideological_thought = 1
+	state_n_government = 1
+	introspectionism = 1
+	associationism = 1
+	water_wheel_power = 1
+	practical_steam_engine = 1
+	publishing_industry = 1
+	mechanical_production = 1
+	mechanized_mining = 1
+	clean_coal = 1
+	experimental_railroad = 1
+	basic_chemistry = 1
+	medicine = 1
+	post_nelsonian_thought = 1
+	battleship_column_doctrine = 1
+	clipper_design = 1
+	steamers = 1
+	naval_design_bureaus = 1
+	fire_control_systems = 1
+	alphabetic_flag_signaling = 1
+	naval_plans = 1
+	the_command_principle = 1
+
+#Inventions
+	john_ramsay_mcculloch = yes
+	nassau_william_sr = yes
+	james_mill = yes
+	ammunition_production = yes
+	small_arms_production = yes
+	explosives_production = yes
+	artillery_production = yes
+	building_station_shipyards = yes
+	decimal_monetary_system = yes
+	clinical_thermometers_and_binaural_stethoscopes = yes
+	pressure_chambers_for_thorax_surgery = yes
+	aerial_bacteria_and_antiseptic_principle = yes
+	genetics:_heredity = yes
+	vaccination = yes
+	northrop_power_loom = yes
+	prophylaxis_against_malaria = yes
+	mechanized_slaughtering_block = yes
+	sharp_n_roberts_power_loom = yes
+	pitts_threshing_machine = yes
+	mechanical_saw = yes
+	chemotherapy = yes
+	jacquard_power_loom = yes
+	mechanical_precision_saw = yes
+	hegelian_idealism = yes
+	hussey_n_mccormicks_reaping_machine = yes
+	combat_medicine = yes
+	silver_standard = yes
+	
+	neokantian_idealism = yes
+	steamer_transports = yes
+	steamer_automatic_construction_plants = yes
+	
+	hierarchical_order = yes
+	authoritarianism = yes
+	
+	mechanized_fishing_vessels = yes
+	egalitarianism = yes
+	
+	political_religion = yes
+	paternalism = yes
+	traditionalism = yes
+	commerce_raiders = yes
+	
+	
+	proto_existentialism = yes
+	
+	
+	work_specialization = yes
+	target_hit_profile_analysis = yes
+	work_classification = yes
+}

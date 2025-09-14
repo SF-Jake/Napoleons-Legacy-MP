@@ -1,6 +1,6 @@
 capital = 349
 primary_culture = estonian
-religion = placeholder
+religion = protestant
 government = absolute_monarchy
 plurality = 0.2
 nationalvalue = nv_order
@@ -35,4 +35,13 @@ upper_house = {
 	anarcho_liberal = 5
 	socialist = 0
 	communist = 0
+}
+
+1861.1.1 = {
+	oob = "/1861/EST_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
 }

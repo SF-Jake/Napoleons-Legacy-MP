@@ -1,19 +1,14 @@
 capital = 2247
 primary_culture = north_andean
-culture = south_andean
-religion = placeholder
+religion = catholic
 government = democracy
-plurality = 25.0
-nationalvalue = nv_productivity
+plurality = 0.0
+nationalvalue = nv_liberty
 literacy = 0.12
-non_state_culture_literacy = 0.05
 civilized = yes
 
-set_country_flag = new_world_nation
-set_country_flag = south_american_immigrant_nation
-
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = landed_voting
 public_meetings = yes_meeting
@@ -66,3 +61,69 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "CLM_oob.txt"
+
+1861.1.1 = {
+	oob = "/1861/CLM_oob.txt"
+}
+1861.1.1 = {
+
+plurality = 50
+
+# Technologies
+	post_napoleonic_thought = 1
+	flintlock_rifles = 1
+	bronze_muzzle_loaded_artillery = 1
+	military_staff_system = 1
+	army_command_principle = 1
+	private_banks = 1
+	stock_exchange = 1
+	no_standard = 1
+	freedom_of_trade = 1
+	guild_based_production = 1
+	organized_factories = 1
+	classicism_n_early_romanticism = 1
+	late_enlightenment_philosophy = 1
+	idealism = 1
+	enlightenment_thought = 1
+	ideological_thought = 1
+	water_wheel_power = 1
+	publishing_industry = 1
+	mechanical_production = 1
+	interchangeable_parts = 1
+	experimental_railroad = 1
+	early_railroad = 1
+	iron_railroad = 1
+	post_nelsonian_thought = 1
+	battleship_column_doctrine = 1
+	the_command_principle = 1
+
+#Inventions
+	work_specialization = yes
+	jacquard_power_loom = yes
+	mechanical_saw = yes
+	northrop_power_loom = yes
+	pitts_threshing_machine = yes
+	mechanical_precision_saw = yes
+	mechanized_slaughtering_block = yes
+	hussey_n_mccormicks_reaping_machine = yes
+	work_control_and_hierarchy = yes
+	precision_work = yes
+	whitney_n_colts_standardized_small_arms = yes
+	machine_tools = yes
+	integral_distillery_process = yes
+	hegelian_idealism = yes
+	jiggs = yes
+	neokantian_idealism = yes
+	work_classification = yes
+	paternalism = yes
+	
+	sharp_n_roberts_power_loom = yes
+	
+	
+	political_religion = yes
+	
+	
+	food_packing_system = yes
+	
+	multitude_of_financial_instruments = yes
+}

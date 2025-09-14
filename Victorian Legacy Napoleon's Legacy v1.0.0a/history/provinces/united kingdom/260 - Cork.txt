@@ -1,10 +1,13 @@
-owner = ENG
-controller = ENG
-add_core = ENG
+owner = IRE
+
+controller = IRE
+
 add_core = IRE
+
+add_core = CAN
 trade_goods = fish
 life_rating = 35
-naval_base = 2 #Base in Cobh, important since pre-Napoleonic times
+naval_base = 1 #Base in Cobh, important since pre-Napoleonic times
 1861.1.1 = {
 	state_building = {
 		level = 1
@@ -12,8 +15,4 @@ naval_base = 2 #Base in Cobh, important since pre-Napoleonic times
 		upgrade = yes
 	}
 }
-1861.1.1 = { 
-	railroad = 3
-	naval_base = 3
-}
-
+1861.1.1 = { railroad = 3 }

@@ -1,17 +1,12 @@
 capital = 2279
 primary_culture = north_andean
-culture = south_andean
-religion = placeholder
+religion = catholic
 government = democracy
-plurality = 25.0
-nationalvalue = nv_productivity
-literacy = 0.10
-non_state_culture_literacy = 0.05
+plurality = 0.0
+nationalvalue = nv_liberty
+literacy = 0.1
 civilized = yes
 prestige = 1
-
-set_country_flag = new_world_nation
-set_country_flag = south_american_immigrant_nation
 
 # Political reforms
 slavery = no_slavery
@@ -67,3 +62,59 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "ECU_oob.txt"
+1861.1.1 = {
+	oob = "/1861/ECU_oob.txt"
+}
+1861.1.1 = {
+ruling_party = ECU_conservative
+
+# Technologies
+	post_napoleonic_thought = 1
+	flintlock_rifles = 1
+	bronze_muzzle_loaded_artillery = 1
+	army_command_principle = 1
+	army_professionalism = 1
+	private_banks = 1
+	stock_exchange = 1
+	no_standard = 1
+	freedom_of_trade = 1
+	guild_based_production = 1
+	organized_factories = 1
+	classicism_n_early_romanticism = 1
+	romanticism = 1
+	late_enlightenment_philosophy = 1
+	idealism = 1
+	enlightenment_thought = 1
+	water_wheel_power = 1
+	publishing_industry = 1
+	mechanical_production = 1
+	experimental_railroad = 1
+	early_railroad = 1
+	post_nelsonian_thought = 1
+	alphabetic_flag_signaling = 1
+	the_command_principle = 1
+
+#Inventions
+	pitts_threshing_machine = yes
+	hussey_n_mccormicks_reaping_machine = yes
+	sharp_n_roberts_power_loom = yes
+	jacquard_power_loom = yes
+	mechanical_saw = yes
+	mechanical_precision_saw = yes
+	mechanized_slaughtering_block = yes
+	northrop_power_loom = yes
+	
+	
+	
+	army_academic_training = yes
+	hegelian_idealism = yes
+	neokantian_idealism = yes
+	work_specialization = yes
+	proto_existentialism = yes
+	field_training = yes
+	army_societal_status = yes
+	multitude_of_financial_instruments = yes
+	insurance_companies = yes
+	regulated_buying_and_selling_of_stocks = yes
+	work_control_and_hierarchy = yes
+}

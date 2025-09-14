@@ -1,11 +1,10 @@
 capital = 720
 primary_culture = north_italian
-religion = placeholder
+religion = catholic
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.4
-non_state_culture_literacy = 0.25
+literacy = 0.45
 civilized = yes
 prestige = 10
 
@@ -64,7 +63,6 @@ water_wheel_power = 1
 publishing_industry = 1
 mechanized_mining = 1
 basic_chemistry = 1
-army_professionalism = 1
 
 #Inventions
 
@@ -75,3 +73,11 @@ nonstate_consciousness = 1
 schools = army_tech_school
 
 oob = "SAR_oob.txt"
+1861.1.1 = {
+	oob = "/1861/SAR_oob.txt"
+}
+1861.1.1 = {
+# Technologies
+
+#Inventions
+}

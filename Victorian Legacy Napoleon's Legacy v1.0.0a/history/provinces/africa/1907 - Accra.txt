@@ -1,13 +1,10 @@
-owner = DEN
-controller = DEN
-naval_base = 1
-colonial = 1
+owner = CAN
+controller = CAN
+colonial = 2
 trade_goods = cattle
-life_rating = 35
+life_rating = 15
 1861.1.1 = {
-	owner = COM
-	controller = COM
-	colonial = 1
-	life_rating = 35
+	owner = ENG
+	controller = ENG
+	colonial = yes
 }
-

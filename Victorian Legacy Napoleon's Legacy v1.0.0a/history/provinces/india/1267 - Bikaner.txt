@@ -1,6 +1,7 @@
-owner = HND
-controller = HND
+owner = MUG
+controller = MUG
+add_core = MUG
+add_core = BIK
 add_core = HND
 trade_goods = wool
-life_rating = 30
-
+life_rating = 35

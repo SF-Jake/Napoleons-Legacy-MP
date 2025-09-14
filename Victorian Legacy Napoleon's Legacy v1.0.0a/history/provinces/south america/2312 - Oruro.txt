@@ -1,8 +1,6 @@
-owner = BOL
-controller = BOL
+owner = PEU
+controller = PEU
+add_core = PEU
 add_core = BOL
 trade_goods = iron
-life_rating = 36
-
-
-
+life_rating = 35

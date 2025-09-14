@@ -1,6 +1,6 @@
 capital = 658
 primary_culture = polynesian
-religion = placeholder
+religion = protestant
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -22,9 +22,9 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "HAW_oob.txt"
-
-#set_country_flag = new_world_nation
-
+1861.1.1 = {
+	oob = "/1861/HAW_oob.txt"
+}
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting

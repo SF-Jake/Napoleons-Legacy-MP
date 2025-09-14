@@ -2,29 +2,8 @@ POR = {
 	value = 125		#relation
 }
 
-KOR = {
-	value = 200		#relation
-	military_access = yes
-}
-
-MCK = {
-	value = 200
-	military_access = yes
-}
-
-XIN = {
-	value = 200
-	military_access = yes
-}
-
-TIB = {
-	value = 200
-	military_access = yes
-}
-
-MGL = {
-	value = 200
-	military_access = yes
+JAP = {
+	value = -200
 }
 
 army = {
@@ -32,19 +11,19 @@ army = {
 	location = 1612
 	regiment = {
 		name= "1. Manchu Yellow Banner"
-		type = infantry
+		type = irregular
 		home = 1612
 	}
 
 	regiment = {
 		name= "2.Manchu Yellow Banner"
-		type = infantry
+		type = irregular
 		home = 1479
 	}
 
 	regiment = {
 		name= "3.Manchu Yellow Banner"
-		type = infantry
+		type = irregular
 		home = 1480
 	}
 }
@@ -55,19 +34,19 @@ army = {
 	
 	regiment = {
 		name= "1.Manchu Bordered Yellow Banner"
-		type = infantry
+		type = irregular
 		home = 1612
 	}
 
 	regiment = {
 		name= "2.Manchu Bordered Yellow Banner"
-		type = infantry
+		type = irregular
 		home = 1552
 	}
 
 	regiment = {
 		name= "3.Manchu Bordered Yellow Banner"
-		type = infantry
+		type = irregular
 		home = 1553
 	}
 }
@@ -78,19 +57,19 @@ army = {
 
 	regiment = {
 		name= "1.Manchu White Banner"
-		type = infantry
+		type = irregular
 		home = 1554
 	}
 
 	regiment = {
 		name= "2.Manchu White Banner"
-		type = infantry
+		type = irregular
 		home = 1555
 	}
 
 	regiment = {
 		name= "3.Manchu White Banner"
-		type = infantry
+		type = irregular
 		home = 1002
 	}
 }
@@ -101,19 +80,19 @@ army = {
 
 	regiment = {
 		name= "1.Manchu Red Banner"
-		type = infantry
+		type = irregular
 		home = 1612
 	}
 
 	regiment = {
 		name= "2.Manchu Red Banner"
-		type = infantry
+		type = irregular
 		home = 1479
 	}
 
 	regiment = {
 		name= "3.Manchu Red Banner"
-		type = infantry
+		type = irregular
 		home = 1552
 	}
 }
@@ -124,19 +103,19 @@ army = {
 
 	regiment = {
 		name= "1.Manchu Blue Banner"
-		type = infantry
+		type = irregular
 		home = 1612
 	}
 
 	regiment = {
 		name= "2.Manchu Blue Banner"
-		type = infantry
+		type = irregular
 		home = 1479
 	}
 
 	regiment = {
 		name= "3.Manchu Blue Banner"
-		type = infantry
+		type = irregular
 		home = 1552
 	}
 }
